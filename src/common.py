@@ -94,6 +94,8 @@ def http_get_with_retry(
 
     for attempt in range(1, max_retries + 1):
         try:
+            if headers is None:
+                headers = {"User-Agent": "quant-research/0.1.0 (research; https://github.com/yudafu-rgb/quant-research)"}
             resp = requests.get(url, params=params, headers=headers, timeout=timeout)
 
             if resp.status_code == 429:
