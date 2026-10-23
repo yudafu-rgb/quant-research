@@ -425,14 +425,22 @@ def main():
         overall_status = "partial_failure"
 
     # 判断是否两大核心市场模块都彻底失败（关键步骤完全失败才算critical）
+    # 2026-10-23 修正：只看 fatal_error / universe_build 会漏掉“0 个资产处理”
+    # 的情况（第二轮就是 0 资产却被记成 success），所以 0 资产也算彻底失败。
+    crypto_processed = run_summaries.get("crypto", {}).get("num_assets_processed", 0) or 0
+    us_processed = run_summaries.get("us_stock", {}).get("num_assets_processed", 0) or 0
     crypto_totally_failed = (
         "fatal_error" in run_summaries.get("crypto", {})
         or "universe_build" in run_summaries.get("crypto", {}).get("errors", {})
+        or crypto_processed == 0
     )
     us_totally_failed = (
         "fatal_error" in run_summaries.get("us_stock", {})
         or "universe_build" in run_summaries.get("us_stock", {}).get("errors", {})
+        or us_processed == 0
     )
+    if (crypto_totally_failed or us_totally_failed) and not (crypto_totally_failed and us_totally_failed):
+        overall_status = "partial_failure"
     if crypto_totally_failed and us_totally_failed:
         critical_failure = True
         overall_status = "failed"
