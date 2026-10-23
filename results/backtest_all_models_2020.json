@@ -1,0 +1,760 @@
+{
+  "us": {
+    "pool": [
+      "MSFT",
+      "AAPL",
+      "AMZN",
+      "GOOGL",
+      "GOOG",
+      "BRK-B",
+      "V",
+      "JPM",
+      "JNJ",
+      "WMT",
+      "INTC",
+      "BA",
+      "MA",
+      "DIS",
+      "PG",
+      "UNH",
+      "XOM",
+      "BAC",
+      "KO",
+      "META"
+    ],
+    "period": "2020-01-02 to 2026-10-22",
+    "n_bars": 1711,
+    "models": {
+      "CSMOM_base": {
+        "label": "CSMOM_base",
+        "cost_per_side": 0.0015,
+        "n_rebalances": 75,
+        "total_cost": 12628.21,
+        "turnover_sum": 45.954,
+        "metrics": {
+          "total_pct": 247.01,
+          "annual_pct": 20.11,
+          "max_dd_pct": -23.61,
+          "sharpe": 0.946,
+          "final_value": 347008.67
+        },
+        "split": {
+          "full": {
+            "total_pct": 247.01,
+            "annual_pct": 20.11,
+            "max_dd_pct": -23.61,
+            "sharpe": 0.946,
+            "final_value": 347008.67
+          },
+          "train_to_2022": {
+            "total_pct": 38.16,
+            "annual_pct": 11.38,
+            "max_dd_pct": -15.18,
+            "sharpe": 0.572,
+            "final_value": 138157.21
+          },
+          "test_from_2023": {
+            "total_pct": 151.22,
+            "annual_pct": 27.52,
+            "max_dd_pct": -23.61,
+            "sharpe": 1.219,
+            "final_value": 347008.67
+          }
+        },
+        "equity_last": 347008.67
+      },
+      "TSMOM_base": {
+        "label": "TSMOM_base",
+        "cost_per_side": 0.0015,
+        "n_rebalances": 75,
+        "total_cost": 7468.51,
+        "turnover_sum": 31.116,
+        "metrics": {
+          "total_pct": 169.59,
+          "annual_pct": 15.73,
+          "max_dd_pct": -19.47,
+          "sharpe": 0.957,
+          "final_value": 269590.3
+        },
+        "split": {
+          "full": {
+            "total_pct": 169.59,
+            "annual_pct": 15.73,
+            "max_dd_pct": -19.47,
+            "sharpe": 0.957,
+            "final_value": 269590.3
+          },
+          "train_to_2022": {
+            "total_pct": 27.5,
+            "annual_pct": 8.44,
+            "max_dd_pct": -18.09,
+            "sharpe": 0.484,
+            "final_value": 127502.21
+          },
+          "test_from_2023": {
+            "total_pct": 111.81,
+            "annual_pct": 21.9,
+            "max_dd_pct": -19.47,
+            "sharpe": 1.367,
+            "final_value": 269590.3
+          }
+        },
+        "equity_last": 269590.3
+      },
+      "RP_base": {
+        "label": "RP_base",
+        "cost_per_side": 0.0015,
+        "n_rebalances": 75,
+        "total_cost": 1917.8,
+        "turnover_sum": 8.263,
+        "metrics": {
+          "total_pct": 159.74,
+          "annual_pct": 15.09,
+          "max_dd_pct": -21.83,
+          "sharpe": 0.939,
+          "final_value": 259744.57
+        },
+        "split": {
+          "full": {
+            "total_pct": 159.74,
+            "annual_pct": 15.09,
+            "max_dd_pct": -21.83,
+            "sharpe": 0.939,
+            "final_value": 259744.57
+          },
+          "train_to_2022": {
+            "total_pct": 25.53,
+            "annual_pct": 7.87,
+            "max_dd_pct": -21.83,
+            "sharpe": 0.431,
+            "final_value": 125532.84
+          },
+          "test_from_2023": {
+            "total_pct": 106.6,
+            "annual_pct": 21.1,
+            "max_dd_pct": -15.13,
+            "sharpe": 1.48,
+            "final_value": 259744.57
+          }
+        },
+        "equity_last": 259744.57
+      },
+      "CSMOM_stress2x": {
+        "label": "CSMOM_stress2x",
+        "cost_per_side": 0.003,
+        "n_rebalances": 75,
+        "total_cost": 24248.32,
+        "turnover_sum": 45.954,
+        "metrics": {
+          "total_pct": 223.85,
+          "annual_pct": 18.9,
+          "max_dd_pct": -23.8,
+          "sharpe": 0.893,
+          "final_value": 323854.98
+        },
+        "split": {
+          "full": {
+            "total_pct": 223.85,
+            "annual_pct": 18.9,
+            "max_dd_pct": -23.8,
+            "sharpe": 0.893,
+            "final_value": 323854.98
+          },
+          "train_to_2022": {
+            "total_pct": 34.71,
+            "annual_pct": 10.44,
+            "max_dd_pct": -15.3,
+            "sharpe": 0.526,
+            "final_value": 134712.45
+          },
+          "test_from_2023": {
+            "total_pct": 140.61,
+            "annual_pct": 26.07,
+            "max_dd_pct": -23.8,
+            "sharpe": 1.161,
+            "final_value": 323854.98
+          }
+        },
+        "equity_last": 323854.98
+      },
+      "TSMOM_stress2x": {
+        "label": "TSMOM_stress2x",
+        "cost_per_side": 0.003,
+        "n_rebalances": 75,
+        "total_cost": 14551.73,
+        "turnover_sum": 31.116,
+        "metrics": {
+          "total_pct": 157.28,
+          "annual_pct": 14.93,
+          "max_dd_pct": -19.61,
+          "sharpe": 0.908,
+          "final_value": 257279.99
+        },
+        "split": {
+          "full": {
+            "total_pct": 157.28,
+            "annual_pct": 14.93,
+            "max_dd_pct": -19.61,
+            "sharpe": 0.908,
+            "final_value": 257279.99
+          },
+          "train_to_2022": {
+            "total_pct": 24.77,
+            "annual_pct": 7.66,
+            "max_dd_pct": -18.8,
+            "sharpe": 0.436,
+            "final_value": 124772.02
+          },
+          "test_from_2023": {
+            "total_pct": 106.61,
+            "annual_pct": 21.11,
+            "max_dd_pct": -19.61,
+            "sharpe": 1.319,
+            "final_value": 257279.99
+          }
+        },
+        "equity_last": 257279.99
+      },
+      "RP_stress2x": {
+        "label": "RP_stress2x",
+        "cost_per_side": 0.003,
+        "n_rebalances": 75,
+        "total_cost": 3808.87,
+        "turnover_sum": 8.263,
+        "metrics": {
+          "total_pct": 156.54,
+          "annual_pct": 14.88,
+          "max_dd_pct": -21.91,
+          "sharpe": 0.926,
+          "final_value": 256543.34
+        },
+        "split": {
+          "full": {
+            "total_pct": 156.54,
+            "annual_pct": 14.88,
+            "max_dd_pct": -21.91,
+            "sharpe": 0.926,
+            "final_value": 256543.34
+          },
+          "train_to_2022": {
+            "total_pct": 24.85,
+            "annual_pct": 7.68,
+            "max_dd_pct": -21.91,
+            "sharpe": 0.42,
+            "final_value": 124849.76
+          },
+          "test_from_2023": {
+            "total_pct": 105.18,
+            "annual_pct": 20.88,
+            "max_dd_pct": -15.17,
+            "sharpe": 1.465,
+            "final_value": 256543.34
+          }
+        },
+        "equity_last": 256543.34
+      }
+    },
+    "bh": {
+      "label": "BH_EW",
+      "metrics": {
+        "total_pct": 161.14,
+        "annual_pct": 15.19,
+        "max_dd_pct": -32.98,
+        "sharpe": 0.71,
+        "final_value": 263284.92
+      },
+      "split": {
+        "full": {
+          "total_pct": 161.14,
+          "annual_pct": 15.19,
+          "max_dd_pct": -32.98,
+          "sharpe": 0.71,
+          "final_value": 263284.92
+        },
+        "train_to_2022": {
+          "total_pct": 17.59,
+          "annual_pct": 5.55,
+          "max_dd_pct": -32.98,
+          "sharpe": 0.261,
+          "final_value": 118562.17
+        },
+        "test_from_2023": {
+          "total_pct": 122.41,
+          "annual_pct": 23.48,
+          "max_dd_pct": -17.1,
+          "sharpe": 1.468,
+          "final_value": 263284.92
+        }
+      },
+      "final_value": 263284.92,
+      "bought": [
+        "AAPL",
+        "AMZN",
+        "BA",
+        "BAC",
+        "BRK-B",
+        "DIS",
+        "GOOG",
+        "GOOGL",
+        "INTC",
+        "JNJ",
+        "JPM",
+        "KO",
+        "MA",
+        "META",
+        "MSFT",
+        "PG",
+        "UNH",
+        "V",
+        "WMT",
+        "XOM"
+      ]
+    },
+    "turtle": {
+      "label": "TurtleCash_spliced",
+      "initial": 100000.0,
+      "n_trades": 627,
+      "metrics": {
+        "total_pct": 18.02,
+        "annual_pct": 2.47,
+        "max_dd_pct": -9.98,
+        "sharpe": 0.099,
+        "final_value": 118016.68
+      },
+      "split": {
+        "full": {
+          "total_pct": 18.02,
+          "annual_pct": 2.47,
+          "max_dd_pct": -9.98,
+          "sharpe": 0.099,
+          "final_value": 118016.68
+        },
+        "train_to_2022": {
+          "total_pct": -0.61,
+          "annual_pct": -0.21,
+          "max_dd_pct": -9.98,
+          "sharpe": -0.239,
+          "final_value": 99385.89
+        },
+        "test_from_2023": {
+          "total_pct": 18.44,
+          "annual_pct": 4.57,
+          "max_dd_pct": -5.59,
+          "sharpe": 0.476,
+          "final_value": 118016.68
+        }
+      },
+      "final_value": 118016.68,
+      "note": "Sum of per-asset $5000 sleeves, NOT a unified $100k account; total_pct is vs $5000*N initial, not directly comparable to portfolio models' $100k account."
+    }
+  },
+  "crypto_coverage": {
+    "BTC": {
+      "first": "2020-01-01",
+      "last": "2026-10-22",
+      "n": 2487
+    },
+    "ETH": {
+      "first": "2020-01-01",
+      "last": "2026-10-22",
+      "n": 2487
+    },
+    "BNB": {
+      "first": "2020-01-01",
+      "last": "2026-10-22",
+      "n": 2487
+    },
+    "XRP": {
+      "first": "2020-01-01",
+      "last": "2026-10-22",
+      "n": 2487
+    },
+    "SOL": {
+      "first": "2020-08-11",
+      "last": "2026-10-22",
+      "n": 2264
+    },
+    "DOGE": {
+      "first": "2020-01-01",
+      "last": "2026-10-22",
+      "n": 2487
+    },
+    "ADA": {
+      "first": "2020-01-01",
+      "last": "2026-10-22",
+      "n": 2487
+    },
+    "LINK": {
+      "first": "2020-01-01",
+      "last": "2026-10-22",
+      "n": 2487
+    },
+    "LTC": {
+      "first": "2020-01-01",
+      "last": "2026-10-22",
+      "n": 2487
+    },
+    "XLM": {
+      "first": "2020-01-01",
+      "last": "2026-10-22",
+      "n": 2487
+    },
+    "BCH": {
+      "first": "2020-01-01",
+      "last": "2026-10-22",
+      "n": 2487
+    },
+    "TRX": {
+      "first": "2020-01-01",
+      "last": "2026-10-22",
+      "n": 2487
+    },
+    "UNI": {
+      "first": "2020-09-17",
+      "last": "2026-10-22",
+      "n": 2227
+    },
+    "AVAX": {
+      "first": "2020-09-22",
+      "last": "2026-10-22",
+      "n": 2222
+    }
+  },
+  "crypto": {
+    "pool": [
+      "BTC",
+      "ETH",
+      "BNB",
+      "XRP",
+      "SOL",
+      "DOGE",
+      "ADA",
+      "LINK",
+      "LTC",
+      "XLM",
+      "BCH",
+      "TRX",
+      "UNI",
+      "AVAX"
+    ],
+    "period": "2020-01-01 to 2026-10-22",
+    "n_bars": 2487,
+    "models": {
+      "CSMOM_base": {
+        "label": "CSMOM_base",
+        "cost_per_side": 0.0015,
+        "n_rebalances": 77,
+        "total_cost": 85458.07,
+        "turnover_sum": 53.925,
+        "metrics": {
+          "total_pct": 904.44,
+          "annual_pct": 40.3,
+          "max_dd_pct": -77.53,
+          "sharpe": 0.801,
+          "final_value": 1004443.72
+        },
+        "split": {
+          "full": {
+            "total_pct": 904.44,
+            "annual_pct": 40.3,
+            "max_dd_pct": -77.53,
+            "sharpe": 0.801,
+            "final_value": 1004443.72
+          },
+          "train_to_2022": {
+            "total_pct": 422.43,
+            "annual_pct": 73.43,
+            "max_dd_pct": -77.53,
+            "sharpe": 1.048,
+            "final_value": 522432.08
+          },
+          "test_from_2023": {
+            "total_pct": 92.08,
+            "annual_pct": 18.68,
+            "max_dd_pct": -74.2,
+            "sharpe": 0.551,
+            "final_value": 1004443.72
+          }
+        },
+        "equity_last": 1004443.72
+      },
+      "TSMOM_base": {
+        "label": "TSMOM_base",
+        "cost_per_side": 0.0015,
+        "n_rebalances": 77,
+        "total_cost": 160968.83,
+        "turnover_sum": 37.456,
+        "metrics": {
+          "total_pct": 5216.32,
+          "annual_pct": 79.17,
+          "max_dd_pct": -57.83,
+          "sharpe": 1.205,
+          "final_value": 5316324.88
+        },
+        "split": {
+          "full": {
+            "total_pct": 5216.32,
+            "annual_pct": 79.17,
+            "max_dd_pct": -57.83,
+            "sharpe": 1.205,
+            "final_value": 5316324.88
+          },
+          "train_to_2022": {
+            "total_pct": 1181.59,
+            "annual_pct": 133.84,
+            "max_dd_pct": -56.55,
+            "sharpe": 1.465,
+            "final_value": 1281590.88
+          },
+          "test_from_2023": {
+            "total_pct": 314.51,
+            "annual_pct": 45.22,
+            "max_dd_pct": -52.78,
+            "sharpe": 0.952,
+            "final_value": 5316324.88
+          }
+        },
+        "equity_last": 5316324.88
+      },
+      "RP_base": {
+        "label": "RP_base",
+        "cost_per_side": 0.0015,
+        "n_rebalances": 77,
+        "total_cost": 58645.89,
+        "turnover_sum": 17.475,
+        "metrics": {
+          "total_pct": 3825.72,
+          "annual_pct": 71.37,
+          "max_dd_pct": -76.14,
+          "sharpe": 1.096,
+          "final_value": 3925724.88
+        },
+        "split": {
+          "full": {
+            "total_pct": 3825.72,
+            "annual_pct": 71.37,
+            "max_dd_pct": -76.14,
+            "sharpe": 1.096,
+            "final_value": 3925724.88
+          },
+          "train_to_2022": {
+            "total_pct": 730.53,
+            "annual_pct": 102.38,
+            "max_dd_pct": -76.14,
+            "sharpe": 1.238,
+            "final_value": 830525.08
+          },
+          "test_from_2023": {
+            "total_pct": 370.03,
+            "annual_pct": 50.1,
+            "max_dd_pct": -59.39,
+            "sharpe": 0.975,
+            "final_value": 3925724.88
+          }
+        },
+        "equity_last": 3925724.88
+      },
+      "CSMOM_stress2x": {
+        "label": "CSMOM_stress2x",
+        "cost_per_side": 0.003,
+        "n_rebalances": 77,
+        "total_cost": 163214.37,
+        "turnover_sum": 53.925,
+        "metrics": {
+          "total_pct": 826.25,
+          "annual_pct": 38.64,
+          "max_dd_pct": -77.79,
+          "sharpe": 0.785,
+          "final_value": 926249.37
+        },
+        "split": {
+          "full": {
+            "total_pct": 826.25,
+            "annual_pct": 38.64,
+            "max_dd_pct": -77.79,
+            "sharpe": 0.785,
+            "final_value": 926249.37
+          },
+          "train_to_2022": {
+            "total_pct": 405.43,
+            "annual_pct": 71.53,
+            "max_dd_pct": -77.79,
+            "sharpe": 1.035,
+            "final_value": 505427.81
+          },
+          "test_from_2023": {
+            "total_pct": 83.21,
+            "annual_pct": 17.22,
+            "max_dd_pct": -74.71,
+            "sharpe": 0.531,
+            "final_value": 926249.37
+          }
+        },
+        "equity_last": 926249.37
+      },
+      "TSMOM_stress2x": {
+        "label": "TSMOM_stress2x",
+        "cost_per_side": 0.003,
+        "n_rebalances": 77,
+        "total_cost": 309801.08,
+        "turnover_sum": 37.456,
+        "metrics": {
+          "total_pct": 4925.42,
+          "annual_pct": 77.69,
+          "max_dd_pct": -58.31,
+          "sharpe": 1.192,
+          "final_value": 5025416.36
+        },
+        "split": {
+          "full": {
+            "total_pct": 4925.42,
+            "annual_pct": 77.69,
+            "max_dd_pct": -58.31,
+            "sharpe": 1.192,
+            "final_value": 5025416.36
+          },
+          "train_to_2022": {
+            "total_pct": 1154.63,
+            "annual_pct": 132.19,
+            "max_dd_pct": -56.78,
+            "sharpe": 1.456,
+            "final_value": 1254631.04
+          },
+          "test_from_2023": {
+            "total_pct": 300.43,
+            "annual_pct": 43.91,
+            "max_dd_pct": -53.29,
+            "sharpe": 0.934,
+            "final_value": 5025416.36
+          }
+        },
+        "equity_last": 5025416.36
+      },
+      "RP_stress2x": {
+        "label": "RP_stress2x",
+        "cost_per_side": 0.003,
+        "n_rebalances": 77,
+        "total_cost": 115234.54,
+        "turnover_sum": 17.475,
+        "metrics": {
+          "total_pct": 3724.08,
+          "annual_pct": 70.71,
+          "max_dd_pct": -76.18,
+          "sharpe": 1.09,
+          "final_value": 3824081.49
+        },
+        "split": {
+          "full": {
+            "total_pct": 3724.08,
+            "annual_pct": 70.71,
+            "max_dd_pct": -76.18,
+            "sharpe": 1.09,
+            "final_value": 3824081.49
+          },
+          "train_to_2022": {
+            "total_pct": 720.04,
+            "annual_pct": 101.53,
+            "max_dd_pct": -76.18,
+            "sharpe": 1.233,
+            "final_value": 820042.22
+          },
+          "test_from_2023": {
+            "total_pct": 363.79,
+            "annual_pct": 49.57,
+            "max_dd_pct": -59.57,
+            "sharpe": 0.969,
+            "final_value": 3824081.49
+          }
+        },
+        "equity_last": 3824081.49
+      }
+    },
+    "bh": {
+      "label": "BH_EW",
+      "metrics": {
+        "total_pct": 1634.91,
+        "annual_pct": 52.01,
+        "max_dd_pct": -84.42,
+        "sharpe": 0.899,
+        "final_value": 1743886.33
+      },
+      "split": {
+        "full": {
+          "total_pct": 1634.91,
+          "annual_pct": 52.01,
+          "max_dd_pct": -84.42,
+          "sharpe": 0.899,
+          "final_value": 1743886.33
+        },
+        "train_to_2022": {
+          "total_pct": 739.87,
+          "annual_pct": 103.14,
+          "max_dd_pct": -84.23,
+          "sharpe": 1.191,
+          "final_value": 844216.65
+        },
+        "test_from_2023": {
+          "total_pct": 105.92,
+          "annual_pct": 20.87,
+          "max_dd_pct": -71.71,
+          "sharpe": 0.584,
+          "final_value": 1743886.33
+        }
+      },
+      "final_value": 1743886.33,
+      "bought": [
+        "ADA",
+        "AVAX",
+        "BCH",
+        "BNB",
+        "BTC",
+        "DOGE",
+        "ETH",
+        "LINK",
+        "LTC",
+        "SOL",
+        "TRX",
+        "UNI",
+        "XLM",
+        "XRP"
+      ]
+    },
+    "turtle": {
+      "label": "TurtleCash_spliced",
+      "initial": 70000.0,
+      "n_trades": 503,
+      "metrics": {
+        "total_pct": 1117.25,
+        "annual_pct": 44.31,
+        "max_dd_pct": -39.95,
+        "sharpe": 1.129,
+        "final_value": 852075.68
+      },
+      "split": {
+        "full": {
+          "total_pct": 1117.25,
+          "annual_pct": 44.31,
+          "max_dd_pct": -39.95,
+          "sharpe": 1.129,
+          "final_value": 852075.68
+        },
+        "train_to_2022": {
+          "total_pct": 437.96,
+          "annual_pct": 75.13,
+          "max_dd_pct": -39.01,
+          "sharpe": 1.502,
+          "final_value": 376572.46
+        },
+        "test_from_2023": {
+          "total_pct": 126.27,
+          "annual_pct": 23.9,
+          "max_dd_pct": -39.95,
+          "sharpe": 0.766,
+          "final_value": 852075.68
+        }
+      },
+      "final_value": 852075.68,
+      "note": "Sum of per-asset $5000 sleeves, NOT a unified $100k account; total_pct is vs $5000*N initial, not directly comparable to portfolio models' $100k account."
+    }
+  }
+}
