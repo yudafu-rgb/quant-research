@@ -1,0 +1,35 @@
+{
+  "run_id": "run_20261023T025625Z_c8e5ce74",
+  "started_at": "2026-10-23T02:56:25.214456+00:00",
+  "finished_at": "2026-10-23T02:57:11.406456+00:00",
+  "status": "success",
+  "error_message": null,
+  "details": {
+    "crypto": {
+      "market": "crypto",
+      "errors": {
+        "BTC/USDT": "binance GET https://api.binance.com/api/v3/exchangeInfo 451  {\n  \"code\": 0,\n  \"msg\": \"Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error.\"\n}",
+        "ETH/USDT": "binance GET https://api.binance.com/api/v3/exchangeInfo 451  {\n  \"code\": 0,\n  \"msg\": \"Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error.\"\n}"
+      },
+      "num_assets_processed": 0,
+      "num_assets_failed": 2
+    },
+    "us_stock": {
+      "market": "us_stock",
+      "errors": {
+        "universe_build": "403 Client Error: Forbidden for url: https://en.wikipedia.org/wiki/List_of_S%26P_500_companies"
+      },
+      "num_assets_processed": 0,
+      "num_assets_failed": 0,
+      "ark_errors": {
+        "ARKK": "403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_INNOVATION_ETF_ARKK_HOLDINGS.csv",
+        "ARKW": "403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_NEXT_GENERATION_INTERNET_ETF_ARKW_HOLDINGS.csv",
+        "ARKQ": "403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_AUTONOMOUS_TECH._%26_ROBOTICS_ETF_ARKQ_HOLDINGS.csv",
+        "ARKF": "403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_FINTECH_INNOVATION_ETF_ARKF_HOLDINGS.csv",
+        "ARKG": "403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_GENOMIC_REVOLUTION_ETF_ARKG_HOLDINGS.csv",
+        "ARKX": "403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_SPACE_EXPLORATION_%26_INNOVATION_ETF_ARKX_HOLDINGS.csv"
+      },
+      "sec_13f_errors": {}
+    }
+  }
+}
