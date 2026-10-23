@@ -16,6 +16,7 @@ us_stock_data.py
   这些情况会被记录日志并尽量跳过对应标的，不会导致整体程序崩溃。
 """
 
+import io
 import time
 import pandas as pd
 import yfinance as yf
@@ -37,7 +38,7 @@ def fetch_sp500_candidate_table(wikipedia_url: str) -> pd.DataFrame:
     """
     try:
         resp = http_get_with_retry(wikipedia_url, logger=logger)
-        tables = pd.read_html(resp.text)
+        tables = pd.read_html(io.StringIO(resp.text))
     except Exception as e:
         logger.warning(f"Wikipedia HTML 页面获取失败（{e}），改走官方 API parse 接口")
         api_url = "https://en.wikipedia.org/w/api.php"
@@ -56,7 +57,7 @@ def fetch_sp500_candidate_table(wikipedia_url: str) -> pd.DataFrame:
         html_text = payload.get("parse", {}).get("text", "")
         if not html_text:
             raise ValueError(f"Wikipedia API 未返回页面 HTML，原始错误: {e}")
-        tables = pd.read_html(html_text)
+        tables = pd.read_html(io.StringIO(html_text))
 
     target = None
     for t in tables:
