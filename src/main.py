@@ -22,6 +22,7 @@ main.py
 历史回测模拟与结果记录。
 """
 
+import os
 import sys
 import json
 import traceback
@@ -120,7 +121,7 @@ def _run_market_backtests(
             metric_rows = metrics_to_flat_rows(metrics, run_id)
             all_metrics_rows.extend(metric_rows)
 
-            equity_path = RESULTS_DIR / f"equity_curve_{market_name}_{symbol.replace('/', '-')}.csv"
+            equity_path = os.path.join(RESULTS_DIR, f"equity_curve_{market_name}_{symbol.replace('/', '-')}.csv")
             _save_df_csv(result.equity_curve, equity_path)
 
             logger.info(
@@ -156,7 +157,7 @@ def run_crypto_pipeline(run_id: str):
         summary["errors"]["universe_build"] = str(e)
         return False, summary
 
-    universe_path = RESULTS_DIR / "crypto_universe_snapshot.csv"
+    universe_path = os.path.join(RESULTS_DIR, "crypto_universe_snapshot.csv")
     _save_df_csv(universe_df, universe_path)
 
     watchlist_rows = []
@@ -185,7 +186,7 @@ def run_crypto_pipeline(run_id: str):
                 "fetched_at": fetched_at,
                 "data_updated_at": fetched_at,
             })
-            ohlcv_path = DATA_DIR / f"crypto_{symbol.replace('/', '-')}.csv"
+            ohlcv_path = os.path.join(DATA_DIR, f"crypto_{symbol.replace('/', '-')}.csv")
             _save_df_csv(df, ohlcv_path)
 
     database.insert_watchlist_members(run_id, watchlist_rows)
@@ -209,9 +210,9 @@ def run_crypto_pipeline(run_id: str):
     database.insert_trades(run_id, "crypto", trades_df, watchlist_source_tag="crypto_backtest")
     database.insert_metrics(run_id, metric_rows)
 
-    _save_df_csv(trades_df, RESULTS_DIR / "trades_crypto.csv")
+    _save_df_csv(trades_df, os.path.join(RESULTS_DIR, "trades_crypto.csv"))
     if metric_rows:
-        with open(RESULTS_DIR / "metrics_crypto.json", "w", encoding="utf-8") as f:
+        with open(os.path.join(RESULTS_DIR, "metrics_crypto.json"), "w", encoding="utf-8") as f:
             json.dump(metric_rows, f, ensure_ascii=False, indent=2, default=str)
 
     summary["errors"] = backtest_errors
@@ -239,7 +240,7 @@ def run_us_stock_pipeline(run_id: str):
         fetch_errors = {}
 
     if len(universe_df) > 0:
-        _save_df_csv(universe_df, RESULTS_DIR / "us_stock_dynamic_top20_snapshot.csv")
+        _save_df_csv(universe_df, os.path.join(RESULTS_DIR, "us_stock_dynamic_top20_snapshot.csv"))
 
     watchlist_rows = []
     metadata_rows = []
@@ -268,7 +269,7 @@ def run_us_stock_pipeline(run_id: str):
                 "fetched_at": fetched_at,
                 "data_updated_at": fetched_at,
             })
-            ohlcv_path = DATA_DIR / f"us_stock_{symbol}.csv"
+            ohlcv_path = os.path.join(DATA_DIR, f"us_stock_{symbol}.csv")
             _save_df_csv(df, ohlcv_path)
 
     database.insert_market_data_metadata(run_id, metadata_rows)
@@ -291,9 +292,9 @@ def run_us_stock_pipeline(run_id: str):
     database.insert_trades(run_id, "us_stock", trades_df, watchlist_source_tag="us_stock_backtest")
     database.insert_metrics(run_id, metric_rows)
 
-    _save_df_csv(trades_df, RESULTS_DIR / "trades_us_stock.csv")
+    _save_df_csv(trades_df, os.path.join(RESULTS_DIR, "trades_us_stock.csv"))
     if metric_rows:
-        with open(RESULTS_DIR / "metrics_us_stock.json", "w", encoding="utf-8") as f:
+        with open(os.path.join(RESULTS_DIR, "metrics_us_stock.json"), "w", encoding="utf-8") as f:
             json.dump(metric_rows, f, ensure_ascii=False, indent=2, default=str)
 
     summary["errors"].update(backtest_errors)
@@ -310,7 +311,7 @@ def run_us_stock_pipeline(run_id: str):
         ark_errors = {"ark_fatal": str(e)}
 
     if len(ark_df) > 0:
-        _save_df_csv(ark_df, RESULTS_DIR / "ark_holdings_snapshot.csv")
+        _save_df_csv(ark_df, os.path.join(RESULTS_DIR, "ark_holdings_snapshot.csv"))
         ark_fetched_at = utc_now_iso()
         ark_watchlist_rows = []
         for _, row in ark_df.iterrows():
@@ -321,7 +322,7 @@ def run_us_stock_pipeline(run_id: str):
                 "fetched_at": row.get("fetched_at", ark_fetched_at),
                 "report_date": None,
                 "filing_date": None,
-                "source_detail": f"fund={row.get('fund')}",
+                "source_detail": f"fund={row.get('fund_code')}",
             })
         database.insert_watchlist_members(run_id, ark_watchlist_rows)
     else:
@@ -342,7 +343,7 @@ def run_us_stock_pipeline(run_id: str):
         sec_errors = {"sec_fatal": str(e)}
 
     if len(sec_df) > 0:
-        _save_df_csv(sec_df, RESULTS_DIR / "sec_13f_holdings_snapshot.csv")
+        _save_df_csv(sec_df, os.path.join(RESULTS_DIR, "sec_13f_holdings_snapshot.csv"))
         sec_watchlist_rows = []
         for _, row in sec_df.iterrows():
             sec_watchlist_rows.append({
@@ -365,7 +366,7 @@ def run_us_stock_pipeline(run_id: str):
     # ---- 合并最终美股观察池（保留各来源标签，从数据库读出后合并导出）----
     try:
         full_watchlist_df = database.get_watchlist_members_df(run_id=run_id, market="us_stock")
-        _save_df_csv(full_watchlist_df, RESULTS_DIR / "us_stock_final_watchlist_merged.csv")
+        _save_df_csv(full_watchlist_df, os.path.join(RESULTS_DIR, "us_stock_final_watchlist_merged.csv"))
     except Exception as e:
         logger.error(f"合并最终美股观察池失败: {e}")
 
@@ -393,9 +394,8 @@ def main():
     try:
         database.create_run(
             run_id=run_id,
-            started_at=started_at,
             code_version=CODE_VERSION,
-            config_summary=json.dumps(config_summary, ensure_ascii=False),
+            config_summary=config_summary,
         )
     except Exception as e:
         logger.critical(f"创建运行记录失败，无法继续: {e}\n{traceback.format_exc()}")
@@ -442,14 +442,13 @@ def main():
     try:
         database.finalize_run(
             run_id=run_id,
-            finished_at=finished_at,
             status=overall_status,
             error_message=error_message,
         )
     except Exception as e:
         logger.error(f"写入运行结束状态失败: {e}")
 
-    summary_path = RESULTS_DIR / f"run_summary_{run_id}.json"
+    summary_path = os.path.join(RESULTS_DIR, f"run_summary_{run_id}.json")
     try:
         with open(summary_path, "w", encoding="utf-8") as f:
             json.dump(
