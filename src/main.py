@@ -276,6 +276,9 @@ def run_us_stock_pipeline(run_id: str):
             _save_df_csv(df, ohlcv_path)
 
     database.insert_market_data_metadata(run_id, metadata_rows)
+    # 修复：Top20 watchlist 行此前只建了没入库，导致 us_stock_final_watchlist_merged.csv
+    # 从数据库读出时只有表头；补上这句后合并文件应含 20 条 Top20 记录
+    database.insert_watchlist_members(run_id, watchlist_rows)
 
     strategy_cfg = StrategyConfig()
     trades_df, metric_rows, backtest_errors = _run_market_backtests(
