@@ -117,3 +117,27 @@ python -m src.main
 调用均通过，`main.py` 再次 `py_compile` 通过。
 注意：这次修复只解决“跑不起来”，不解决 ARK 官方 CSV 404 和
 美股 500 只市值逐个抓取耗时长的问题，下一轮仍可能因数据源慢而耗时较长。
+
+## 2026-10-23 第三次修复（第二轮 0 资产假 success 后）
+
+第二轮 run 39892259580 显示 success，但实际 0 个资产处理：
+加密 Binance 在 Actions 跑者上 451，美股 Wikipedia 在 Actions 上 403，
+ARK 在 Actions 上 403（本机为 404）。本次修法：
+
+- 加密：ccxt Binance 改走 `https://data-api.binance.vision/api/v3`
+  （公开行情端点，与 api.binance.com 同一套现货数据，无需 Key），
+  并在 ccxt 失败时直接调 vision 的 exchangeInfo / klines 接口作备用，
+  load_markets 失败时不再直接退回只有 BTC/ETH 的默认池，
+  而是先用 vision exchangeInfo 拿 USDT 现货对集合再映射 CoinGecko 前 50。
+  注意：本机 VM 的 Python 请求到 vision 会报 SSL WRONG_VERSION_NUMBER
+  （代理问题，curl 能通），所以本机 Python 测 vision 会失败，
+  真正的验证在 Actions 第三轮。
+- 美股：`common.py` 的 HTTP 默认 User-Agent 改为可识别的
+  `quant-research/0.1.0 (research; ...)`（原来是 python-requests 默认 UA，
+  Wikipedia 常因此 403）；`us_stock_data.py` 的 S&P 500 成分表
+  在 HTML 页面失败时改走 Wikipedia 官方 API parse 接口拿同一页表格，
+  本机已验证两种路径都能拿到 503 条。
+- success 假阳性：`main.py` 的彻底失败判定改为“0 个资产处理也算彻底失败”，
+  一市场为 0 资产记 partial_failure，两市场都为 0 记 failed；
+  工作流的 Commit results 加了 `if: always()`，即使主程序 exit 1，
+  run_summary 和日志也会被提交，不会像首轮那样看不到结果。
