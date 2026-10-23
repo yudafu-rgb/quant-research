@@ -34,6 +34,7 @@ from src.config import (
     RESULTS_DIR,
     DATA_DIR,
     CryptoConfig,
+    CSMOMConfig,
     USStockConfig,
     ARKConfig,
     SEC13FConfig,
@@ -47,6 +48,7 @@ from src.us_stock_data import fetch_all_us_stock_data
 from src.ark_holdings import fetch_all_ark_holdings
 from src.sec_13f import fetch_all_13f_reference_data
 from src.backtest import run_single_asset_backtest, trades_to_dataframe
+from src.csmom import run_csmom_portfolio_backtest
 from src.metrics import compute_performance_metrics, metrics_to_flat_rows
 
 logger = get_logger("main")
@@ -306,6 +308,43 @@ def run_us_stock_pipeline(run_id: str):
     summary["errors"].update(backtest_errors)
     summary["num_assets_processed"] = len(ohlcv_data)
     summary["num_assets_failed"] = len(backtest_errors)
+
+    # ---- 横截面动量（CSMOM）组合回测：与单资产趋势/均值回归并列 ----
+    # 仅追加独立输出文件（csmom_us_stock_*），不改动已有 trades/metrics
+    # 文件；失败时只记入 summary，不中断美股模块后续流程。
+    # 注意：日常流水线资产池为当前市值前 N，历史回测存在幸存者偏差，
+    # 见 src/csmom.py 与 README 横截面动量一节；无偏时点版本为
+    # 2026-10-23 本地研究，不随日常流水线运行。
+    try:
+        csmom_cfg = CSMOMConfig()
+        if csmom_cfg.enabled and len(ohlcv_data) > 0:
+            csmom_result = run_csmom_portfolio_backtest(ohlcv_data, csmom_cfg)
+            if csmom_result.get("error"):
+                summary["errors"]["csmom"] = csmom_result["error"]
+                logger.warning(f"CSMOM 回测失败: {csmom_result['error']}")
+            else:
+                _save_df_csv(
+                    csmom_result["equity_df"],
+                    os.path.join(RESULTS_DIR, "csmom_us_stock_equity.csv"),
+                )
+                _save_df_csv(
+                    csmom_result["weights_df"],
+                    os.path.join(RESULTS_DIR, "csmom_us_stock_weights.csv"),
+                )
+                with open(
+                    os.path.join(RESULTS_DIR, "csmom_us_stock_metrics.json"),
+                    "w",
+                    encoding="utf-8",
+                ) as f:
+                    json.dump(
+                        csmom_result["metrics"], f, ensure_ascii=False, indent=2, default=str
+                    )
+                summary["csmom"] = csmom_result["metrics"]
+                if csmom_result.get("skipped"):
+                    summary["csmom_skipped"] = csmom_result["skipped"][:20]
+    except Exception as e:
+        logger.error(f"CSMOM 回测发生异常: {e}\n{traceback.format_exc()}")
+        summary["errors"]["csmom"] = str(e)
 
     # ---- ARK 每日持仓（独立于回测，仅作为观察池来源）----
     ark_cfg = ARKConfig()
