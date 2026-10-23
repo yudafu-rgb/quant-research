@@ -1,0 +1,18 @@
+{
+  "run_id": "run_20261023T041749Z_e66d5d5e",
+  "started_at": "2026-10-23T04:17:49.359004+00:00",
+  "finished_at": "2026-10-23T04:26:44.980835+00:00",
+  "status": "partial_failure",
+  "error_message": null,
+  "details": {
+    "crypto": {
+      "market": "crypto",
+      "errors": {},
+      "num_assets_processed": 34,
+      "num_assets_failed": 0
+    },
+    "us_stock": {
+      "fatal_error": "'date'"
+    }
+  }
+}
