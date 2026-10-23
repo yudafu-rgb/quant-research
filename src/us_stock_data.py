@@ -31,9 +31,32 @@ def fetch_sp500_candidate_table(wikipedia_url: str) -> pd.DataFrame:
     从 Wikipedia 获取 S&P 500 成分股表格。
     返回列：wiki_symbol, security_name, gics_sector
     失败时抛出异常。
+    先走 HTML 页面（已带正常 User-Agent，见 common.py 默认 UA），
+    若被 403 挡住（GitHub Actions 跑者 IP 常见），再走 Wikipedia 官方 API
+    的 parse 接口拿同一页的 HTML 表格解析，两者都是同一页内容。
     """
-    resp = http_get_with_retry(wikipedia_url, logger=logger)
-    tables = pd.read_html(resp.text)
+    try:
+        resp = http_get_with_retry(wikipedia_url, logger=logger)
+        tables = pd.read_html(resp.text)
+    except Exception as e:
+        logger.warning(f"Wikipedia HTML 页面获取失败（{e}），改走官方 API parse 接口")
+        api_url = "https://en.wikipedia.org/w/api.php"
+        api_resp = http_get_with_retry(
+            api_url,
+            params={
+                "action": "parse",
+                "page": "List_of_S&P_500_companies",
+                "prop": "text",
+                "format": "json",
+                "formatversion": "2",
+            },
+            logger=logger,
+        )
+        payload = api_resp.json()
+        html_text = payload.get("parse", {}).get("text", "")
+        if not html_text:
+            raise ValueError(f"Wikipedia API 未返回页面 HTML，原始错误: {e}")
+        tables = pd.read_html(html_text)
 
     target = None
     for t in tables:
