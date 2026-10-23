@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+
+# 数据库文件由代码首次运行时创建。
+# 如果你不希望数据库进入版本库，可自行取消注释下一行：
+# data/*.db
+
+.DS_Store
+data/
