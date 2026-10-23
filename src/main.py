@@ -259,11 +259,14 @@ def run_us_stock_pipeline(run_id: str):
         })
         if symbol in ohlcv_data:
             df = ohlcv_data[symbol]
+            # us_stock_data.fetch_ohlcv_history 返回 datetime 列（与加密口径一致，见 crypto 分支），
+            # 之前误写 df["date"] 导致 run 4 在 20 只全部取到 1711 条后仍 KeyError: 'date' 整体失败
+            date_col = "datetime" if "datetime" in df.columns else "date"
             metadata_rows.append({
                 "symbol": symbol,
                 "market": "us_stock",
-                "start_date": str(df["date"].iloc[0]),
-                "end_date": str(df["date"].iloc[-1]),
+                "start_date": str(df[date_col].iloc[0]),
+                "end_date": str(df[date_col].iloc[-1]),
                 "num_rows": len(df),
                 "data_source": "yfinance",
                 "fetched_at": fetched_at,
