@@ -52,9 +52,21 @@ python -m src.main
 
 - **ARK 链接已失效（2026-10-22 实测）：** 配置里的
   `ark-funds.com/.../ARK_INNOVATION_ETF_ARKK_HOLDINGS.csv` 跳转后返回 404，
-  ARK 层第一轮会为空，程序会记为 partial_failure 但不中断加密和美股回测。
+  另外两个旧路径 `wp-content/uploads/funds-etf-csv/...` 和
+  `etfs.ark-funds.com/...` 实测也是 404，ARK 层自动抓取目前会为空，
+  程序会记为 partial_failure 但不中断加密和美股回测。
   需人工核实到 ARK 当前官方地址后再更新 `src/config.py` 的 `ARKConfig`，
   不要编造新链接。
+- **ARK 当前选股快照（2026-10-22，已加进仓库）：**
+  `results/ark_combined_holdings_2026-10-22.csv`，共 124 条，
+  六只基金（ARKK / ARKQ / ARKW / ARKG / ARKF / ARKX）合计市值约 135.8 亿美元，
+  按合计市值排序，前 10 名：TSLA、SPCX（SpaceX）、TEM、CRCL、NVDA、PLTR、
+  COIN、CRSP、OpenAI（无公开代码）、TWST。
+  来源是第三方追踪站 ARK Invest Daily Trades Tracker 的 2026-10-22 合计持仓页，
+  该站自述其数据来自 ARK 每日持仓文件；这不是 ARK 官方 CSV，
+  也不是分基金权重，合计口径不能直接拆成单基金权重。
+  下一轮自动运行若 ARK 抓取仍失败，不会覆盖这份带日期的快照；
+  若将来 ARK 官方抓取恢复，会另写 `results/ark_holdings_snapshot.csv`。
 - **SEC 13F 默认不启用：** `SEC13FConfig.target_ciks` 默认是空的，
   需用户自行从 SEC EDGAR 官方全文检索确认目标机构的真实 CIK 后手动填入，
   不得编造。未配置时 13F 层直接跳过，不是失败。
@@ -79,3 +91,29 @@ python -m src.main
 修复后全部模块 `py_compile` 通过，并用合成日线数据做过回测冒烟测试
 （能出交易、能算指标、能建库），合成数据不代表策略有效。
 原文本缺 tests、README、工作流，本仓库补了 README 和工作流，tests 未补。
+
+## 2026-10-22 晚第二次修复（首轮运行失败后查到的）
+
+首轮手动运行 run 39889793372 在 28 秒内失败，`Run quant research` 步骤失败，
+`Commit results` 被跳过，所以没有任何 results 被提交。根因不是网络，
+是 `main.py` 与 `database.py` / `config.py` 对不上：
+
+- `main.py` 调用 `database.create_run(run_id, started_at, ...)`，
+  但 `database.create_run` 只接受 `(run_id, code_version, config_summary)`，
+  多余的 `started_at` 会直接 TypeError，程序在数据库初始化后立刻 `sys.exit(1)`。
+- `main.py` 调用 `database.finalize_run(..., finished_at=...)`，
+  但 `finalize_run` 只接受 `(run_id, status, error_message)`，同理会失败。
+- `main.py` 大量用 `RESULTS_DIR / "xxx.csv"`，但 `config.py` 里
+  `RESULTS_DIR` / `DATA_DIR` 是 `os.path.join` 返回的字符串，
+  字符串不能用 `/` 运算，跑到第一张结果表就会 TypeError。
+- `main.py` 调用 `database.get_watchlist_members_df(run_id, market="us_stock")`，
+  但原函数只接受 `run_id`，合并观察池那步永远报错（被 try 包住，不致命，
+  但 `us_stock_final_watchlist_merged.csv` 永远出不来）。
+
+本次已修：`main.py` 改用 `os.path.join`，`create_run` / `finalize_run`
+按数据库签名调用，`ark` 的 `source_detail` 由 `fund` 改为 `fund_code`，
+`database.get_watchlist_members_df` 增加 `market` 过滤参数。
+修复后本地验证 `create_run` / `finalize_run` / `get_watchlist_members_df`
+调用均通过，`main.py` 再次 `py_compile` 通过。
+注意：这次修复只解决“跑不起来”，不解决 ARK 官方 CSV 404 和
+美股 500 只市值逐个抓取耗时长的问题，下一轮仍可能因数据源慢而耗时较长。
