@@ -101,6 +101,83 @@ def map_to_binance_usdt_symbol(cg_symbol: str, exchange: ccxt.Exchange):
     return None
 
 
+
+BINANCE_VISION_PUBLIC_URL = "https://data-api.binance.vision/api/v3"
+
+def create_exchange(exchange_id: str):
+    """创建 ccxt 交易所实例。Binance 默认 api.binance.com 在 GitHub Actions
+    跑者上返回 451 受限地区，改走 data-api.binance.vision（公开行情端点，
+    与 api.binance.com 同一套现货数据，无需 API Key）。"""
+    exchange = getattr(ccxt, exchange_id)()
+    if exchange_id == "binance":
+        try:
+            exchange.urls["api"]["public"] = BINANCE_VISION_PUBLIC_URL
+        except Exception:
+            pass
+    return exchange
+
+
+def _binance_spot_usdt_symbols_via_vision() -> set:
+    """直接调用 data-api.binance.vision 的 exchangeInfo，拿到现货 USDT 交易对集合。
+    用于 ccxt load_markets 失败时的备用映射，避免退回只有 BTC/ETH 的默认池。"""
+    import requests
+    resp = requests.get(
+        f"{BINANCE_VISION_PUBLIC_URL}/exchangeInfo",
+        headers={"User-Agent": "quant-research/0.1.0"},
+        timeout=30,
+    )
+    resp.raise_for_status()
+    data = resp.json()
+    out = set()
+    for s in data.get("symbols", []):
+        if s.get("status") == "TRADING" and s.get("quoteAsset") == "USDT":
+            out.add(f"{s.get('baseAsset')}/USDT")
+    return out
+
+
+def _fetch_ohlcv_via_vision_direct(symbol: str, since_iso_utc: str) -> pd.DataFrame:
+    """直接调用 data-api.binance.vision 的 klines 接口，绕过 ccxt。
+    symbol 如 BTC/USDT -> BTCUSDT，interval 1d，分页拉取。"""
+    import requests
+    base, quote = symbol.split("/")
+    pair = f"{base}{quote}"
+    # since_iso_utc 如 2020-01-01T00:00:00Z -> ms
+    import datetime
+    dt = datetime.datetime.fromisoformat(since_iso_utc.replace("Z", "+00:00"))
+    start_ms = int(dt.timestamp() * 1000)
+    all_rows = []
+    cursor = start_ms
+    for _ in range(200):
+        resp = requests.get(
+            f"{BINANCE_VISION_PUBLIC_URL}/klines",
+            params={"symbol": pair, "interval": "1d", "startTime": cursor, "limit": 1000},
+            headers={"User-Agent": "quant-research/0.1.0"},
+            timeout=30,
+        )
+        resp.raise_for_status()
+        batch = resp.json()
+        if not batch:
+            break
+        all_rows.extend(batch)
+        last_close_ms = batch[-1][6]
+        if last_close_ms <= cursor:
+            break
+        cursor = last_close_ms + 1
+        if len(batch) < 1000:
+            break
+    if not all_rows:
+        raise ValueError(f"{symbol} 直接 klines 接口未返回任何数据")
+    df = pd.DataFrame(
+        all_rows,
+        columns=["timestamp_ms", "open", "high", "low", "close", "volume", "close_time", "quote_volume", "trades", "taker_buy_base", "taker_buy_quote", "ignore"],
+    )
+    df["datetime"] = pd.to_datetime(df["timestamp_ms"], unit="ms", utc=True)
+    df = df.drop_duplicates(subset=["datetime"]).sort_values("datetime").reset_index(drop=True)
+    for c in ["open", "high", "low", "close", "volume"]:
+        df[c] = pd.to_numeric(df[c], errors="coerce")
+    return df[["datetime", "open", "high", "low", "close", "volume"]]
+
+
 def build_crypto_universe(cfg: CryptoConfig) -> pd.DataFrame:
     """
     构建加密货币回测资产池：
@@ -109,14 +186,21 @@ def build_crypto_universe(cfg: CryptoConfig) -> pd.DataFrame:
       获取失败时记录日志并回退到 default_symbols，不中断整体运行。
     返回 DataFrame 列：symbol, source, coingecko_id, market_cap_rank, fetched_at
     """
-    exchange = getattr(ccxt, cfg.exchange_id)()
+    exchange = create_exchange(cfg.exchange_id)
+    vision_symbols = None
     try:
         exchange.load_markets()
     except Exception as e:
         logger.error(f"加载{cfg.exchange_id}交易市场失败: {e}")
-        exchange = None
+        # 备用：直接用 vision exchangeInfo 拿交易对集合，不退回默认池
+        try:
+            vision_symbols = _binance_spot_usdt_symbols_via_vision()
+            logger.info(f"vision exchangeInfo 备用映射成功，共{len(vision_symbols)}个 USDT 现货对")
+        except Exception as e2:
+            logger.error(f"vision exchangeInfo 备用映射也失败: {e2}")
+            exchange = None
 
-    if not cfg.use_dynamic_top_n or exchange is None:
+    if not cfg.use_dynamic_top_n or (exchange is None and vision_symbols is None):
         rows = [{
             "symbol": s,
             "source": "default_symbols",
@@ -141,7 +225,11 @@ def build_crypto_universe(cfg: CryptoConfig) -> pd.DataFrame:
 
     rows = []
     for _, r in cg_df.iterrows():
-        binance_symbol = map_to_binance_usdt_symbol(r["symbol"], exchange)
+        if vision_symbols is not None:
+            base = SYMBOL_OVERRIDES.get(r["symbol"], r["symbol"].upper())
+            binance_symbol = f"{base}/USDT" if f"{base}/USDT" in vision_symbols else None
+        else:
+            binance_symbol = map_to_binance_usdt_symbol(r["symbol"], exchange)
         if binance_symbol is None:
             logger.warning(
                 f"币种 {r['coingecko_id']} ({r['symbol']}) 在 Binance 无对应"
@@ -182,8 +270,12 @@ def fetch_ohlcv_history(
     若该交易对无数据或请求失败，抛出异常，由调用方决定跳过并记录日志。
     """
     log = logger_override or logger
-    exchange = getattr(ccxt, exchange_id)()
-    exchange.load_markets()
+    try:
+        exchange = create_exchange(exchange_id)
+        exchange.load_markets()
+    except Exception as e:
+        log.warning(f"ccxt 加载市场失败，改走 vision 直接 klines 接口: {e}")
+        return _fetch_ohlcv_via_vision_direct(symbol, since_iso_utc)
 
     since_ms = exchange.parse8601(since_iso_utc)
     all_rows = []
@@ -197,8 +289,8 @@ def fetch_ohlcv_history(
                 symbol, timeframe=timeframe, since=cursor, limit=limit
             )
         except Exception as e:
-            log.error(f"获取 {symbol} OHLCV 失败: {e}")
-            raise
+            log.warning(f"ccxt 获取 {symbol} OHLCV 失败，改走 vision 直接 klines 接口: {e}")
+            return _fetch_ohlcv_via_vision_direct(symbol, since_iso_utc)
 
         if not batch:
             break
