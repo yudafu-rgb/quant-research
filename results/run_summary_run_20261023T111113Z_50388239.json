@@ -1,0 +1,30 @@
+{
+  "run_id": "run_20261023T111113Z_50388239",
+  "started_at": "2026-10-23T11:11:13.372616+00:00",
+  "finished_at": "2026-10-23T11:20:53.220943+00:00",
+  "status": "success",
+  "error_message": null,
+  "details": {
+    "crypto": {
+      "market": "crypto",
+      "errors": {},
+      "num_assets_processed": 34,
+      "num_assets_failed": 0
+    },
+    "us_stock": {
+      "market": "us_stock",
+      "errors": {},
+      "num_assets_processed": 20,
+      "num_assets_failed": 0,
+      "ark_errors": {
+        "ARKK": "403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_INNOVATION_ETF_ARKK_HOLDINGS.csv",
+        "ARKW": "403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_NEXT_GENERATION_INTERNET_ETF_ARKW_HOLDINGS.csv",
+        "ARKQ": "403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_AUTONOMOUS_TECH._%26_ROBOTICS_ETF_ARKQ_HOLDINGS.csv",
+        "ARKF": "403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_FINTECH_INNOVATION_ETF_ARKF_HOLDINGS.csv",
+        "ARKG": "403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_GENOMIC_REVOLUTION_ETF_ARKG_HOLDINGS.csv",
+        "ARKX": "403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_SPACE_EXPLORATION_%26_INNOVATION_ETF_ARKX_HOLDINGS.csv"
+      },
+      "sec_13f_errors": {}
+    }
+  }
+}
