@@ -383,17 +383,24 @@ def get_all_metrics_df(run_id: str = None):
     return df
 
 
-def get_watchlist_members_df(run_id: str = None):
+def get_watchlist_members_df(run_id: str = None, market: str = None):
     """
-    辅助查询函数：获取watchlist_members表中的全部记录，可选按run_id过滤。
+    辅助查询函数：获取watchlist_members表中的全部记录，可选按run_id / market过滤。
     """
     import pandas as pd
 
     query = "SELECT * FROM watchlist_members"
-    params = ()
+    conditions = []
+    params = []
     if run_id is not None:
-        query += " WHERE run_id = ?"
-        params = (run_id,)
+        conditions.append("run_id = ?")
+        params.append(run_id)
+    if market is not None:
+        conditions.append("market = ?")
+        params.append(market)
+    if conditions:
+        query += " WHERE " + " AND ".join(conditions)
+    params = tuple(params)
 
     with get_connection() as conn:
         df = pd.read_sql_query(query, conn, params=params)
