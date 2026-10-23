@@ -1,0 +1,714 @@
+{
+  "us_2020": {
+    "pool": [
+      "MSFT",
+      "AAPL",
+      "AMZN",
+      "GOOGL",
+      "GOOG",
+      "BRK-B",
+      "V",
+      "JPM",
+      "JNJ",
+      "WMT",
+      "INTC",
+      "BA",
+      "MA",
+      "DIS",
+      "PG",
+      "UNH",
+      "XOM",
+      "BAC",
+      "KO",
+      "META"
+    ],
+    "period": "2020-01-02 to 2026-10-22",
+    "models": {
+      "CSMOM_monthly": {
+        "label": "CSMOM_monthly",
+        "cost_per_side": 0.0015,
+        "n_rebalances": 75,
+        "total_cost": 12628.21,
+        "turnover_sum": 45.954,
+        "avg_turnover": 0.613,
+        "metrics": {
+          "total_pct": 247.01,
+          "annual_pct": 20.11,
+          "max_dd_pct": -23.61,
+          "sharpe": 0.946,
+          "final_value": 347008.67
+        },
+        "split": {
+          "full": {
+            "total_pct": 247.01,
+            "annual_pct": 20.11,
+            "max_dd_pct": -23.61,
+            "sharpe": 0.946,
+            "final_value": 347008.67
+          },
+          "train_to_2022": {
+            "total_pct": 38.16,
+            "annual_pct": 11.38,
+            "max_dd_pct": -15.18,
+            "sharpe": 0.572,
+            "final_value": 138157.21
+          },
+          "test_from_2023": {
+            "total_pct": 151.22,
+            "annual_pct": 27.52,
+            "max_dd_pct": -23.61,
+            "sharpe": 1.219,
+            "final_value": 347008.67
+          }
+        }
+      },
+      "TSMOM_monthly": {
+        "label": "TSMOM_monthly",
+        "cost_per_side": 0.0015,
+        "n_rebalances": 75,
+        "total_cost": 7468.51,
+        "turnover_sum": 31.116,
+        "avg_turnover": 0.415,
+        "metrics": {
+          "total_pct": 169.59,
+          "annual_pct": 15.73,
+          "max_dd_pct": -19.47,
+          "sharpe": 0.957,
+          "final_value": 269590.3
+        },
+        "split": {
+          "full": {
+            "total_pct": 169.59,
+            "annual_pct": 15.73,
+            "max_dd_pct": -19.47,
+            "sharpe": 0.957,
+            "final_value": 269590.3
+          },
+          "train_to_2022": {
+            "total_pct": 27.5,
+            "annual_pct": 8.44,
+            "max_dd_pct": -18.09,
+            "sharpe": 0.484,
+            "final_value": 127502.21
+          },
+          "test_from_2023": {
+            "total_pct": 111.81,
+            "annual_pct": 21.9,
+            "max_dd_pct": -19.47,
+            "sharpe": 1.367,
+            "final_value": 269590.3
+          }
+        }
+      },
+      "RP_monthly": {
+        "label": "RP_monthly",
+        "cost_per_side": 0.0015,
+        "n_rebalances": 75,
+        "total_cost": 1917.8,
+        "turnover_sum": 8.263,
+        "avg_turnover": 0.11,
+        "metrics": {
+          "total_pct": 159.74,
+          "annual_pct": 15.09,
+          "max_dd_pct": -21.83,
+          "sharpe": 0.939,
+          "final_value": 259744.57
+        },
+        "split": {
+          "full": {
+            "total_pct": 159.74,
+            "annual_pct": 15.09,
+            "max_dd_pct": -21.83,
+            "sharpe": 0.939,
+            "final_value": 259744.57
+          },
+          "train_to_2022": {
+            "total_pct": 25.53,
+            "annual_pct": 7.87,
+            "max_dd_pct": -21.83,
+            "sharpe": 0.431,
+            "final_value": 125532.84
+          },
+          "test_from_2023": {
+            "total_pct": 106.6,
+            "annual_pct": 21.1,
+            "max_dd_pct": -15.13,
+            "sharpe": 1.48,
+            "final_value": 259744.57
+          }
+        }
+      },
+      "CSMOM_weekly": {
+        "label": "CSMOM_weekly",
+        "cost_per_side": 0.0015,
+        "n_rebalances": 316,
+        "total_cost": 27629.56,
+        "turnover_sum": 103.382,
+        "avg_turnover": 0.327,
+        "metrics": {
+          "total_pct": 218.46,
+          "annual_pct": 18.6,
+          "max_dd_pct": -23.94,
+          "sharpe": 0.879,
+          "final_value": 318462.44
+        },
+        "split": {
+          "full": {
+            "total_pct": 218.46,
+            "annual_pct": 18.6,
+            "max_dd_pct": -23.94,
+            "sharpe": 0.879,
+            "final_value": 318462.44
+          },
+          "train_to_2022": {
+            "total_pct": 35.9,
+            "annual_pct": 10.77,
+            "max_dd_pct": -17.04,
+            "sharpe": 0.539,
+            "final_value": 135896.5
+          },
+          "test_from_2023": {
+            "total_pct": 133.66,
+            "annual_pct": 25.1,
+            "max_dd_pct": -23.94,
+            "sharpe": 1.127,
+            "final_value": 318462.44
+          }
+        }
+      },
+      "TSMOM_weekly": {
+        "label": "TSMOM_weekly",
+        "cost_per_side": 0.0015,
+        "n_rebalances": 316,
+        "total_cost": 16301.36,
+        "turnover_sum": 72.324,
+        "avg_turnover": 0.229,
+        "metrics": {
+          "total_pct": 141.81,
+          "annual_pct": 13.89,
+          "max_dd_pct": -25.75,
+          "sharpe": 0.846,
+          "final_value": 241814.15
+        },
+        "split": {
+          "full": {
+            "total_pct": 141.81,
+            "annual_pct": 13.89,
+            "max_dd_pct": -25.75,
+            "sharpe": 0.846,
+            "final_value": 241814.15
+          },
+          "train_to_2022": {
+            "total_pct": 18.5,
+            "annual_pct": 5.82,
+            "max_dd_pct": -25.75,
+            "sharpe": 0.321,
+            "final_value": 118503.14
+          },
+          "test_from_2023": {
+            "total_pct": 104.26,
+            "annual_pct": 20.74,
+            "max_dd_pct": -18.98,
+            "sharpe": 1.302,
+            "final_value": 241814.15
+          }
+        }
+      },
+      "RP_weekly": {
+        "label": "RP_weekly",
+        "cost_per_side": 0.0015,
+        "n_rebalances": 316,
+        "total_cost": 3295.41,
+        "turnover_sum": 14.005,
+        "avg_turnover": 0.044,
+        "metrics": {
+          "total_pct": 158.69,
+          "annual_pct": 15.03,
+          "max_dd_pct": -21.91,
+          "sharpe": 0.93,
+          "final_value": 258691.3
+        },
+        "split": {
+          "full": {
+            "total_pct": 158.69,
+            "annual_pct": 15.03,
+            "max_dd_pct": -21.91,
+            "sharpe": 0.93,
+            "final_value": 258691.3
+          },
+          "train_to_2022": {
+            "total_pct": 25.37,
+            "annual_pct": 7.83,
+            "max_dd_pct": -21.91,
+            "sharpe": 0.426,
+            "final_value": 125368.07
+          },
+          "test_from_2023": {
+            "total_pct": 106.02,
+            "annual_pct": 21.01,
+            "max_dd_pct": -15.09,
+            "sharpe": 1.474,
+            "final_value": 258691.3
+          }
+        }
+      }
+    },
+    "bh": {
+      "label": "BH_EW",
+      "metrics": {
+        "total_pct": 161.14,
+        "annual_pct": 15.19,
+        "max_dd_pct": -32.98,
+        "sharpe": 0.71,
+        "final_value": 263284.92
+      },
+      "split": {
+        "full": {
+          "total_pct": 161.14,
+          "annual_pct": 15.19,
+          "max_dd_pct": -32.98,
+          "sharpe": 0.71,
+          "final_value": 263284.92
+        },
+        "train_to_2022": {
+          "total_pct": 17.59,
+          "annual_pct": 5.55,
+          "max_dd_pct": -32.98,
+          "sharpe": 0.261,
+          "final_value": 118562.17
+        },
+        "test_from_2023": {
+          "total_pct": 122.41,
+          "annual_pct": 23.48,
+          "max_dd_pct": -17.1,
+          "sharpe": 1.468,
+          "final_value": 263284.92
+        }
+      }
+    },
+    "turtle": {
+      "initial": 100000.0,
+      "n_trades": 627,
+      "metrics": {
+        "total_pct": 18.02,
+        "annual_pct": 2.47,
+        "max_dd_pct": -9.98,
+        "sharpe": 0.099,
+        "final_value": 118016.68
+      },
+      "split": {
+        "full": {
+          "total_pct": 18.02,
+          "annual_pct": 2.47,
+          "max_dd_pct": -9.98,
+          "sharpe": 0.099,
+          "final_value": 118016.68
+        },
+        "train_to_2022": {
+          "total_pct": -0.61,
+          "annual_pct": -0.21,
+          "max_dd_pct": -9.98,
+          "sharpe": -0.239,
+          "final_value": 99385.89
+        },
+        "test_from_2023": {
+          "total_pct": 18.44,
+          "annual_pct": 4.57,
+          "max_dd_pct": -5.59,
+          "sharpe": 0.476,
+          "final_value": 118016.68
+        }
+      },
+      "note": "Event-driven, same for monthly/weekly; spliced sleeves."
+    }
+  },
+  "crypto_coverage_2018": {
+    "BTC": {
+      "first": "2018-01-01",
+      "last": "2026-10-22",
+      "n": 3217
+    },
+    "ETH": {
+      "first": "2018-01-01",
+      "last": "2026-10-22",
+      "n": 3217
+    },
+    "BNB": {
+      "first": "2018-01-01",
+      "last": "2026-10-22",
+      "n": 3217
+    },
+    "XRP": {
+      "first": "2018-05-04",
+      "last": "2026-10-22",
+      "n": 3094
+    },
+    "SOL": {
+      "first": "2020-08-11",
+      "last": "2026-10-22",
+      "n": 2264
+    },
+    "DOGE": {
+      "first": "2019-07-05",
+      "last": "2026-10-22",
+      "n": 2667
+    },
+    "ADA": {
+      "first": "2018-04-17",
+      "last": "2026-10-22",
+      "n": 3111
+    },
+    "LINK": {
+      "first": "2019-01-16",
+      "last": "2026-10-22",
+      "n": 2837
+    },
+    "LTC": {
+      "first": "2018-01-01",
+      "last": "2026-10-22",
+      "n": 3217
+    },
+    "XLM": {
+      "first": "2018-05-31",
+      "last": "2026-10-22",
+      "n": 3067
+    },
+    "BCH": {
+      "first": "2019-11-28",
+      "last": "2026-10-22",
+      "n": 2521
+    },
+    "TRX": {
+      "first": "2018-06-11",
+      "last": "2026-10-22",
+      "n": 3056
+    },
+    "UNI": {
+      "first": "2020-09-17",
+      "last": "2026-10-22",
+      "n": 2227
+    },
+    "AVAX": {
+      "first": "2020-09-22",
+      "last": "2026-10-22",
+      "n": 2222
+    }
+  },
+  "crypto_2018": {
+    "pool": [
+      "BTC",
+      "ETH",
+      "BNB",
+      "XRP",
+      "SOL",
+      "DOGE",
+      "ADA",
+      "LINK",
+      "LTC",
+      "XLM",
+      "BCH",
+      "TRX",
+      "UNI",
+      "AVAX"
+    ],
+    "period": "2018-01-01 to 2026-10-22",
+    "models": {
+      "CSMOM_monthly": {
+        "label": "CSMOM_monthly",
+        "cost_per_side": 0.0015,
+        "n_rebalances": 101,
+        "total_cost": 86570.5,
+        "turnover_sum": 63.86,
+        "avg_turnover": 0.632,
+        "metrics": {
+          "total_pct": 903.93,
+          "annual_pct": 29.91,
+          "max_dd_pct": -77.53,
+          "sharpe": 0.705,
+          "final_value": 1003927.28
+        },
+        "split": {
+          "full": {
+            "total_pct": 903.93,
+            "annual_pct": 29.91,
+            "max_dd_pct": -77.53,
+            "sharpe": 0.705,
+            "final_value": 1003927.28
+          },
+          "train_to_2022": {
+            "total_pct": 422.16,
+            "annual_pct": 39.15,
+            "max_dd_pct": -77.53,
+            "sharpe": 0.802,
+            "final_value": 522163.47
+          },
+          "test_from_2023": {
+            "total_pct": 92.08,
+            "annual_pct": 18.68,
+            "max_dd_pct": -74.2,
+            "sharpe": 0.551,
+            "final_value": 1003927.28
+          }
+        }
+      },
+      "TSMOM_monthly": {
+        "label": "TSMOM_monthly",
+        "cost_per_side": 0.0015,
+        "n_rebalances": 101,
+        "total_cost": 179401.02,
+        "turnover_sum": 44.98,
+        "avg_turnover": 0.445,
+        "metrics": {
+          "total_pct": 5780.55,
+          "annual_pct": 58.77,
+          "max_dd_pct": -57.84,
+          "sharpe": 1.035,
+          "final_value": 5880549.85
+        },
+        "split": {
+          "full": {
+            "total_pct": 5780.55,
+            "annual_pct": 58.77,
+            "max_dd_pct": -57.84,
+            "sharpe": 1.035,
+            "final_value": 5880549.85
+          },
+          "train_to_2022": {
+            "total_pct": 1317.61,
+            "annual_pct": 69.9,
+            "max_dd_pct": -57.84,
+            "sharpe": 1.097,
+            "final_value": 1417606.95
+          },
+          "test_from_2023": {
+            "total_pct": 314.51,
+            "annual_pct": 45.22,
+            "max_dd_pct": -52.78,
+            "sharpe": 0.952,
+            "final_value": 5880549.85
+          }
+        }
+      },
+      "RP_monthly": {
+        "label": "RP_monthly",
+        "cost_per_side": 0.0015,
+        "n_rebalances": 101,
+        "total_cost": 45009.31,
+        "turnover_sum": 22.412,
+        "avg_turnover": 0.222,
+        "metrics": {
+          "total_pct": 2875.71,
+          "annual_pct": 46.96,
+          "max_dd_pct": -76.14,
+          "sharpe": 0.872,
+          "final_value": 2975708.97
+        },
+        "split": {
+          "full": {
+            "total_pct": 2875.71,
+            "annual_pct": 46.96,
+            "max_dd_pct": -76.14,
+            "sharpe": 0.872,
+            "final_value": 2975708.97
+          },
+          "train_to_2022": {
+            "total_pct": 529.54,
+            "annual_pct": 44.45,
+            "max_dd_pct": -76.14,
+            "sharpe": 0.843,
+            "final_value": 629540.02
+          },
+          "test_from_2023": {
+            "total_pct": 370.03,
+            "annual_pct": 50.1,
+            "max_dd_pct": -59.39,
+            "sharpe": 0.975,
+            "final_value": 2975708.97
+          }
+        }
+      },
+      "CSMOM_weekly": {
+        "label": "CSMOM_weekly",
+        "cost_per_side": 0.0015,
+        "n_rebalances": 441,
+        "total_cost": 460762.65,
+        "turnover_sum": 137.159,
+        "avg_turnover": 0.311,
+        "metrics": {
+          "total_pct": 3223.57,
+          "annual_pct": 48.81,
+          "max_dd_pct": -76.25,
+          "sharpe": 0.857,
+          "final_value": 3323573.27
+        },
+        "split": {
+          "full": {
+            "total_pct": 3223.57,
+            "annual_pct": 48.81,
+            "max_dd_pct": -76.25,
+            "sharpe": 0.857,
+            "final_value": 3323573.27
+          },
+          "train_to_2022": {
+            "total_pct": 1056.0,
+            "annual_pct": 63.11,
+            "max_dd_pct": -76.17,
+            "sharpe": 0.951,
+            "final_value": 1155995.2
+          },
+          "test_from_2023": {
+            "total_pct": 186.48,
+            "annual_pct": 31.81,
+            "max_dd_pct": -72.73,
+            "sharpe": 0.719,
+            "final_value": 3323573.27
+          }
+        }
+      },
+      "TSMOM_weekly": {
+        "label": "TSMOM_weekly",
+        "cost_per_side": 0.0015,
+        "n_rebalances": 441,
+        "total_cost": 549791.91,
+        "turnover_sum": 92.665,
+        "avg_turnover": 0.21,
+        "metrics": {
+          "total_pct": 8778.53,
+          "annual_pct": 66.36,
+          "max_dd_pct": -54.85,
+          "sharpe": 1.177,
+          "final_value": 8878531.23
+        },
+        "split": {
+          "full": {
+            "total_pct": 8778.53,
+            "annual_pct": 66.36,
+            "max_dd_pct": -54.85,
+            "sharpe": 1.177,
+            "final_value": 8878531.23
+          },
+          "train_to_2022": {
+            "total_pct": 2323.42,
+            "annual_pct": 89.12,
+            "max_dd_pct": -54.85,
+            "sharpe": 1.358,
+            "final_value": 2423417.46
+          },
+          "test_from_2023": {
+            "total_pct": 265.91,
+            "annual_pct": 40.55,
+            "max_dd_pct": -47.65,
+            "sharpe": 0.904,
+            "final_value": 8878531.23
+          }
+        }
+      },
+      "RP_weekly": {
+        "label": "RP_weekly",
+        "cost_per_side": 0.0015,
+        "n_rebalances": 441,
+        "total_cost": 53854.87,
+        "turnover_sum": 37.011,
+        "avg_turnover": 0.084,
+        "metrics": {
+          "total_pct": 1919.01,
+          "annual_pct": 40.63,
+          "max_dd_pct": -76.58,
+          "sharpe": 0.814,
+          "final_value": 2019010.3
+        },
+        "split": {
+          "full": {
+            "total_pct": 1919.01,
+            "annual_pct": 40.63,
+            "max_dd_pct": -76.58,
+            "sharpe": 0.814,
+            "final_value": 2019010.3
+          },
+          "train_to_2022": {
+            "total_pct": 404.56,
+            "annual_pct": 38.2,
+            "max_dd_pct": -76.58,
+            "sharpe": 0.791,
+            "final_value": 504560.42
+          },
+          "test_from_2023": {
+            "total_pct": 297.82,
+            "annual_pct": 43.67,
+            "max_dd_pct": -58.28,
+            "sharpe": 0.904,
+            "final_value": 2019010.3
+          }
+        }
+      }
+    },
+    "bh": {
+      "label": "BH_EW",
+      "metrics": {
+        "total_pct": 1453.13,
+        "annual_pct": 36.51,
+        "max_dd_pct": -83.8,
+        "sharpe": 0.768,
+        "final_value": 1551934.0
+      },
+      "split": {
+        "full": {
+          "total_pct": 1453.13,
+          "annual_pct": 36.51,
+          "max_dd_pct": -83.8,
+          "sharpe": 0.768,
+          "final_value": 1551934.0
+        },
+        "train_to_2022": {
+          "total_pct": 579.01,
+          "annual_pct": 46.65,
+          "max_dd_pct": -82.72,
+          "sharpe": 0.858,
+          "final_value": 678487.91
+        },
+        "test_from_2023": {
+          "total_pct": 128.35,
+          "annual_pct": 24.19,
+          "max_dd_pct": -68.2,
+          "sharpe": 0.629,
+          "final_value": 1551934.0
+        }
+      }
+    },
+    "turtle": {
+      "initial": 70000.0,
+      "n_trades": 578,
+      "metrics": {
+        "total_pct": 1176.77,
+        "annual_pct": 33.51,
+        "max_dd_pct": -38.78,
+        "sharpe": 0.978,
+        "final_value": 893736.9
+      },
+      "split": {
+        "full": {
+          "total_pct": 1176.77,
+          "annual_pct": 33.51,
+          "max_dd_pct": -38.78,
+          "sharpe": 0.978,
+          "final_value": 893736.9
+        },
+        "train_to_2022": {
+          "total_pct": 478.96,
+          "annual_pct": 42.05,
+          "max_dd_pct": -38.3,
+          "sharpe": 1.133,
+          "final_value": 405268.78
+        },
+        "test_from_2023": {
+          "total_pct": 120.53,
+          "annual_pct": 23.06,
+          "max_dd_pct": -38.78,
+          "sharpe": 0.756,
+          "final_value": 893736.9
+        }
+      },
+      "note": "Event-driven, same for monthly/weekly; spliced sleeves."
+    }
+  }
+}
