@@ -16697,3 +16697,416 @@ KeyError: 'date'
 2026-10-23 11:52:09,586 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/us_stock_final_watchlist_merged.csv
 2026-10-23 11:52:09,587 [INFO] main: 运行汇总已保存: /home/runner/work/quant-research/quant-research/results/run_summary_run_20261023T114300Z_26dc460e.json
 2026-10-23 11:52:09,587 [INFO] main: ========== 本次运行结束 run_id=run_20261023T114300Z_26dc460e status=success finished_at=2026-10-23T11:52:09.586478+00:00 ==========
+2026-10-23 13:29:19,948 [INFO] main: ========== 本次运行开始 run_id=run_20261023T132919Z_cf33a824 started_at=2026-10-23T13:29:19.948473+00:00 ==========
+2026-10-23 13:29:19,955 [INFO] database: 数据库初始化完成，路径: /home/runner/work/quant-research/quant-research/data/quant_research.db
+2026-10-23 13:29:21,461 [ERROR] crypto_data: 加载binance交易市场失败: binance GET https://fapi.binance.com/fapi/v1/exchangeInfo 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2026-10-23 13:29:22,713 [INFO] crypto_data: vision exchangeInfo 备用映射成功，共516个 USDT 现货对
+2026-10-23 13:29:22,896 [INFO] crypto_data: CoinGecko 获取市值前50币种成功，实际获取50条。
+2026-10-23 13:29:22,898 [WARNING] crypto_data: 币种 tether (usdt) 在 Binance 无对应 USDT 现货交易对，跳过。
+2026-10-23 13:29:22,898 [WARNING] crypto_data: 币种 figure-heloc (figr_heloc) 在 Binance 无对应 USDT 现货交易对，跳过。
+2026-10-23 13:29:22,899 [WARNING] crypto_data: 币种 monero (xmr) 在 Binance 无对应 USDT 现货交易对，跳过。
+2026-10-23 13:29:22,899 [WARNING] crypto_data: 币种 whitebit (wbt) 在 Binance 无对应 USDT 现货交易对，跳过。
+2026-10-23 13:29:22,899 [WARNING] crypto_data: 币种 leo-token (leo) 在 Binance 无对应 USDT 现货交易对，跳过。
+2026-10-23 13:29:22,899 [WARNING] crypto_data: 币种 rain (rain) 在 Binance 无对应 USDT 现货交易对，跳过。
+2026-10-23 13:29:22,899 [WARNING] crypto_data: 币种 dai (dai) 在 Binance 无对应 USDT 现货交易对，跳过。
+2026-10-23 13:29:22,900 [WARNING] crypto_data: 币种 canton-network (cc) 在 Binance 无对应 USDT 现货交易对，跳过。
+2026-10-23 13:29:22,900 [WARNING] crypto_data: 币种 global-dollar (usdg) 在 Binance 无对应 USDT 现货交易对，跳过。
+2026-10-23 13:29:22,900 [WARNING] crypto_data: 币种 paypal-usd (pyusd) 在 Binance 无对应 USDT 现货交易对，跳过。
+2026-10-23 13:29:22,900 [WARNING] crypto_data: 币种 crypto-com-chain (cro) 在 Binance 无对应 USDT 现货交易对，跳过。
+2026-10-23 13:29:22,900 [WARNING] crypto_data: 币种 bitway (btw) 在 Binance 无对应 USDT 现货交易对，跳过。
+2026-10-23 13:29:22,900 [WARNING] crypto_data: 币种 hashnote-usyc (usyc) 在 Binance 无对应 USDT 现货交易对，跳过。
+2026-10-23 13:29:22,900 [WARNING] crypto_data: 币种 ondo-us-dollar-yield (usdy) 在 Binance 无对应 USDT 现货交易对，跳过。
+2026-10-23 13:29:22,901 [WARNING] crypto_data: 币种 okb (okb) 在 Binance 无对应 USDT 现货交易对，跳过。
+2026-10-23 13:29:22,901 [WARNING] crypto_data: 币种 blackrock-usd-institutional-digital-liquidity-fund (buidl) 在 Binance 无对应 USDT 现货交易对，跳过。
+2026-10-23 13:29:24,162 [WARNING] crypto_data: ccxt 加载市场失败，改走 vision 直接 klines 接口: binance GET https://fapi.binance.com/fapi/v1/exchangeInfo 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2026-10-23 13:29:26,273 [INFO] crypto_data: BTC/USDT 历史数据获取成功，共2488条。
+2026-10-23 13:29:27,525 [WARNING] crypto_data: ccxt 加载市场失败，改走 vision 直接 klines 接口: binance GET https://fapi.binance.com/fapi/v1/exchangeInfo 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2026-10-23 13:29:29,544 [INFO] crypto_data: ETH/USDT 历史数据获取成功，共2488条。
+2026-10-23 13:29:30,890 [WARNING] crypto_data: ccxt 加载市场失败，改走 vision 直接 klines 接口: binance GET https://fapi.binance.com/fapi/v1/exchangeInfo 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2026-10-23 13:29:32,897 [INFO] crypto_data: BNB/USDT 历史数据获取成功，共2488条。
+2026-10-23 13:29:34,123 [WARNING] crypto_data: ccxt 加载市场失败，改走 vision 直接 klines 接口: binance GET https://fapi.binance.com/fapi/v1/exchangeInfo 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2026-10-23 13:29:36,146 [INFO] crypto_data: XRP/USDT 历史数据获取成功，共2488条。
+2026-10-23 13:29:37,493 [WARNING] crypto_data: ccxt 加载市场失败，改走 vision 直接 klines 接口: binance GET https://fapi.binance.com/fapi/v1/exchangeInfo 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2026-10-23 13:29:39,512 [INFO] crypto_data: USDC/USDT 历史数据获取成功，共2323条。
+2026-10-23 13:29:40,766 [WARNING] crypto_data: ccxt 加载市场失败，改走 vision 直接 klines 接口: binance GET https://fapi.binance.com/fapi/v1/exchangeInfo 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2026-10-23 13:29:42,846 [INFO] crypto_data: SOL/USDT 历史数据获取成功，共2265条。
+2026-10-23 13:29:44,151 [WARNING] crypto_data: ccxt 加载市场失败，改走 vision 直接 klines 接口: binance GET https://fapi.binance.com/fapi/v1/exchangeInfo 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2026-10-23 13:29:46,179 [INFO] crypto_data: TRX/USDT 历史数据获取成功，共2488条。
+2026-10-23 13:29:47,467 [WARNING] crypto_data: ccxt 加载市场失败，改走 vision 直接 klines 接口: binance GET https://fapi.binance.com/fapi/v1/exchangeInfo 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2026-10-23 13:29:49,468 [INFO] crypto_data: ZEC/USDT 历史数据获取成功，共2488条。
+2026-10-23 13:29:50,824 [WARNING] crypto_data: ccxt 加载市场失败，改走 vision 直接 klines 接口: binance GET https://fapi.binance.com/fapi/v1/exchangeInfo 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2026-10-23 13:29:51,308 [INFO] crypto_data: HYPE/USDT 历史数据获取成功，共30条。
+2026-10-23 13:29:52,531 [WARNING] crypto_data: ccxt 加载市场失败，改走 vision 直接 klines 接口: binance GET https://fapi.binance.com/fapi/v1/exchangeInfo 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2026-10-23 13:29:54,557 [INFO] crypto_data: DOGE/USDT 历史数据获取成功，共2488条。
+2026-10-23 13:29:55,898 [WARNING] crypto_data: ccxt 加载市场失败，改走 vision 直接 klines 接口: binance GET https://fapi.binance.com/fapi/v1/exchangeInfo 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2026-10-23 13:29:56,401 [INFO] crypto_data: USDS/USDT 历史数据获取成功，共198条。
+2026-10-23 13:29:57,649 [WARNING] crypto_data: ccxt 加载市场失败，改走 vision 直接 klines 接口: binance GET https://fapi.binance.com/fapi/v1/exchangeInfo 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2026-10-23 13:29:59,688 [INFO] crypto_data: LINK/USDT 历史数据获取成功，共2488条。
+2026-10-23 13:30:00,930 [WARNING] crypto_data: ccxt 加载市场失败，改走 vision 直接 klines 接口: binance GET https://fapi.binance.com/fapi/v1/exchangeInfo 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2026-10-23 13:30:04,359 [INFO] crypto_data: ADA/USDT 历史数据获取成功，共2488条。
+2026-10-23 13:30:05,624 [WARNING] crypto_data: ccxt 加载市场失败，改走 vision 直接 klines 接口: binance GET https://fapi.binance.com/fapi/v1/exchangeInfo 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2026-10-23 13:30:07,515 [INFO] crypto_data: NEAR/USDT 历史数据获取成功，共2201条。
+2026-10-23 13:30:08,763 [WARNING] crypto_data: ccxt 加载市场失败，改走 vision 直接 klines 接口: binance GET https://fapi.binance.com/fapi/v1/exchangeInfo 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2026-10-23 13:30:10,852 [INFO] crypto_data: XLM/USDT 历史数据获取成功，共2488条。
+2026-10-23 13:30:12,108 [WARNING] crypto_data: ccxt 加载市场失败，改走 vision 直接 klines 接口: binance GET https://fapi.binance.com/fapi/v1/exchangeInfo 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2026-10-23 13:30:14,138 [INFO] crypto_data: BCH/USDT 历史数据获取成功，共2488条。
+2026-10-23 13:30:15,363 [WARNING] crypto_data: ccxt 加载市场失败，改走 vision 直接 klines 接口: binance GET https://fapi.binance.com/fapi/v1/exchangeInfo 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2026-10-23 13:30:15,968 [INFO] crypto_data: USDE/USDT 历史数据获取成功，共410条。
+2026-10-23 13:30:17,238 [WARNING] crypto_data: ccxt 加载市场失败，改走 vision 直接 klines 接口: binance GET https://fapi.binance.com/fapi/v1/exchangeInfo 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2026-10-23 13:30:19,293 [INFO] crypto_data: LTC/USDT 历史数据获取成功，共2488条。
+2026-10-23 13:30:20,560 [WARNING] crypto_data: ccxt 加载市场失败，改走 vision 直接 klines 接口: binance GET https://fapi.binance.com/fapi/v1/exchangeInfo 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2026-10-23 13:30:22,465 [INFO] crypto_data: UNI/USDT 历史数据获取成功，共2228条。
+2026-10-23 13:30:23,868 [WARNING] crypto_data: ccxt 加载市场失败，改走 vision 直接 klines 接口: binance GET https://fapi.binance.com/fapi/v1/exchangeInfo 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2026-10-23 13:30:25,192 [INFO] crypto_data: SUI/USDT 历史数据获取成功，共1270条。
+2026-10-23 13:30:26,413 [WARNING] crypto_data: ccxt 加载市场失败，改走 vision 直接 klines 接口: binance GET https://fapi.binance.com/fapi/v1/exchangeInfo 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2026-10-23 13:30:28,347 [INFO] crypto_data: AVAX/USDT 历史数据获取成功，共2223条。
+2026-10-23 13:30:29,671 [WARNING] crypto_data: ccxt 加载市场失败，改走 vision 直接 klines 接口: binance GET https://fapi.binance.com/fapi/v1/exchangeInfo 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2026-10-23 13:30:30,270 [INFO] crypto_data: USD1/USDT 历史数据获取成功，共520条。
+2026-10-23 13:30:31,543 [WARNING] crypto_data: ccxt 加载市场失败，改走 vision 直接 klines 接口: binance GET https://fapi.binance.com/fapi/v1/exchangeInfo 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2026-10-23 13:30:32,031 [INFO] crypto_data: GRAM/USDT 历史数据获取成功，共114条。
+2026-10-23 13:30:33,386 [WARNING] crypto_data: ccxt 加载市场失败，改走 vision 直接 klines 接口: binance GET https://fapi.binance.com/fapi/v1/exchangeInfo 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2026-10-23 13:30:35,401 [INFO] crypto_data: HBAR/USDT 历史数据获取成功，共2488条。
+2026-10-23 13:30:36,754 [WARNING] crypto_data: ccxt 加载市场失败，改走 vision 直接 klines 接口: binance GET https://fapi.binance.com/fapi/v1/exchangeInfo 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2026-10-23 13:30:37,243 [INFO] crypto_data: XAUT/USDT 历史数据获取成功，共212条。
+2026-10-23 13:30:38,565 [WARNING] crypto_data: ccxt 加载市场失败，改走 vision 直接 klines 接口: binance GET https://fapi.binance.com/fapi/v1/exchangeInfo 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2026-10-23 13:30:39,985 [INFO] crypto_data: SHIB/USDT 历史数据获取成功，共1993条。
+2026-10-23 13:30:41,212 [WARNING] crypto_data: ccxt 加载市场失败，改走 vision 直接 klines 接口: binance GET https://fapi.binance.com/fapi/v1/exchangeInfo 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2026-10-23 13:30:41,943 [INFO] crypto_data: TAO/USDT 历史数据获取成功，共926条。
+2026-10-23 13:30:43,296 [WARNING] crypto_data: ccxt 加载市场失败，改走 vision 直接 klines 接口: binance GET https://fapi.binance.com/fapi/v1/exchangeInfo 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2026-10-23 13:30:44,024 [INFO] crypto_data: ENA/USDT 历史数据获取成功，共935条。
+2026-10-23 13:30:45,256 [WARNING] crypto_data: ccxt 加载市场失败，改走 vision 直接 klines 接口: binance GET https://fapi.binance.com/fapi/v1/exchangeInfo 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2026-10-23 13:30:46,676 [INFO] crypto_data: QNT/USDT 历史数据获取成功，共1913条。
+2026-10-23 13:30:47,907 [WARNING] crypto_data: ccxt 加载市场失败，改走 vision 直接 klines 接口: binance GET https://fapi.binance.com/fapi/v1/exchangeInfo 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2026-10-23 13:30:48,410 [INFO] crypto_data: RLUSD/USDT 历史数据获取成功，共275条。
+2026-10-23 13:30:49,637 [WARNING] crypto_data: ccxt 加载市场失败，改走 vision 直接 klines 接口: binance GET https://fapi.binance.com/fapi/v1/exchangeInfo 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2026-10-23 13:30:51,571 [INFO] crypto_data: AAVE/USDT 历史数据获取成功，共2200条。
+2026-10-23 13:30:52,792 [WARNING] crypto_data: ccxt 加载市场失败，改走 vision 直接 klines 接口: binance GET https://fapi.binance.com/fapi/v1/exchangeInfo 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2026-10-23 13:30:53,410 [INFO] crypto_data: PUMP/USDT 历史数据获取成功，共408条。
+2026-10-23 13:30:54,665 [WARNING] crypto_data: ccxt 加载市场失败，改走 vision 直接 klines 接口: binance GET https://fapi.binance.com/fapi/v1/exchangeInfo 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2026-10-23 13:30:56,009 [INFO] crypto_data: PEPE/USDT 历史数据获取成功，共1268条。
+2026-10-23 13:30:57,292 [WARNING] crypto_data: ccxt 加载市场失败，改走 vision 直接 klines 接口: binance GET https://fapi.binance.com/fapi/v1/exchangeInfo 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2026-10-23 13:30:57,893 [INFO] crypto_data: ONDO/USDT 历史数据获取成功，共561条。
+2026-10-23 13:30:57,895 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/crypto_universe_snapshot.csv
+2026-10-23 13:30:57,911 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_BTC-USDT.csv
+2026-10-23 13:30:57,927 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_ETH-USDT.csv
+2026-10-23 13:30:57,942 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_BNB-USDT.csv
+2026-10-23 13:30:57,957 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_XRP-USDT.csv
+2026-10-23 13:30:57,972 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_USDC-USDT.csv
+2026-10-23 13:30:57,986 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_SOL-USDT.csv
+2026-10-23 13:30:58,001 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_TRX-USDT.csv
+2026-10-23 13:30:58,016 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_ZEC-USDT.csv
+2026-10-23 13:30:58,017 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_HYPE-USDT.csv
+2026-10-23 13:30:58,032 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_DOGE-USDT.csv
+2026-10-23 13:30:58,034 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_USDS-USDT.csv
+2026-10-23 13:30:58,049 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_LINK-USDT.csv
+2026-10-23 13:30:58,064 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_ADA-USDT.csv
+2026-10-23 13:30:58,077 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_NEAR-USDT.csv
+2026-10-23 13:30:58,092 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_XLM-USDT.csv
+2026-10-23 13:30:58,106 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_BCH-USDT.csv
+2026-10-23 13:30:58,109 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_USDE-USDT.csv
+2026-10-23 13:30:58,124 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_LTC-USDT.csv
+2026-10-23 13:30:58,137 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_UNI-USDT.csv
+2026-10-23 13:30:58,145 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_SUI-USDT.csv
+2026-10-23 13:30:58,158 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_AVAX-USDT.csv
+2026-10-23 13:30:58,162 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_USD1-USDT.csv
+2026-10-23 13:30:58,163 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_GRAM-USDT.csv
+2026-10-23 13:30:58,178 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_HBAR-USDT.csv
+2026-10-23 13:30:58,180 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_XAUT-USDT.csv
+2026-10-23 13:30:58,192 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_SHIB-USDT.csv
+2026-10-23 13:30:58,198 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_TAO-USDT.csv
+2026-10-23 13:30:58,205 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_ENA-USDT.csv
+2026-10-23 13:30:58,216 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_QNT-USDT.csv
+2026-10-23 13:30:58,218 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_RLUSD-USDT.csv
+2026-10-23 13:30:58,232 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_AAVE-USDT.csv
+2026-10-23 13:30:58,235 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_PUMP-USDT.csv
+2026-10-23 13:30:58,244 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_PEPE-USDT.csv
+2026-10-23 13:30:58,248 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_ONDO-USDT.csv
+2026-10-23 13:30:58,356 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_BTC-USDT.csv
+2026-10-23 13:30:58,356 [INFO] main: [crypto] BTC/USDT 回测完成: 总收益率=-9.885739592198917, 交易数=125, 胜率=36.8
+2026-10-23 13:30:58,458 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_ETH-USDT.csv
+2026-10-23 13:30:58,459 [INFO] main: [crypto] ETH/USDT 回测完成: 总收益率=-18.06684614245311, 交易数=127, 胜率=28.346456692913385
+2026-10-23 13:30:58,559 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_BNB-USDT.csv
+2026-10-23 13:30:58,559 [INFO] main: [crypto] BNB/USDT 回测完成: 总收益率=-18.691318003259262, 交易数=133, 胜率=36.09022556390977
+2026-10-23 13:30:58,653 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_XRP-USDT.csv
+2026-10-23 13:30:58,653 [INFO] main: [crypto] XRP/USDT 回测完成: 总收益率=-12.097472573080537, 交易数=105, 胜率=31.428571428571427
+2026-10-23 13:30:58,745 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_USDC-USDT.csv
+2026-10-23 13:30:58,745 [INFO] main: [crypto] USDC/USDT 回测完成: 总收益率=-8.690306289368532, 交易数=118, 胜率=3.389830508474576
+2026-10-23 13:30:58,836 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_SOL-USDT.csv
+2026-10-23 13:30:58,836 [INFO] main: [crypto] SOL/USDT 回测完成: 总收益率=-11.682553177642474, 交易数=114, 胜率=30.701754385964914
+2026-10-23 13:30:58,972 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_TRX-USDT.csv
+2026-10-23 13:30:58,972 [INFO] main: [crypto] TRX/USDT 回测完成: 总收益率=-12.321526216147538, 交易数=136, 胜率=33.088235294117645
+2026-10-23 13:30:59,068 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_ZEC-USDT.csv
+2026-10-23 13:30:59,068 [INFO] main: [crypto] ZEC/USDT 回测完成: 总收益率=-12.569273526843538, 交易数=131, 胜率=33.587786259541986
+2026-10-23 13:30:59,077 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_HYPE-USDT.csv
+2026-10-23 13:30:59,077 [INFO] main: [crypto] HYPE/USDT 回测完成: 总收益率=0.0, 交易数=0, 胜率=None
+2026-10-23 13:30:59,173 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_DOGE-USDT.csv
+2026-10-23 13:30:59,173 [INFO] main: [crypto] DOGE/USDT 回测完成: 总收益率=-13.734625536827716, 交易数=141, 胜率=31.914893617021278
+2026-10-23 13:30:59,190 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_USDS-USDT.csv
+2026-10-23 13:30:59,190 [INFO] main: [crypto] USDS/USDT 回测完成: 总收益率=-1.1306655857442505, 交易数=12, 胜率=8.333333333333332
+2026-10-23 13:30:59,289 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_LINK-USDT.csv
+2026-10-23 13:30:59,289 [INFO] main: [crypto] LINK/USDT 回测完成: 总收益率=-22.904154337698024, 交易数=108, 胜率=22.22222222222222
+2026-10-23 13:30:59,383 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_ADA-USDT.csv
+2026-10-23 13:30:59,383 [INFO] main: [crypto] ADA/USDT 回测完成: 总收益率=-16.20217625112611, 交易数=106, 胜率=28.30188679245283
+2026-10-23 13:30:59,472 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_NEAR-USDT.csv
+2026-10-23 13:30:59,472 [INFO] main: [crypto] NEAR/USDT 回测完成: 总收益率=-13.526906760498747, 交易数=125, 胜率=31.2
+2026-10-23 13:30:59,575 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_XLM-USDT.csv
+2026-10-23 13:30:59,575 [INFO] main: [crypto] XLM/USDT 回测完成: 总收益率=-20.429266160918978, 交易数=111, 胜率=25.225225225225223
+2026-10-23 13:30:59,669 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_BCH-USDT.csv
+2026-10-23 13:30:59,669 [INFO] main: [crypto] BCH/USDT 回测完成: 总收益率=-14.982905452210693, 交易数=102, 胜率=23.52941176470588
+2026-10-23 13:30:59,693 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_USDE-USDT.csv
+2026-10-23 13:30:59,693 [INFO] main: [crypto] USDE/USDT 回测完成: 总收益率=-1.1909252214383215, 交易数=14, 胜率=0.0
+2026-10-23 13:30:59,786 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_LTC-USDT.csv
+2026-10-23 13:30:59,786 [INFO] main: [crypto] LTC/USDT 回测完成: 总收益率=-23.954769556275537, 交易数=86, 胜率=18.6046511627907
+2026-10-23 13:30:59,874 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_UNI-USDT.csv
+2026-10-23 13:30:59,874 [INFO] main: [crypto] UNI/USDT 回测完成: 总收益率=-14.719584346331594, 交易数=113, 胜率=30.08849557522124
+2026-10-23 13:30:59,927 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_SUI-USDT.csv
+2026-10-23 13:30:59,927 [INFO] main: [crypto] SUI/USDT 回测完成: 总收益率=-13.96116914270149, 交易数=60, 胜率=20.0
+2026-10-23 13:31:00,011 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_AVAX-USDT.csv
+2026-10-23 13:31:00,011 [INFO] main: [crypto] AVAX/USDT 回测完成: 总收益率=-8.515910526932002, 交易数=90, 胜率=38.88888888888889
+2026-10-23 13:31:00,038 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_USD1-USDT.csv
+2026-10-23 13:31:00,038 [INFO] main: [crypto] USD1/USDT 回测完成: 总收益率=-1.519048873598039, 交易数=19, 胜率=5.263157894736842
+2026-10-23 13:31:00,053 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_GRAM-USDT.csv
+2026-10-23 13:31:00,053 [INFO] main: [crypto] GRAM/USDT 回测完成: 总收益率=-0.7816458120923575, 交易数=1, 胜率=0.0
+2026-10-23 13:31:00,148 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_HBAR-USDT.csv
+2026-10-23 13:31:00,148 [INFO] main: [crypto] HBAR/USDT 回测完成: 总收益率=-11.451179861962224, 交易数=134, 胜率=31.343283582089555
+2026-10-23 13:31:00,164 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_XAUT-USDT.csv
+2026-10-23 13:31:00,164 [INFO] main: [crypto] XAUT/USDT 回测完成: 总收益率=0.24760376595678313, 交易数=3, 胜率=66.66666666666666
+2026-10-23 13:31:00,240 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_SHIB-USDT.csv
+2026-10-23 13:31:00,240 [INFO] main: [crypto] SHIB/USDT 回测完成: 总收益率=-9.943981332667374, 交易数=80, 胜率=23.75
+2026-10-23 13:31:00,282 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_TAO-USDT.csv
+2026-10-23 13:31:00,282 [INFO] main: [crypto] TAO/USDT 回测完成: 总收益率=-3.9965642485178976, 交易数=33, 胜率=21.21212121212121
+2026-10-23 13:31:00,323 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_ENA-USDT.csv
+2026-10-23 13:31:00,323 [INFO] main: [crypto] ENA/USDT 回测完成: 总收益率=-6.136112492358459, 交易数=38, 胜率=26.31578947368421
+2026-10-23 13:31:00,397 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_QNT-USDT.csv
+2026-10-23 13:31:00,397 [INFO] main: [crypto] QNT/USDT 回测完成: 总收益率=-5.359748034750533, 交易数=68, 胜率=35.294117647058826
+2026-10-23 13:31:00,414 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_RLUSD-USDT.csv
+2026-10-23 13:31:00,414 [INFO] main: [crypto] RLUSD/USDT 回测完成: 总收益率=-0.16520020429714455, 交易数=2, 胜率=0.0
+2026-10-23 13:31:00,500 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_AAVE-USDT.csv
+2026-10-23 13:31:00,500 [INFO] main: [crypto] AAVE/USDT 回测完成: 总收益率=-17.073639541289864, 交易数=91, 胜率=29.67032967032967
+2026-10-23 13:31:00,524 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_PUMP-USDT.csv
+2026-10-23 13:31:00,524 [INFO] main: [crypto] PUMP/USDT 回测完成: 总收益率=-1.2901889151195833, 交易数=16, 胜率=31.25
+2026-10-23 13:31:00,581 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_PEPE-USDT.csv
+2026-10-23 13:31:00,582 [INFO] main: [crypto] PEPE/USDT 回测完成: 总收益率=-12.191295919030654, 交易数=61, 胜率=24.59016393442623
+2026-10-23 13:31:00,610 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_ONDO-USDT.csv
+2026-10-23 13:31:00,610 [INFO] main: [crypto] ONDO/USDT 回测完成: 总收益率=-3.9828949283528314, 交易数=20, 胜率=20.0
+2026-10-23 13:31:00,780 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/trades_crypto.csv
+2026-10-23 13:31:00,962 [INFO] us_stock_data: Wikipedia S&P500候选股票池获取成功，共503条。
+2026-10-23 13:37:41,479 [INFO] us_stock_data: 美股动态市值前20观察池构建完成，实际20条。
+2026-10-23 13:37:41,844 [INFO] us_stock_data: AAPL 历史数据获取成功，共1712条。
+2026-10-23 13:37:42,014 [INFO] us_stock_data: NVDA 历史数据获取成功，共1712条。
+2026-10-23 13:37:42,228 [INFO] us_stock_data: GOOGL 历史数据获取成功，共1712条。
+2026-10-23 13:37:42,466 [INFO] us_stock_data: GOOG 历史数据获取成功，共1712条。
+2026-10-23 13:37:42,620 [INFO] us_stock_data: MSFT 历史数据获取成功，共1712条。
+2026-10-23 13:37:42,723 [INFO] us_stock_data: AMZN 历史数据获取成功，共1712条。
+2026-10-23 13:37:42,889 [INFO] us_stock_data: META 历史数据获取成功，共1712条。
+2026-10-23 13:37:43,069 [INFO] us_stock_data: AVGO 历史数据获取成功，共1712条。
+2026-10-23 13:37:43,228 [INFO] us_stock_data: TSLA 历史数据获取成功，共1712条。
+2026-10-23 13:37:43,338 [INFO] us_stock_data: BRK-B 历史数据获取成功，共1712条。
+2026-10-23 13:37:43,537 [INFO] us_stock_data: LLY 历史数据获取成功，共1712条。
+2026-10-23 13:37:43,733 [INFO] us_stock_data: MU 历史数据获取成功，共1712条。
+2026-10-23 13:37:43,923 [INFO] us_stock_data: WMT 历史数据获取成功，共1712条。
+2026-10-23 13:37:44,089 [INFO] us_stock_data: JPM 历史数据获取成功，共1712条。
+2026-10-23 13:37:44,244 [INFO] us_stock_data: AMD 历史数据获取成功，共1712条。
+2026-10-23 13:37:44,424 [INFO] us_stock_data: V 历史数据获取成功，共1712条。
+2026-10-23 13:37:44,632 [INFO] us_stock_data: XOM 历史数据获取成功，共1712条。
+2026-10-23 13:37:44,881 [INFO] us_stock_data: JNJ 历史数据获取成功，共1712条。
+2026-10-23 13:37:45,027 [INFO] us_stock_data: MA 历史数据获取成功，共1712条。
+2026-10-23 13:37:45,207 [INFO] us_stock_data: ABBV 历史数据获取成功，共1712条。
+2026-10-23 13:37:45,208 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/us_stock_dynamic_top20_snapshot.csv
+2026-10-23 13:37:45,223 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/us_stock_AAPL.csv
+2026-10-23 13:37:45,237 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/us_stock_NVDA.csv
+2026-10-23 13:37:45,251 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/us_stock_GOOGL.csv
+2026-10-23 13:37:45,265 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/us_stock_GOOG.csv
+2026-10-23 13:37:45,279 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/us_stock_MSFT.csv
+2026-10-23 13:37:45,292 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/us_stock_AMZN.csv
+2026-10-23 13:37:45,306 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/us_stock_META.csv
+2026-10-23 13:37:45,319 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/us_stock_AVGO.csv
+2026-10-23 13:37:45,333 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/us_stock_TSLA.csv
+2026-10-23 13:37:45,346 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/us_stock_BRK-B.csv
+2026-10-23 13:37:45,360 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/us_stock_LLY.csv
+2026-10-23 13:37:45,373 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/us_stock_MU.csv
+2026-10-23 13:37:45,386 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/us_stock_WMT.csv
+2026-10-23 13:37:45,402 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/us_stock_JPM.csv
+2026-10-23 13:37:45,417 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/us_stock_AMD.csv
+2026-10-23 13:37:45,432 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/us_stock_V.csv
+2026-10-23 13:37:45,447 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/us_stock_XOM.csv
+2026-10-23 13:37:45,462 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/us_stock_JNJ.csv
+2026-10-23 13:37:45,476 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/us_stock_MA.csv
+2026-10-23 13:37:45,490 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/us_stock_ABBV.csv
+2026-10-23 13:37:45,577 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_us_stock_AAPL.csv
+2026-10-23 13:37:45,577 [INFO] main: [us_stock] AAPL 回测完成: 总收益率=4.908169485256542, 交易数=88, 胜率=48.86363636363637
+2026-10-23 13:37:45,651 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_us_stock_NVDA.csv
+2026-10-23 13:37:45,652 [INFO] main: [us_stock] NVDA 回测完成: 总收益率=4.635216582451784, 交易数=90, 胜率=36.666666666666664
+2026-10-23 13:37:45,722 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_us_stock_GOOGL.csv
+2026-10-23 13:37:45,722 [INFO] main: [us_stock] GOOGL 回测完成: 总收益率=-3.1945824753323193, 交易数=66, 胜率=30.303030303030305
+2026-10-23 13:37:45,791 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_us_stock_GOOG.csv
+2026-10-23 13:37:45,791 [INFO] main: [us_stock] GOOG 回测完成: 总收益率=-1.8646578251710566, 交易数=65, 胜率=29.230769230769234
+2026-10-23 13:37:45,862 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_us_stock_MSFT.csv
+2026-10-23 13:37:45,862 [INFO] main: [us_stock] MSFT 回测完成: 总收益率=-3.927487794795692, 交易数=70, 胜率=30.0
+2026-10-23 13:37:45,930 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_us_stock_AMZN.csv
+2026-10-23 13:37:45,930 [INFO] main: [us_stock] AMZN 回测完成: 总收益率=-4.625174046750457, 交易数=48, 胜率=35.41666666666667
+2026-10-23 13:37:46,002 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_us_stock_META.csv
+2026-10-23 13:37:46,002 [INFO] main: [us_stock] META 回测完成: 总收益率=10.991690040209745, 交易数=69, 胜率=44.927536231884055
+2026-10-23 13:37:46,075 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_us_stock_AVGO.csv
+2026-10-23 13:37:46,075 [INFO] main: [us_stock] AVGO 回测完成: 总收益率=9.145586224233494, 交易数=85, 胜率=44.70588235294118
+2026-10-23 13:37:46,150 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_us_stock_TSLA.csv
+2026-10-23 13:37:46,151 [INFO] main: [us_stock] TSLA 回测完成: 总收益率=-1.0999817813134305, 交易数=86, 胜率=39.53488372093023
+2026-10-23 13:37:46,221 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_us_stock_BRK-B.csv
+2026-10-23 13:37:46,221 [INFO] main: [us_stock] BRK-B 回测完成: 总收益率=-4.9785504742999365, 交易数=75, 胜率=28.000000000000004
+2026-10-23 13:37:46,294 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_us_stock_LLY.csv
+2026-10-23 13:37:46,294 [INFO] main: [us_stock] LLY 回测完成: 总收益率=12.579017722932239, 交易数=89, 胜率=41.57303370786517
+2026-10-23 13:37:46,366 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_us_stock_MU.csv
+2026-10-23 13:37:46,366 [INFO] main: [us_stock] MU 回测完成: 总收益率=11.731233600579749, 交易数=88, 胜率=44.31818181818182
+2026-10-23 13:37:46,438 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_us_stock_WMT.csv
+2026-10-23 13:37:46,438 [INFO] main: [us_stock] WMT 回测完成: 总收益率=-7.685261450360247, 交易数=92, 胜率=28.26086956521739
+2026-10-23 13:37:46,508 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_us_stock_JPM.csv
+2026-10-23 13:37:46,508 [INFO] main: [us_stock] JPM 回测完成: 总收益率=0.5035947280410014, 交易数=56, 胜率=37.5
+2026-10-23 13:37:46,582 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_us_stock_AMD.csv
+2026-10-23 13:37:46,582 [INFO] main: [us_stock] AMD 回测完成: 总收益率=-0.2443291469852893, 交易数=77, 胜率=38.961038961038966
+2026-10-23 13:37:46,651 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_us_stock_V.csv
+2026-10-23 13:37:46,651 [INFO] main: [us_stock] V 回测完成: 总收益率=-1.5201274976846646, 交易数=50, 胜率=40.0
+2026-10-23 13:37:46,721 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_us_stock_XOM.csv
+2026-10-23 13:37:46,721 [INFO] main: [us_stock] XOM 回测完成: 总收益率=2.812703331729005, 交易数=74, 胜率=36.486486486486484
+2026-10-23 13:37:46,792 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_us_stock_JNJ.csv
+2026-10-23 13:37:46,792 [INFO] main: [us_stock] JNJ 回测完成: 总收益率=-0.4252148429820024, 交易数=60, 胜率=36.666666666666664
+2026-10-23 13:37:46,899 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_us_stock_MA.csv
+2026-10-23 13:37:46,899 [INFO] main: [us_stock] MA 回测完成: 总收益率=3.2316153105256706, 交易数=55, 胜率=40.0
+2026-10-23 13:37:46,982 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_us_stock_ABBV.csv
+2026-10-23 13:37:46,982 [INFO] main: [us_stock] ABBV 回测完成: 总收益率=-2.384562575022975, 交易数=79, 胜率=34.177215189873415
+2026-10-23 13:37:47,077 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/trades_us_stock.csv
+2026-10-23 13:37:47,308 [WARNING] ark_holdings: 请求异常: https://ark-funds.com/wp-content/fundsiteliterature/csv/ARK_INNOVATION_ETF_ARKK_HOLDINGS.csv，第1次尝试失败: 403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_INNOVATION_ETF_ARKK_HOLDINGS.csv，2.0s后重试。
+2026-10-23 13:37:49,449 [WARNING] ark_holdings: 请求异常: https://ark-funds.com/wp-content/fundsiteliterature/csv/ARK_INNOVATION_ETF_ARKK_HOLDINGS.csv，第2次尝试失败: 403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_INNOVATION_ETF_ARKK_HOLDINGS.csv，4.0s后重试。
+2026-10-23 13:37:53,581 [ERROR] ark_holdings: 请求最终失败（已重试3次）: https://ark-funds.com/wp-content/fundsiteliterature/csv/ARK_INNOVATION_ETF_ARKK_HOLDINGS.csv，错误: 403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_INNOVATION_ETF_ARKK_HOLDINGS.csv
+2026-10-23 13:37:53,581 [ERROR] ark_holdings: ARK基金ARKK持仓获取失败: 403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_INNOVATION_ETF_ARKK_HOLDINGS.csv
+2026-10-23 13:37:53,719 [WARNING] ark_holdings: 请求异常: https://ark-funds.com/wp-content/fundsiteliterature/csv/ARK_NEXT_GENERATION_INTERNET_ETF_ARKW_HOLDINGS.csv，第1次尝试失败: 403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_NEXT_GENERATION_INTERNET_ETF_ARKW_HOLDINGS.csv，2.0s后重试。
+2026-10-23 13:37:55,842 [WARNING] ark_holdings: 请求异常: https://ark-funds.com/wp-content/fundsiteliterature/csv/ARK_NEXT_GENERATION_INTERNET_ETF_ARKW_HOLDINGS.csv，第2次尝试失败: 403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_NEXT_GENERATION_INTERNET_ETF_ARKW_HOLDINGS.csv，4.0s后重试。
+2026-10-23 13:37:59,992 [ERROR] ark_holdings: 请求最终失败（已重试3次）: https://ark-funds.com/wp-content/fundsiteliterature/csv/ARK_NEXT_GENERATION_INTERNET_ETF_ARKW_HOLDINGS.csv，错误: 403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_NEXT_GENERATION_INTERNET_ETF_ARKW_HOLDINGS.csv
+2026-10-23 13:37:59,992 [ERROR] ark_holdings: ARK基金ARKW持仓获取失败: 403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_NEXT_GENERATION_INTERNET_ETF_ARKW_HOLDINGS.csv
+2026-10-23 13:38:00,127 [WARNING] ark_holdings: 请求异常: https://ark-funds.com/wp-content/fundsiteliterature/csv/ARK_AUTONOMOUS_TECH._%26_ROBOTICS_ETF_ARKQ_HOLDINGS.csv，第1次尝试失败: 403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_AUTONOMOUS_TECH._%26_ROBOTICS_ETF_ARKQ_HOLDINGS.csv，2.0s后重试。
+2026-10-23 13:38:02,260 [WARNING] ark_holdings: 请求异常: https://ark-funds.com/wp-content/fundsiteliterature/csv/ARK_AUTONOMOUS_TECH._%26_ROBOTICS_ETF_ARKQ_HOLDINGS.csv，第2次尝试失败: 403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_AUTONOMOUS_TECH._%26_ROBOTICS_ETF_ARKQ_HOLDINGS.csv，4.0s后重试。
+2026-10-23 13:38:06,397 [ERROR] ark_holdings: 请求最终失败（已重试3次）: https://ark-funds.com/wp-content/fundsiteliterature/csv/ARK_AUTONOMOUS_TECH._%26_ROBOTICS_ETF_ARKQ_HOLDINGS.csv，错误: 403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_AUTONOMOUS_TECH._%26_ROBOTICS_ETF_ARKQ_HOLDINGS.csv
+2026-10-23 13:38:06,398 [ERROR] ark_holdings: ARK基金ARKQ持仓获取失败: 403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_AUTONOMOUS_TECH._%26_ROBOTICS_ETF_ARKQ_HOLDINGS.csv
+2026-10-23 13:38:06,555 [WARNING] ark_holdings: 请求异常: https://ark-funds.com/wp-content/fundsiteliterature/csv/ARK_FINTECH_INNOVATION_ETF_ARKF_HOLDINGS.csv，第1次尝试失败: 403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_FINTECH_INNOVATION_ETF_ARKF_HOLDINGS.csv，2.0s后重试。
+2026-10-23 13:38:08,688 [WARNING] ark_holdings: 请求异常: https://ark-funds.com/wp-content/fundsiteliterature/csv/ARK_FINTECH_INNOVATION_ETF_ARKF_HOLDINGS.csv，第2次尝试失败: 403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_FINTECH_INNOVATION_ETF_ARKF_HOLDINGS.csv，4.0s后重试。
+2026-10-23 13:38:12,841 [ERROR] ark_holdings: 请求最终失败（已重试3次）: https://ark-funds.com/wp-content/fundsiteliterature/csv/ARK_FINTECH_INNOVATION_ETF_ARKF_HOLDINGS.csv，错误: 403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_FINTECH_INNOVATION_ETF_ARKF_HOLDINGS.csv
+2026-10-23 13:38:12,841 [ERROR] ark_holdings: ARK基金ARKF持仓获取失败: 403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_FINTECH_INNOVATION_ETF_ARKF_HOLDINGS.csv
+2026-10-23 13:38:12,989 [WARNING] ark_holdings: 请求异常: https://ark-funds.com/wp-content/fundsiteliterature/csv/ARK_GENOMIC_REVOLUTION_ETF_ARKG_HOLDINGS.csv，第1次尝试失败: 403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_GENOMIC_REVOLUTION_ETF_ARKG_HOLDINGS.csv，2.0s后重试。
+2026-10-23 13:38:15,140 [WARNING] ark_holdings: 请求异常: https://ark-funds.com/wp-content/fundsiteliterature/csv/ARK_GENOMIC_REVOLUTION_ETF_ARKG_HOLDINGS.csv，第2次尝试失败: 403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_GENOMIC_REVOLUTION_ETF_ARKG_HOLDINGS.csv，4.0s后重试。
+2026-10-23 13:38:19,285 [ERROR] ark_holdings: 请求最终失败（已重试3次）: https://ark-funds.com/wp-content/fundsiteliterature/csv/ARK_GENOMIC_REVOLUTION_ETF_ARKG_HOLDINGS.csv，错误: 403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_GENOMIC_REVOLUTION_ETF_ARKG_HOLDINGS.csv
+2026-10-23 13:38:19,285 [ERROR] ark_holdings: ARK基金ARKG持仓获取失败: 403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_GENOMIC_REVOLUTION_ETF_ARKG_HOLDINGS.csv
+2026-10-23 13:38:19,432 [WARNING] ark_holdings: 请求异常: https://ark-funds.com/wp-content/fundsiteliterature/csv/ARK_SPACE_EXPLORATION_%26_INNOVATION_ETF_ARKX_HOLDINGS.csv，第1次尝试失败: 403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_SPACE_EXPLORATION_%26_INNOVATION_ETF_ARKX_HOLDINGS.csv，2.0s后重试。
+2026-10-23 13:38:21,579 [WARNING] ark_holdings: 请求异常: https://ark-funds.com/wp-content/fundsiteliterature/csv/ARK_SPACE_EXPLORATION_%26_INNOVATION_ETF_ARKX_HOLDINGS.csv，第2次尝试失败: 403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_SPACE_EXPLORATION_%26_INNOVATION_ETF_ARKX_HOLDINGS.csv，4.0s后重试。
+2026-10-23 13:38:25,717 [ERROR] ark_holdings: 请求最终失败（已重试3次）: https://ark-funds.com/wp-content/fundsiteliterature/csv/ARK_SPACE_EXPLORATION_%26_INNOVATION_ETF_ARKX_HOLDINGS.csv，错误: 403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_SPACE_EXPLORATION_%26_INNOVATION_ETF_ARKX_HOLDINGS.csv
+2026-10-23 13:38:25,717 [ERROR] ark_holdings: ARK基金ARKX持仓获取失败: 403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_SPACE_EXPLORATION_%26_INNOVATION_ETF_ARKX_HOLDINGS.csv
+2026-10-23 13:38:25,718 [ERROR] ark_holdings: 所有ARK基金持仓获取均失败，返回空表。这不代表持仓为空，而是数据获取失败，请检查errors字典并人工核实官方链接。
+2026-10-23 13:38:25,718 [WARNING] main: ARK 持仓数据为空（可能是官方CSV URL或格式已变化），请人工检查 ARKConfig 中配置的URL与解析逻辑。本次运行不会伪造ARK持仓数据。
+2026-10-23 13:38:25,718 [WARNING] sec_13f: SEC13FConfig.target_ciks 为空，未配置任何机构CIK，跳过13F季度参考层获取。请参考README和SEC EDGAR官网(https://www.sec.gov/cgi-bin/browse-edgar) 自行查找并配置CIK。
+2026-10-23 13:38:25,718 [INFO] main: SEC 13F 数据为空：可能是因为未配置 CIK 列表（target_ciks为空），或所有申报获取失败。请参阅 README 配置说明。
+2026-10-23 13:38:25,720 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/us_stock_final_watchlist_merged.csv
+2026-10-23 13:38:25,722 [INFO] main: 运行汇总已保存: /home/runner/work/quant-research/quant-research/results/run_summary_run_20261023T132919Z_cf33a824.json
+2026-10-23 13:38:25,722 [INFO] main: ========== 本次运行结束 run_id=run_20261023T132919Z_cf33a824 status=success finished_at=2026-10-23T13:38:25.720871+00:00 ==========
