@@ -26,6 +26,9 @@ table{border-collapse:collapse;width:100%;margin:12px 0} th,td{border:1px solid 
 <h2>V5币圈纸面（24池，$100,000起，纸面记录，非实盘）</h2>
 <div id="v5"></div>
 
+<h2>CSMOM 美股前瞻账本（公开仓库每日流水线，月调仓前 5 只，成本未扣）</h2>
+<div id="csmom"></div>
+
 <h2>纸面账户总值历史（永久记录，每轮追加，最新在前）</h2>
 <div id="acchistory"></div>
 
@@ -101,6 +104,27 @@ async function getText(url){
     document.getElementById("v5").innerHTML = html;
   }catch(e){
     document.getElementById("v5").innerHTML = `<p class="note">V5 快照尚未上传到仓库，待 V5 定时任务上传后这里自动显示。</p>`;
+  }
+  try{
+    const c = await getJSON(RAW + "results/csmom_forward_ledger.json");
+    const s = c.summary || {};
+    const latest = (c.picks || []).filter(p=>p.signal_date === s.latest_signal_date);
+    let chtml = `<p>最新信号：${esc(s.latest_signal_date || "")}（调仓 ${esc(s.latest_rebalance_date || "")}，T+1 开盘成交）</p>`;
+    chtml += `<table><tr><th>标的</th><th>权重</th><th>入场价（调仓日开盘）</th></tr>` +
+      latest.map(p=>`<tr><td>${esc(p.symbol)}</td><td>${(p.weight * 100).toFixed(0)}%</td><td>${money(p.entry_price)}</td></tr>`).join("") + `</table>`;
+    if(s.insufficient){
+      chtml += `<p class="note">前瞻胜率：数据不足（已结算 ${s.n_evaluated} 只，待结算 ${s.n_pending} 只，n&lt;10 不宣称有效；回测历史成绩不是前瞻胜率）。</p>`;
+    }else{
+      chtml += `<p>前瞻胜率：${(s.win_rate * 100).toFixed(1)}%（已结算 ${s.n_evaluated} 只，平均收益 ${(s.avg_ret * 100).toFixed(2)}%，开盘价对开盘价、成本未扣）。</p>`;
+    }
+    const ev = (c.picks || []).filter(p=>p.evaluated).slice(-12).reverse();
+    if(ev.length){
+      chtml += `<table><tr><th>信号日</th><th>标的</th><th>入场价</th><th>结算价</th><th>收益</th></tr>` +
+        ev.map(p=>`<tr><td>${esc(p.signal_date)}</td><td>${esc(p.symbol)}</td><td>${money(p.entry_price)}</td><td>${money(p.exit_price)}</td><td>${(p.ret * 100).toFixed(2)}%</td></tr>`).join("") + `</table>`;
+    }
+    document.getElementById("csmom").innerHTML = chtml;
+  }catch(e){
+    document.getElementById("csmom").innerHTML = `<p class="note">CSMOM 前瞻账本尚未生成（待下一次每日流水线运行后自动出现；回测历史成绩见仓库 results/csmom_us_stock_metrics.json）。</p>`;
   }
   try{
     const atxt = await getText(RAW + "results/daily_push_account_history.jsonl");
