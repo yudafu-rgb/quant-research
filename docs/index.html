@@ -26,6 +26,9 @@ table{border-collapse:collapse;width:100%;margin:12px 0} th,td{border:1px solid 
 <h2>V5币圈纸面（24池，$100,000起，纸面记录，非实盘）</h2>
 <div id="v5"></div>
 
+<h2>纸面账户总值历史（永久记录，每轮追加，最新在前）</h2>
+<div id="acchistory"></div>
+
 <h2>V5历史（永久记录，每轮追加，最新在前）</h2>
 <div id="v5history"></div>
 
@@ -98,6 +101,16 @@ async function getText(url){
     document.getElementById("v5").innerHTML = html;
   }catch(e){
     document.getElementById("v5").innerHTML = `<p class="note">V5 快照尚未上传到仓库，待 V5 定时任务上传后这里自动显示。</p>`;
+  }
+  try{
+    const atxt = await getText(RAW + "results/daily_push_account_history.jsonl");
+    const alines = atxt.trim().split("\n").filter(Boolean).map(l=>JSON.parse(l));
+    const akeys = ["crypto_RP","crypto_TSMOM","crypto_CSMOM","us_CSMOM","us_TSMOM","us_RP","us_MF"];
+    let ahist = `<table><tr><th>推送时间（多伦多）</th>` + akeys.map(k=>`<th>${esc(k)}</th>`).join("") + `</tr>` +
+      alines.slice(-12).reverse().map(d=>`<tr><td>${esc(d.run_toronto||"")}</td>` + akeys.map(k=>`<td>${d.accounts && d.accounts[k] ? money(d.accounts[k].total) : "—"}</td>`).join("") + `</tr>`).join("") + `</table>`;
+    document.getElementById("acchistory").innerHTML = ahist;
+  }catch(e){
+    document.getElementById("acchistory").innerHTML = `<p class="note">账户总值历史尚未上传（从下一轮推送起自动追加上传），最新总值见上一栏。</p>`;
   }
   try{
     const vtxt = await getText(RAW + "results/v5_history.jsonl");
