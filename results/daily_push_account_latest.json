@@ -1,13 +1,12 @@
 {
- "run_toronto": "2026-10-27 20:56",
- "note": "One-time snapshot from verified 2026-10-27 21:00 push briefing; from 2026-10-28 09:00 push onward this file is written by daily_models_push.py each run",
+ "run_toronto": "2026-10-28 08:58",
  "accounts": {
   "crypto_RP": {
-   "total": 100430,
-   "cash": 32756,
-   "holdings_value": 67673,
-   "pnl": 430,
-   "pnl_pct": 0.0043,
+   "total": 100429.56,
+   "cash": 32756.42857142857,
+   "holdings_value": 67673.14,
+   "pnl": 429.56,
+   "pnl_pct": 0.004295642444909026,
    "shares": {
     "TRX": 50942.98721005853,
     "BTC": 0.1573069948577396,
@@ -28,11 +27,11 @@
    "exec_date": "2026-10-26"
   },
   "crypto_TSMOM": {
-   "total": 100680,
-   "cash": 32756,
-   "holdings_value": 67924,
-   "pnl": 680,
-   "pnl_pct": 0.0068,
+   "total": 100680.12,
+   "cash": 32756.42857142857,
+   "holdings_value": 67923.69,
+   "pnl": 680.12,
+   "pnl_pct": 0.0068012103718038995,
    "shares": {
     "UNI": 1001.7830802000012,
     "LINK": 1019.2935783913729,
@@ -53,11 +52,11 @@
    "exec_date": "2026-10-26"
   },
   "crypto_CSMOM": {
-   "total": 100702,
-   "cash": 32756,
-   "holdings_value": 67946,
-   "pnl": 702,
-   "pnl_pct": 0.00702,
+   "total": 100702.27,
+   "cash": 32756.42857142857,
+   "holdings_value": 67945.84,
+   "pnl": 702.27,
+   "pnl_pct": 0.007022657914669108,
    "shares": {
     "UNI": 1563.7892943650352,
     "LINK": 981.1043477534797,
@@ -78,11 +77,11 @@
    "exec_date": "2026-10-26"
   },
   "us_CSMOM": {
-   "total": 99850,
-   "cash": 0,
-   "holdings_value": 99850,
-   "pnl": -150,
-   "pnl_pct": -0.0015,
+   "total": 97863.6,
+   "cash": 0.0,
+   "holdings_value": 97863.6,
+   "pnl": -2136.4,
+   "pnl_pct": -0.021363962866469664,
    "shares": {
     "FTNT": 54.464626085595874,
     "ILMN": 36.839579712251584,
@@ -111,11 +110,11 @@
    "exec_date": "2026-10-26"
   },
   "us_TSMOM": {
-   "total": 99912,
-   "cash": 40911,
-   "holdings_value": 59000,
-   "pnl": -88,
-   "pnl_pct": -0.00088,
+   "total": 99784.03,
+   "cash": 40911.49999999999,
+   "holdings_value": 58872.53,
+   "pnl": -215.97,
+   "pnl_pct": -0.002159661452196888,
    "shares": {
     "MSFT": 8.796840012500656,
     "AAPL": 13.623322165686233,
@@ -150,11 +149,11 @@
    "exec_date": "2026-10-26"
   },
   "us_RP": {
-   "total": 99912,
-   "cash": 40911,
-   "holdings_value": 59000,
-   "pnl": -88,
-   "pnl_pct": -0.00088,
+   "total": 99564.01,
+   "cash": 40911.49999999999,
+   "holdings_value": 58652.51,
+   "pnl": -435.99,
+   "pnl_pct": -0.00435988619584954,
    "shares": {
     "MSFT": 3.4439101908323466,
     "AAPL": 8.55063174728246,
@@ -201,6 +200,17 @@
    },
    "signal_date": "2026-10-26",
    "exec_date": "2026-10-26"
+  },
+  "us_MF": {
+   "total": 100000.0,
+   "cash": 100000.0,
+   "holdings_value": 0.0,
+   "pnl": 0.0,
+   "pnl_pct": 0.0,
+   "shares": {},
+   "entry_prices": {},
+   "signal_date": null,
+   "exec_date": null
   }
  }
 }
