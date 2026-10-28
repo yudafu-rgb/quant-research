@@ -406,3 +406,277 @@
 2026-10-28 03:01:28,531 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/us_stock_final_watchlist_merged.csv
 2026-10-28 03:01:28,533 [INFO] main: 运行汇总已保存: /home/runner/work/quant-research/quant-research/results/run_summary_run_20261028T025219Z_96eb1cc9.json
 2026-10-28 03:01:28,533 [INFO] main: ========== 本次运行结束 run_id=run_20261028T025219Z_96eb1cc9 status=success finished_at=2026-10-28T03:01:28.531833+00:00 ==========
+2026-10-28 13:44:24,218 [INFO] main: ========== 本次运行开始 run_id=run_20261028T134424Z_e4ac8efb started_at=2026-10-28T13:44:24.218734+00:00 ==========
+2026-10-28 13:44:24,226 [INFO] database: 数据库初始化完成，路径: /home/runner/work/quant-research/quant-research/data/quant_research.db
+2026-10-28 13:44:29,891 [INFO] crypto_data: CoinGecko 获取市值前50币种成功，实际获取50条。
+2026-10-28 13:44:29,892 [WARNING] crypto_data: 币种 tether (usdt) 在 Binance 无对应 USDT 现货交易对，跳过。
+2026-10-28 13:44:29,893 [WARNING] crypto_data: 币种 figure-heloc (figr_heloc) 在 Binance 无对应 USDT 现货交易对，跳过。
+2026-10-28 13:44:29,893 [WARNING] crypto_data: 币种 whitebit (wbt) 在 Binance 无对应 USDT 现货交易对，跳过。
+2026-10-28 13:44:29,894 [WARNING] crypto_data: 币种 leo-token (leo) 在 Binance 无对应 USDT 现货交易对，跳过。
+2026-10-28 13:44:29,894 [WARNING] crypto_data: 币种 rain (rain) 在 Binance 无对应 USDT 现货交易对，跳过。
+2026-10-28 13:44:29,895 [WARNING] crypto_data: 币种 canton-network (cc) 在 Binance 无对应 USDT 现货交易对，跳过。
+2026-10-28 13:44:29,895 [WARNING] crypto_data: 币种 global-dollar (usdg) 在 Binance 无对应 USDT 现货交易对，跳过。
+2026-10-28 13:44:29,895 [WARNING] crypto_data: 币种 paypal-usd (pyusd) 在 Binance 无对应 USDT 现货交易对，跳过。
+2026-10-28 13:44:29,895 [WARNING] crypto_data: 币种 crypto-com-chain (cro) 在 Binance 无对应 USDT 现货交易对，跳过。
+2026-10-28 13:44:29,896 [WARNING] crypto_data: 币种 bitway (btw) 在 Binance 无对应 USDT 现货交易对，跳过。
+2026-10-28 13:44:29,896 [WARNING] crypto_data: 币种 memecore (m) 在 Binance 无对应 USDT 现货交易对，跳过。
+2026-10-28 13:44:29,896 [WARNING] crypto_data: 币种 ondo-us-dollar-yield (usdy) 在 Binance 无对应 USDT 现货交易对，跳过。
+2026-10-28 13:44:29,896 [WARNING] crypto_data: 币种 hashnote-usyc (usyc) 在 Binance 无对应 USDT 现货交易对，跳过。
+2026-10-28 13:44:29,896 [WARNING] crypto_data: 币种 okb (okb) 在 Binance 无对应 USDT 现货交易对，跳过。
+2026-10-28 13:44:29,897 [WARNING] crypto_data: 币种 blackrock-usd-institutional-digital-liquidity-fund (buidl) 在 Binance 无对应 USDT 现货交易对，跳过。
+2026-10-28 13:44:35,728 [INFO] crypto_data: BTC/USDT 历史数据获取成功，共2493条。
+2026-10-28 13:44:41,477 [INFO] crypto_data: ETH/USDT 历史数据获取成功，共2493条。
+2026-10-28 13:44:47,377 [INFO] crypto_data: BNB/USDT 历史数据获取成功，共2493条。
+2026-10-28 13:44:53,185 [INFO] crypto_data: XRP/USDT 历史数据获取成功，共2493条。
+2026-10-28 13:44:58,693 [INFO] crypto_data: USDC/USDT 历史数据获取成功，共2328条。
+2026-10-28 13:45:04,721 [INFO] crypto_data: SOL/USDT 历史数据获取成功，共2270条。
+2026-10-28 13:45:10,094 [INFO] crypto_data: TRX/USDT 历史数据获取成功，共2493条。
+2026-10-28 13:45:15,630 [INFO] crypto_data: ZEC/USDT 历史数据获取成功，共2493条。
+2026-10-28 13:45:20,519 [INFO] crypto_data: HYPE/USDT 历史数据获取成功，共35条。
+2026-10-28 13:45:26,088 [INFO] crypto_data: DOGE/USDT 历史数据获取成功，共2493条。
+2026-10-28 13:45:31,260 [INFO] crypto_data: XMR/USDT 历史数据获取成功，共1512条。
+2026-10-28 13:45:35,599 [INFO] crypto_data: USDS/USDT 历史数据获取成功，共203条。
+2026-10-28 13:45:41,030 [INFO] crypto_data: LINK/USDT 历史数据获取成功，共2493条。
+2026-10-28 13:45:45,936 [INFO] crypto_data: ADA/USDT 历史数据获取成功，共2493条。
+2026-10-28 13:45:51,641 [INFO] crypto_data: NEAR/USDT 历史数据获取成功，共2206条。
+2026-10-28 13:45:57,187 [INFO] crypto_data: XLM/USDT 历史数据获取成功，共2493条。
+2026-10-28 13:46:02,190 [INFO] crypto_data: BCH/USDT 历史数据获取成功，共2493条。
+2026-10-28 13:46:07,281 [INFO] crypto_data: USDE/USDT 历史数据获取成功，共415条。
+2026-10-28 13:46:12,162 [ERROR] crypto_data: DAI/USDT 数据获取失败，跳过: 数据量过少(21条)，可能上市时间太短
+2026-10-28 13:46:17,130 [INFO] crypto_data: LTC/USDT 历史数据获取成功，共2493条。
+2026-10-28 13:46:22,043 [INFO] crypto_data: UNI/USDT 历史数据获取成功，共2233条。
+2026-10-28 13:46:26,970 [INFO] crypto_data: AVAX/USDT 历史数据获取成功，共2228条。
+2026-10-28 13:46:31,395 [INFO] crypto_data: USD1/USDT 历史数据获取成功，共525条。
+2026-10-28 13:46:36,559 [INFO] crypto_data: SUI/USDT 历史数据获取成功，共1275条。
+2026-10-28 13:46:41,625 [INFO] crypto_data: GRAM/USDT 历史数据获取成功，共119条。
+2026-10-28 13:46:46,561 [INFO] crypto_data: HBAR/USDT 历史数据获取成功，共2493条。
+2026-10-28 13:46:50,910 [INFO] crypto_data: XAUT/USDT 历史数据获取成功，共217条。
+2026-10-28 13:46:55,222 [INFO] crypto_data: TAO/USDT 历史数据获取成功，共931条。
+2026-10-28 13:47:00,355 [INFO] crypto_data: SHIB/USDT 历史数据获取成功，共1998条。
+2026-10-28 13:47:04,961 [INFO] crypto_data: QNT/USDT 历史数据获取成功，共1918条。
+2026-10-28 13:47:09,280 [INFO] crypto_data: ENA/USDT 历史数据获取成功，共940条。
+2026-10-28 13:47:13,646 [INFO] crypto_data: RLUSD/USDT 历史数据获取成功，共280条。
+2026-10-28 13:47:19,083 [INFO] crypto_data: AAVE/USDT 历史数据获取成功，共2205条。
+2026-10-28 13:47:24,271 [INFO] crypto_data: PEPE/USDT 历史数据获取成功，共1273条。
+2026-10-28 13:47:28,583 [INFO] crypto_data: ONDO/USDT 历史数据获取成功，共566条。
+2026-10-28 13:47:28,585 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/crypto_universe_snapshot.csv
+2026-10-28 13:47:28,605 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_BTC-USDT.csv
+2026-10-28 13:47:28,625 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_ETH-USDT.csv
+2026-10-28 13:47:28,643 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_BNB-USDT.csv
+2026-10-28 13:47:28,662 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_XRP-USDT.csv
+2026-10-28 13:47:28,679 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_USDC-USDT.csv
+2026-10-28 13:47:28,696 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_SOL-USDT.csv
+2026-10-28 13:47:28,715 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_TRX-USDT.csv
+2026-10-28 13:47:28,734 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_ZEC-USDT.csv
+2026-10-28 13:47:28,735 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_HYPE-USDT.csv
+2026-10-28 13:47:28,754 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_DOGE-USDT.csv
+2026-10-28 13:47:28,766 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_XMR-USDT.csv
+2026-10-28 13:47:28,768 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_USDS-USDT.csv
+2026-10-28 13:47:28,786 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_LINK-USDT.csv
+2026-10-28 13:47:28,805 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_ADA-USDT.csv
+2026-10-28 13:47:28,821 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_NEAR-USDT.csv
+2026-10-28 13:47:28,840 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_XLM-USDT.csv
+2026-10-28 13:47:28,858 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_BCH-USDT.csv
+2026-10-28 13:47:28,862 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_USDE-USDT.csv
+2026-10-28 13:47:28,881 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_LTC-USDT.csv
+2026-10-28 13:47:28,897 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_UNI-USDT.csv
+2026-10-28 13:47:28,913 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_AVAX-USDT.csv
+2026-10-28 13:47:28,918 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_USD1-USDT.csv
+2026-10-28 13:47:28,928 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_SUI-USDT.csv
+2026-10-28 13:47:28,930 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_GRAM-USDT.csv
+2026-10-28 13:47:28,948 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_HBAR-USDT.csv
+2026-10-28 13:47:28,951 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_XAUT-USDT.csv
+2026-10-28 13:47:28,958 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_TAO-USDT.csv
+2026-10-28 13:47:28,974 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_SHIB-USDT.csv
+2026-10-28 13:47:28,988 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_QNT-USDT.csv
+2026-10-28 13:47:28,996 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_ENA-USDT.csv
+2026-10-28 13:47:28,999 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_RLUSD-USDT.csv
+2026-10-28 13:47:29,015 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_AAVE-USDT.csv
+2026-10-28 13:47:29,026 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_PEPE-USDT.csv
+2026-10-28 13:47:29,031 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/crypto_ONDO-USDT.csv
+2026-10-28 13:47:29,200 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_BTC-USDT.csv
+2026-10-28 13:47:29,200 [INFO] main: [crypto] BTC/USDT 回测完成: 总收益率=-9.885739592198917, 交易数=125, 胜率=36.8
+2026-10-28 13:47:29,364 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_ETH-USDT.csv
+2026-10-28 13:47:29,364 [INFO] main: [crypto] ETH/USDT 回测完成: 总收益率=-18.06684614245311, 交易数=127, 胜率=28.346456692913385
+2026-10-28 13:47:29,526 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_BNB-USDT.csv
+2026-10-28 13:47:29,526 [INFO] main: [crypto] BNB/USDT 回测完成: 总收益率=-18.691318003259262, 交易数=133, 胜率=36.09022556390977
+2026-10-28 13:47:29,684 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_XRP-USDT.csv
+2026-10-28 13:47:29,684 [INFO] main: [crypto] XRP/USDT 回测完成: 总收益率=-12.097472573080537, 交易数=105, 胜率=31.428571428571427
+2026-10-28 13:47:29,837 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_USDC-USDT.csv
+2026-10-28 13:47:29,837 [INFO] main: [crypto] USDC/USDT 回测完成: 总收益率=-8.531483879080259, 交易数=120, 胜率=5.0
+2026-10-28 13:47:29,986 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_SOL-USDT.csv
+2026-10-28 13:47:29,986 [INFO] main: [crypto] SOL/USDT 回测完成: 总收益率=-11.682553177642474, 交易数=114, 胜率=30.701754385964914
+2026-10-28 13:47:30,150 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_TRX-USDT.csv
+2026-10-28 13:47:30,150 [INFO] main: [crypto] TRX/USDT 回测完成: 总收益率=-12.321526216147538, 交易数=136, 胜率=33.088235294117645
+2026-10-28 13:47:30,353 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_ZEC-USDT.csv
+2026-10-28 13:47:30,353 [INFO] main: [crypto] ZEC/USDT 回测完成: 总收益率=-12.569273526843538, 交易数=131, 胜率=33.587786259541986
+2026-10-28 13:47:30,367 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_HYPE-USDT.csv
+2026-10-28 13:47:30,367 [INFO] main: [crypto] HYPE/USDT 回测完成: 总收益率=0.0, 交易数=0, 胜率=None
+2026-10-28 13:47:30,528 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_DOGE-USDT.csv
+2026-10-28 13:47:30,529 [INFO] main: [crypto] DOGE/USDT 回测完成: 总收益率=-13.734625536827716, 交易数=141, 胜率=31.914893617021278
+2026-10-28 13:47:30,631 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_XMR-USDT.csv
+2026-10-28 13:47:30,631 [INFO] main: [crypto] XMR/USDT 回测完成: 总收益率=-11.419246426323449, 交易数=65, 胜率=27.692307692307693
+2026-10-28 13:47:30,658 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_USDS-USDT.csv
+2026-10-28 13:47:30,658 [INFO] main: [crypto] USDS/USDT 回测完成: 总收益率=-1.225837675942787, 交易数=13, 胜率=7.6923076923076925
+2026-10-28 13:47:30,816 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_LINK-USDT.csv
+2026-10-28 13:47:30,816 [INFO] main: [crypto] LINK/USDT 回测完成: 总收益率=-22.904154337698024, 交易数=108, 胜率=22.22222222222222
+2026-10-28 13:47:30,976 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_ADA-USDT.csv
+2026-10-28 13:47:30,976 [INFO] main: [crypto] ADA/USDT 回测完成: 总收益率=-16.20217625112611, 交易数=106, 胜率=28.30188679245283
+2026-10-28 13:47:31,122 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_NEAR-USDT.csv
+2026-10-28 13:47:31,122 [INFO] main: [crypto] NEAR/USDT 回测完成: 总收益率=-13.526906760498747, 交易数=125, 胜率=31.2
+2026-10-28 13:47:31,283 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_XLM-USDT.csv
+2026-10-28 13:47:31,283 [INFO] main: [crypto] XLM/USDT 回测完成: 总收益率=-20.429266160918978, 交易数=111, 胜率=25.225225225225223
+2026-10-28 13:47:31,445 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_BCH-USDT.csv
+2026-10-28 13:47:31,445 [INFO] main: [crypto] BCH/USDT 回测完成: 总收益率=-14.982905452210693, 交易数=102, 胜率=23.52941176470588
+2026-10-28 13:47:31,484 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_USDE-USDT.csv
+2026-10-28 13:47:31,484 [INFO] main: [crypto] USDE/USDT 回测完成: 总收益率=-1.1884588205142377, 交易数=14, 胜率=0.0
+2026-10-28 13:47:31,638 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_LTC-USDT.csv
+2026-10-28 13:47:31,638 [INFO] main: [crypto] LTC/USDT 回测完成: 总收益率=-23.954769556275537, 交易数=86, 胜率=18.6046511627907
+2026-10-28 13:47:31,787 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_UNI-USDT.csv
+2026-10-28 13:47:31,787 [INFO] main: [crypto] UNI/USDT 回测完成: 总收益率=-14.719584346331594, 交易数=113, 胜率=30.08849557522124
+2026-10-28 13:47:31,932 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_AVAX-USDT.csv
+2026-10-28 13:47:31,933 [INFO] main: [crypto] AVAX/USDT 回测完成: 总收益率=-8.515910526932002, 交易数=90, 胜率=38.88888888888889
+2026-10-28 13:47:31,978 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_USD1-USDT.csv
+2026-10-28 13:47:31,978 [INFO] main: [crypto] USD1/USDT 回测完成: 总收益率=-1.5892223471125955, 交易数=20, 胜率=5.0
+2026-10-28 13:47:32,068 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_SUI-USDT.csv
+2026-10-28 13:47:32,069 [INFO] main: [crypto] SUI/USDT 回测完成: 总收益率=-13.96116914270149, 交易数=60, 胜率=20.0
+2026-10-28 13:47:32,090 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_GRAM-USDT.csv
+2026-10-28 13:47:32,090 [INFO] main: [crypto] GRAM/USDT 回测完成: 总收益率=-0.7816458120923575, 交易数=1, 胜率=0.0
+2026-10-28 13:47:32,253 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_HBAR-USDT.csv
+2026-10-28 13:47:32,253 [INFO] main: [crypto] HBAR/USDT 回测完成: 总收益率=-11.451179861962224, 交易数=134, 胜率=31.343283582089555
+2026-10-28 13:47:32,280 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_XAUT-USDT.csv
+2026-10-28 13:47:32,280 [INFO] main: [crypto] XAUT/USDT 回测完成: 总收益率=0.24760376595678313, 交易数=3, 胜率=66.66666666666666
+2026-10-28 13:47:32,350 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_TAO-USDT.csv
+2026-10-28 13:47:32,350 [INFO] main: [crypto] TAO/USDT 回测完成: 总收益率=-3.9965642485178976, 交易数=33, 胜率=21.21212121212121
+2026-10-28 13:47:32,481 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_SHIB-USDT.csv
+2026-10-28 13:47:32,481 [INFO] main: [crypto] SHIB/USDT 回测完成: 总收益率=-9.943981332667374, 交易数=80, 胜率=23.75
+2026-10-28 13:47:32,607 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_QNT-USDT.csv
+2026-10-28 13:47:32,607 [INFO] main: [crypto] QNT/USDT 回测完成: 总收益率=-5.534076051794379, 交易数=69, 胜率=34.78260869565217
+2026-10-28 13:47:32,676 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_ENA-USDT.csv
+2026-10-28 13:47:32,676 [INFO] main: [crypto] ENA/USDT 回测完成: 总收益率=-6.136112492358459, 交易数=38, 胜率=26.31578947368421
+2026-10-28 13:47:32,705 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_RLUSD-USDT.csv
+2026-10-28 13:47:32,705 [INFO] main: [crypto] RLUSD/USDT 回测完成: 总收益率=-0.15772755158443008, 交易数=2, 胜率=0.0
+2026-10-28 13:47:32,850 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_AAVE-USDT.csv
+2026-10-28 13:47:32,850 [INFO] main: [crypto] AAVE/USDT 回测完成: 总收益率=-17.073639541289864, 交易数=91, 胜率=29.67032967032967
+2026-10-28 13:47:32,940 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_PEPE-USDT.csv
+2026-10-28 13:47:32,940 [INFO] main: [crypto] PEPE/USDT 回测完成: 总收益率=-12.191295919030654, 交易数=61, 胜率=24.59016393442623
+2026-10-28 13:47:32,987 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_crypto_ONDO-USDT.csv
+2026-10-28 13:47:32,987 [INFO] main: [crypto] ONDO/USDT 回测完成: 总收益率=-3.9828949283528314, 交易数=20, 胜率=20.0
+2026-10-28 13:47:33,293 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/trades_crypto.csv
+2026-10-28 13:47:33,945 [INFO] us_stock_data: Wikipedia S&P500候选股票池获取成功，共503条。
+2026-10-28 13:57:49,110 [INFO] us_stock_data: 美股动态市值前20观察池构建完成，实际20条。
+2026-10-28 13:57:49,830 [INFO] us_stock_data: NVDA 历史数据获取成功，共1715条。
+2026-10-28 13:57:50,252 [INFO] us_stock_data: AAPL 历史数据获取成功，共1715条。
+2026-10-28 13:57:50,508 [INFO] us_stock_data: GOOGL 历史数据获取成功，共1715条。
+2026-10-28 13:57:50,898 [INFO] us_stock_data: MSFT 历史数据获取成功，共1715条。
+2026-10-28 13:57:51,174 [INFO] us_stock_data: GOOG 历史数据获取成功，共1715条。
+2026-10-28 13:57:51,544 [INFO] us_stock_data: AMZN 历史数据获取成功，共1715条。
+2026-10-28 13:57:51,947 [INFO] us_stock_data: AVGO 历史数据获取成功，共1715条。
+2026-10-28 13:57:52,425 [INFO] us_stock_data: TSLA 历史数据获取成功，共1715条。
+2026-10-28 13:57:52,782 [INFO] us_stock_data: META 历史数据获取成功，共1715条。
+2026-10-28 13:57:53,131 [INFO] us_stock_data: BRK-B 历史数据获取成功，共1715条。
+2026-10-28 13:57:53,421 [INFO] us_stock_data: LLY 历史数据获取成功，共1715条。
+2026-10-28 13:57:53,847 [INFO] us_stock_data: MU 历史数据获取成功，共1715条。
+2026-10-28 13:57:54,367 [INFO] us_stock_data: WMT 历史数据获取成功，共1715条。
+2026-10-28 13:57:54,604 [INFO] us_stock_data: AMD 历史数据获取成功，共1715条。
+2026-10-28 13:57:54,918 [INFO] us_stock_data: JPM 历史数据获取成功，共1715条。
+2026-10-28 13:57:55,311 [INFO] us_stock_data: V 历史数据获取成功，共1715条。
+2026-10-28 13:57:55,636 [INFO] us_stock_data: XOM 历史数据获取成功，共1715条。
+2026-10-28 13:57:56,050 [INFO] us_stock_data: JNJ 历史数据获取成功，共1715条。
+2026-10-28 13:57:56,331 [INFO] us_stock_data: MA 历史数据获取成功，共1715条。
+2026-10-28 13:57:56,585 [INFO] us_stock_data: ABBV 历史数据获取成功，共1715条。
+2026-10-28 13:57:56,586 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/us_stock_dynamic_top20_snapshot.csv
+2026-10-28 13:57:56,603 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/us_stock_NVDA.csv
+2026-10-28 13:57:56,620 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/us_stock_AAPL.csv
+2026-10-28 13:57:56,636 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/us_stock_GOOGL.csv
+2026-10-28 13:57:56,653 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/us_stock_MSFT.csv
+2026-10-28 13:57:56,670 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/us_stock_GOOG.csv
+2026-10-28 13:57:56,687 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/us_stock_AMZN.csv
+2026-10-28 13:57:56,704 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/us_stock_AVGO.csv
+2026-10-28 13:57:56,721 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/us_stock_TSLA.csv
+2026-10-28 13:57:56,738 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/us_stock_META.csv
+2026-10-28 13:57:56,755 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/us_stock_BRK-B.csv
+2026-10-28 13:57:56,772 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/us_stock_LLY.csv
+2026-10-28 13:57:56,788 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/us_stock_MU.csv
+2026-10-28 13:57:56,805 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/us_stock_WMT.csv
+2026-10-28 13:57:56,821 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/us_stock_AMD.csv
+2026-10-28 13:57:56,838 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/us_stock_JPM.csv
+2026-10-28 13:57:56,854 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/us_stock_V.csv
+2026-10-28 13:57:56,871 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/us_stock_XOM.csv
+2026-10-28 13:57:56,887 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/us_stock_JNJ.csv
+2026-10-28 13:57:56,904 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/us_stock_MA.csv
+2026-10-28 13:57:56,920 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/data/us_stock_ABBV.csv
+2026-10-28 13:57:57,052 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_us_stock_NVDA.csv
+2026-10-28 13:57:57,052 [INFO] main: [us_stock] NVDA 回测完成: 总收益率=4.63523252658864, 交易数=90, 胜率=36.666666666666664
+2026-10-28 13:57:57,183 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_us_stock_AAPL.csv
+2026-10-28 13:57:57,183 [INFO] main: [us_stock] AAPL 回测完成: 总收益率=4.908203826581237, 交易数=88, 胜率=48.86363636363637
+2026-10-28 13:57:57,310 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_us_stock_GOOGL.csv
+2026-10-28 13:57:57,310 [INFO] main: [us_stock] GOOGL 回测完成: 总收益率=-2.7971387917335555, 交易数=67, 胜率=31.343283582089555
+2026-10-28 13:57:57,438 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_us_stock_MSFT.csv
+2026-10-28 13:57:57,438 [INFO] main: [us_stock] MSFT 回测完成: 总收益率=-4.045598341449919, 交易数=71, 胜率=29.577464788732392
+2026-10-28 13:57:57,564 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_us_stock_GOOG.csv
+2026-10-28 13:57:57,564 [INFO] main: [us_stock] GOOG 回测完成: 总收益率=-1.5033363731287275, 交易数=66, 胜率=30.303030303030305
+2026-10-28 13:57:57,687 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_us_stock_AMZN.csv
+2026-10-28 13:57:57,687 [INFO] main: [us_stock] AMZN 回测完成: 总收益率=-4.625174046750457, 交易数=48, 胜率=35.41666666666667
+2026-10-28 13:57:57,817 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_us_stock_AVGO.csv
+2026-10-28 13:57:57,817 [INFO] main: [us_stock] AVGO 回测完成: 总收益率=9.145543246700228, 交易数=85, 胜率=44.70588235294118
+2026-10-28 13:57:57,943 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_us_stock_TSLA.csv
+2026-10-28 13:57:57,943 [INFO] main: [us_stock] TSLA 回测完成: 总收益率=-1.0999817813134305, 交易数=86, 胜率=39.53488372093023
+2026-10-28 13:57:58,069 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_us_stock_META.csv
+2026-10-28 13:57:58,069 [INFO] main: [us_stock] META 回测完成: 总收益率=10.991666925709742, 交易数=69, 胜率=44.927536231884055
+2026-10-28 13:57:58,196 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_us_stock_BRK-B.csv
+2026-10-28 13:57:58,196 [INFO] main: [us_stock] BRK-B 回测完成: 总收益率=-5.2468952586195545, 交易数=75, 胜率=28.000000000000004
+2026-10-28 13:57:58,327 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_us_stock_LLY.csv
+2026-10-28 13:57:58,327 [INFO] main: [us_stock] LLY 回测完成: 总收益率=12.540830329258634, 交易数=89, 胜率=41.57303370786517
+2026-10-28 13:57:58,453 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_us_stock_MU.csv
+2026-10-28 13:57:58,454 [INFO] main: [us_stock] MU 回测完成: 总收益率=11.731218980513503, 交易数=88, 胜率=44.31818181818182
+2026-10-28 13:57:58,582 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_us_stock_WMT.csv
+2026-10-28 13:57:58,583 [INFO] main: [us_stock] WMT 回测完成: 总收益率=-8.347408685272972, 交易数=92, 胜率=27.173913043478258
+2026-10-28 13:57:58,709 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_us_stock_AMD.csv
+2026-10-28 13:57:58,709 [INFO] main: [us_stock] AMD 回测完成: 总收益率=-0.2443291469852893, 交易数=77, 胜率=38.961038961038966
+2026-10-28 13:57:58,834 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_us_stock_JPM.csv
+2026-10-28 13:57:58,834 [INFO] main: [us_stock] JPM 回测完成: 总收益率=0.503582178107087, 交易数=56, 胜率=37.5
+2026-10-28 13:57:58,957 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_us_stock_V.csv
+2026-10-28 13:57:58,957 [INFO] main: [us_stock] V 回测完成: 总收益率=-1.9371058572254518, 交易数=51, 胜率=41.17647058823529
+2026-10-28 13:57:59,082 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_us_stock_XOM.csv
+2026-10-28 13:57:59,082 [INFO] main: [us_stock] XOM 回测完成: 总收益率=2.952190521250553, 交易数=74, 胜率=36.486486486486484
+2026-10-28 13:57:59,256 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_us_stock_JNJ.csv
+2026-10-28 13:57:59,256 [INFO] main: [us_stock] JNJ 回测完成: 总收益率=-0.42526892292990004, 交易数=60, 胜率=36.666666666666664
+2026-10-28 13:57:59,379 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_us_stock_MA.csv
+2026-10-28 13:57:59,379 [INFO] main: [us_stock] MA 回测完成: 总收益率=2.8454298465314, 交易数=56, 胜率=39.285714285714285
+2026-10-28 13:57:59,507 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/equity_curve_us_stock_ABBV.csv
+2026-10-28 13:57:59,508 [INFO] main: [us_stock] ABBV 回测完成: 总收益率=-2.275030447638693, 交易数=79, 胜率=35.44303797468354
+2026-10-28 13:57:59,678 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/trades_us_stock.csv
+2026-10-28 13:58:00,275 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/csmom_us_stock_equity.csv
+2026-10-28 13:58:00,276 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/csmom_us_stock_weights.csv
+2026-10-28 13:58:00,750 [WARNING] ark_holdings: 请求异常: https://ark-funds.com/wp-content/fundsiteliterature/csv/ARK_INNOVATION_ETF_ARKK_HOLDINGS.csv，第1次尝试失败: 403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_INNOVATION_ETF_ARKK_HOLDINGS.csv，2.0s后重试。
+2026-10-28 13:58:03,145 [WARNING] ark_holdings: 请求异常: https://ark-funds.com/wp-content/fundsiteliterature/csv/ARK_INNOVATION_ETF_ARKK_HOLDINGS.csv，第2次尝试失败: 403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_INNOVATION_ETF_ARKK_HOLDINGS.csv，4.0s后重试。
+2026-10-28 13:58:07,544 [ERROR] ark_holdings: 请求最终失败（已重试3次）: https://ark-funds.com/wp-content/fundsiteliterature/csv/ARK_INNOVATION_ETF_ARKK_HOLDINGS.csv，错误: 403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_INNOVATION_ETF_ARKK_HOLDINGS.csv
+2026-10-28 13:58:07,544 [ERROR] ark_holdings: ARK基金ARKK持仓获取失败: 403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_INNOVATION_ETF_ARKK_HOLDINGS.csv
+2026-10-28 13:58:07,918 [WARNING] ark_holdings: 请求异常: https://ark-funds.com/wp-content/fundsiteliterature/csv/ARK_NEXT_GENERATION_INTERNET_ETF_ARKW_HOLDINGS.csv，第1次尝试失败: 403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_NEXT_GENERATION_INTERNET_ETF_ARKW_HOLDINGS.csv，2.0s后重试。
+2026-10-28 13:58:10,307 [WARNING] ark_holdings: 请求异常: https://ark-funds.com/wp-content/fundsiteliterature/csv/ARK_NEXT_GENERATION_INTERNET_ETF_ARKW_HOLDINGS.csv，第2次尝试失败: 403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_NEXT_GENERATION_INTERNET_ETF_ARKW_HOLDINGS.csv，4.0s后重试。
+2026-10-28 13:58:14,680 [ERROR] ark_holdings: 请求最终失败（已重试3次）: https://ark-funds.com/wp-content/fundsiteliterature/csv/ARK_NEXT_GENERATION_INTERNET_ETF_ARKW_HOLDINGS.csv，错误: 403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_NEXT_GENERATION_INTERNET_ETF_ARKW_HOLDINGS.csv
+2026-10-28 13:58:14,681 [ERROR] ark_holdings: ARK基金ARKW持仓获取失败: 403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_NEXT_GENERATION_INTERNET_ETF_ARKW_HOLDINGS.csv
+2026-10-28 13:58:15,065 [WARNING] ark_holdings: 请求异常: https://ark-funds.com/wp-content/fundsiteliterature/csv/ARK_AUTONOMOUS_TECH._%26_ROBOTICS_ETF_ARKQ_HOLDINGS.csv，第1次尝试失败: 403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_AUTONOMOUS_TECH._%26_ROBOTICS_ETF_ARKQ_HOLDINGS.csv，2.0s后重试。
+2026-10-28 13:58:17,441 [WARNING] ark_holdings: 请求异常: https://ark-funds.com/wp-content/fundsiteliterature/csv/ARK_AUTONOMOUS_TECH._%26_ROBOTICS_ETF_ARKQ_HOLDINGS.csv，第2次尝试失败: 403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_AUTONOMOUS_TECH._%26_ROBOTICS_ETF_ARKQ_HOLDINGS.csv，4.0s后重试。
+2026-10-28 13:58:21,812 [ERROR] ark_holdings: 请求最终失败（已重试3次）: https://ark-funds.com/wp-content/fundsiteliterature/csv/ARK_AUTONOMOUS_TECH._%26_ROBOTICS_ETF_ARKQ_HOLDINGS.csv，错误: 403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_AUTONOMOUS_TECH._%26_ROBOTICS_ETF_ARKQ_HOLDINGS.csv
+2026-10-28 13:58:21,812 [ERROR] ark_holdings: ARK基金ARKQ持仓获取失败: 403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_AUTONOMOUS_TECH._%26_ROBOTICS_ETF_ARKQ_HOLDINGS.csv
+2026-10-28 13:58:22,175 [WARNING] ark_holdings: 请求异常: https://ark-funds.com/wp-content/fundsiteliterature/csv/ARK_FINTECH_INNOVATION_ETF_ARKF_HOLDINGS.csv，第1次尝试失败: 403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_FINTECH_INNOVATION_ETF_ARKF_HOLDINGS.csv，2.0s后重试。
+2026-10-28 13:58:24,572 [WARNING] ark_holdings: 请求异常: https://ark-funds.com/wp-content/fundsiteliterature/csv/ARK_FINTECH_INNOVATION_ETF_ARKF_HOLDINGS.csv，第2次尝试失败: 403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_FINTECH_INNOVATION_ETF_ARKF_HOLDINGS.csv，4.0s后重试。
+2026-10-28 13:58:29,011 [ERROR] ark_holdings: 请求最终失败（已重试3次）: https://ark-funds.com/wp-content/fundsiteliterature/csv/ARK_FINTECH_INNOVATION_ETF_ARKF_HOLDINGS.csv，错误: 403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_FINTECH_INNOVATION_ETF_ARKF_HOLDINGS.csv
+2026-10-28 13:58:29,011 [ERROR] ark_holdings: ARK基金ARKF持仓获取失败: 403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_FINTECH_INNOVATION_ETF_ARKF_HOLDINGS.csv
+2026-10-28 13:58:29,420 [WARNING] ark_holdings: 请求异常: https://ark-funds.com/wp-content/fundsiteliterature/csv/ARK_GENOMIC_REVOLUTION_ETF_ARKG_HOLDINGS.csv，第1次尝试失败: 403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_GENOMIC_REVOLUTION_ETF_ARKG_HOLDINGS.csv，2.0s后重试。
+2026-10-28 13:58:31,870 [WARNING] ark_holdings: 请求异常: https://ark-funds.com/wp-content/fundsiteliterature/csv/ARK_GENOMIC_REVOLUTION_ETF_ARKG_HOLDINGS.csv，第2次尝试失败: 403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_GENOMIC_REVOLUTION_ETF_ARKG_HOLDINGS.csv，4.0s后重试。
+2026-10-28 13:58:36,245 [ERROR] ark_holdings: 请求最终失败（已重试3次）: https://ark-funds.com/wp-content/fundsiteliterature/csv/ARK_GENOMIC_REVOLUTION_ETF_ARKG_HOLDINGS.csv，错误: 403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_GENOMIC_REVOLUTION_ETF_ARKG_HOLDINGS.csv
+2026-10-28 13:58:36,246 [ERROR] ark_holdings: ARK基金ARKG持仓获取失败: 403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_GENOMIC_REVOLUTION_ETF_ARKG_HOLDINGS.csv
+2026-10-28 13:58:36,624 [WARNING] ark_holdings: 请求异常: https://ark-funds.com/wp-content/fundsiteliterature/csv/ARK_SPACE_EXPLORATION_%26_INNOVATION_ETF_ARKX_HOLDINGS.csv，第1次尝试失败: 403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_SPACE_EXPLORATION_%26_INNOVATION_ETF_ARKX_HOLDINGS.csv，2.0s后重试。
+2026-10-28 13:58:38,986 [WARNING] ark_holdings: 请求异常: https://ark-funds.com/wp-content/fundsiteliterature/csv/ARK_SPACE_EXPLORATION_%26_INNOVATION_ETF_ARKX_HOLDINGS.csv，第2次尝试失败: 403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_SPACE_EXPLORATION_%26_INNOVATION_ETF_ARKX_HOLDINGS.csv，4.0s后重试。
+2026-10-28 13:58:43,392 [ERROR] ark_holdings: 请求最终失败（已重试3次）: https://ark-funds.com/wp-content/fundsiteliterature/csv/ARK_SPACE_EXPLORATION_%26_INNOVATION_ETF_ARKX_HOLDINGS.csv，错误: 403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_SPACE_EXPLORATION_%26_INNOVATION_ETF_ARKX_HOLDINGS.csv
+2026-10-28 13:58:43,392 [ERROR] ark_holdings: ARK基金ARKX持仓获取失败: 403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_SPACE_EXPLORATION_%26_INNOVATION_ETF_ARKX_HOLDINGS.csv
+2026-10-28 13:58:43,393 [ERROR] ark_holdings: 所有ARK基金持仓获取均失败，返回空表。这不代表持仓为空，而是数据获取失败，请检查errors字典并人工核实官方链接。
+2026-10-28 13:58:43,393 [WARNING] main: ARK 持仓数据为空（可能是官方CSV URL或格式已变化），请人工检查 ARKConfig 中配置的URL与解析逻辑。本次运行不会伪造ARK持仓数据。
+2026-10-28 13:58:43,393 [WARNING] sec_13f: SEC13FConfig.target_ciks 为空，未配置任何机构CIK，跳过13F季度参考层获取。请参考README和SEC EDGAR官网(https://www.sec.gov/cgi-bin/browse-edgar) 自行查找并配置CIK。
+2026-10-28 13:58:43,394 [INFO] main: SEC 13F 数据为空：可能是因为未配置 CIK 列表（target_ciks为空），或所有申报获取失败。请参阅 README 配置说明。
+2026-10-28 13:58:43,396 [INFO] main: 已保存: /home/runner/work/quant-research/quant-research/results/us_stock_final_watchlist_merged.csv
+2026-10-28 13:58:43,397 [INFO] main: 运行汇总已保存: /home/runner/work/quant-research/quant-research/results/run_summary_run_20261028T134424Z_e4ac8efb.json
+2026-10-28 13:58:43,397 [INFO] main: ========== 本次运行结束 run_id=run_20261028T134424Z_e4ac8efb status=success finished_at=2026-10-28T13:58:43.396316+00:00 ==========
