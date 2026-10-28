@@ -31,6 +31,9 @@ jobs:
           SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
         run: python -m src.main
 
+      - name: Record CSMOM forward ledger
+        run: python scripts/record_csmom_forward.py
+
       - name: Commit results
         if: always()
         run: |
