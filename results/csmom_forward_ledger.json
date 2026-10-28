@@ -1,0 +1,102 @@
+{
+  "model": "csmom_us_stock",
+  "picks": [
+    {
+      "signal_date": "2026-09-30",
+      "rebalance_date": "2026-10-01",
+      "symbol": "MU",
+      "weight": 0.2,
+      "entry_price": 1053.9140435777158,
+      "entry_price_date": "2026-10-01",
+      "evaluated": false,
+      "exit_signal_date": null,
+      "exit_rebalance_date": null,
+      "exit_price": null,
+      "exit_price_date": null,
+      "exit_price_fallback": false,
+      "ret": null
+    },
+    {
+      "signal_date": "2026-09-30",
+      "rebalance_date": "2026-10-01",
+      "symbol": "AMD",
+      "weight": 0.2,
+      "entry_price": 612.7000122070312,
+      "entry_price_date": "2026-10-01",
+      "evaluated": false,
+      "exit_signal_date": null,
+      "exit_rebalance_date": null,
+      "exit_price": null,
+      "exit_price_date": null,
+      "exit_price_fallback": false,
+      "ret": null
+    },
+    {
+      "signal_date": "2026-09-30",
+      "rebalance_date": "2026-10-01",
+      "symbol": "MSFT",
+      "weight": 0.2,
+      "entry_price": 519.8800048828125,
+      "entry_price_date": "2026-10-01",
+      "evaluated": false,
+      "exit_signal_date": null,
+      "exit_rebalance_date": null,
+      "exit_price": null,
+      "exit_price_date": null,
+      "exit_price_fallback": false,
+      "ret": null
+    },
+    {
+      "signal_date": "2026-09-30",
+      "rebalance_date": "2026-10-01",
+      "symbol": "AAPL",
+      "weight": 0.2,
+      "entry_price": 330.0,
+      "entry_price_date": "2026-10-01",
+      "evaluated": false,
+      "exit_signal_date": null,
+      "exit_rebalance_date": null,
+      "exit_price": null,
+      "exit_price_date": null,
+      "exit_price_fallback": false,
+      "ret": null
+    },
+    {
+      "signal_date": "2026-09-30",
+      "rebalance_date": "2026-10-01",
+      "symbol": "NVDA",
+      "weight": 0.2,
+      "entry_price": 229.97999572753906,
+      "entry_price_date": "2026-10-01",
+      "evaluated": false,
+      "exit_signal_date": null,
+      "exit_rebalance_date": null,
+      "exit_price": null,
+      "exit_price_date": null,
+      "exit_price_fallback": false,
+      "ret": null
+    }
+  ],
+  "skipped": [],
+  "summary": {
+    "latest_signal_date": "2026-09-30",
+    "latest_rebalance_date": "2026-10-01",
+    "latest_symbols": [
+      "MU",
+      "AMD",
+      "MSFT",
+      "AAPL",
+      "NVDA"
+    ],
+    "n_picks_total": 5,
+    "n_pending": 5,
+    "n_evaluated": 0,
+    "wins": 0,
+    "win_rate": null,
+    "avg_ret": null,
+    "insufficient": true,
+    "return_basis": "open-to-open price return, costs excluded",
+    "holding": "one monthly rebalance cycle (signal month-end, executed next trading day open)"
+  },
+  "last_updated": "2026-10-28"
+}
