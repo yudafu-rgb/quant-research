@@ -26,6 +26,9 @@ table{border-collapse:collapse;width:100%;margin:12px 0} th,td{border:1px solid 
 <h2>V5币圈纸面（24池，$100,000起，纸面记录，非实盘）</h2>
 <div id="v5"></div>
 
+<h2>V5历史（永久记录，每轮追加，最新在前）</h2>
+<div id="v5history"></div>
+
 <h2>推送历史（最近 12 轮）</h2>
 <div id="history"></div>
 
@@ -95,6 +98,15 @@ async function getText(url){
     document.getElementById("v5").innerHTML = html;
   }catch(e){
     document.getElementById("v5").innerHTML = `<p class="note">V5 快照尚未上传到仓库，待 V5 定时任务上传后这里自动显示。</p>`;
+  }
+  try{
+    const vtxt = await getText(RAW + "results/v5_history.jsonl");
+    const vlines = vtxt.trim().split("\n").filter(Boolean).map(l=>JSON.parse(l));
+    let vhist = `<table><tr><th>已完成日线</th><th>模式</th><th>总值</th><th>盈亏</th><th>持仓</th></tr>` +
+      vlines.slice(-12).reverse().map(d=>`<tr><td>${esc(d.last_close_date||"")}</td><td>${esc(d.mode||"")}</td><td>${money(d.total)}</td><td>${money(d.pnl||0)}</td><td>${esc((d.holdings||[]).map(h=>h.coin||h.ticker||"").join("、")||"空仓")}</td></tr>`).join("") + `</table>`;
+    document.getElementById("v5history").innerHTML = vhist;
+  }catch(e){
+    document.getElementById("v5history").innerHTML = `<p class="note">V5 历史尚未上传（从下一轮 V5 任务起自动追加上传），最新快照见上一栏。</p>`;
   }
 })();
 </script>
