@@ -1,5 +1,5 @@
 {
- "mode": "rebalance",
+ "mode": "valuation",
  "last_close_date": "2026-10-28",
  "cash": 100000.0,
  "holdings_value": 0.0,
@@ -249,10 +249,7 @@
    "trend_ok": true
   }
  ],
- "pending_entries_before": [],
- "pending_exits_before": [],
- "trades_today": [],
- "new_pending_entries": [
+ "pending_entries_before": [
   {
    "coin": "PEPE",
    "breakout_price": 5.01e-06,
@@ -264,7 +261,201 @@
    "mom126": 0.3435209122782166
   }
  ],
+ "pending_exits_before": [],
+ "trades_today": [],
+ "new_pending_entries": [],
  "new_pending_exits": [],
  "no_new_close": false,
- "pending_entries_detail": []
+ "watchlist_trend_ok": [
+  {
+   "coin": "ZEC",
+   "close": 1310.64,
+   "mom126": 2.1485334038004185,
+   "ma200": 725.06645,
+   "prior_max": 1314.13,
+   "prior_min": 1126.08,
+   "breakout": false,
+   "trend_ok": true
+  },
+  {
+   "coin": "QNT",
+   "close": 201.52,
+   "mom126": 1.8682038144036435,
+   "ma200": 93.57639999999999,
+   "prior_max": 249.48,
+   "prior_min": 178.04,
+   "breakout": false,
+   "trend_ok": true
+  },
+  {
+   "coin": "ENA",
+   "close": 0.2112,
+   "mom126": 1.470175438596491,
+   "ma200": 0.1281785,
+   "prior_max": 0.2399,
+   "prior_min": 0.185,
+   "breakout": false,
+   "trend_ok": true
+  },
+  {
+   "coin": "UNI",
+   "close": 7.212,
+   "mom126": 1.4656410256410255,
+   "ma200": 4.655045,
+   "prior_max": 7.739,
+   "prior_min": 6.873,
+   "breakout": false,
+   "trend_ok": true
+  },
+  {
+   "coin": "NEAR",
+   "close": 4.745,
+   "mom126": 1.3976755937342094,
+   "ma200": 2.479995,
+   "prior_max": 5.876,
+   "prior_min": 4.483,
+   "breakout": false,
+   "trend_ok": true
+  },
+  {
+   "coin": "PEPE",
+   "close": 5.01e-06,
+   "mom126": 0.9647058823529411,
+   "ma200": 3.4631e-06,
+   "prior_max": 4.66e-06,
+   "prior_min": 3.79e-06,
+   "breakout": true,
+   "trend_ok": true
+  },
+  {
+   "coin": "AAVE",
+   "close": 134.16,
+   "mom126": 0.7776599973499403,
+   "ma200": 107.6473,
+   "prior_max": 171.84,
+   "prior_min": 132.72,
+   "breakout": false,
+   "trend_ok": true
+  },
+  {
+   "coin": "LINK",
+   "close": 11.812,
+   "mom126": 0.5923429495820975,
+   "ma200": 9.989315,
+   "prior_max": 13.348,
+   "prior_min": 11.403,
+   "breakout": false,
+   "trend_ok": true
+  },
+  {
+   "coin": "BCH",
+   "close": 288.4,
+   "mom126": 0.5139107611548555,
+   "ma200": 286.83099999999996,
+   "prior_max": 294.7,
+   "prior_min": 265.4,
+   "breakout": false,
+   "trend_ok": true
+  },
+  {
+   "coin": "SOL",
+   "close": 102.47,
+   "mom126": 0.5049199588779556,
+   "ma200": 88.67139999999999,
+   "prior_max": 111.35,
+   "prior_min": 100.95,
+   "breakout": false,
+   "trend_ok": true
+  },
+  {
+   "coin": "ETH",
+   "close": 2360.29,
+   "mom126": 0.45471522517580776,
+   "ma200": 2160.2282999999998,
+   "prior_max": 2537.01,
+   "prior_min": 2324.52,
+   "breakout": false,
+   "trend_ok": true
+  },
+  {
+   "coin": "LTC",
+   "close": 59.26,
+   "mom126": 0.43939761962594104,
+   "ma200": 52.17585,
+   "prior_max": 64.65,
+   "prior_min": 56.5,
+   "breakout": false,
+   "trend_ok": true
+  },
+  {
+   "coin": "AVAX",
+   "close": 9.015,
+   "mom126": 0.3985417313062365,
+   "ma200": 8.177380000000001,
+   "prior_max": 10.967,
+   "prior_min": 8.909,
+   "breakout": false,
+   "trend_ok": true
+  },
+  {
+   "coin": "SUI",
+   "close": 0.945,
+   "mom126": 0.3795620437956202,
+   "ma200": 0.8661815,
+   "prior_max": 1.1287,
+   "prior_min": 0.9157,
+   "breakout": false,
+   "trend_ok": true
+  },
+  {
+   "coin": "BNB",
+   "close": 758.74,
+   "mom126": 0.3435209122782166,
+   "ma200": 653.8000499999999,
+   "prior_max": 754.67,
+   "prior_min": 717.66,
+   "breakout": true,
+   "trend_ok": true
+  },
+  {
+   "coin": "BTC",
+   "close": 81341.7,
+   "mom126": 0.3321263544734778,
+   "ma200": 73110.25705,
+   "prior_max": 84070.75,
+   "prior_min": 80131.63,
+   "breakout": false,
+   "trend_ok": true
+  },
+  {
+   "coin": "XRP",
+   "close": 1.3251,
+   "mom126": 0.2336840145237873,
+   "ma200": 1.2790949999999999,
+   "prior_max": 1.4104,
+   "prior_min": 1.2942,
+   "breakout": false,
+   "trend_ok": true
+  },
+  {
+   "coin": "TAO",
+   "close": 255.52013449611417,
+   "mom126": 0.15949664236018757,
+   "ma200": 243.11256409283206,
+   "prior_max": 295.169702834959,
+   "prior_min": 250.93957783650094,
+   "breakout": false,
+   "trend_ok": true
+  },
+  {
+   "coin": "TRX",
+   "close": 0.33,
+   "mom126": 0.0141364474492931,
+   "ma200": 0.32903055000000003,
+   "prior_max": 0.3357,
+   "prior_min": 0.3282,
+   "breakout": false,
+   "trend_ok": true
+  }
+ ]
 }
