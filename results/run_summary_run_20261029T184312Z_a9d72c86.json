@@ -1,0 +1,56 @@
+{
+  "run_id": "run_20261029T184312Z_a9d72c86",
+  "started_at": "2026-10-29T18:43:12.968341+00:00",
+  "finished_at": "2026-10-29T18:52:35.493895+00:00",
+  "status": "success",
+  "error_message": null,
+  "details": {
+    "crypto": {
+      "market": "crypto",
+      "errors": {},
+      "num_assets_processed": 33,
+      "num_assets_failed": 0
+    },
+    "us_stock": {
+      "market": "us_stock",
+      "errors": {},
+      "num_assets_processed": 20,
+      "num_assets_failed": 0,
+      "csmom": {
+        "initial_capital": 100000.0,
+        "final_equity": 834333.1009766809,
+        "total_return_pct": 734.33,
+        "cagr_pct_365d": 36.46,
+        "annual_pct_trading_days_252d": 36.55,
+        "max_drawdown_pct": 28.65,
+        "annualized_volatility_pct": 27.61,
+        "sharpe_ratio_cagr_based": 1.248,
+        "sharpe_ratio_mean_based": 1.195,
+        "risk_free_rate_annual": 0.02,
+        "num_rebalances": 75,
+        "total_trading_costs": 21450.48,
+        "turnover_sum": 41.005,
+        "avg_turnover_per_rebalance": 0.547,
+        "start_date": "2020-01-02",
+        "end_date": "2026-10-29",
+        "num_bars": 1716,
+        "lookback_days": 126,
+        "top_n": 5,
+        "max_position_pct": 0.25,
+        "fee_pct": 0.001,
+        "slippage_pct": 0.0005,
+        "allow_short": false,
+        "note": "组合级统一账户、月末信号次日开盘成交、只做多。日常流水线资产池为当前市值前 N，历史回测存在幸存者偏差（见模块 docstring）；无偏时点版本见 README 横截面动量一节。"
+      },
+      "ark_errors": {
+        "ARKK": "403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_INNOVATION_ETF_ARKK_HOLDINGS.csv",
+        "ARKW": "403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_NEXT_GENERATION_INTERNET_ETF_ARKW_HOLDINGS.csv",
+        "ARKQ": "403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_AUTONOMOUS_TECH._%26_ROBOTICS_ETF_ARKQ_HOLDINGS.csv",
+        "ARKF": "403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_FINTECH_INNOVATION_ETF_ARKF_HOLDINGS.csv",
+        "ARKG": "403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_GENOMIC_REVOLUTION_ETF_ARKG_HOLDINGS.csv",
+        "ARKX": "403 Client Error: Forbidden for url: https://www.ark-funds.com/wp-content/fundsiteliterature/csv/ARK_SPACE_EXPLORATION_%26_INNOVATION_ETF_ARKX_HOLDINGS.csv"
+      },
+      "sec_13f_errors": {}
+    }
+  }
+}
