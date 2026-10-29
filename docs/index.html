@@ -9,6 +9,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei
 h1{font-size:22px} h2{font-size:18px;margin-top:32px;border-bottom:1px solid #ddd;padding-bottom:6px} h3{font-size:16px;margin-top:20px}
 table{border-collapse:collapse;width:100%;margin:12px 0} th,td{border:1px solid #ddd;padding:6px 8px;text-align:left;font-size:14px} th{background:#f2f2f2}
 .note{color:#555;font-size:13px} .pos{color:#0a7a42} .neg{color:#b42318} .err{color:#b42318}
+.scroll{overflow-x:auto} .scroll table{min-width:640px}
 </style>
 </head>
 <body>
@@ -22,6 +23,9 @@ table{border-collapse:collapse;width:100%;margin:12px 0} th,td{border:1px solid 
 
 <h2>纸面账户（最新快照）</h2>
 <div id="accounts"></div>
+
+<h2>币圈持仓明细（分币盈亏，建仓 2026-10-26 收盘）</h2>
+<div id="cryptodetail"></div>
 
 <h2>V5币圈纸面（24池，$100,000起，纸面记录，非实盘）</h2>
 <div id="v5"></div>
@@ -88,8 +92,23 @@ async function getText(url){
     let html = `<p>快照时间（多伦多）：${esc(a.run_toronto||"")} · 每模型各 $100,000 独立账户</p><table><tr><th>模型</th><th>总值</th><th>盈亏</th><th>现金</th><th>持仓市值</th></tr>` +
       Object.entries(a.accounts||{}).map(([k,v])=>`<tr><td>${esc(k)}</td><td>${money(v.total)}</td><td class="${v.pnl>=0?"pos":"neg"}">${v.pnl>=0?"+":""}${money(v.pnl)} (${(v.pnl_pct*100).toFixed(2)}%)</td><td>${money(v.cash)}</td><td>${money(v.holdings_value)}</td></tr>`).join("") + `</table>`;
     document.getElementById("accounts").innerHTML = html;
+    const fmtPrice = x => "$" + Number(x).toLocaleString("en-US",{minimumFractionDigits: Math.abs(x)<10?4:2, maximumFractionDigits: Math.abs(x)<10?4:2});
+    let det = `<p class="note">现价为最新已完成日线收盘价；浮盈亏为价格变动，未扣未来卖出成本；每模型合计浮盈减去建仓成本即账户盈亏。</p>`;
+    for(const k of ["crypto_RP","crypto_TSMOM","crypto_CSMOM"]){
+      const v = (a.accounts||{})[k]; if(!v || !v.latest_close) continue;
+      let rows = "", tot = 0, gain = 0;
+      for(const [t, sh] of Object.entries(v.shares||{})){
+        const ep = v.entry_prices ? v.entry_prices[t] : null; const px = v.latest_close[t];
+        if(ep == null || px == null) continue;
+        const val = sh*px, g = sh*(px-ep); tot += val; gain += g;
+        rows += `<tr><td>${esc(t)}</td><td>${Number(sh).toFixed(4)}</td><td>${fmtPrice(ep)}</td><td>${fmtPrice(px)}</td><td>${money(val)}</td><td class="${g>=0?"pos":"neg"}">${g>=0?"+":""}${money(g)}</td></tr>`;
+      }
+      if(rows) det += `<h3>${esc(k)} · 现值 ${money(tot)} · 合计浮盈 ${gain>=0?"+":""}${money(gain)}</h3><div class="scroll"><table><tr><th>币</th><th>数量</th><th>建仓价</th><th>现价</th><th>现值</th><th>浮盈亏</th></tr>${rows}</table></div>`;
+    }
+    document.getElementById("cryptodetail").innerHTML = det;
   }catch(e){
     document.getElementById("accounts").innerHTML = `<p class="note">纸面账户总值快照尚未随推送上传（从下一轮推送起自动上传），总值见聊天推送。</p>`;
+    document.getElementById("cryptodetail").innerHTML = `<p class="note">分币明细随账户快照一起上传后显示。</p>`;
   }
   try{
     const v = await getJSON(RAW + "results/v5_crypto_latest.json");
