@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YouTube BTC/ETH观点简报 · 网页版</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;max-width:980px;margin:0 auto;padding:24px 16px;color:#222;line-height:1.6}
+h1{font-size:22px} h2{font-size:18px;margin-top:32px;border-bottom:1px solid #ddd;padding-bottom:6px} h3{font-size:16px;margin-top:20px}
+table{border-collapse:collapse;width:100%;margin:12px 0} th,td{border:1px solid #ddd;padding:6px 8px;text-align:left;font-size:14px} th{background:#f2f2f2}
+.note{color:#555;font-size:13px} .err{color:#b42318}
+.scroll{overflow-x:auto} .scroll table{min-width:640px}
+a{color:#0b5fff}
+</style>
+</head>
+<body>
+<h1>YouTube BTC/ETH观点简报 · 网页版</h1>
+<p class="note">只读网页版：聊天推送仍由 Muse 定时任务在每天多伦多时间 9:00 和 21:00 运行，本页只展示简报内容，不交易、不下单。<br>
+数据来源：<code>results/youtube_briefing_history.jsonl</code>（Muse 每次推送后上传）。本页打开时从仓库实时读取，刷新页面即更新。<br>
+以下均为 YouTube 视频作者观点整理，仅供资讯参考，不构成买卖建议。历史准确度只写可核实到日期和价位的记录，无法核实的写“准确度无法核实”。</p>
+<p id="status" class="note">正在读取仓库数据……</p>
+
+<h2>最新一期</h2>
+<div id="latest"></div>
+
+<h2>历史简报（最近 12 期）</h2>
+<div id="history"></div>
+
+<h2>追踪频道名单（共 45 个，2026-11-02 用户确认）</h2>
+<p class="note">新增 30 个全部采用；示范 20 个中保留 15 个，筛掉 5 个（Crypto Banter、宝二爷、孙宇晨/行业播客精选、Web3洞察/链闻精选、深度加密实验室），筛掉原因见定时任务说明，不再追踪。</p>
+<div class="scroll"><table>
+<tr><th>分类</th><th>频道</th></tr>
+<tr><td>英语核心（新增）</td><td>Unchained、Natalie Brunell / Coin Stories、99Bitcoins、CryptosRUs、Thinking Crypto、Crypto Capital Venture、Brian Jung、Crypto Jebb、Crypto World、Bitcoin Magazine</td></tr>
+<tr><td>英语核心（示范保留）</td><td>Coin Bureau、Altcoin Daily、Benjamin Cowen、Bankless</td></tr>
+<tr><td>海外新增（新增）</td><td>Michaël van de Poppe、Crypto Rover、The Moon、Ivan on Tech、MMCrypto、Boxmining、Altcoin Buzz、Nugget's News、Finematics、Crypto Québec</td></tr>
+<tr><td>海外新增（示范保留）</td><td>Lark Davis、Alessio Rastani、InvestAnswers、DataDash、Paul Barron Network</td></tr>
+<tr><td>中文精选（新增）</td><td>K线回忆录、比特币欧阳、加密仲达、区块链Coco、「鳄鱼」比特币实盘战神、Btc喬喬、提阿非羅大人 TiaBTC、加密1988、卫央Neo、區塊鏈日報 Blockchain Daily</td></tr>
+<tr><td>中文精选（示范保留）</td><td>区块先生、潘E的区块链视角、宇浩聊区块链、加密狗、链上研究院、币圈老雅各</td></tr>
+</table></div>
+
+<p class="note">返回主看板：<a href="./index.html">分开前三模型每日推送 + V5币圈纸面 · GitHub看板</a></p>
+
+<script>
+const RAW = "https://raw.githubusercontent.com/yudafu-rgb/quant-research/main/";
+const esc = s => String(s ?? "").replace(/&/g,"&amp;").replace(/</g,"&lt;");
+async function getText(url){ const r = await fetch(url); if(!r.ok) throw new Error(r.status); return r.text(); }
+(async function(){
+  try{
+    const txt = await getText(RAW + "results/youtube_briefing_history.jsonl");
+    const lines = txt.trim().split("\n").filter(Boolean).map(l=>JSON.parse(l));
+    const last = lines[lines.length-1];
+    document.getElementById("status").textContent = "已读取 " + lines.length + " 期简报记录，最新一期：" + last.run_toronto + "（多伦多）。";
+    let html = "<p>推送时间（多伦多）：" + esc(last.run_toronto) + "</p>";
+    if(last.format_note) html += "<p class=\"note\">" + esc(last.format_note) + "</p>";
+    html += "<h3>BTC</h3><p>" + esc(last.btc_summary||"") + "</p>";
+    html += "<h3>ETH</h3><p>" + esc(last.eth_summary||"") + "</p>";
+    if(last.consensus) html += "<p><b>共识：</b>" + esc(last.consensus) + "</p>";
+    if(last.divergence) html += "<p><b>分歧：</b>" + esc(last.divergence) + "</p>";
+    if(last.table_rows && last.table_rows.length){
+      html += "<div class=\"scroll\"><table><tr><th>分类</th><th>频道名称</th><th>核心关注点 / 风格定位</th><th>最新核心观点</th></tr>" +
+        last.table_rows.map(r=>"<tr><td>"+esc(r.category)+"</td><td>"+esc(r.channel)+"</td><td>"+esc(r.focus)+"</td><td>"+esc(r.view)+"</td></tr>").join("") + "</table></div>";
+    }
+    if(last.sources && last.sources.length){
+      html += "<h3>主要视频来源</h3><ul>" + last.sources.map(s=>"<li><a href=\""+esc(s.url)+"\" target=\"_blank\" rel=\"noopener\">"+esc(s.title)+"</a></li>").join("") + "</ul>";
+    }
+    document.getElementById("latest").innerHTML = html;
+    let hist = "<table><tr><th>推送时间（多伦多）</th><th>BTC 速览</th><th>ETH 速览</th></tr>" +
+      lines.slice(-12).reverse().map(d=>"<tr><td>"+esc(d.run_toronto)+"</td><td>"+esc((d.btc_summary||"").slice(0,120))+"</td><td>"+esc((d.eth_summary||"").slice(0,120))+"</td></tr>").join("") + "</table>";
+    document.getElementById("history").innerHTML = hist;
+  }catch(e){
+    document.getElementById("status").innerHTML = "<span class=\"err\">简报历史读取失败（"+esc(e.message)+"），请稍后刷新。</span>";
+    document.getElementById("latest").innerHTML = "<p class=\"note\">暂无已上传的简报记录，下一期推送后会自动显示。</p>";
+  }
+})();
+</script>
+</body>
+</html>
