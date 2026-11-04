@@ -1,3782 +1,3782 @@
 [
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AAPL",
     "metric_name": "total_return_pct",
-    "metric_value": 4.908153537029203,
+    "metric_value": 4.908111249897229,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AAPL",
     "metric_name": "cagr_pct",
-    "metric_value": 0.7031413772110362,
+    "metric_value": 0.702570509565259,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AAPL",
     "metric_name": "max_drawdown_pct",
-    "metric_value": 4.5853287728030585,
+    "metric_value": 4.585338530349198,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AAPL",
     "metric_name": "num_trades",
     "metric_value": 88,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AAPL",
     "metric_name": "num_closed_trades",
     "metric_value": 88,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AAPL",
     "metric_name": "num_open_trades",
     "metric_value": 0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AAPL",
     "metric_name": "win_rate_pct",
     "metric_value": 48.86363636363637,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AAPL",
     "metric_name": "avg_win",
-    "metric_value": 66.17297901447611,
+    "metric_value": 66.17288338458015,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AAPL",
     "metric_name": "avg_loss",
-    "metric_value": -52.3249498648791,
+    "metric_value": -52.32495245660503,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AAPL",
     "metric_name": "avg_win_loss_ratio",
-    "metric_value": 1.2646544179279169,
+    "metric_value": 1.264652527672332,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AAPL",
     "metric_name": "expectancy_per_trade",
-    "metric_value": 5.577447201169465,
+    "metric_value": 5.577399147610458,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AAPL",
     "metric_name": "annualized_volatility_pct",
-    "metric_value": 2.8071902864778133,
+    "metric_value": 2.8055570813302797,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AAPL",
     "metric_name": "sharpe_ratio",
-    "metric_value": 0.25047870128293614,
+    "metric_value": 0.2504210355371308,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AAPL",
     "metric_name": "risk_free_rate_annual",
     "metric_value": 0.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AAPL",
     "metric_name": "buy_and_hold_total_return_pct",
-    "metric_value": 374.61805427185243,
+    "metric_value": 394.49681566672626,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AAPL",
     "metric_name": "excess_return_vs_buy_and_hold_pct",
-    "metric_value": -369.70990073482324,
+    "metric_value": -389.58870441682905,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AAPL",
     "metric_name": "total_trading_costs",
     "metric_value": 0.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AAPL",
     "metric_name": "initial_capital",
     "metric_value": 10000.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AAPL",
     "metric_name": "final_equity",
-    "metric_value": 10490.815353702921,
+    "metric_value": 10490.811124989723,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AAPL",
     "metric_name": "num_bars",
-    "metric_value": 1718,
+    "metric_value": 1720,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AAPL",
     "metric_name": "open_position_at_end",
     "metric_value": 0.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "NVDA",
     "metric_name": "total_return_pct",
-    "metric_value": 4.635238210065862,
+    "metric_value": 4.63520138591107,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "NVDA",
     "metric_name": "cagr_pct",
-    "metric_value": 0.664788955924922,
+    "metric_value": 0.6642497586527796,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "NVDA",
     "metric_name": "max_drawdown_pct",
-    "metric_value": 5.682415812385867,
+    "metric_value": 5.682429176917792,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "NVDA",
     "metric_name": "num_trades",
     "metric_value": 90,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "NVDA",
     "metric_name": "num_closed_trades",
     "metric_value": 90,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "NVDA",
     "metric_name": "num_open_trades",
     "metric_value": 0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "NVDA",
     "metric_name": "win_rate_pct",
     "metric_value": 36.666666666666664,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "NVDA",
     "metric_name": "avg_win",
-    "metric_value": 98.53368361991681,
+    "metric_value": 98.53360980144397,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "NVDA",
     "metric_name": "avg_loss",
-    "metric_value": -48.913819972818935,
+    "metric_value": -48.9138418395886,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "NVDA",
     "metric_name": "avg_win_loss_ratio",
-    "metric_value": 2.0144344415273903,
+    "metric_value": 2.014432031828165,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "NVDA",
     "metric_name": "expectancy_per_trade",
-    "metric_value": 5.150264677850838,
+    "metric_value": 5.150223762123347,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "NVDA",
     "metric_name": "annualized_volatility_pct",
-    "metric_value": 2.932911348318351,
+    "metric_value": 2.9312035852507963,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "NVDA",
     "metric_name": "sharpe_ratio",
-    "metric_value": 0.2266652063336634,
+    "metric_value": 0.2266133140649614,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "NVDA",
     "metric_name": "risk_free_rate_annual",
     "metric_value": 0.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "NVDA",
     "metric_name": "buy_and_hold_total_return_pct",
-    "metric_value": 3308.377612085236,
+    "metric_value": 3312.8468410340865,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "NVDA",
     "metric_name": "excess_return_vs_buy_and_hold_pct",
-    "metric_value": -3303.74237387517,
+    "metric_value": -3308.2116396481756,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "NVDA",
     "metric_name": "total_trading_costs",
     "metric_value": 0.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "NVDA",
     "metric_name": "initial_capital",
     "metric_value": 10000.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "NVDA",
     "metric_name": "final_equity",
-    "metric_value": 10463.523821006585,
+    "metric_value": 10463.520138591106,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "NVDA",
     "metric_name": "num_bars",
-    "metric_value": 1718,
+    "metric_value": 1720,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "NVDA",
     "metric_name": "open_position_at_end",
     "metric_value": 0.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "MSFT",
     "metric_name": "total_return_pct",
-    "metric_value": -4.715778677946469,
+    "metric_value": -4.715810892586325,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "MSFT",
     "metric_name": "cagr_pct",
-    "metric_value": -0.7039080948975207,
+    "metric_value": -0.7033514094960114,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "MSFT",
     "metric_name": "max_drawdown_pct",
-    "metric_value": 6.730111583641307,
+    "metric_value": 6.730140330088669,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "MSFT",
     "metric_name": "num_trades",
     "metric_value": 71,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "MSFT",
     "metric_name": "num_closed_trades",
     "metric_value": 71,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "MSFT",
     "metric_name": "num_open_trades",
     "metric_value": 0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "MSFT",
     "metric_name": "win_rate_pct",
     "metric_value": 29.577464788732392,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "MSFT",
     "metric_name": "avg_win",
-    "metric_value": 74.11138648047468,
+    "metric_value": 74.11142263848092,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "MSFT",
     "metric_name": "avg_loss",
-    "metric_value": -40.558339677692395,
+    "metric_value": -40.55841929333471,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "MSFT",
     "metric_name": "avg_win_loss_ratio",
-    "metric_value": 1.8272786082818102,
+    "metric_value": 1.8272759128623202,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "MSFT",
     "metric_name": "expectancy_per_trade",
-    "metric_value": -6.641941799924664,
+    "metric_value": -6.641987172656849,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "MSFT",
     "metric_name": "annualized_volatility_pct",
-    "metric_value": 2.24555168126294,
+    "metric_value": 2.2442465150022994,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "MSFT",
     "metric_name": "sharpe_ratio",
-    "metric_value": -0.3134677775492701,
+    "metric_value": -0.31340202816146107,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "MSFT",
     "metric_name": "risk_free_rate_annual",
     "metric_value": 0.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "MSFT",
     "metric_name": "buy_and_hold_total_return_pct",
-    "metric_value": 238.51279181893435,
+    "metric_value": 272.7665125123623,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "MSFT",
     "metric_name": "excess_return_vs_buy_and_hold_pct",
-    "metric_value": -243.22857049688082,
+    "metric_value": -277.4823234049486,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "MSFT",
     "metric_name": "total_trading_costs",
     "metric_value": 0.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "MSFT",
     "metric_name": "initial_capital",
     "metric_value": 10000.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "MSFT",
     "metric_name": "final_equity",
-    "metric_value": 9528.422132205353,
+    "metric_value": 9528.418910741368,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "MSFT",
     "metric_name": "num_bars",
-    "metric_value": 1718,
+    "metric_value": 1720,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "MSFT",
     "metric_name": "open_position_at_end",
     "metric_value": 0.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "GOOGL",
     "metric_name": "total_return_pct",
-    "metric_value": -4.291734117076828,
+    "metric_value": -3.7303230112614605,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "GOOGL",
     "metric_name": "cagr_pct",
-    "metric_value": -0.6394099279782517,
+    "metric_value": -0.5539496438822566,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "GOOGL",
     "metric_name": "max_drawdown_pct",
-    "metric_value": 9.212080423599033,
+    "metric_value": 9.212084093059609,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "GOOGL",
     "metric_name": "num_trades",
     "metric_value": 68,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "GOOGL",
     "metric_name": "num_closed_trades",
     "metric_value": 68,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "GOOGL",
     "metric_name": "num_open_trades",
     "metric_value": 0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "GOOGL",
     "metric_name": "win_rate_pct",
-    "metric_value": 29.411764705882355,
+    "metric_value": 30.88235294117647,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "GOOGL",
     "metric_name": "avg_win",
-    "metric_value": 74.59013937588063,
+    "metric_value": 73.183191967097,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "GOOGL",
     "metric_name": "avg_loss",
-    "metric_value": -40.020337483860224,
+    "metric_value": -40.63573047734434,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "GOOGL",
     "metric_name": "avg_win_loss_ratio",
-    "metric_value": 1.8638058563589583,
+    "metric_value": 1.8009567222594625,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "GOOGL",
     "metric_name": "expectancy_per_trade",
-    "metric_value": -6.311373701583508,
+    "metric_value": -5.485769134208037,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "GOOGL",
     "metric_name": "annualized_volatility_pct",
-    "metric_value": 2.4637865578543146,
+    "metric_value": 2.4708259023309185,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "GOOGL",
     "metric_name": "sharpe_ratio",
-    "metric_value": -0.2595232634660963,
+    "metric_value": -0.2241961456530279,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "GOOGL",
     "metric_name": "risk_free_rate_annual",
     "metric_value": 0.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "GOOGL",
     "metric_name": "buy_and_hold_total_return_pct",
-    "metric_value": 317.7435079807311,
+    "metric_value": 336.01115114216765,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "GOOGL",
     "metric_name": "excess_return_vs_buy_and_hold_pct",
-    "metric_value": -322.03524209780795,
+    "metric_value": -339.7414741534291,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "GOOGL",
     "metric_name": "total_trading_costs",
     "metric_value": 0.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "GOOGL",
     "metric_name": "initial_capital",
     "metric_value": 10000.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "GOOGL",
     "metric_name": "final_equity",
-    "metric_value": 9570.826588292317,
+    "metric_value": 9626.967698873854,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "GOOGL",
     "metric_name": "num_bars",
-    "metric_value": 1718,
+    "metric_value": 1720,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "GOOGL",
     "metric_name": "open_position_at_end",
     "metric_value": 0.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "GOOG",
     "metric_name": "total_return_pct",
-    "metric_value": -2.956406277817003,
+    "metric_value": -2.4147790806902436,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "GOOG",
     "metric_name": "cagr_pct",
-    "metric_value": -0.4378850040784421,
+    "metric_value": -0.3565329266416839,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "GOOG",
     "metric_name": "max_drawdown_pct",
-    "metric_value": 8.723672746950797,
+    "metric_value": 8.723679543948256,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "GOOG",
     "metric_name": "num_trades",
     "metric_value": 67,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "GOOG",
     "metric_name": "num_closed_trades",
     "metric_value": 67,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "GOOG",
     "metric_name": "num_open_trades",
     "metric_value": 0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "GOOG",
     "metric_name": "win_rate_pct",
-    "metric_value": 28.35820895522388,
+    "metric_value": 29.850746268656714,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "GOOG",
     "metric_name": "avg_win",
-    "metric_value": 83.5380296649992,
+    "metric_value": 81.61085777565496,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "GOOG",
     "metric_name": "avg_loss",
-    "metric_value": -39.22631648784762,
+    "metric_value": -39.865852416640905,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "GOOG",
     "metric_name": "avg_win_loss_ratio",
-    "metric_value": 2.129642473334947,
+    "metric_value": 2.047136906110372,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "GOOG",
     "metric_name": "expectancy_per_trade",
-    "metric_value": -4.412546683308969,
+    "metric_value": -3.6041478816272163,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "GOOG",
     "metric_name": "annualized_volatility_pct",
-    "metric_value": 2.4748980820075897,
+    "metric_value": 2.4821336622098995,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "GOOG",
     "metric_name": "sharpe_ratio",
-    "metric_value": -0.17693051979063243,
+    "metric_value": -0.14363969679386832,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "GOOG",
     "metric_name": "risk_free_rate_annual",
     "metric_value": 0.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "GOOG",
     "metric_name": "buy_and_hold_total_return_pct",
-    "metric_value": 318.43172848137107,
+    "metric_value": 335.58796141254777,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "GOOG",
     "metric_name": "excess_return_vs_buy_and_hold_pct",
-    "metric_value": -321.38813475918806,
+    "metric_value": -338.00274049323804,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "GOOG",
     "metric_name": "total_trading_costs",
     "metric_value": 0.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "GOOG",
     "metric_name": "initial_capital",
     "metric_value": 10000.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "GOOG",
     "metric_name": "final_equity",
-    "metric_value": 9704.3593722183,
+    "metric_value": 9758.522091930976,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "GOOG",
     "metric_name": "num_bars",
-    "metric_value": 1718,
+    "metric_value": 1720,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "GOOG",
     "metric_name": "open_position_at_end",
     "metric_value": 0.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AMZN",
     "metric_name": "total_return_pct",
     "metric_value": -4.625174046750457,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AMZN",
     "metric_name": "cagr_pct",
-    "metric_value": -0.6901063617285486,
+    "metric_value": -0.6895557440042777,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AMZN",
     "metric_name": "max_drawdown_pct",
     "metric_value": 8.57584212277573,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AMZN",
     "metric_name": "num_trades",
     "metric_value": 48,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AMZN",
     "metric_name": "num_closed_trades",
     "metric_value": 48,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AMZN",
     "metric_name": "num_open_trades",
     "metric_value": 0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AMZN",
     "metric_name": "win_rate_pct",
     "metric_value": 35.41666666666667,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AMZN",
     "metric_name": "avg_win",
     "metric_value": 73.44411914615905,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AMZN",
     "metric_name": "avg_loss",
     "metric_value": -55.19572355354031,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AMZN",
     "metric_name": "avg_win_loss_ratio",
     "metric_value": 1.3306124898411313,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AMZN",
     "metric_name": "expectancy_per_trade",
     "metric_value": -9.635779264063453,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AMZN",
     "metric_name": "annualized_volatility_pct",
-    "metric_value": 2.1258370867417957,
+    "metric_value": 2.1245998267824016,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AMZN",
     "metric_name": "sharpe_ratio",
-    "metric_value": -0.3246280564171797,
+    "metric_value": -0.32455794042333835,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AMZN",
     "metric_name": "risk_free_rate_annual",
     "metric_value": 0.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AMZN",
     "metric_name": "buy_and_hold_total_return_pct",
-    "metric_value": 162.00533854166665,
+    "metric_value": 185.71904296875,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AMZN",
     "metric_name": "excess_return_vs_buy_and_hold_pct",
-    "metric_value": -166.6305125884171,
+    "metric_value": -190.34421701550045,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AMZN",
     "metric_name": "total_trading_costs",
     "metric_value": 0.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AMZN",
     "metric_name": "initial_capital",
     "metric_value": 10000.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AMZN",
     "metric_name": "final_equity",
     "metric_value": 9537.482595324955,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AMZN",
     "metric_name": "num_bars",
-    "metric_value": 1718,
+    "metric_value": 1720,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AMZN",
     "metric_name": "open_position_at_end",
     "metric_value": 0.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
-    "market": "us_stock",
-    "symbol": "TSLA",
-    "metric_name": "total_return_pct",
-    "metric_value": -1.0999817813134305,
-    "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
-  },
-  {
-    "run_id": "run_20261102T215944Z_2a06bd00",
-    "market": "us_stock",
-    "symbol": "TSLA",
-    "metric_name": "cagr_pct",
-    "metric_value": -0.1616151971909452,
-    "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
-  },
-  {
-    "run_id": "run_20261102T215944Z_2a06bd00",
-    "market": "us_stock",
-    "symbol": "TSLA",
-    "metric_name": "max_drawdown_pct",
-    "metric_value": 7.198807601976916,
-    "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
-  },
-  {
-    "run_id": "run_20261102T215944Z_2a06bd00",
-    "market": "us_stock",
-    "symbol": "TSLA",
-    "metric_name": "num_trades",
-    "metric_value": 86,
-    "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
-  },
-  {
-    "run_id": "run_20261102T215944Z_2a06bd00",
-    "market": "us_stock",
-    "symbol": "TSLA",
-    "metric_name": "num_closed_trades",
-    "metric_value": 86,
-    "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
-  },
-  {
-    "run_id": "run_20261102T215944Z_2a06bd00",
-    "market": "us_stock",
-    "symbol": "TSLA",
-    "metric_name": "num_open_trades",
-    "metric_value": 0,
-    "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
-  },
-  {
-    "run_id": "run_20261102T215944Z_2a06bd00",
-    "market": "us_stock",
-    "symbol": "TSLA",
-    "metric_name": "win_rate_pct",
-    "metric_value": 39.53488372093023,
-    "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
-  },
-  {
-    "run_id": "run_20261102T215944Z_2a06bd00",
-    "market": "us_stock",
-    "symbol": "TSLA",
-    "metric_name": "avg_win",
-    "metric_value": 72.61808494265179,
-    "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
-  },
-  {
-    "run_id": "run_20261102T215944Z_2a06bd00",
-    "market": "us_stock",
-    "symbol": "TSLA",
-    "metric_name": "avg_loss",
-    "metric_value": -49.5964051188748,
-    "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
-  },
-  {
-    "run_id": "run_20261102T215944Z_2a06bd00",
-    "market": "us_stock",
-    "symbol": "TSLA",
-    "metric_name": "avg_win_loss_ratio",
-    "metric_value": 1.4641804132496627,
-    "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
-  },
-  {
-    "run_id": "run_20261102T215944Z_2a06bd00",
-    "market": "us_stock",
-    "symbol": "TSLA",
-    "metric_name": "expectancy_per_trade",
-    "metric_value": -1.2790485829224283,
-    "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
-  },
-  {
-    "run_id": "run_20261102T215944Z_2a06bd00",
-    "market": "us_stock",
-    "symbol": "TSLA",
-    "metric_name": "annualized_volatility_pct",
-    "metric_value": 2.7525095111664806,
-    "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
-  },
-  {
-    "run_id": "run_20261102T215944Z_2a06bd00",
-    "market": "us_stock",
-    "symbol": "TSLA",
-    "metric_name": "sharpe_ratio",
-    "metric_value": -0.05871558173924515,
-    "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
-  },
-  {
-    "run_id": "run_20261102T215944Z_2a06bd00",
-    "market": "us_stock",
-    "symbol": "TSLA",
-    "metric_name": "risk_free_rate_annual",
-    "metric_value": 0.0,
-    "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
-  },
-  {
-    "run_id": "run_20261102T215944Z_2a06bd00",
-    "market": "us_stock",
-    "symbol": "TSLA",
-    "metric_name": "buy_and_hold_total_return_pct",
-    "metric_value": 1326.9258594021169,
-    "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
-  },
-  {
-    "run_id": "run_20261102T215944Z_2a06bd00",
-    "market": "us_stock",
-    "symbol": "TSLA",
-    "metric_name": "excess_return_vs_buy_and_hold_pct",
-    "metric_value": -1328.0258411834302,
-    "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
-  },
-  {
-    "run_id": "run_20261102T215944Z_2a06bd00",
-    "market": "us_stock",
-    "symbol": "TSLA",
-    "metric_name": "total_trading_costs",
-    "metric_value": 0.0,
-    "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
-  },
-  {
-    "run_id": "run_20261102T215944Z_2a06bd00",
-    "market": "us_stock",
-    "symbol": "TSLA",
-    "metric_name": "initial_capital",
-    "metric_value": 10000.0,
-    "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
-  },
-  {
-    "run_id": "run_20261102T215944Z_2a06bd00",
-    "market": "us_stock",
-    "symbol": "TSLA",
-    "metric_name": "final_equity",
-    "metric_value": 9890.001821868656,
-    "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
-  },
-  {
-    "run_id": "run_20261102T215944Z_2a06bd00",
-    "market": "us_stock",
-    "symbol": "TSLA",
-    "metric_name": "num_bars",
-    "metric_value": 1718,
-    "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
-  },
-  {
-    "run_id": "run_20261102T215944Z_2a06bd00",
-    "market": "us_stock",
-    "symbol": "TSLA",
-    "metric_name": "open_position_at_end",
-    "metric_value": 0.0,
-    "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
-  },
-  {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "META",
     "metric_name": "total_return_pct",
-    "metric_value": 10.991674200851342,
+    "metric_value": 10.991670084202077,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "META",
     "metric_name": "cagr_pct",
-    "metric_value": 1.5366885565401667,
+    "metric_value": 1.5354482735747021,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "META",
     "metric_name": "max_drawdown_pct",
-    "metric_value": 4.469433316723413,
+    "metric_value": 4.469433397004554,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "META",
     "metric_name": "num_trades",
     "metric_value": 69,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "META",
     "metric_name": "num_closed_trades",
     "metric_value": 69,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "META",
     "metric_name": "num_open_trades",
     "metric_value": 0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "META",
     "metric_name": "win_rate_pct",
     "metric_value": 44.927536231884055,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "META",
     "metric_name": "avg_win",
-    "metric_value": 107.21113111022366,
+    "metric_value": 107.21109692953665,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "META",
     "metric_name": "avg_loss",
-    "metric_value": -58.536253798205244,
+    "metric_value": -58.53623674724825,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "META",
     "metric_name": "avg_win_loss_ratio",
-    "metric_value": 1.8315338641214995,
+    "metric_value": 1.8315338137034676,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "META",
     "metric_name": "expectancy_per_trade",
-    "metric_value": 15.929962609929474,
+    "metric_value": 15.929956643771051,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "META",
     "metric_name": "annualized_volatility_pct",
-    "metric_value": 2.892709254814753,
+    "metric_value": 2.891026146490259,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "META",
     "metric_name": "sharpe_ratio",
-    "metric_value": 0.5312281398424106,
+    "metric_value": 0.5311084008834562,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "META",
     "metric_name": "risk_free_rate_annual",
     "metric_value": 0.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "META",
     "metric_name": "buy_and_hold_total_return_pct",
-    "metric_value": 196.2713835199251,
+    "metric_value": 207.81009225406626,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "META",
     "metric_name": "excess_return_vs_buy_and_hold_pct",
-    "metric_value": -185.27970931907376,
+    "metric_value": -196.8184221698642,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "META",
     "metric_name": "total_trading_costs",
     "metric_value": 0.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "META",
     "metric_name": "initial_capital",
     "metric_value": 10000.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "META",
     "metric_name": "final_equity",
-    "metric_value": 11099.167420085134,
+    "metric_value": 11099.167008420209,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "META",
     "metric_name": "num_bars",
-    "metric_value": 1718,
+    "metric_value": 1720,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "META",
     "metric_name": "open_position_at_end",
     "metric_value": 0.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AVGO",
     "metric_name": "total_return_pct",
-    "metric_value": 9.145560697674583,
+    "metric_value": 9.145571795171946,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AVGO",
     "metric_name": "cagr_pct",
-    "metric_value": 1.2879495767543991,
+    "metric_value": 1.286913289998881,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AVGO",
     "metric_name": "max_drawdown_pct",
-    "metric_value": 4.1605827582917625,
+    "metric_value": 4.160583976048779,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AVGO",
     "metric_name": "num_trades",
     "metric_value": 85,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AVGO",
     "metric_name": "num_closed_trades",
     "metric_value": 85,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AVGO",
     "metric_name": "num_open_trades",
     "metric_value": 0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AVGO",
     "metric_name": "win_rate_pct",
     "metric_value": 44.70588235294118,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AVGO",
     "metric_name": "avg_win",
-    "metric_value": 87.65090918165467,
+    "metric_value": 87.6509238687565,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AVGO",
     "metric_name": "avg_loss",
-    "metric_value": -51.40805274756213,
+    "metric_value": -51.40804101054346,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AVGO",
     "metric_name": "avg_win_loss_ratio",
-    "metric_value": 1.705003486750648,
+    "metric_value": 1.7050041617182,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AVGO",
     "metric_name": "expectancy_per_trade",
-    "metric_value": 10.759483173734795,
+    "metric_value": 10.759496229614152,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AVGO",
     "metric_name": "annualized_volatility_pct",
-    "metric_value": 2.928702984038901,
+    "metric_value": 2.92700024654378,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AVGO",
     "metric_name": "sharpe_ratio",
-    "metric_value": 0.4397679053743511,
+    "metric_value": 0.43966968964846387,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AVGO",
     "metric_name": "risk_free_rate_annual",
     "metric_value": 0.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AVGO",
     "metric_name": "buy_and_hold_total_return_pct",
-    "metric_value": 1079.428278054934,
+    "metric_value": 1092.4680099469474,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AVGO",
     "metric_name": "excess_return_vs_buy_and_hold_pct",
-    "metric_value": -1070.2827173572593,
+    "metric_value": -1083.3224381517755,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AVGO",
     "metric_name": "total_trading_costs",
     "metric_value": 0.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AVGO",
     "metric_name": "initial_capital",
     "metric_value": 10000.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AVGO",
     "metric_name": "final_equity",
-    "metric_value": 10914.55606976746,
+    "metric_value": 10914.557179517195,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AVGO",
     "metric_name": "num_bars",
-    "metric_value": 1718,
+    "metric_value": 1720,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AVGO",
     "metric_name": "open_position_at_end",
     "metric_value": 0.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
+    "market": "us_stock",
+    "symbol": "TSLA",
+    "metric_name": "total_return_pct",
+    "metric_value": -1.0999817813134305,
+    "period_start": "2020-01-02 05:00:00+00:00",
+    "period_end": "2026-11-04 05:00:00+00:00"
+  },
+  {
+    "run_id": "run_20261104T200837Z_ce9562fd",
+    "market": "us_stock",
+    "symbol": "TSLA",
+    "metric_name": "cagr_pct",
+    "metric_value": -0.1614859060508511,
+    "period_start": "2020-01-02 05:00:00+00:00",
+    "period_end": "2026-11-04 05:00:00+00:00"
+  },
+  {
+    "run_id": "run_20261104T200837Z_ce9562fd",
+    "market": "us_stock",
+    "symbol": "TSLA",
+    "metric_name": "max_drawdown_pct",
+    "metric_value": 7.198807601976916,
+    "period_start": "2020-01-02 05:00:00+00:00",
+    "period_end": "2026-11-04 05:00:00+00:00"
+  },
+  {
+    "run_id": "run_20261104T200837Z_ce9562fd",
+    "market": "us_stock",
+    "symbol": "TSLA",
+    "metric_name": "num_trades",
+    "metric_value": 86,
+    "period_start": "2020-01-02 05:00:00+00:00",
+    "period_end": "2026-11-04 05:00:00+00:00"
+  },
+  {
+    "run_id": "run_20261104T200837Z_ce9562fd",
+    "market": "us_stock",
+    "symbol": "TSLA",
+    "metric_name": "num_closed_trades",
+    "metric_value": 86,
+    "period_start": "2020-01-02 05:00:00+00:00",
+    "period_end": "2026-11-04 05:00:00+00:00"
+  },
+  {
+    "run_id": "run_20261104T200837Z_ce9562fd",
+    "market": "us_stock",
+    "symbol": "TSLA",
+    "metric_name": "num_open_trades",
+    "metric_value": 0,
+    "period_start": "2020-01-02 05:00:00+00:00",
+    "period_end": "2026-11-04 05:00:00+00:00"
+  },
+  {
+    "run_id": "run_20261104T200837Z_ce9562fd",
+    "market": "us_stock",
+    "symbol": "TSLA",
+    "metric_name": "win_rate_pct",
+    "metric_value": 39.53488372093023,
+    "period_start": "2020-01-02 05:00:00+00:00",
+    "period_end": "2026-11-04 05:00:00+00:00"
+  },
+  {
+    "run_id": "run_20261104T200837Z_ce9562fd",
+    "market": "us_stock",
+    "symbol": "TSLA",
+    "metric_name": "avg_win",
+    "metric_value": 72.61808494265179,
+    "period_start": "2020-01-02 05:00:00+00:00",
+    "period_end": "2026-11-04 05:00:00+00:00"
+  },
+  {
+    "run_id": "run_20261104T200837Z_ce9562fd",
+    "market": "us_stock",
+    "symbol": "TSLA",
+    "metric_name": "avg_loss",
+    "metric_value": -49.5964051188748,
+    "period_start": "2020-01-02 05:00:00+00:00",
+    "period_end": "2026-11-04 05:00:00+00:00"
+  },
+  {
+    "run_id": "run_20261104T200837Z_ce9562fd",
+    "market": "us_stock",
+    "symbol": "TSLA",
+    "metric_name": "avg_win_loss_ratio",
+    "metric_value": 1.4641804132496627,
+    "period_start": "2020-01-02 05:00:00+00:00",
+    "period_end": "2026-11-04 05:00:00+00:00"
+  },
+  {
+    "run_id": "run_20261104T200837Z_ce9562fd",
+    "market": "us_stock",
+    "symbol": "TSLA",
+    "metric_name": "expectancy_per_trade",
+    "metric_value": -1.2790485829224283,
+    "period_start": "2020-01-02 05:00:00+00:00",
+    "period_end": "2026-11-04 05:00:00+00:00"
+  },
+  {
+    "run_id": "run_20261104T200837Z_ce9562fd",
+    "market": "us_stock",
+    "symbol": "TSLA",
+    "metric_name": "annualized_volatility_pct",
+    "metric_value": 2.7509068984068366,
+    "period_start": "2020-01-02 05:00:00+00:00",
+    "period_end": "2026-11-04 05:00:00+00:00"
+  },
+  {
+    "run_id": "run_20261104T200837Z_ce9562fd",
+    "market": "us_stock",
+    "symbol": "TSLA",
+    "metric_name": "sharpe_ratio",
+    "metric_value": -0.05870278857651426,
+    "period_start": "2020-01-02 05:00:00+00:00",
+    "period_end": "2026-11-04 05:00:00+00:00"
+  },
+  {
+    "run_id": "run_20261104T200837Z_ce9562fd",
+    "market": "us_stock",
+    "symbol": "TSLA",
+    "metric_name": "risk_free_rate_annual",
+    "metric_value": 0.0,
+    "period_start": "2020-01-02 05:00:00+00:00",
+    "period_end": "2026-11-04 05:00:00+00:00"
+  },
+  {
+    "run_id": "run_20261104T200837Z_ce9562fd",
+    "market": "us_stock",
+    "symbol": "TSLA",
+    "metric_name": "buy_and_hold_total_return_pct",
+    "metric_value": 1263.9576339440669,
+    "period_start": "2020-01-02 05:00:00+00:00",
+    "period_end": "2026-11-04 05:00:00+00:00"
+  },
+  {
+    "run_id": "run_20261104T200837Z_ce9562fd",
+    "market": "us_stock",
+    "symbol": "TSLA",
+    "metric_name": "excess_return_vs_buy_and_hold_pct",
+    "metric_value": -1265.0576157253802,
+    "period_start": "2020-01-02 05:00:00+00:00",
+    "period_end": "2026-11-04 05:00:00+00:00"
+  },
+  {
+    "run_id": "run_20261104T200837Z_ce9562fd",
+    "market": "us_stock",
+    "symbol": "TSLA",
+    "metric_name": "total_trading_costs",
+    "metric_value": 0.0,
+    "period_start": "2020-01-02 05:00:00+00:00",
+    "period_end": "2026-11-04 05:00:00+00:00"
+  },
+  {
+    "run_id": "run_20261104T200837Z_ce9562fd",
+    "market": "us_stock",
+    "symbol": "TSLA",
+    "metric_name": "initial_capital",
+    "metric_value": 10000.0,
+    "period_start": "2020-01-02 05:00:00+00:00",
+    "period_end": "2026-11-04 05:00:00+00:00"
+  },
+  {
+    "run_id": "run_20261104T200837Z_ce9562fd",
+    "market": "us_stock",
+    "symbol": "TSLA",
+    "metric_name": "final_equity",
+    "metric_value": 9890.001821868656,
+    "period_start": "2020-01-02 05:00:00+00:00",
+    "period_end": "2026-11-04 05:00:00+00:00"
+  },
+  {
+    "run_id": "run_20261104T200837Z_ce9562fd",
+    "market": "us_stock",
+    "symbol": "TSLA",
+    "metric_name": "num_bars",
+    "metric_value": 1720,
+    "period_start": "2020-01-02 05:00:00+00:00",
+    "period_end": "2026-11-04 05:00:00+00:00"
+  },
+  {
+    "run_id": "run_20261104T200837Z_ce9562fd",
+    "market": "us_stock",
+    "symbol": "TSLA",
+    "metric_name": "open_position_at_end",
+    "metric_value": 0.0,
+    "period_start": "2020-01-02 05:00:00+00:00",
+    "period_end": "2026-11-04 05:00:00+00:00"
+  },
+  {
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "LLY",
     "metric_name": "total_return_pct",
-    "metric_value": 13.59271993589639,
+    "metric_value": 13.668318450974759,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "LLY",
     "metric_name": "cagr_pct",
-    "metric_value": 1.8812168388484096,
+    "metric_value": 1.8896009766155686,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "LLY",
     "metric_name": "max_drawdown_pct",
-    "metric_value": 5.318587968251255,
+    "metric_value": 5.3185959088340695,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "LLY",
     "metric_name": "num_trades",
     "metric_value": 90,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "LLY",
     "metric_name": "num_closed_trades",
     "metric_value": 90,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "LLY",
     "metric_name": "num_open_trades",
     "metric_value": 0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "LLY",
     "metric_name": "win_rate_pct",
     "metric_value": 41.11111111111111,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "LLY",
     "metric_name": "avg_win",
-    "metric_value": 114.75766296906922,
+    "metric_value": 114.75766417592028,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "LLY",
     "metric_name": "avg_loss",
-    "metric_value": -54.46719879747048,
+    "metric_value": -54.324560932294006,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "LLY",
     "metric_name": "avg_win_loss_ratio",
-    "metric_value": 2.1069132524288854,
+    "metric_value": 2.1124453139887405,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "LLY",
     "metric_name": "expectancy_per_trade",
-    "metric_value": 15.103022150995852,
+    "metric_value": 15.187020501082992,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "LLY",
     "metric_name": "annualized_volatility_pct",
-    "metric_value": 2.9897744036719263,
+    "metric_value": 2.98813421735318,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "LLY",
     "metric_name": "sharpe_ratio",
-    "metric_value": 0.629216985916386,
+    "metric_value": 0.6323681733042544,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "LLY",
     "metric_name": "risk_free_rate_annual",
     "metric_value": 0.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "LLY",
     "metric_name": "buy_and_hold_total_return_pct",
-    "metric_value": 1056.5555119520634,
+    "metric_value": 1061.4489573844755,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "LLY",
     "metric_name": "excess_return_vs_buy_and_hold_pct",
-    "metric_value": -1042.962792016167,
+    "metric_value": -1047.7806389335008,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "LLY",
     "metric_name": "total_trading_costs",
     "metric_value": 0.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "LLY",
     "metric_name": "initial_capital",
     "metric_value": 10000.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "LLY",
     "metric_name": "final_equity",
-    "metric_value": 11359.271993589638,
+    "metric_value": 11366.831845097475,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "LLY",
     "metric_name": "num_bars",
-    "metric_value": 1718,
+    "metric_value": 1720,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "LLY",
     "metric_name": "open_position_at_end",
     "metric_value": 0.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "BRK-B",
     "metric_name": "total_return_pct",
-    "metric_value": -5.094472077518864,
+    "metric_value": -4.613889025825591,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "BRK-B",
     "metric_name": "cagr_pct",
-    "metric_value": -0.7617157283596465,
+    "metric_value": -0.6878388557592374,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "BRK-B",
     "metric_name": "max_drawdown_pct",
     "metric_value": 6.258341882133524,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "BRK-B",
     "metric_name": "num_trades",
-    "metric_value": 75,
+    "metric_value": 76,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "BRK-B",
     "metric_name": "num_closed_trades",
-    "metric_value": 75,
+    "metric_value": 76,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "BRK-B",
     "metric_name": "num_open_trades",
     "metric_value": 0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "BRK-B",
     "metric_name": "win_rate_pct",
-    "metric_value": 28.000000000000004,
+    "metric_value": 28.947368421052634,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "BRK-B",
     "metric_name": "avg_win",
-    "metric_value": 68.32836115426883,
+    "metric_value": 67.40699497313507,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "BRK-B",
     "metric_name": "avg_loss",
     "metric_value": -36.00634799984314,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "BRK-B",
     "metric_name": "avg_win_loss_ratio",
-    "metric_value": 1.8976754086409011,
+    "metric_value": 1.8720864158017003,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "BRK-B",
     "metric_name": "expectancy_per_trade",
-    "metric_value": -6.792629436691795,
+    "metric_value": -6.070906612928404,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "BRK-B",
     "metric_name": "annualized_volatility_pct",
-    "metric_value": 1.8743467039278416,
+    "metric_value": 1.879875607529438,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "BRK-B",
     "metric_name": "sharpe_ratio",
-    "metric_value": -0.40638998471489346,
+    "metric_value": -0.3658959417337225,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "BRK-B",
     "metric_name": "risk_free_rate_annual",
     "metric_value": 0.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "BRK-B",
     "metric_name": "buy_and_hold_total_return_pct",
-    "metric_value": 144.4332111901366,
+    "metric_value": 154.2899156578144,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "BRK-B",
     "metric_name": "excess_return_vs_buy_and_hold_pct",
-    "metric_value": -149.52768326765548,
+    "metric_value": -158.90380468363998,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "BRK-B",
     "metric_name": "total_trading_costs",
     "metric_value": 0.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "BRK-B",
     "metric_name": "initial_capital",
     "metric_value": 10000.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "BRK-B",
     "metric_name": "final_equity",
-    "metric_value": 9490.552792248114,
+    "metric_value": 9538.61109741744,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "BRK-B",
     "metric_name": "num_bars",
-    "metric_value": 1718,
+    "metric_value": 1720,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "BRK-B",
     "metric_name": "open_position_at_end",
     "metric_value": 0.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "WMT",
     "metric_name": "total_return_pct",
-    "metric_value": -6.641186513430808,
+    "metric_value": -6.780667873884361,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "WMT",
     "metric_name": "cagr_pct",
-    "metric_value": -0.9998860786341157,
+    "metric_value": -1.0207156145570773,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "WMT",
     "metric_name": "max_drawdown_pct",
-    "metric_value": 10.849370824735452,
+    "metric_value": 10.849346611373294,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "WMT",
     "metric_name": "num_trades",
-    "metric_value": 92,
+    "metric_value": 93,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "WMT",
     "metric_name": "num_closed_trades",
-    "metric_value": 92,
+    "metric_value": 93,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "WMT",
     "metric_name": "num_open_trades",
     "metric_value": 0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "WMT",
     "metric_name": "win_rate_pct",
-    "metric_value": 28.26086956521739,
+    "metric_value": 27.956989247311824,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "WMT",
     "metric_name": "avg_win",
-    "metric_value": 63.3350187141536,
+    "metric_value": 63.33500194332374,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "WMT",
     "metric_name": "avg_loss",
-    "metric_value": -35.012562695622314,
+    "metric_value": -34.69816175992311,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "WMT",
     "metric_name": "avg_win_loss_ratio",
-    "metric_value": 1.808922679118044,
+    "metric_value": 1.8253128906810447,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "WMT",
     "metric_name": "expectancy_per_trade",
-    "metric_value": -7.218680992859558,
+    "metric_value": -7.291040724606783,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "WMT",
     "metric_name": "annualized_volatility_pct",
-    "metric_value": 2.208527979067778,
+    "metric_value": 2.2131037938750757,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "WMT",
     "metric_name": "sharpe_ratio",
-    "metric_value": -0.4527386965938138,
+    "metric_value": -0.4612145247692319,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "WMT",
     "metric_name": "risk_free_rate_annual",
     "metric_value": 0.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "WMT",
     "metric_name": "buy_and_hold_total_return_pct",
-    "metric_value": 252.94021211063256,
+    "metric_value": 260.2095736153164,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "WMT",
     "metric_name": "excess_return_vs_buy_and_hold_pct",
-    "metric_value": -259.58139862406335,
+    "metric_value": -266.99024148920074,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "WMT",
     "metric_name": "total_trading_costs",
     "metric_value": 0.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "WMT",
     "metric_name": "initial_capital",
     "metric_value": 10000.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "WMT",
     "metric_name": "final_equity",
-    "metric_value": 9335.88134865692,
+    "metric_value": 9321.933212611564,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "WMT",
     "metric_name": "num_bars",
-    "metric_value": 1718,
+    "metric_value": 1720,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "WMT",
     "metric_name": "open_position_at_end",
     "metric_value": 0.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
-    "market": "us_stock",
-    "symbol": "MU",
-    "metric_name": "total_return_pct",
-    "metric_value": 11.731213376818994,
-    "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
-  },
-  {
-    "run_id": "run_20261102T215944Z_2a06bd00",
-    "market": "us_stock",
-    "symbol": "MU",
-    "metric_name": "cagr_pct",
-    "metric_value": 1.6353415123378623,
-    "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
-  },
-  {
-    "run_id": "run_20261102T215944Z_2a06bd00",
-    "market": "us_stock",
-    "symbol": "MU",
-    "metric_name": "max_drawdown_pct",
-    "metric_value": 7.794414380219608,
-    "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
-  },
-  {
-    "run_id": "run_20261102T215944Z_2a06bd00",
-    "market": "us_stock",
-    "symbol": "MU",
-    "metric_name": "num_trades",
-    "metric_value": 88,
-    "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
-  },
-  {
-    "run_id": "run_20261102T215944Z_2a06bd00",
-    "market": "us_stock",
-    "symbol": "MU",
-    "metric_name": "num_closed_trades",
-    "metric_value": 88,
-    "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
-  },
-  {
-    "run_id": "run_20261102T215944Z_2a06bd00",
-    "market": "us_stock",
-    "symbol": "MU",
-    "metric_name": "num_open_trades",
-    "metric_value": 0,
-    "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
-  },
-  {
-    "run_id": "run_20261102T215944Z_2a06bd00",
-    "market": "us_stock",
-    "symbol": "MU",
-    "metric_name": "win_rate_pct",
-    "metric_value": 44.31818181818182,
-    "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
-  },
-  {
-    "run_id": "run_20261102T215944Z_2a06bd00",
-    "market": "us_stock",
-    "symbol": "MU",
-    "metric_name": "avg_win",
-    "metric_value": 94.75721685675167,
-    "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
-  },
-  {
-    "run_id": "run_20261102T215944Z_2a06bd00",
-    "market": "us_stock",
-    "symbol": "MU",
-    "metric_name": "avg_loss",
-    "metric_value": -51.47775754553902,
-    "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
-  },
-  {
-    "run_id": "run_20261102T215944Z_2a06bd00",
-    "market": "us_stock",
-    "symbol": "MU",
-    "metric_name": "avg_win_loss_ratio",
-    "metric_value": 1.8407409602666962,
-    "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
-  },
-  {
-    "run_id": "run_20261102T215944Z_2a06bd00",
-    "market": "us_stock",
-    "symbol": "MU",
-    "metric_name": "expectancy_per_trade",
-    "metric_value": 13.330924291839805,
-    "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
-  },
-  {
-    "run_id": "run_20261102T215944Z_2a06bd00",
-    "market": "us_stock",
-    "symbol": "MU",
-    "metric_name": "annualized_volatility_pct",
-    "metric_value": 3.210101753947365,
-    "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
-  },
-  {
-    "run_id": "run_20261102T215944Z_2a06bd00",
-    "market": "us_stock",
-    "symbol": "MU",
-    "metric_name": "sharpe_ratio",
-    "metric_value": 0.5094360358910531,
-    "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
-  },
-  {
-    "run_id": "run_20261102T215944Z_2a06bd00",
-    "market": "us_stock",
-    "symbol": "MU",
-    "metric_name": "risk_free_rate_annual",
-    "metric_value": 0.0,
-    "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
-  },
-  {
-    "run_id": "run_20261102T215944Z_2a06bd00",
-    "market": "us_stock",
-    "symbol": "MU",
-    "metric_name": "buy_and_hold_total_return_pct",
-    "metric_value": 1458.757250766556,
-    "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
-  },
-  {
-    "run_id": "run_20261102T215944Z_2a06bd00",
-    "market": "us_stock",
-    "symbol": "MU",
-    "metric_name": "excess_return_vs_buy_and_hold_pct",
-    "metric_value": -1447.026037389737,
-    "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
-  },
-  {
-    "run_id": "run_20261102T215944Z_2a06bd00",
-    "market": "us_stock",
-    "symbol": "MU",
-    "metric_name": "total_trading_costs",
-    "metric_value": 0.0,
-    "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
-  },
-  {
-    "run_id": "run_20261102T215944Z_2a06bd00",
-    "market": "us_stock",
-    "symbol": "MU",
-    "metric_name": "initial_capital",
-    "metric_value": 10000.0,
-    "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
-  },
-  {
-    "run_id": "run_20261102T215944Z_2a06bd00",
-    "market": "us_stock",
-    "symbol": "MU",
-    "metric_name": "final_equity",
-    "metric_value": 11173.1213376819,
-    "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
-  },
-  {
-    "run_id": "run_20261102T215944Z_2a06bd00",
-    "market": "us_stock",
-    "symbol": "MU",
-    "metric_name": "num_bars",
-    "metric_value": 1718,
-    "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
-  },
-  {
-    "run_id": "run_20261102T215944Z_2a06bd00",
-    "market": "us_stock",
-    "symbol": "MU",
-    "metric_name": "open_position_at_end",
-    "metric_value": 0.0,
-    "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
-  },
-  {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "JPM",
     "metric_name": "total_return_pct",
-    "metric_value": 0.5036121351452039,
+    "metric_value": 0.5036182582050852,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "JPM",
     "metric_name": "cagr_pct",
-    "metric_value": 0.07348736997878635,
+    "metric_value": 0.07342940226993111,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "JPM",
     "metric_name": "max_drawdown_pct",
-    "metric_value": 5.169300306732357,
+    "metric_value": 5.169289776766693,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "JPM",
     "metric_name": "num_trades",
     "metric_value": 56,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "JPM",
     "metric_name": "num_closed_trades",
     "metric_value": 56,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "JPM",
     "metric_name": "num_open_trades",
     "metric_value": 0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "JPM",
     "metric_name": "win_rate_pct",
     "metric_value": 37.5,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "JPM",
     "metric_name": "avg_win",
-    "metric_value": 80.28933445078039,
+    "metric_value": 80.28926084046793,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "JPM",
     "metric_name": "avg_loss",
-    "metric_value": -46.73470885576734,
+    "metric_value": -46.73464719512359,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "JPM",
     "metric_name": "avg_win_loss_ratio",
-    "metric_value": 1.7179808415747135,
+    "metric_value": 1.7179815331706518,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "JPM",
     "metric_name": "expectancy_per_trade",
-    "metric_value": 0.8993073841880579,
+    "metric_value": 0.899318318223224,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "JPM",
     "metric_name": "annualized_volatility_pct",
-    "metric_value": 2.0286579791729413,
+    "metric_value": 2.0274787362370175,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "JPM",
     "metric_name": "sharpe_ratio",
-    "metric_value": 0.036224622747273665,
+    "metric_value": 0.036217101051434664,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "JPM",
     "metric_name": "risk_free_rate_annual",
     "metric_value": 0.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "JPM",
     "metric_name": "buy_and_hold_total_return_pct",
-    "metric_value": 193.01481399803953,
+    "metric_value": 201.72588102122623,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "JPM",
     "metric_name": "excess_return_vs_buy_and_hold_pct",
-    "metric_value": -192.51120186289432,
+    "metric_value": -201.22226276302115,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "JPM",
     "metric_name": "total_trading_costs",
     "metric_value": 0.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "JPM",
     "metric_name": "initial_capital",
     "metric_value": 10000.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "JPM",
     "metric_name": "final_equity",
-    "metric_value": 10050.361213514521,
+    "metric_value": 10050.361825820508,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "JPM",
     "metric_name": "num_bars",
-    "metric_value": 1718,
+    "metric_value": 1720,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "JPM",
     "metric_name": "open_position_at_end",
     "metric_value": 0.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
+    "market": "us_stock",
+    "symbol": "MU",
+    "metric_name": "total_return_pct",
+    "metric_value": 11.731214736627082,
+    "period_start": "2020-01-02 05:00:00+00:00",
+    "period_end": "2026-11-04 05:00:00+00:00"
+  },
+  {
+    "run_id": "run_20261104T200837Z_ce9562fd",
+    "market": "us_stock",
+    "symbol": "MU",
+    "metric_name": "cagr_pct",
+    "metric_value": 1.6340217329327444,
+    "period_start": "2020-01-02 05:00:00+00:00",
+    "period_end": "2026-11-04 05:00:00+00:00"
+  },
+  {
+    "run_id": "run_20261104T200837Z_ce9562fd",
+    "market": "us_stock",
+    "symbol": "MU",
+    "metric_name": "max_drawdown_pct",
+    "metric_value": 7.794409961211544,
+    "period_start": "2020-01-02 05:00:00+00:00",
+    "period_end": "2026-11-04 05:00:00+00:00"
+  },
+  {
+    "run_id": "run_20261104T200837Z_ce9562fd",
+    "market": "us_stock",
+    "symbol": "MU",
+    "metric_name": "num_trades",
+    "metric_value": 88,
+    "period_start": "2020-01-02 05:00:00+00:00",
+    "period_end": "2026-11-04 05:00:00+00:00"
+  },
+  {
+    "run_id": "run_20261104T200837Z_ce9562fd",
+    "market": "us_stock",
+    "symbol": "MU",
+    "metric_name": "num_closed_trades",
+    "metric_value": 88,
+    "period_start": "2020-01-02 05:00:00+00:00",
+    "period_end": "2026-11-04 05:00:00+00:00"
+  },
+  {
+    "run_id": "run_20261104T200837Z_ce9562fd",
+    "market": "us_stock",
+    "symbol": "MU",
+    "metric_name": "num_open_trades",
+    "metric_value": 0,
+    "period_start": "2020-01-02 05:00:00+00:00",
+    "period_end": "2026-11-04 05:00:00+00:00"
+  },
+  {
+    "run_id": "run_20261104T200837Z_ce9562fd",
+    "market": "us_stock",
+    "symbol": "MU",
+    "metric_name": "win_rate_pct",
+    "metric_value": 44.31818181818182,
+    "period_start": "2020-01-02 05:00:00+00:00",
+    "period_end": "2026-11-04 05:00:00+00:00"
+  },
+  {
+    "run_id": "run_20261104T200837Z_ce9562fd",
+    "market": "us_stock",
+    "symbol": "MU",
+    "metric_name": "avg_win",
+    "metric_value": 94.75721292509219,
+    "period_start": "2020-01-02 05:00:00+00:00",
+    "period_end": "2026-11-04 05:00:00+00:00"
+  },
+  {
+    "run_id": "run_20261104T200837Z_ce9562fd",
+    "market": "us_stock",
+    "symbol": "MU",
+    "metric_name": "avg_loss",
+    "metric_value": -51.477751641140394,
+    "period_start": "2020-01-02 05:00:00+00:00",
+    "period_end": "2026-11-04 05:00:00+00:00"
+  },
+  {
+    "run_id": "run_20261104T200837Z_ce9562fd",
+    "market": "us_stock",
+    "symbol": "MU",
+    "metric_name": "avg_win_loss_ratio",
+    "metric_value": 1.8407410950202296,
+    "period_start": "2020-01-02 05:00:00+00:00",
+    "period_end": "2026-11-04 05:00:00+00:00"
+  },
+  {
+    "run_id": "run_20261104T200837Z_ce9562fd",
+    "market": "us_stock",
+    "symbol": "MU",
+    "metric_name": "expectancy_per_trade",
+    "metric_value": 13.330925837076313,
+    "period_start": "2020-01-02 05:00:00+00:00",
+    "period_end": "2026-11-04 05:00:00+00:00"
+  },
+  {
+    "run_id": "run_20261104T200837Z_ce9562fd",
+    "market": "us_stock",
+    "symbol": "MU",
+    "metric_name": "annualized_volatility_pct",
+    "metric_value": 3.2082348496591933,
+    "period_start": "2020-01-02 05:00:00+00:00",
+    "period_end": "2026-11-04 05:00:00+00:00"
+  },
+  {
+    "run_id": "run_20261104T200837Z_ce9562fd",
+    "market": "us_stock",
+    "symbol": "MU",
+    "metric_name": "sharpe_ratio",
+    "metric_value": 0.5093211094276108,
+    "period_start": "2020-01-02 05:00:00+00:00",
+    "period_end": "2026-11-04 05:00:00+00:00"
+  },
+  {
+    "run_id": "run_20261104T200837Z_ce9562fd",
+    "market": "us_stock",
+    "symbol": "MU",
+    "metric_name": "risk_free_rate_annual",
+    "metric_value": 0.0,
+    "period_start": "2020-01-02 05:00:00+00:00",
+    "period_end": "2026-11-04 05:00:00+00:00"
+  },
+  {
+    "run_id": "run_20261104T200837Z_ce9562fd",
+    "market": "us_stock",
+    "symbol": "MU",
+    "metric_name": "buy_and_hold_total_return_pct",
+    "metric_value": 1390.3457217989485,
+    "period_start": "2020-01-02 05:00:00+00:00",
+    "period_end": "2026-11-04 05:00:00+00:00"
+  },
+  {
+    "run_id": "run_20261104T200837Z_ce9562fd",
+    "market": "us_stock",
+    "symbol": "MU",
+    "metric_name": "excess_return_vs_buy_and_hold_pct",
+    "metric_value": -1378.6145070623213,
+    "period_start": "2020-01-02 05:00:00+00:00",
+    "period_end": "2026-11-04 05:00:00+00:00"
+  },
+  {
+    "run_id": "run_20261104T200837Z_ce9562fd",
+    "market": "us_stock",
+    "symbol": "MU",
+    "metric_name": "total_trading_costs",
+    "metric_value": 0.0,
+    "period_start": "2020-01-02 05:00:00+00:00",
+    "period_end": "2026-11-04 05:00:00+00:00"
+  },
+  {
+    "run_id": "run_20261104T200837Z_ce9562fd",
+    "market": "us_stock",
+    "symbol": "MU",
+    "metric_name": "initial_capital",
+    "metric_value": 10000.0,
+    "period_start": "2020-01-02 05:00:00+00:00",
+    "period_end": "2026-11-04 05:00:00+00:00"
+  },
+  {
+    "run_id": "run_20261104T200837Z_ce9562fd",
+    "market": "us_stock",
+    "symbol": "MU",
+    "metric_name": "final_equity",
+    "metric_value": 11173.121473662708,
+    "period_start": "2020-01-02 05:00:00+00:00",
+    "period_end": "2026-11-04 05:00:00+00:00"
+  },
+  {
+    "run_id": "run_20261104T200837Z_ce9562fd",
+    "market": "us_stock",
+    "symbol": "MU",
+    "metric_name": "num_bars",
+    "metric_value": 1720,
+    "period_start": "2020-01-02 05:00:00+00:00",
+    "period_end": "2026-11-04 05:00:00+00:00"
+  },
+  {
+    "run_id": "run_20261104T200837Z_ce9562fd",
+    "market": "us_stock",
+    "symbol": "MU",
+    "metric_name": "open_position_at_end",
+    "metric_value": 0.0,
+    "period_start": "2020-01-02 05:00:00+00:00",
+    "period_end": "2026-11-04 05:00:00+00:00"
+  },
+  {
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "V",
     "metric_name": "total_return_pct",
-    "metric_value": -0.7623827110622372,
+    "metric_value": -0.1056049381230495,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "V",
     "metric_name": "cagr_pct",
-    "metric_value": -0.11185080247847479,
+    "metric_value": -0.015437627287251399,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "V",
     "metric_name": "max_drawdown_pct",
-    "metric_value": 5.197758996046434,
+    "metric_value": 5.197758116395373,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "V",
     "metric_name": "num_trades",
-    "metric_value": 51,
+    "metric_value": 52,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "V",
     "metric_name": "num_closed_trades",
-    "metric_value": 51,
+    "metric_value": 52,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "V",
     "metric_name": "num_open_trades",
     "metric_value": 0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "V",
     "metric_name": "win_rate_pct",
-    "metric_value": 41.17647058823529,
+    "metric_value": 42.30769230769231,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "V",
     "metric_name": "avg_win",
-    "metric_value": 56.84091477795663,
+    "metric_value": 57.24252402717064,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "V",
     "metric_name": "avg_loss",
-    "metric_value": -42.32991604811048,
+    "metric_value": -42.32986741366884,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "V",
     "metric_name": "avg_win_loss_ratio",
-    "metric_value": 1.3428071700721902,
+    "metric_value": 1.352296322305189,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "V",
     "metric_name": "expectancy_per_trade",
-    "metric_value": -1.4948680609063747,
+    "metric_value": -0.2030864194675265,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "V",
     "metric_name": "annualized_volatility_pct",
-    "metric_value": 1.7251098581038486,
+    "metric_value": 1.7513359894393394,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "V",
     "metric_name": "sharpe_ratio",
-    "metric_value": -0.06483691572049527,
+    "metric_value": -0.008814771911467139,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "V",
     "metric_name": "risk_free_rate_annual",
     "metric_value": 0.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "V",
     "metric_name": "buy_and_hold_total_return_pct",
-    "metric_value": 136.29871252172504,
+    "metric_value": 141.01904248859154,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "V",
     "metric_name": "excess_return_vs_buy_and_hold_pct",
-    "metric_value": -137.06109523278727,
+    "metric_value": -141.12464742671457,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "V",
     "metric_name": "total_trading_costs",
     "metric_value": 0.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "V",
     "metric_name": "initial_capital",
     "metric_value": 10000.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "V",
     "metric_name": "final_equity",
-    "metric_value": 9923.761728893776,
+    "metric_value": 9989.439506187695,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "V",
     "metric_name": "num_bars",
-    "metric_value": 1718,
+    "metric_value": 1720,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "V",
     "metric_name": "open_position_at_end",
     "metric_value": 0.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AMD",
     "metric_name": "total_return_pct",
     "metric_value": -0.2443291469852893,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AMD",
     "metric_name": "cagr_pct",
-    "metric_value": -0.0357665441411803,
+    "metric_value": -0.035737913114541886,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AMD",
     "metric_name": "max_drawdown_pct",
     "metric_value": 6.465792794867038,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AMD",
     "metric_name": "num_trades",
     "metric_value": 77,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AMD",
     "metric_name": "num_closed_trades",
     "metric_value": 77,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AMD",
     "metric_name": "num_open_trades",
     "metric_value": 0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AMD",
     "metric_name": "win_rate_pct",
     "metric_value": 38.961038961038966,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AMD",
     "metric_name": "avg_win",
     "metric_value": 78.38723915113903,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AMD",
     "metric_name": "avg_loss",
     "metric_value": -50.5542572177173,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AMD",
     "metric_name": "avg_win_loss_ratio",
     "metric_value": 1.550556638851522,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AMD",
     "metric_name": "expectancy_per_trade",
     "metric_value": -0.31731058050054406,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AMD",
     "metric_name": "annualized_volatility_pct",
-    "metric_value": 2.726361004276556,
+    "metric_value": 2.7247736032673617,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AMD",
     "metric_name": "sharpe_ratio",
-    "metric_value": -0.013118785107723109,
+    "metric_value": -0.013115920189364513,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AMD",
     "metric_name": "risk_free_rate_annual",
     "metric_value": 0.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AMD",
     "metric_name": "buy_and_hold_total_return_pct",
-    "metric_value": 896.2441106643174,
+    "metric_value": 931.2614355439908,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AMD",
     "metric_name": "excess_return_vs_buy_and_hold_pct",
-    "metric_value": -896.4884398113027,
+    "metric_value": -931.5057646909761,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AMD",
     "metric_name": "total_trading_costs",
     "metric_value": 0.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AMD",
     "metric_name": "initial_capital",
     "metric_value": 10000.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AMD",
     "metric_name": "final_equity",
     "metric_value": 9975.56708530147,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AMD",
     "metric_name": "num_bars",
-    "metric_value": 1718,
+    "metric_value": 1720,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "AMD",
     "metric_name": "open_position_at_end",
     "metric_value": 0.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "XOM",
     "metric_name": "total_return_pct",
-    "metric_value": 3.0386674532347335,
+    "metric_value": 2.177098601698102,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "XOM",
     "metric_name": "cagr_pct",
-    "metric_value": 0.4386983601631478,
+    "metric_value": 0.31519323566016055,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "XOM",
     "metric_name": "max_drawdown_pct",
-    "metric_value": 4.520853126302853,
+    "metric_value": 4.546161405707582,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "XOM",
     "metric_name": "num_trades",
-    "metric_value": 74,
+    "metric_value": 75,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "XOM",
     "metric_name": "num_closed_trades",
-    "metric_value": 74,
+    "metric_value": 75,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "XOM",
     "metric_name": "num_open_trades",
     "metric_value": 0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "XOM",
     "metric_name": "win_rate_pct",
-    "metric_value": 36.486486486486484,
+    "metric_value": 36.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "XOM",
     "metric_name": "avg_win",
-    "metric_value": 91.94789755384507,
+    "metric_value": 91.9479050275149,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "XOM",
     "metric_name": "avg_loss",
-    "metric_value": -46.35588273681562,
+    "metric_value": -47.185074491106,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "XOM",
     "metric_name": "avg_win_loss_ratio",
-    "metric_value": 1.9835216616600093,
+    "metric_value": 1.9486650390865936,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "XOM",
     "metric_name": "expectancy_per_trade",
-    "metric_value": 4.106307369236237,
+    "metric_value": 2.902798135597518,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "XOM",
     "metric_name": "annualized_volatility_pct",
-    "metric_value": 2.49015404383271,
+    "metric_value": 2.505956487200358,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "XOM",
     "metric_name": "sharpe_ratio",
-    "metric_value": 0.17617318143416022,
+    "metric_value": 0.12577761715738842,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "XOM",
     "metric_name": "risk_free_rate_annual",
     "metric_value": 0.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "XOM",
     "metric_name": "buy_and_hold_total_return_pct",
-    "metric_value": 244.74560573619456,
+    "metric_value": 224.52177088945206,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "XOM",
     "metric_name": "excess_return_vs_buy_and_hold_pct",
-    "metric_value": -241.70693828295984,
+    "metric_value": -222.34467228775395,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "XOM",
     "metric_name": "total_trading_costs",
     "metric_value": 0.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "XOM",
     "metric_name": "initial_capital",
     "metric_value": 10000.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "XOM",
     "metric_name": "final_equity",
-    "metric_value": 10303.866745323474,
+    "metric_value": 10217.70986016981,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "XOM",
     "metric_name": "num_bars",
-    "metric_value": 1718,
+    "metric_value": 1720,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "XOM",
     "metric_name": "open_position_at_end",
     "metric_value": 0.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "JNJ",
     "metric_name": "total_return_pct",
-    "metric_value": -0.4252530148682876,
+    "metric_value": -0.42523494126655015,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "JNJ",
     "metric_name": "cagr_pct",
-    "metric_value": -0.06229962510411191,
+    "metric_value": -0.06224711054285681,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "JNJ",
     "metric_name": "max_drawdown_pct",
-    "metric_value": 4.012990052631801,
+    "metric_value": 4.012963329217613,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "JNJ",
     "metric_name": "num_trades",
     "metric_value": 60,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "JNJ",
     "metric_name": "num_closed_trades",
     "metric_value": 60,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "JNJ",
     "metric_name": "num_open_trades",
     "metric_value": 0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "JNJ",
     "metric_name": "win_rate_pct",
     "metric_value": 36.666666666666664,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "JNJ",
     "metric_name": "avg_win",
-    "metric_value": 62.11918824862077,
+    "metric_value": 62.119268401138534,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "JNJ",
     "metric_name": "avg_loss",
-    "metric_value": -37.08282744622332,
+    "metric_value": -37.08282628820271,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "JNJ",
     "metric_name": "avg_win_loss_ratio",
-    "metric_value": 1.6751470296784845,
+    "metric_value": 1.6751492434356534,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "JNJ",
     "metric_name": "expectancy_per_trade",
-    "metric_value": -0.7087550247804927,
+    "metric_value": -0.7087249021109223,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "JNJ",
     "metric_name": "annualized_volatility_pct",
-    "metric_value": 1.9241541744910475,
+    "metric_value": 1.9230358390622486,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "JNJ",
     "metric_name": "sharpe_ratio",
-    "metric_value": -0.03237766803202795,
+    "metric_value": -0.03236918900752836,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "JNJ",
     "metric_name": "risk_free_rate_annual",
     "metric_value": 0.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "JNJ",
     "metric_name": "buy_and_hold_total_return_pct",
-    "metric_value": 123.13229913438195,
+    "metric_value": 128.0805317145377,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "JNJ",
     "metric_name": "excess_return_vs_buy_and_hold_pct",
-    "metric_value": -123.55755214925024,
+    "metric_value": -128.50576665580425,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "JNJ",
     "metric_name": "total_trading_costs",
     "metric_value": 0.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "JNJ",
     "metric_name": "initial_capital",
     "metric_value": 10000.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "JNJ",
     "metric_name": "final_equity",
-    "metric_value": 9957.474698513171,
+    "metric_value": 9957.476505873345,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "JNJ",
     "metric_name": "num_bars",
-    "metric_value": 1718,
+    "metric_value": 1720,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "JNJ",
     "metric_name": "open_position_at_end",
     "metric_value": 0.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "MA",
     "metric_name": "total_return_pct",
-    "metric_value": 2.9607804157185447,
+    "metric_value": 3.657376627883524,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "MA",
     "metric_name": "cagr_pct",
-    "metric_value": 0.4275924413900567,
+    "metric_value": 0.5262436715696817,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "MA",
     "metric_name": "max_drawdown_pct",
-    "metric_value": 3.7976194402308274,
+    "metric_value": 3.797639099935405,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "MA",
     "metric_name": "num_trades",
-    "metric_value": 57,
+    "metric_value": 58,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "MA",
     "metric_name": "num_closed_trades",
-    "metric_value": 57,
+    "metric_value": 58,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "MA",
     "metric_name": "num_open_trades",
     "metric_value": 0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "MA",
     "metric_name": "win_rate_pct",
-    "metric_value": 40.35087719298245,
+    "metric_value": 41.37931034482759,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "MA",
     "metric_name": "avg_win",
-    "metric_value": 70.2525098270363,
+    "metric_value": 70.22784395389472,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "MA",
     "metric_name": "avg_loss",
-    "metric_value": -38.815578954411365,
+    "metric_value": -38.815605650150985,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "MA",
     "metric_name": "avg_win_loss_ratio",
-    "metric_value": 1.8099049845307578,
+    "metric_value": 1.8092682769622466,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "MA",
     "metric_name": "expectancy_per_trade",
-    "metric_value": 5.1943516065236555,
+    "metric_value": 6.3058217722127585,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "MA",
     "metric_name": "annualized_volatility_pct",
-    "metric_value": 1.8929235196649215,
+    "metric_value": 1.925411752162591,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "MA",
     "metric_name": "sharpe_ratio",
-    "metric_value": 0.2258899722825292,
+    "metric_value": 0.2733148745864947,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "MA",
     "metric_name": "risk_free_rate_annual",
     "metric_value": 0.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "MA",
     "metric_name": "buy_and_hold_total_return_pct",
-    "metric_value": 127.99235448510294,
+    "metric_value": 132.52028308188724,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "MA",
     "metric_name": "excess_return_vs_buy_and_hold_pct",
-    "metric_value": -125.03157406938439,
+    "metric_value": -128.8629064540037,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "MA",
     "metric_name": "total_trading_costs",
     "metric_value": 0.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "MA",
     "metric_name": "initial_capital",
     "metric_value": 10000.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "MA",
     "metric_name": "final_equity",
-    "metric_value": 10296.078041571855,
+    "metric_value": 10365.737662788351,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "MA",
     "metric_name": "num_bars",
-    "metric_value": 1718,
+    "metric_value": 1720,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "MA",
     "metric_name": "open_position_at_end",
     "metric_value": 0.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "ABBV",
     "metric_name": "total_return_pct",
-    "metric_value": -2.0358200967314,
+    "metric_value": -2.4642336180794477,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "ABBV",
     "metric_name": "cagr_pct",
-    "metric_value": -0.30032632637958523,
+    "metric_value": -0.3639130792263301,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "ABBV",
     "metric_name": "max_drawdown_pct",
-    "metric_value": 5.598803106807968,
+    "metric_value": 5.598784556980303,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "ABBV",
     "metric_name": "num_trades",
-    "metric_value": 79,
+    "metric_value": 80,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "ABBV",
     "metric_name": "num_closed_trades",
-    "metric_value": 79,
+    "metric_value": 80,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "ABBV",
     "metric_name": "num_open_trades",
     "metric_value": 0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "ABBV",
     "metric_name": "win_rate_pct",
-    "metric_value": 35.44303797468354,
+    "metric_value": 35.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "ABBV",
     "metric_name": "avg_win",
-    "metric_value": 70.97990089506459,
+    "metric_value": 70.01652852446571,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "ABBV",
     "metric_name": "avg_loss",
-    "metric_value": -42.96116146539124,
+    "metric_value": -42.440118471018764,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "ABBV",
     "metric_name": "avg_win_loss_ratio",
-    "metric_value": 1.6521876614589377,
+    "metric_value": 1.6497722213541453,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "ABBV",
     "metric_name": "expectancy_per_trade",
-    "metric_value": -2.5769874642170256,
+    "metric_value": -3.080292022599195,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "ABBV",
     "metric_name": "annualized_volatility_pct",
-    "metric_value": 2.288454049373806,
+    "metric_value": 2.2902275035161392,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "ABBV",
     "metric_name": "sharpe_ratio",
-    "metric_value": -0.13123546284958792,
+    "metric_value": -0.15889822241136384,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "ABBV",
     "metric_name": "risk_free_rate_annual",
     "metric_value": 0.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "ABBV",
     "metric_name": "buy_and_hold_total_return_pct",
-    "metric_value": 328.300454474517,
+    "metric_value": 333.0529482204761,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "ABBV",
     "metric_name": "excess_return_vs_buy_and_hold_pct",
-    "metric_value": -330.3362745712484,
+    "metric_value": -335.51718183855553,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "ABBV",
     "metric_name": "total_trading_costs",
     "metric_value": 0.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "ABBV",
     "metric_name": "initial_capital",
     "metric_value": 10000.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "ABBV",
     "metric_name": "final_equity",
-    "metric_value": 9796.41799032686,
+    "metric_value": 9753.576638192055,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "ABBV",
     "metric_name": "num_bars",
-    "metric_value": 1718,
+    "metric_value": 1720,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   },
   {
-    "run_id": "run_20261102T215944Z_2a06bd00",
+    "run_id": "run_20261104T200837Z_ce9562fd",
     "market": "us_stock",
     "symbol": "ABBV",
     "metric_name": "open_position_at_end",
     "metric_value": 0.0,
     "period_start": "2020-01-02 05:00:00+00:00",
-    "period_end": "2026-11-02 05:00:00+00:00"
+    "period_end": "2026-11-04 05:00:00+00:00"
   }
 ]
