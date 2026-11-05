@@ -1,5 +1,5 @@
 {
- "mode": "rebalance",
+ "mode": "valuation",
  "last_close_date": "2026-11-04",
  "cash": 100000.0,
  "holdings_value": 0.0,
@@ -249,10 +249,7 @@
    "trend_ok": true
   }
  ],
- "pending_entries_before": [],
- "pending_exits_before": [],
- "trades_today": [],
- "new_pending_entries": [
+ "pending_entries_before": [
   {
    "coin": "UNI",
    "breakout_price": 7.8,
@@ -264,7 +261,181 @@
    "mom126": 1.1171548117154813
   }
  ],
+ "pending_exits_before": [],
+ "trades_today": [],
+ "new_pending_entries": [],
  "new_pending_exits": [],
  "no_new_close": false,
- "pending_entries_detail": []
+ "watchlist_trend_ok": [
+  {
+   "coin": "ZEC",
+   "close": 1296.57,
+   "mom126": 2.1048875691467708,
+   "ma200": 756.1425999999999,
+   "prior_max": 1314.13,
+   "prior_min": 1126.08,
+   "breakout": false,
+   "trend_ok": true
+  },
+  {
+   "coin": "QNT",
+   "close": 203.64,
+   "mom126": 2.001768867924528,
+   "ma200": 97.80065,
+   "prior_max": 206.56,
+   "prior_min": 178.04,
+   "breakout": false,
+   "trend_ok": true
+  },
+  {
+   "coin": "UNI",
+   "close": 7.8,
+   "mom126": 1.758132956152758,
+   "ma200": 4.79042,
+   "prior_max": 7.495,
+   "prior_min": 6.464,
+   "breakout": true,
+   "trend_ok": true
+  },
+  {
+   "coin": "ENA",
+   "close": 0.1797,
+   "mom126": 1.4316644113667119,
+   "ma200": 0.130704,
+   "prior_max": 0.2136,
+   "prior_min": 0.1706,
+   "breakout": false,
+   "trend_ok": true
+  },
+  {
+   "coin": "NEAR",
+   "close": 4.015,
+   "mom126": 1.224376731301939,
+   "ma200": 2.57552,
+   "prior_max": 5.255,
+   "prior_min": 3.86,
+   "breakout": false,
+   "trend_ok": true
+  },
+  {
+   "coin": "PEPE",
+   "close": 5.06e-06,
+   "mom126": 1.1171548117154813,
+   "ma200": 3.5022e-06,
+   "prior_max": 5.01e-06,
+   "prior_min": 3.79e-06,
+   "breakout": true,
+   "trend_ok": true
+  },
+  {
+   "coin": "AAVE",
+   "close": 132.39,
+   "mom126": 0.5796444338384439,
+   "ma200": 108.5001,
+   "prior_max": 157.76,
+   "prior_min": 119.57,
+   "breakout": false,
+   "trend_ok": true
+  },
+  {
+   "coin": "LINK",
+   "close": 11.447,
+   "mom126": 0.554243041412084,
+   "ma200": 10.05912,
+   "prior_max": 12.493,
+   "prior_min": 10.636,
+   "breakout": false,
+   "trend_ok": true
+  },
+  {
+   "coin": "ETH",
+   "close": 2424.62,
+   "mom126": 0.5063494035785288,
+   "ma200": 2158.36295,
+   "prior_max": 2472.5,
+   "prior_min": 2245.19,
+   "breakout": false,
+   "trend_ok": true
+  },
+  {
+   "coin": "BCH",
+   "close": 282.7,
+   "mom126": 0.3455497382198953,
+   "ma200": 281.16450000000003,
+   "prior_max": 294.7,
+   "prior_min": 273.5,
+   "breakout": false,
+   "trend_ok": true
+  },
+  {
+   "coin": "BTC",
+   "close": 80478.4,
+   "mom126": 0.3405499262333078,
+   "ma200": 73229.8083,
+   "prior_max": 84070.75,
+   "prior_min": 76815.66,
+   "breakout": false,
+   "trend_ok": true
+  },
+  {
+   "coin": "LTC",
+   "close": 56.28,
+   "mom126": 0.31710741867540393,
+   "ma200": 52.181400000000004,
+   "prior_max": 61.59,
+   "prior_min": 53.75,
+   "breakout": false,
+   "trend_ok": true
+  },
+  {
+   "coin": "AVAX",
+   "close": 8.746,
+   "mom126": 0.3112443778110945,
+   "ma200": 8.145055,
+   "prior_max": 10.041,
+   "prior_min": 8.25,
+   "breakout": false,
+   "trend_ok": true
+  },
+  {
+   "coin": "BNB",
+   "close": 719.81,
+   "mom126": 0.3076042726347914,
+   "ma200": 656.7155,
+   "prior_max": 758.74,
+   "prior_min": 697.69,
+   "breakout": false,
+   "trend_ok": true
+  },
+  {
+   "coin": "SUI",
+   "close": 0.9319,
+   "mom126": 0.2999023573720183,
+   "ma200": 0.8639875,
+   "prior_max": 1.0378,
+   "prior_min": 0.8713,
+   "breakout": false,
+   "trend_ok": true
+  },
+  {
+   "coin": "XRP",
+   "close": 1.305,
+   "mom126": 0.23931623931623935,
+   "ma200": 1.274147,
+   "prior_max": 1.3654,
+   "prior_min": 1.2379,
+   "breakout": false,
+   "trend_ok": true
+  },
+  {
+   "coin": "SOL",
+   "close": 95.58,
+   "mom126": 0.2345647119607337,
+   "ma200": 88.9806,
+   "prior_max": 106.94,
+   "prior_min": 91.96,
+   "breakout": false,
+   "trend_ok": true
+  }
+ ]
 }
