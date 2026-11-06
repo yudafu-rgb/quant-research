@@ -13,7 +13,7 @@
   --bear:#b42318; --bear-bg:#fdecea;
   --neu:#5a6572; --neu-bg:#edf0f2;
   --mix:#8a5a00; --mix-bg:#fdf3df;
-  --pm-bg:#f5f8fb;
+  --pm-bg:#e9eff8;
   --font-body:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",sans-serif;
   --font-num:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;
 }
@@ -51,7 +51,8 @@ tr:nth-child(even) td{background:#f7f4ec}
 tr:hover td{background:#f2eee3}
 td.cat{color:var(--muted);font-size:13px;white-space:nowrap}
 td.ch{font-weight:650;white-space:nowrap}
-tr.pm td{background:var(--pm-bg)}
+table tr.pm td{background:var(--pm-bg)}
+table tr.pm:nth-child(even) td{background:var(--pm-bg)}
 /* 立场徽章：只在能判断时出现 */
 .badge{display:inline-block;font-size:12px;font-weight:700;line-height:1.5;padding:1px 8px;border-radius:999px;margin:0 6px 2px 0;white-space:nowrap}
 .badge.bull{color:var(--bull);background:var(--bull-bg)}
