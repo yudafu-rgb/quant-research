@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Telegram 下单信号 · 陈哥 / 米娅</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;max-width:980px;margin:0 auto;padding:24px 16px;color:#222;line-height:1.6}
+h1{font-size:22px} h2{font-size:18px;margin-top:32px;border-bottom:1px solid #ddd;padding-bottom:6px}
+table{border-collapse:collapse;width:100%;margin:12px 0} th,td{border:1px solid #ddd;padding:6px 8px;text-align:left;font-size:14px} th{background:#f2f2f2}
+.note{color:#555;font-size:13px} .err{color:#b42318}
+.scroll{overflow-x:auto} .scroll table{min-width:720px}
+a{color:#0b5fff}
+.badge{display:inline-block;padding:1px 8px;border-radius:10px;font-size:12px;background:#eef4ff}
+</style>
+</head>
+<body>
+<h1>Telegram 下单信号 · 陈哥 / 米娅</h1>
+<p class="note">只读网页版：只整理发帖人的下单 / 策略信息，仅供资讯参考，不构成买卖建议。“止盈已触发”等说法均为发帖人自称，未独立核实，不得当作已证实战绩。<br>
+来源：TraderChenge Telegram（@ChengeTrader，BTC）、交易员陈哥 Telegram（@ChengeTG，美股，内容与陈哥频道同步）、比特币米娅老师 Telegram（@BtcMiaTchrTG，BTC/ETH）。<br>
+数据来源：<code>results/telegram_signals_history.jsonl</code>（Muse 每 30 分钟检查一次，有新下单信号才追加并推送）。本页打开时从仓库实时读取，刷新页面即更新。<br>
+Discord 陈哥社区暂未并入：登录仍在重试中，登录成功后再补。</p>
+<p id="status" class="note">正在读取仓库数据……</p>
+
+<h2>最新下单信号</h2>
+<div id="latest"></div>
+
+<h2>全部信号（最近 30 条）</h2>
+<div id="history"></div>
+
+<h2>追踪来源</h2>
+<div class="scroll"><table>
+<tr><th>来源</th><th>说明</th></tr>
+<tr><td>TraderChenge Telegram（BTC）</td><td>https://t.me/ChengeTrader ，频道 Chenge 二级市场从业者，19,434 订阅，BTC 合约策略 / 技术分析</td></tr>
+<tr><td>交易员陈哥 Telegram（美股）</td><td>https://t.me/ChengeTG ，723 成员，美股技术分析，内容与陈哥频道同步</td></tr>
+<tr><td>比特币米娅老师 Telegram（BTC/ETH）</td><td>https://t.me/BtcMiaTchrTG ，6,350 成员，BTC/ETH 每日行情、支撑阻力</td></tr>
+</table></div>
+
+<p class="note">返回：<a href="./youtube-briefing.html">YouTube BTC/ETH观点简报</a> · <a href="./index.html">主看板</a></p>
+
+<script>
+const RAW = "https://raw.githubusercontent.com/yudafu-rgb/quant-research/main/";
+const esc = s => String(s ?? "").replace(/&/g,"&amp;").replace(/</g,"&lt;");
+async function getText(url){ const r = await fetch(url); if(!r.ok) throw new Error(r.status); return r.text(); }
+function rowHtml(r){
+  return "<tr><td>"+esc(r.posted_at)+"</td><td>"+esc(r.source_name)+"</td><td>"+esc(r.symbol)+"</td><td>"+esc(r.direction)+"</td><td>"+esc(r.entry)+"</td><td>"+esc(r.stop_loss)+"</td><td>"+esc(r.take_profit)+"</td><td>"+esc(r.status)+"</td><td>"+(r.source_url? "<a href=\""+esc(r.source_url)+"\" target=\"_blank\" rel=\"noopener\">来源</a>":"")+"</td></tr>";
+}
+(async function(){
+  try{
+    const txt = await getText(RAW + "results/telegram_signals_history.jsonl");
+    const lines = txt.trim().split("\n").filter(Boolean).map(l=>JSON.parse(l));
+    const orders = lines.filter(r=>r.type==="order"||r.type==="result");
+    document.getElementById("status").textContent = "已读取 " + lines.length + " 条记录（其中下单/止盈 " + orders.length + " 条），最新发布时间：" + lines[lines.length-1].posted_at + "。";
+    const head = "<div class=\"scroll\"><table><tr><th>发帖时间</th><th>来源</th><th>币种</th><th>方向</th><th>入场</th><th>止损</th><th>止盈</th><th>状态</th><th>来源</th></tr>";
+    const latest = orders.slice(-5).reverse();
+    document.getElementById("latest").innerHTML = head + latest.map(rowHtml).join("") + "</table></div><p class=\"note\">分析 / 视频类记录见下表，不计入下单信号。</p>";
+    document.getElementById("history").innerHTML = head + lines.slice(-30).reverse().map(rowHtml).join("") + "</table></div>";
+  }catch(e){
+    document.getElementById("status").innerHTML = "<span class=\"err\">信号历史读取失败（"+esc(e.message)+"），请稍后刷新。</span>";
+    document.getElementById("latest").innerHTML = "<p class=\"note\">暂无已上传的信号记录，下一条新信号出现后会自动显示。</p>";
+  }
+})();
+</script>
+</body>
+</html>
