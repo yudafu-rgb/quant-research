@@ -10,6 +10,7 @@ h1{font-size:22px} h2{font-size:18px;margin-top:32px;border-bottom:1px solid #dd
 table{border-collapse:collapse;width:100%;margin:12px 0} th,td{border:1px solid #ddd;padding:6px 8px;text-align:left;font-size:14px} th{background:#f2f2f2}
 .note{color:#555;font-size:13px} .err{color:#b42318}
 .scroll{overflow-x:auto} .scroll table{min-width:640px}
+#history td{vertical-align:top}
 a{color:#0b5fff}
 </style>
 </head>
@@ -64,7 +65,7 @@ async function getText(url){ const r = await fetch(url); if(r.status===404) retu
     }
     document.getElementById("latest").innerHTML = html;
     let hist = "<table><tr><th>推送时间（多伦多）</th><th>BTC 速览</th><th>ETH 速览</th></tr>" +
-      lines.slice(-12).reverse().map(d=>"<tr><td>"+esc(d.run_toronto)+"</td><td>"+esc((d.btc_summary||"").slice(0,120))+"</td><td>"+esc((d.eth_summary||"").slice(0,120))+"</td></tr>").join("") + "</table>";
+      lines.slice(-12).reverse().map(d=>"<tr><td>"+esc(d.run_toronto)+"</td><td>"+esc(d.btc_summary||"")+"</td><td>"+esc(d.eth_summary||"")+"</td></tr>").join("") + "</table>";
     document.getElementById("history").innerHTML = hist;
   }catch(e){
     document.getElementById("status").innerHTML = "<span class=\"err\">简报历史读取失败（"+esc(e.message)+"），请稍后刷新。</span>";
