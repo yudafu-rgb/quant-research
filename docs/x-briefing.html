@@ -51,6 +51,7 @@ tr:nth-child(even) td{background:#f7f4ec}
 tr:hover td{background:#f2eee3}
 td.cat{color:var(--muted);font-size:13px}
 td.ch{font-weight:650}
+td.acc{font-size:13px;white-space:nowrap;text-align:center}
 /* 最新一期表：固定列宽，最新核心观点居中、占约一半宽度 */
 table.main{table-layout:fixed}
 table tr.pm td{background:var(--pm-bg)}
@@ -124,6 +125,8 @@ function stanceBadge(s){ const m = STANCE[s||""]; return m ? '<span class="badge
   try{
     const txt = await getText(RAW + "results/x_briefing_history.jsonl");
     if(!txt.trim()){ document.getElementById("status").textContent = "暂无已上传的简报记录，下一期推送后会自动显示。"; document.getElementById("latest").innerHTML = "<p class=\"note\">首期为 2026-11-03 09:30（多伦多）。</p>"; return; }
+    let acc = {}, accMeta = "";
+    try{ const aj = JSON.parse(await getText(RAW + "results/x_accuracy.json")); acc = aj.channels || {}; accMeta = aj.generated_at || ""; }catch(e){}
     const lines = txt.trim().split("\n").filter(Boolean).map(l=>JSON.parse(l));
     const last = lines[lines.length-1];
     document.getElementById("status").textContent = "已读取 " + lines.length + " 期简报记录，最新一期：" + last.run_toronto + "（多伦多）。";
@@ -141,12 +144,14 @@ function stanceBadge(s){ const m = STANCE[s||""]; return m ? '<span class="badge
     if(last.table_rows && last.table_rows.length){
       const isEmpty = r => (r.view||"").trim() === "本期暂无新帖";
       const hiddenCount = last.table_rows.filter(isEmpty).length;
-      html += "<div class=\"scroll\"><table class=\"main\"><colgroup><col style=\"width:12%\"><col style=\"width:15%\"><col style=\"width:51%\"><col style=\"width:22%\"></colgroup><tr><th>分类</th><th>账号名称</th><th>最新核心观点</th><th>核心关注点 / 风格定位</th></tr>" +
+      const accCell = r => r.category==="预测市场" ? "—" : (r.channel||"").includes("Telegram") ? "—" : (acc[r.channel] ? acc[r.channel].display : "暂无");
+      html += "<div class=\"scroll\"><table class=\"main\"><colgroup><col style=\"width:11%\"><col style=\"width:14%\"><col style=\"width:47%\"><col style=\"width:18%\"><col style=\"width:10%\"></colgroup><tr><th>分类</th><th>账号名称</th><th>最新核心观点</th><th>核心关注点 / 风格定位</th><th>准确率</th></tr>" +
         last.table_rows.map(r=>{
           const cls = [isEmpty(r)?"no-video":"", r.category==="预测市场"?"pm":""].filter(Boolean).join(" ");
-          return "<tr"+(cls?(" class=\""+cls+"\""):"")+(isEmpty(r)?" style=\"display:none\"":"")+"><td class=\"cat\">"+esc(r.category)+"</td><td class=\"ch\">"+esc(r.channel)+"</td><td>"+stanceBadge(r.stance)+markNums(r.view||"")+"</td><td>"+esc(r.focus)+"</td></tr>";
+          return "<tr"+(cls?(" class=\""+cls+"\""):"")+(isEmpty(r)?" style=\"display:none\"":"")+"><td class=\"cat\">"+esc(r.category)+"</td><td class=\"ch\">"+esc(r.channel)+"</td><td>"+stanceBadge(r.stance)+markNums(r.view||"")+"</td><td>"+esc(r.focus)+"</td><td class=\"acc\">"+accCell(r)+"</td></tr>";
         }).join("") + "</table></div>";
       if(hiddenCount) html += "<p class=\"note\">本期 " + hiddenCount + " 个账号暂无新帖，已默认隐藏。 <button onclick=\"toggleNoVideo(this)\" data-label-show=\"显示" + hiddenCount + "个无新帖的账号\">显示" + hiddenCount + "个无新帖的账号</button></p>";
+      if(accMeta) html += "<p class=\"note\">准确率：只统计已验证的预测（命中 / 已判定数，括号为样本数）；“待验证”为窗口未到，“暂无”为无可核实预测。价格源 Binance US 日线，更新于 " + esc(accMeta) + "。</p>";
     }
     if(last.sources && last.sources.length){
       html += "<h3>主要帖子来源</h3><ul>" + last.sources.map(s=>"<li><a href=\""+esc(s.url)+"\" target=\"_blank\" rel=\"noopener\">"+esc(s.title)+"</a></li>").join("") + "</ul>";
