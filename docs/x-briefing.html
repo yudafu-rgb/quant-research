@@ -49,8 +49,10 @@ th{position:sticky;top:0;background:#f3f0e8;font-size:13px;color:var(--muted);fo
 td{border-bottom:1px solid var(--line-soft)}
 tr:nth-child(even) td{background:#f7f4ec}
 tr:hover td{background:#f2eee3}
-td.cat{color:var(--muted);font-size:13px;white-space:nowrap}
-td.ch{font-weight:650;white-space:nowrap}
+td.cat{color:var(--muted);font-size:13px}
+td.ch{font-weight:650}
+/* 最新一期表：固定列宽，最新核心观点居中、占约一半宽度 */
+table.main{table-layout:fixed}
 table tr.pm td{background:var(--pm-bg)}
 table tr.pm:nth-child(even) td{background:var(--pm-bg)}
 /* 立场徽章：只在能判断时出现 */
@@ -139,10 +141,10 @@ function stanceBadge(s){ const m = STANCE[s||""]; return m ? '<span class="badge
     if(last.table_rows && last.table_rows.length){
       const isEmpty = r => (r.view||"").trim() === "本期暂无新帖";
       const hiddenCount = last.table_rows.filter(isEmpty).length;
-      html += "<div class=\"scroll\"><table><tr><th>分类</th><th>账号名称</th><th>核心关注点 / 风格定位</th><th>最新核心观点</th></tr>" +
+      html += "<div class=\"scroll\"><table class=\"main\"><colgroup><col style=\"width:12%\"><col style=\"width:15%\"><col style=\"width:51%\"><col style=\"width:22%\"></colgroup><tr><th>分类</th><th>账号名称</th><th>最新核心观点</th><th>核心关注点 / 风格定位</th></tr>" +
         last.table_rows.map(r=>{
           const cls = [isEmpty(r)?"no-video":"", r.category==="预测市场"?"pm":""].filter(Boolean).join(" ");
-          return "<tr"+(cls?(" class=\""+cls+"\""):"")+(isEmpty(r)?" style=\"display:none\"":"")+"><td class=\"cat\">"+esc(r.category)+"</td><td class=\"ch\">"+esc(r.channel)+"</td><td>"+esc(r.focus)+"</td><td>"+stanceBadge(r.stance)+markNums(r.view||"")+"</td></tr>";
+          return "<tr"+(cls?(" class=\""+cls+"\""):"")+(isEmpty(r)?" style=\"display:none\"":"")+"><td class=\"cat\">"+esc(r.category)+"</td><td class=\"ch\">"+esc(r.channel)+"</td><td>"+stanceBadge(r.stance)+markNums(r.view||"")+"</td><td>"+esc(r.focus)+"</td></tr>";
         }).join("") + "</table></div>";
       if(hiddenCount) html += "<p class=\"note\">本期 " + hiddenCount + " 个账号暂无新帖，已默认隐藏。 <button onclick=\"toggleNoVideo(this)\" data-label-show=\"显示" + hiddenCount + "个无新帖的账号\">显示" + hiddenCount + "个无新帖的账号</button></p>";
     }
