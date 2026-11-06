@@ -1,0 +1,37 @@
+{
+  "generated_at": "2026-11-05 22:48",
+  "price_source": "Binance US 日线（UTC）最高/最低价；窗口为原帖发布后 7 天",
+  "rule": "只验带明确价位+方向+短期的预测；复述、提问、模型估值、长期目标不验；同一原帖只计一次",
+  "summary": {
+    "claims": 5,
+    "hits": 3,
+    "misses": 0,
+    "pending": 2
+  },
+  "channels": {
+    "Crypto World": {
+      "hits": 2,
+      "misses": 0,
+      "pending": 0,
+      "resolved": 2,
+      "accuracy_pct": 100,
+      "display": "100%（2/2）"
+    },
+    "TraderChenge": {
+      "hits": 0,
+      "misses": 0,
+      "pending": 1,
+      "resolved": 0,
+      "accuracy_pct": null,
+      "display": "待验证（1）"
+    },
+    "「鳄鱼」比特币实盘战神": {
+      "hits": 1,
+      "misses": 0,
+      "pending": 1,
+      "resolved": 1,
+      "accuracy_pct": 100,
+      "display": "100%（1/1）"
+    }
+  }
+}
