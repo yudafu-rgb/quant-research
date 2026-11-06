@@ -5,13 +5,72 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>X BTC/ETH观点简报 · 网页版</title>
 <style>
-body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;max-width:980px;margin:0 auto;padding:24px 16px;color:#222;line-height:1.6}
-h1{font-size:22px} h2{font-size:18px;margin-top:32px;border-bottom:1px solid #ddd;padding-bottom:6px} h3{font-size:16px;margin-top:20px}
-table{border-collapse:collapse;width:100%;margin:12px 0} th,td{border:1px solid #ddd;padding:6px 8px;text-align:left;font-size:14px} th{background:#f2f2f2}
-.note{color:#555;font-size:13px} .err{color:#b42318}
-.scroll{overflow-x:auto} .scroll table{min-width:640px}
+:root{
+  --ink:#1d2733; --muted:#5a6572; --faint:#8b95a1;
+  --paper:#faf9f5; --line:#e7e2d6; --line-soft:#efece3;
+  --accent:#1d4ed8;
+  --bull:#177245; --bull-bg:#e6f4ec;
+  --bear:#b42318; --bear-bg:#fdecea;
+  --neu:#5a6572; --neu-bg:#edf0f2;
+  --mix:#8a5a00; --mix-bg:#fdf3df;
+  --pm-bg:#f5f8fb;
+  --font-body:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",sans-serif;
+  --font-num:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;
+}
+*{box-sizing:border-box}
+body{font-family:var(--font-body);max-width:960px;margin:0 auto;padding:32px 20px 48px;color:var(--ink);background:var(--paper);line-height:1.75;font-size:16px}
+::selection{background:#dbe7ff}
+a{color:var(--accent);text-underline-offset:3px}
+a:hover{color:#173ea8}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+h1{font-size:26px;line-height:1.3;letter-spacing:-.01em;margin:0 0 6px;text-wrap:balance}
+h2{font-size:19px;margin:40px 0 12px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+h3{font-size:15px;margin:0 0 8px}
+p{margin:0 0 12px}
+.meta{color:var(--muted);font-size:14px;margin:2px 0 0}
+/* 重点数字：等宽字体，和正文区分 */
+.num{font-family:var(--font-num);font-size:.92em;font-weight:600;letter-spacing:-.01em}
+.note{color:var(--muted);font-size:13.5px;line-height:1.7}
+.err{color:var(--bear)}
+.scroll{overflow-x:auto} .scroll table{min-width:680px}
+/* BTC / ETH 摘要：左右两栏，窄屏自动上下排 */
+.summary-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 32px;margin:20px 0 8px}
+.summary-grid section+section{border-left:1px solid var(--line);padding-left:32px}
+.summary-grid p{margin:0;max-width:68ch;text-wrap:pretty}
+.coin{display:inline-flex;align-items:center;gap:8px;font-size:17px;letter-spacing:.02em}
+.coin::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--coin,#888)}
+.coin.btc{--coin:#f7931a} .coin.eth{--coin:#627eea}
+.verdict{margin:20px 0 4px;border-top:1px solid var(--line-soft);padding-top:16px}
+.verdict p{margin:0 0 10px;max-width:74ch;text-wrap:pretty}
+/* 表格 */
+table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14.5px}
+th,td{padding:9px 10px;text-align:left;vertical-align:top;line-height:1.65}
+th{position:sticky;top:0;background:#f3f0e8;font-size:13px;color:var(--muted);font-weight:700;white-space:nowrap;border-bottom:1px solid var(--line)}
+td{border-bottom:1px solid var(--line-soft)}
+tr:nth-child(even) td{background:#f7f4ec}
+tr:hover td{background:#f2eee3}
+td.cat{color:var(--muted);font-size:13px;white-space:nowrap}
+td.ch{font-weight:650;white-space:nowrap}
+tr.pm td{background:var(--pm-bg)}
+/* 立场徽章：只在能判断时出现 */
+.badge{display:inline-block;font-size:12px;font-weight:700;line-height:1.5;padding:1px 8px;border-radius:999px;margin:0 6px 2px 0;white-space:nowrap}
+.badge.bull{color:var(--bull);background:var(--bull-bg)}
+.badge.bear{color:var(--bear);background:var(--bear-bg)}
+.badge.neu{color:var(--neu);background:var(--neu-bg)}
+.badge.mix{color:var(--mix);background:var(--mix-bg)}
 #history td{vertical-align:top}
-a{color:#0b5fff}
+#history td:first-child{font-family:var(--font-num);font-size:13px;white-space:nowrap;color:var(--muted)}
+#history tr:nth-child(even) td{background:#f7f4ec}
+button{font:inherit;font-size:13.5px;padding:5px 12px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);cursor:pointer}
+button:hover{border-color:var(--accent);color:var(--accent)}
+.foot{margin-top:40px}
+@media(max-width:720px){
+  body{padding:24px 16px 40px;font-size:15.5px}
+  h1{font-size:22px}
+  .summary-grid{grid-template-columns:1fr}
+  .summary-grid section+section{border-left:0;padding-left:0;border-top:1px solid var(--line);padding-top:20px;margin-top:20px}
+  th{position:static}
+}
 </style>
 </head>
 <body>
@@ -50,6 +109,14 @@ function toggleNoVideo(btn){
   btn.dataset.showing = showing ? "0" : "1";
   btn.textContent = showing ? btn.dataset.labelShow : "收起无新帖的账号";
 }
+/* 重点数字（$价位、百分比）用等宽字体高亮，和正文区分 */
+function markNums(s){
+  return esc(s)
+    .replace(/\$[\d,]+(?:\.\d+)?/g, m=>'<span class="num">'+m+'</span>')
+    .replace(/\d+(?:\.\d+)?%/g, m=>'<span class="num">'+m+'</span>');
+}
+const STANCE = {bullish:["看涨","bull"], bearish:["看空","bear"], neutral:["中性","neu"], range:["区间","neu"], mixed:["分歧","mix"]};
+function stanceBadge(s){ const m = STANCE[s||""]; return m ? '<span class="badge '+m[1]+'">'+m[0]+'</span>' : ""; }
 (async function(){
   try{
     const txt = await getText(RAW + "results/x_briefing_history.jsonl");
@@ -57,17 +124,25 @@ function toggleNoVideo(btn){
     const lines = txt.trim().split("\n").filter(Boolean).map(l=>JSON.parse(l));
     const last = lines[lines.length-1];
     document.getElementById("status").textContent = "已读取 " + lines.length + " 期简报记录，最新一期：" + last.run_toronto + "（多伦多）。";
-    let html = "<p>推送时间（多伦多）：" + esc(last.run_toronto) + "</p>";
+    let html = "<p class=\"meta\">推送时间（多伦多）：<span class=\"num\">" + esc(last.run_toronto) + "</span></p>";
     if(last.format_note) html += "<p class=\"note\">" + esc(last.format_note) + "</p>";
-    html += "<h3>BTC</h3><p>" + esc(last.btc_summary||"") + "</p>";
-    html += "<h3>ETH</h3><p>" + esc(last.eth_summary||"") + "</p>";
-    if(last.consensus) html += "<p><b>共识：</b>" + esc(last.consensus) + "</p>";
-    if(last.divergence) html += "<p><b>分歧：</b>" + esc(last.divergence) + "</p>";
+    html += "<div class=\"summary-grid\">"
+      + "<section><h3><span class=\"coin btc\">BTC</span></h3><p>" + markNums(last.btc_summary||"") + "</p></section>"
+      + "<section><h3><span class=\"coin eth\">ETH</span></h3><p>" + markNums(last.eth_summary||"") + "</p></section></div>";
+    if(last.consensus || last.divergence){
+      html += "<div class=\"verdict\">";
+      if(last.consensus) html += "<p><b>共识：</b>" + markNums(last.consensus) + "</p>";
+      if(last.divergence) html += "<p><b>分歧：</b>" + markNums(last.divergence) + "</p>";
+      html += "</div>";
+    }
     if(last.table_rows && last.table_rows.length){
       const isEmpty = r => (r.view||"").trim() === "本期暂无新帖";
       const hiddenCount = last.table_rows.filter(isEmpty).length;
       html += "<div class=\"scroll\"><table><tr><th>分类</th><th>账号名称</th><th>核心关注点 / 风格定位</th><th>最新核心观点</th></tr>" +
-        last.table_rows.map(r=>"<tr"+(isEmpty(r) ? " class=\"no-video\" style=\"display:none\"" : "")+"><td>"+esc(r.category)+"</td><td>"+esc(r.channel)+"</td><td>"+esc(r.focus)+"</td><td>"+esc(r.view)+"</td></tr>").join("") + "</table></div>";
+        last.table_rows.map(r=>{
+          const cls = [isEmpty(r)?"no-video":"", r.category==="预测市场"?"pm":""].filter(Boolean).join(" ");
+          return "<tr"+(cls?(" class=\""+cls+"\""):"")+(isEmpty(r)?" style=\"display:none\"":"")+"><td class=\"cat\">"+esc(r.category)+"</td><td class=\"ch\">"+esc(r.channel)+"</td><td>"+esc(r.focus)+"</td><td>"+stanceBadge(r.stance)+markNums(r.view||"")+"</td></tr>";
+        }).join("") + "</table></div>";
       if(hiddenCount) html += "<p class=\"note\">本期 " + hiddenCount + " 个账号暂无新帖，已默认隐藏。 <button onclick=\"toggleNoVideo(this)\" data-label-show=\"显示" + hiddenCount + "个无新帖的账号\">显示" + hiddenCount + "个无新帖的账号</button></p>";
     }
     if(last.sources && last.sources.length){
@@ -75,7 +150,7 @@ function toggleNoVideo(btn){
     }
     document.getElementById("latest").innerHTML = html;
     let hist = "<table><tr><th>推送时间（多伦多）</th><th>BTC 速览</th><th>ETH 速览</th></tr>" +
-      lines.slice(-12).reverse().map(d=>"<tr><td>"+esc(d.run_toronto)+"</td><td>"+esc(d.btc_summary||"")+"</td><td>"+esc(d.eth_summary||"")+"</td></tr>").join("") + "</table>";
+      lines.slice(-12).reverse().map(d=>"<tr><td>"+esc(d.run_toronto)+"</td><td>"+markNums(d.btc_summary||"")+"</td><td>"+markNums(d.eth_summary||"")+"</td></tr>").join("") + "</table>";
     document.getElementById("history").innerHTML = hist;
   }catch(e){
     document.getElementById("status").innerHTML = "<span class=\"err\">简报历史读取失败（"+esc(e.message)+"），请稍后刷新。</span>";
