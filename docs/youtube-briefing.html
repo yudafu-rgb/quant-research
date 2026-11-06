@@ -48,6 +48,13 @@ a{color:#0b5fff}
 const RAW = "https://raw.githubusercontent.com/yudafu-rgb/quant-research/main/";
 const esc = s => String(s ?? "").replace(/&/g,"&amp;").replace(/</g,"&lt;");
 async function getText(url){ const r = await fetch(url); if(!r.ok) throw new Error(r.status); return r.text(); }
+function toggleNoVideo(btn){
+  const rows = document.querySelectorAll("#latest tr.no-video");
+  const showing = btn.dataset.showing === "1";
+  rows.forEach(r=>{ r.style.display = showing ? "none" : ""; });
+  btn.dataset.showing = showing ? "0" : "1";
+  btn.textContent = showing ? btn.dataset.labelShow : "收起无新视频的频道";
+}
 (async function(){
   try{
     const txt = await getText(RAW + "results/youtube_briefing_history.jsonl");
@@ -61,8 +68,11 @@ async function getText(url){ const r = await fetch(url); if(!r.ok) throw new Err
     if(last.consensus) html += "<p><b>共识：</b>" + esc(last.consensus) + "</p>";
     if(last.divergence) html += "<p><b>分歧：</b>" + esc(last.divergence) + "</p>";
     if(last.table_rows && last.table_rows.length){
+      const isEmpty = r => (r.view||"").trim() === "本期暂无新视频";
+      const hiddenCount = last.table_rows.filter(isEmpty).length;
       html += "<div class=\"scroll\"><table><tr><th>分类</th><th>频道名称</th><th>核心关注点 / 风格定位</th><th>最新核心观点</th></tr>" +
-        last.table_rows.map(r=>"<tr><td>"+esc(r.category)+"</td><td>"+esc(r.channel)+"</td><td>"+esc(r.focus)+"</td><td>"+esc(r.view)+"</td></tr>").join("") + "</table></div>";
+        last.table_rows.map(r=>"<tr"+(isEmpty(r) ? " class=\"no-video\" style=\"display:none\"" : "")+"><td>"+esc(r.category)+"</td><td>"+esc(r.channel)+"</td><td>"+esc(r.focus)+"</td><td>"+esc(r.view)+"</td></tr>").join("") + "</table></div>";
+      if(hiddenCount) html += "<p class=\"note\">本期 " + hiddenCount + " 个频道暂无新视频，已默认隐藏。 <button onclick=\"toggleNoVideo(this)\" data-label-show=\"显示" + hiddenCount + "个无新视频的频道\">显示" + hiddenCount + "个无新视频的频道</button></p>";
     }
     if(last.sources && last.sources.length){
       html += "<h3>主要视频来源</h3><ul>" + last.sources.map(s=>"<li><a href=\""+esc(s.url)+"\" target=\"_blank\" rel=\"noopener\">"+esc(s.title)+"</a></li>").join("") + "</ul>";
