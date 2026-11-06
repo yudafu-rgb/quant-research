@@ -24,6 +24,9 @@ table{border-collapse:collapse;width:100%;margin:12px 0} th,td{border:1px solid 
 <h2>纸面账户（最新快照）</h2>
 <div id="accounts"></div>
 
+<h2>持仓对比（各模型放一起比）</h2>
+<div id="compare"></div>
+
 <h2>币圈持仓明细（分币盈亏，建仓 2026-10-26 收盘）</h2>
 <div id="cryptodetail"></div>
 
@@ -92,6 +95,50 @@ async function getText(url){
     let html = `<p>快照时间（多伦多）：${esc(a.run_toronto||"")} · 每模型各 $100,000 独立账户</p><table><tr><th>模型</th><th>总值</th><th>盈亏</th><th>现金</th><th>持仓市值</th></tr>` +
       Object.entries(a.accounts||{}).map(([k,v])=>`<tr><td>${esc(k)}</td><td>${money(v.total)}</td><td class="${v.pnl>=0?"pos":"neg"}">${v.pnl>=0?"+":""}${money(v.pnl)} (${(v.pnl_pct*100).toFixed(2)}%)</td><td>${money(v.cash)}</td><td>${money(v.holdings_value)}</td></tr>`).join("") + `</table>`;
     document.getElementById("accounts").innerHTML = html;
+    // ---- 持仓对比：同一标的放一行，各模型并排比权重 ----
+    function cmpTable(title, keys, labels){
+      const accs = (a.accounts||{});
+      const assets = {};
+      keys.forEach(k=>{
+        const v = accs[k]; if(!v||!v.shares) return;
+        Object.keys(v.shares).forEach(t=>{ (assets[t] = assets[t]||{})[k] = v; });
+      });
+      const names = Object.keys(assets).sort((x,y)=>{
+        const mw = t => Math.max(...keys.map(k=>{const v=accs[k]; if(!v||!v.shares||v.shares[t]==null||!v.latest_close||v.latest_close[t]==null) return 0; return v.shares[t]*v.latest_close[t]/v.total;}));
+        return mw(y)-mw(x);
+      });
+      if(!names.length) return `<h3>${esc(title)}</h3><p class="note">当前均为空仓。</p>`;
+      let h = `<h3>${esc(title)}</h3><div class="scroll"><table><tr><th>标的</th>` + keys.map((k,i)=>`<th>${esc(labels[i])}</th>`).join("") + `</tr>`;
+      for(const t of names){
+        const held = keys.filter(k=>assets[t][k]);
+        const star = held.length===keys.length ? " ★" : "";
+        h += `<tr><td>${esc(t)}${star}</td>`;
+        for(const k of keys){
+          const v = accs[k];
+          if(!v||!v.shares||v.shares[t]==null||!v.latest_close||v.latest_close[t]==null){ h += `<td>—</td>`; continue; }
+          const val = v.shares[t]*v.latest_close[t];
+          const w = val/v.total;
+          const ep = v.entry_prices ? v.entry_prices[t] : null;
+          const g = ep!=null ? (v.latest_close[t]-ep)/ep*100 : null;
+          h += `<td><b>${(w*100).toFixed(1)}%</b> <span class="note">${money(val)}${g!=null?` (${g>=0?"+":""}${g.toFixed(1)}%)`:""}</span></td>`;
+        }
+        h += `</tr>`;
+      }
+      h += `<tr><td>现金</td>`;
+      for(const k of keys){
+        const v = accs[k]; if(!v){ h += `<td>—</td>`; continue; }
+        h += `<td>${(v.cash/v.total*100).toFixed(1)}%</td>`;
+      }
+      h += `</tr></table></div><p class="note">★ 为该组 ${keys.length} 个模型同时持有；单元格为占该模型账户总值的权重，现值按最新已完成日线收盘价算，括号内为相对建仓价的涨跌。</p>`;
+      return h;
+    }
+    const mfEmpty = !(a.accounts.us_MF && a.accounts.us_MF.shares && Object.keys(a.accounts.us_MF.shares).length);
+    const usKeys = ["us_CSMOM","us_TSMOM","us_RP"], usLabels = ["美股 CSMOM","美股 TSMOM","美股 RP"];
+    if(!mfEmpty){ usKeys.push("us_MF"); usLabels.push("美股 MF"); }
+    let cmp = `<p class="note">同一标的在不同模型里的权重放一行比；权重按各模型自己的账户总值算，所以不同模型之间可以直接比。${mfEmpty ? "多因子纸面账户 us_MF 当前空仓，不在表内；" : ""}V5 当前空仓，见下方 V5 一栏。</p>`;
+    cmp += cmpTable("币圈（14 只池）", ["crypto_RP","crypto_TSMOM","crypto_CSMOM"], ["币圈 RP","币圈 TSMOM","币圈 CSMOM"]);
+    cmp += cmpTable("美股（Top20 / 全池 451）", usKeys, usLabels);
+    document.getElementById("compare").innerHTML = cmp;
     const fmtPrice = x => "$" + Number(x).toLocaleString("en-US",{minimumFractionDigits: Math.abs(x)<10?4:2, maximumFractionDigits: Math.abs(x)<10?4:2});
     let det = `<p class="note">现价为最新已完成日线收盘价；浮盈亏为价格变动，未扣未来卖出成本；每模型合计浮盈减去建仓成本即账户盈亏。</p>`;
     for(const k of ["crypto_RP","crypto_TSMOM","crypto_CSMOM"]){
@@ -108,6 +155,7 @@ async function getText(url){
     document.getElementById("cryptodetail").innerHTML = det;
   }catch(e){
     document.getElementById("accounts").innerHTML = `<p class="note">纸面账户总值快照尚未随推送上传（从下一轮推送起自动上传），总值见聊天推送。</p>`;
+    document.getElementById("compare").innerHTML = `<p class="note">持仓对比随账户快照一起上传后显示。</p>`;
     document.getElementById("cryptodetail").innerHTML = `<p class="note">分币明细随账户快照一起上传后显示。</p>`;
   }
   try{
