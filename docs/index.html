@@ -74,15 +74,17 @@ async function getText(url){
     const last = lines[lines.length-1];
     document.getElementById("status").textContent = "已读取 " + lines.length + " 轮推送记录，最新一轮：" + last.run_toronto + "（多伦多）。";
     let html = `<p>推送时间（多伦多）：${esc(last.run_toronto)} · 美股数据源：${esc(last.us_source||"yfinance")}</p>`;
+    let detailTables = "";
     for(const suite of ["crypto","us"]){
       const s = last[suite]; if(!s) continue;
       html += `<h3>${esc(s.name||suite)} · 数据截至 ${esc(s.data_asof)} · ${esc(s.breadth||"")} · 动量前三：${esc(s.leaders||"")}</h3>`;
       if(s.exposure) html += `<p>仓位上限：信号 ${pct(s.exposure.hold_E)} / 今日 ${pct(s.exposure.prev_E)}</p>`;
       for(const m of Object.keys(s.holdings||{})){
-        html += weightsTable((suite==="crypto"?"币圈 ":"美股 ") + m + " · 当前持仓", s.holdings[m]);
-        if(s.preview && s.preview[m]) html += weightsTable((suite==="crypto"?"币圈 ":"美股 ") + m + " · 今日预览（非交易信号）", s.preview[m]);
+        detailTables += weightsTable((suite==="crypto"?"币圈 ":"美股 ") + m + " · 当前持仓", s.holdings[m]);
+        if(s.preview && s.preview[m]) detailTables += weightsTable((suite==="crypto"?"币圈 ":"美股 ") + m + " · 今日预览（非交易信号）", s.preview[m]);
       }
     }
+    if(detailTables) html += `<details><summary>各模型当前持仓与今日预览（点击展开，默认收起）</summary>${detailTables}</details>`;
     document.getElementById("latest").innerHTML = html;
     let hist = `<table><tr><th>推送时间（多伦多）</th><th>币圈截至</th><th>币圈动量为正</th><th>美股截至</th><th>美股动量为正</th></tr>` +
       lines.slice(-12).reverse().map(d=>`<tr><td>${esc(d.run_toronto)}</td><td>${esc(d.crypto?.data_asof||"")}</td><td>${esc(d.crypto?.breadth||"")}</td><td>${esc(d.us?.data_asof||"")}</td><td>${esc(d.us?.breadth||"")}</td></tr>`).join("") + `</table>`;
