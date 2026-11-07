@@ -1,14 +1,22 @@
 {
-  "generated_at": "2026-11-06 09:10",
+  "generated_at": "2026-11-06 21:07",
   "price_source": "Binance US 日线（UTC）最高/最低价；窗口为原帖发布后 7 天",
   "rule": "只验带明确价位+方向+短期的预测；复述、提问、模型估值、长期目标不验；同一原帖只计一次",
   "summary": {
-    "claims": 5,
+    "claims": 7,
     "hits": 3,
     "misses": 0,
-    "pending": 2
+    "pending": 4
   },
   "channels": {
+    "Benjamin Cowen": {
+      "hits": 0,
+      "misses": 0,
+      "pending": 1,
+      "resolved": 0,
+      "accuracy_pct": null,
+      "display": "待验证（1）"
+    },
     "Crypto World": {
       "hits": 2,
       "misses": 0,
@@ -16,6 +24,14 @@
       "resolved": 2,
       "accuracy_pct": 100,
       "display": "100%（2/2）"
+    },
+    "Gareth Soloway": {
+      "hits": 0,
+      "misses": 0,
+      "pending": 1,
+      "resolved": 0,
+      "accuracy_pct": null,
+      "display": "待验证（1）"
     },
     "TraderChenge": {
       "hits": 0,
