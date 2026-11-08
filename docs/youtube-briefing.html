@@ -81,7 +81,7 @@ button:hover{border-color:var(--accent);color:var(--accent)}
 <h1>YouTube BTC/ETH观点简报 · 网页版</h1>
 <p class="note">只读网页版：聊天推送仍由 Muse 定时任务在每天多伦多时间 9:00 和 21:00 运行，本页只展示简报内容，不交易、不下单。<br>
 数据来源：<code>results/youtube_briefing_history.jsonl</code>（Muse 每次推送后上传）。本页打开时从仓库实时读取，刷新页面即更新。<br>
-以下均为 YouTube 视频作者观点整理，仅供资讯参考，不构成买卖建议。历史准确度只写可核实到日期和价位的记录，无法核实的写“准确度无法核实”。</p>
+以下均为 YouTube 视频作者观点整理，仅供资讯参考，不构成买卖建议。历史准确度只写可核实到日期和价位的记录，无法核实的写“准确度无法核实”。“点评”为 Muse 对每条观点的专业判断（不超过 3 句），只评逻辑、证据和价位合理性，不构成买卖建议；无观点的行显示“—”。</p>
 <p id="status" class="note">正在读取仓库数据……</p>
 
 <h2>最新一期</h2>
@@ -90,8 +90,8 @@ button:hover{border-color:var(--accent);color:var(--accent)}
 <h2>历史简报（最近 12 期）</h2>
 <div id="history"></div>
 
-<h2>追踪频道名单（共 54 个，2026-11-02 用户确认 49 个，2026-11-04 用户确认新增 4 个，2026-11-05 用户确认新增 1 个）</h2>
-<p class="note">新增 30 个全部采用；示范 20 个中保留 15 个，筛掉 5 个（Crypto Banter、宝二爷、孙宇晨/行业播客精选、Web3洞察/链闻精选、深度加密实验室），筛掉原因见定时任务说明，不再追踪。2026-11-04 新增：VirtualBacon、The Wolf Of All Streets（Scott Melker）、Morning Crypto Brief、Blockchain Backer。2026-11-05 新增：交易员陈哥（与 TraderChenge 同一人，美股为主、兼讲 BTC）。</p>
+<h2>追踪频道名单（共 57 个，2026-11-02 用户确认 49 个，2026-11-04 用户确认新增 4 个，2026-11-05 用户确认新增 1 个，2026-11-06 新增 Gareth Soloway，2026-11-07 新增 DonAlt，2026-11-08 新增 Rekt Capital）</h2>
+<p class="note">新增 30 个全部采用；示范 20 个中保留 15 个，筛掉 5 个（Crypto Banter、宝二爷、孙宇晨/行业播客精选、Web3洞察/链闻精选、深度加密实验室），筛掉原因见定时任务说明，不再追踪。2026-11-04 新增：VirtualBacon、The Wolf Of All Streets（Scott Melker）、Morning Crypto Brief、Blockchain Backer。2026-11-05 新增：交易员陈哥（与 TraderChenge 同一人，美股为主、兼讲 BTC）。2026-11-06 新增：Gareth Soloway；2026-11-07 新增：DonAlt；2026-11-08 新增：Rekt Capital。</p>
 <div class="scroll"><table>
 <tr><th>分类</th><th>频道</th></tr>
 <tr><td>英语核心（新增）</td><td>Unchained、Natalie Brunell / Coin Stories、99Bitcoins、CryptosRUs、Thinking Crypto、Crypto Capital Venture、Brian Jung、Crypto Jebb、Crypto World、Bitcoin Magazine</td></tr>
@@ -103,6 +103,7 @@ button:hover{border-color:var(--accent);color:var(--accent)}
 <tr><td>用户常看（新增）</td><td>TraderChenge、比特币米娅老师、分析师舒琴谈比特币、大漂亮（大漂亮的K线日记）</td></tr>
 <tr><td>海外新增（2026-11-04 新增）</td><td>VirtualBacon、The Wolf Of All Streets（Scott Melker）、Morning Crypto Brief、Blockchain Backer</td></tr>
 <tr><td>用户常看（2026-11-05 新增）</td><td>交易员陈哥（与 TraderChenge 同一人，美股为主、兼讲 BTC）</td></tr>
+<tr><td>每日推荐新增</td><td>Gareth Soloway（2026-11-06）、DonAlt（2026-11-07）、Rekt Capital（2026-11-08）</td></tr>
 </table></div>
 
 <p class="note">返回主看板：<a href="./index.html">分开前三模型每日推送 + V5币圈纸面 · GitHub看板</a></p>
@@ -149,10 +150,10 @@ function stanceBadge(s){ const m = STANCE[s||""]; return m ? '<span class="badge
       const isEmpty = r => (r.view||"").trim() === "本期暂无新视频";
       const hiddenCount = last.table_rows.filter(isEmpty).length;
       const accCell = r => r.category==="预测市场" ? "—" : (r.channel||"").includes("Telegram") ? "—" : (acc[r.channel] ? acc[r.channel].display : "暂无");
-      html += "<div class=\"scroll\"><table class=\"main\"><colgroup><col style=\"width:11%\"><col style=\"width:14%\"><col style=\"width:47%\"><col style=\"width:18%\"><col style=\"width:10%\"></colgroup><tr><th>分类</th><th>频道名称</th><th>最新核心观点</th><th>核心关注点 / 风格定位</th><th>准确率</th></tr>" +
+      html += "<div class=\"scroll\"><table class=\"main\"><colgroup><col style=\"width:10%\"><col style=\"width:12%\"><col style=\"width:38%\"><col style=\"width:14%\"><col style=\"width:16%\"><col style=\"width:10%\"></colgroup><tr><th>分类</th><th>频道名称</th><th>最新核心观点</th><th>核心关注点 / 风格定位</th><th>点评</th><th>准确率</th></tr>" +
         last.table_rows.map(r=>{
           const cls = [isEmpty(r)?"no-video":"", r.category==="预测市场"?"pm":""].filter(Boolean).join(" ");
-          return "<tr"+(cls?(" class=\""+cls+"\""):"")+(isEmpty(r)?" style=\"display:none\"":"")+"><td class=\"cat\">"+esc(r.category)+"</td><td class=\"ch\">"+esc(r.channel)+"</td><td>"+stanceBadge(r.stance)+markNums(r.view||"")+"</td><td>"+esc(r.focus)+"</td><td class=\"acc\">"+accCell(r)+"</td></tr>";
+          return "<tr"+(cls?(" class=\""+cls+"\""):"")+(isEmpty(r)?" style=\"display:none\"":"")+"><td class=\"cat\">"+esc(r.category)+"</td><td class=\"ch\">"+esc(r.channel)+"</td><td>"+stanceBadge(r.stance)+markNums(r.view||"")+"</td><td>"+esc(r.focus)+"</td><td>"+markNums(r.comment||"—")+"</td><td class=\"acc\">"+accCell(r)+"</td></tr>";
         }).join("") + "</table></div>";
       if(hiddenCount) html += "<p class=\"note\">本期 " + hiddenCount + " 个频道暂无新视频，已默认隐藏。 <button onclick=\"toggleNoVideo(this)\" data-label-show=\"显示" + hiddenCount + "个无新视频的频道\">显示" + hiddenCount + "个无新视频的频道</button></p>";
       if(accMeta) html += "<p class=\"note\">准确率：只统计已验证的预测（命中 / 已判定数，括号为样本数）；“待验证”为窗口未到，“暂无”为无可核实预测。价格源 Binance US 日线，更新于 " + esc(accMeta) + "。</p>";
