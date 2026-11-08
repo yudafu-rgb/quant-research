@@ -81,7 +81,7 @@ button:hover{border-color:var(--accent);color:var(--accent)}
 <h1>X BTC/ETH观点简报 · 网页版</h1>
 <p class="note">只读网页版：聊天推送仍由 Muse 定时任务在每天多伦多时间 9:30 和 20:30 运行，本页只展示简报内容，不交易、不下单。<br>
 数据来源：<code>results/x_briefing_history.jsonl</code>（Muse 每次推送后上传）。本页打开时从仓库实时读取，刷新页面即更新。<br>
-以下均为 X 帖子观点整理（公开搜索和新闻引用的X帖子，X账号不直连，不声称为X官方趋势榜），仅供资讯参考，不构成买卖建议。历史准确度只写可核实到日期和价位的记录，无法核实的写“准确度无法核实”。</p>
+以下均为 X 帖子观点整理（公开搜索和新闻引用的X帖子，X账号不直连，不声称为X官方趋势榜），仅供资讯参考，不构成买卖建议。历史准确度只写可核实到日期和价位的记录，无法核实的写“准确度无法核实”。“点评”为 Muse 对每条观点的专业判断（不超过 3 句），只评逻辑、证据和价位合理性，不构成买卖建议；无观点的行显示“—”。</p>
 <p id="status" class="note">正在读取仓库数据……</p>
 
 <h2>最新一期</h2>
@@ -145,10 +145,10 @@ function stanceBadge(s){ const m = STANCE[s||""]; return m ? '<span class="badge
       const isEmpty = r => (r.view||"").trim() === "本期暂无新帖";
       const hiddenCount = last.table_rows.filter(isEmpty).length;
       const accCell = r => r.category==="预测市场" ? "—" : (r.channel||"").includes("Telegram") ? "—" : (acc[r.channel] ? acc[r.channel].display : "暂无");
-      html += "<div class=\"scroll\"><table class=\"main\"><colgroup><col style=\"width:11%\"><col style=\"width:14%\"><col style=\"width:47%\"><col style=\"width:18%\"><col style=\"width:10%\"></colgroup><tr><th>分类</th><th>账号名称</th><th>最新核心观点</th><th>核心关注点 / 风格定位</th><th>准确率</th></tr>" +
+      html += "<div class=\"scroll\"><table class=\"main\"><colgroup><col style=\"width:10%\"><col style=\"width:12%\"><col style=\"width:38%\"><col style=\"width:14%\"><col style=\"width:16%\"><col style=\"width:10%\"></colgroup><tr><th>分类</th><th>账号名称</th><th>最新核心观点</th><th>核心关注点 / 风格定位</th><th>点评</th><th>准确率</th></tr>" +
         last.table_rows.map(r=>{
           const cls = [isEmpty(r)?"no-video":"", r.category==="预测市场"?"pm":""].filter(Boolean).join(" ");
-          return "<tr"+(cls?(" class=\""+cls+"\""):"")+(isEmpty(r)?" style=\"display:none\"":"")+"><td class=\"cat\">"+esc(r.category)+"</td><td class=\"ch\">"+esc(r.channel)+"</td><td>"+stanceBadge(r.stance)+markNums(r.view||"")+"</td><td>"+esc(r.focus)+"</td><td class=\"acc\">"+accCell(r)+"</td></tr>";
+          return "<tr"+(cls?(" class=\""+cls+"\""):"")+(isEmpty(r)?" style=\"display:none\"":"")+"><td class=\"cat\">"+esc(r.category)+"</td><td class=\"ch\">"+esc(r.channel)+"</td><td>"+stanceBadge(r.stance)+markNums(r.view||"")+"</td><td>"+esc(r.focus)+"</td><td>"+markNums(r.comment||"—")+"</td><td class=\"acc\">"+accCell(r)+"</td></tr>";
         }).join("") + "</table></div>";
       if(hiddenCount) html += "<p class=\"note\">本期 " + hiddenCount + " 个账号暂无新帖，已默认隐藏。 <button onclick=\"toggleNoVideo(this)\" data-label-show=\"显示" + hiddenCount + "个无新帖的账号\">显示" + hiddenCount + "个无新帖的账号</button></p>";
       if(accMeta) html += "<p class=\"note\">准确率：只统计已验证的预测（命中 / 已判定数，括号为样本数）；“待验证”为窗口未到，“暂无”为无可核实预测。价格源 Binance US 日线，更新于 " + esc(accMeta) + "。</p>";
