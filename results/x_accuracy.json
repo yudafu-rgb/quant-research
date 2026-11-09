@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-11-08 20:39",
+  "generated_at": "2026-11-09 09:39",
   "price_source": "Binance US 日线（UTC）最高/最低价；窗口为原帖发布后 7 天",
   "rule": "只验带明确价位+方向+短期的预测；复述、提问、模型估值、长期目标不验；同一原帖只计一次",
   "summary": {
-    "claims": 22,
+    "claims": 25,
     "hits": 7,
-    "misses": 8,
-    "pending": 7
+    "misses": 10,
+    "pending": 8
   },
   "channels": {
     "Alex Thorn（Galaxy，@intangiblecoins）": {
       "hits": 0,
       "misses": 1,
-      "pending": 0,
+      "pending": 1,
       "resolved": 1,
       "accuracy_pct": 0,
       "display": "0%（0/1）"
@@ -43,19 +43,19 @@
     },
     "Glassnode（@glassnode）": {
       "hits": 0,
-      "misses": 0,
-      "pending": 2,
-      "resolved": 0,
-      "accuracy_pct": null,
-      "display": "待验证（2）"
+      "misses": 1,
+      "pending": 1,
+      "resolved": 1,
+      "accuracy_pct": 0,
+      "display": "0%（0/1）"
     },
     "Michaël van de Poppe（@CryptoMichNL）": {
       "hits": 1,
-      "misses": 1,
+      "misses": 2,
       "pending": 2,
-      "resolved": 2,
-      "accuracy_pct": 50,
-      "display": "50%（1/2）"
+      "resolved": 3,
+      "accuracy_pct": 33,
+      "display": "33%（1/3）"
     },
     "Rekt Capital（@rektcapital）": {
       "hits": 2,
@@ -68,7 +68,7 @@
     "Ted Pillows（@TedPillows）": {
       "hits": 3,
       "misses": 1,
-      "pending": 0,
+      "pending": 1,
       "resolved": 4,
       "accuracy_pct": 75,
       "display": "75%（3/4）"
