@@ -1,5 +1,5 @@
 {
- "mode": "rebalance",
+ "mode": "valuation",
  "last_close_date": "2026-11-08",
  "cash": 100000.0,
  "holdings_value": 0.0,
@@ -255,5 +255,106 @@
  "new_pending_entries": [],
  "new_pending_exits": [],
  "no_new_close": false,
- "pending_entries_detail": []
+ "watchlist_trend_ok": [
+  {
+   "coin": "QNT",
+   "close": 199.2,
+   "mom126": 1.902943748178373,
+   "ma200": 100.16695,
+   "prior_max": 206.56,
+   "prior_min": 178.04,
+   "breakout": false,
+   "trend_ok": true
+  },
+  {
+   "coin": "ZEC",
+   "close": 1213.61,
+   "mom126": 1.6241918394706678,
+   "ma200": 775.28715,
+   "prior_max": 1321.31,
+   "prior_min": 1135.03,
+   "breakout": false,
+   "trend_ok": true
+  },
+  {
+   "coin": "UNI",
+   "close": 6.876,
+   "mom126": 1.1400560224089635,
+   "ma200": 4.864915,
+   "prior_max": 7.8,
+   "prior_min": 6.464,
+   "breakout": false,
+   "trend_ok": true
+  },
+  {
+   "coin": "ENA",
+   "close": 0.1498,
+   "mom126": 0.8471023427866828,
+   "ma200": 0.1317075,
+   "prior_max": 0.2136,
+   "prior_min": 0.158,
+   "breakout": false,
+   "trend_ok": true
+  },
+  {
+   "coin": "PEPE",
+   "close": 4.97e-06,
+   "mom126": 0.8072727272727274,
+   "ma200": 3.5246499999999998e-06,
+   "prior_max": 5.06e-06,
+   "prior_min": 4.15e-06,
+   "breakout": false,
+   "trend_ok": true
+  },
+  {
+   "coin": "NEAR",
+   "close": 3.58,
+   "mom126": 0.7609444171175603,
+   "ma200": 2.621515,
+   "prior_max": 5.229,
+   "prior_min": 3.67,
+   "breakout": false,
+   "trend_ok": true
+  },
+  {
+   "coin": "AAVE",
+   "close": 126.42,
+   "mom126": 0.43659090909090903,
+   "ma200": 109.24289999999999,
+   "prior_max": 155.63,
+   "prior_min": 119.57,
+   "breakout": false,
+   "trend_ok": true
+  },
+  {
+   "coin": "LINK",
+   "close": 10.386,
+   "mom126": 0.2876270766179021,
+   "ma200": 10.08759,
+   "prior_max": 12.493,
+   "prior_min": 10.636,
+   "breakout": false,
+   "trend_ok": true
+  },
+  {
+   "coin": "BTC",
+   "close": 74826.95,
+   "mom126": 0.1758303353649433,
+   "ma200": 73222.2237,
+   "prior_max": 84070.75,
+   "prior_min": 75855.19,
+   "breakout": false,
+   "trend_ok": true
+  },
+  {
+   "coin": "BNB",
+   "close": 684.99,
+   "mom126": 0.1619453114398155,
+   "ma200": 657.9749,
+   "prior_max": 758.74,
+   "prior_min": 689.27,
+   "breakout": false,
+   "trend_ok": true
+  }
+ ]
 }
