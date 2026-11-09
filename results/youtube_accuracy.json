@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-08 21:09",
+  "generated_at": "2026-11-09 09:11",
   "price_source": "Binance US 日线（UTC）最高/最低价；窗口为原帖发布后 7 天",
   "rule": "只验带明确价位+方向+短期的预测；复述、提问、模型估值、长期目标不验；同一原帖只计一次",
   "summary": {
-    "claims": 7,
+    "claims": 9,
     "hits": 5,
     "misses": 1,
-    "pending": 1
+    "pending": 3
   },
   "channels": {
     "Benjamin Cowen": {
@@ -41,6 +41,14 @@
       "accuracy_pct": 0,
       "display": "0%（0/1）"
     },
+    "TraderChenge Telegram（BTC）": {
+      "hits": 0,
+      "misses": 0,
+      "pending": 1,
+      "resolved": 0,
+      "accuracy_pct": null,
+      "display": "待验证（1）"
+    },
     "「鳄鱼」比特币实盘战神": {
       "hits": 1,
       "misses": 0,
@@ -48,6 +56,14 @@
       "resolved": 1,
       "accuracy_pct": 100,
       "display": "100%（1/1）"
+    },
+    "比特币米娅老师 Telegram（BTC/ETH）": {
+      "hits": 0,
+      "misses": 0,
+      "pending": 1,
+      "resolved": 0,
+      "accuracy_pct": null,
+      "display": "待验证（1）"
     }
   }
 }
