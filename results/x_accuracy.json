@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-11 09:35",
+  "generated_at": "2026-11-11 20:48",
   "price_source": "Binance US 日线（UTC）最高/最低价；窗口为原帖发布后 7 天",
   "rule": "只验带明确价位+方向+短期的预测；复述、提问、模型估值、长期目标不验；同一原帖只计一次",
   "summary": {
-    "claims": 25,
+    "claims": 26,
     "hits": 8,
     "misses": 11,
-    "pending": 6
+    "pending": 7
   },
   "channels": {
     "Alex Thorn（Galaxy，@intangiblecoins）": {
@@ -68,7 +68,7 @@
     "Ted Pillows（@TedPillows）": {
       "hits": 3,
       "misses": 1,
-      "pending": 1,
+      "pending": 2,
       "resolved": 4,
       "accuracy_pct": 75,
       "display": "75%（3/4）"
