@@ -1,8 +1,66 @@
 {
  "kind": "v2",
- "report": "run_2026-11-14_1346.json",
- "published_at_toronto": "2026-11-14 08:50",
+ "report": "run_2026-11-14_2146.json",
+ "published_at_toronto": "2026-11-14 16:51",
  "universes": {
+  "crypto": {
+   "regime": "risk-off",
+   "data_asof": "2026-11-14 00:00",
+   "skipped": false,
+   "skip_reason": null,
+   "longs": [
+    {
+     "label": "FIGR_HELOC (Figure Heloc)",
+     "entry_price": 1.0460421812108247,
+     "entry_ts": "2026-11-14",
+     "score": 79.2,
+     "tier": "B",
+     "reason": "分数79.2（第1名）；看涨信号：MACD bullish cross；RSI 52.5；周线向上；市场状态risk-off；Tier-B（未过：regime）"
+    },
+    {
+     "label": "NEAR (NEAR Protocol)",
+     "entry_price": 2.969935312859768,
+     "entry_ts": "2026-11-14",
+     "score": 58.0,
+     "tier": "B",
+     "reason": "分数58.0（第6名）；看涨信号：RSI oversold；RSI 29.3；周线向上；市场状态risk-off；注意：存在多空信号冲突，已按优先级裁决；Tier-B（未过：regime）"
+    },
+    {
+     "label": "ZEC (Zcash)",
+     "entry_price": 842.9843594193868,
+     "entry_ts": "2026-11-14",
+     "score": 51.8,
+     "tier": "B",
+     "reason": "分数51.8（第8名）；看涨信号：RSI oversold；RSI 28.9；周线向上；市场状态risk-off；注意：存在多空信号冲突，已按优先级裁决；Tier-B（未过：regime）"
+    }
+   ],
+   "shorts": [
+    {
+     "label": "XAUT (Tether Gold)",
+     "entry_price": 3783.9436778557547,
+     "entry_ts": "2026-11-14",
+     "score": 26.6,
+     "tier": "A",
+     "reason": "分数26.6（第30名）；看跌信号：MACD bearish cross、Breakdown；RSI 30.7；周线向下；市场状态risk-off"
+    },
+    {
+     "label": "AVAX (Avalanche)",
+     "entry_price": 7.133333613286395,
+     "entry_ts": "2026-11-14",
+     "score": 41.7,
+     "tier": "C",
+     "reason": "分数41.7（第16名）；看跌信号：MACD bearish cross、Breakdown；RSI 31.4；周线向下；市场状态risk-off；Tier-C（未过：score）"
+    },
+    {
+     "label": "PAXG (PAX Gold)",
+     "entry_price": 3775.3682563817483,
+     "entry_ts": "2026-11-14",
+     "score": 26.0,
+     "tier": "C",
+     "reason": "分数26.0（第33名）；看跌信号：MACD bearish cross、Breakdown；RSI 29.5；周线向下；市场状态risk-off；注意：存在多空信号冲突，已按优先级裁决；Tier-C（未过：rsi）"
+    }
+   ]
+  },
   "stocks": {
    "regime": "risk-on",
    "data_asof": "2026-11-13 00:00",
@@ -64,15 +122,15 @@
  },
  "winrate": {
   "crypto_long": {
-   "n": 320,
-   "win_rate": 24.4,
-   "avg_ret": -6.17,
+   "n": 325,
+   "win_rate": 24.0,
+   "avg_ret": -6.54,
    "insufficient": false
   },
   "crypto_short": {
-   "n": 331,
-   "win_rate": 80.1,
-   "avg_ret": 5.26,
+   "n": 338,
+   "win_rate": 80.5,
+   "avg_ret": 5.53,
    "insufficient": false
   },
   "stocks_long": {
