@@ -1,0 +1,149 @@
+{
+ "kind": "v2",
+ "report": "run_2026-11-13_2146.json",
+ "published_at_toronto": "2026-11-13 23:21",
+ "universes": {
+  "crypto": {
+   "regime": "risk-off",
+   "data_asof": "2026-11-13 00:00",
+   "skipped": false,
+   "skip_reason": null,
+   "longs": [
+    {
+     "label": "akedo (trending)",
+     "entry_price": 0.012301832861664941,
+     "entry_ts": "2026-11-13",
+     "score": 79.8,
+     "tier": "B",
+     "reason": "分数79.8（第2名）；看涨信号：MACD bullish cross；RSI 48.0；周线向上；市场状态risk-off；Tier-B（未过：regime）"
+    },
+    {
+     "label": "WBT (WhiteBIT Coin)",
+     "entry_price": 66.04946899414062,
+     "entry_ts": "2026-11-13",
+     "score": 53.3,
+     "tier": "B",
+     "reason": "分数53.3（第18名）；看涨信号：RSI oversold；RSI 24.9；周线向上；市场状态risk-off；注意：存在多空信号冲突，已按优先级裁决；Tier-B（未过：regime）"
+    },
+    {
+     "label": "injective-protocol (trending)",
+     "entry_price": 8.058136608675172,
+     "entry_ts": "2026-11-13",
+     "score": 83.2,
+     "tier": "C",
+     "reason": "分数83.2（第1名）；RSI 53.4；周线向上；市场状态risk-off；Tier-C（未过：signal,regime）"
+    }
+   ],
+   "shorts": [
+    {
+     "label": "XMR (Monero)",
+     "entry_price": 118.7,
+     "entry_ts": "2026-11-13",
+     "score": 23.9,
+     "tier": "C",
+     "reason": "分数23.9（第55名）；RSI 38.3；周线向下；市场状态risk-off；Tier-C（未过：signal）"
+    },
+    {
+     "label": "WLFI (Official World Liberty Financial)",
+     "entry_price": 0.0471,
+     "entry_ts": "2026-11-13",
+     "score": 24.2,
+     "tier": "C",
+     "reason": "分数24.2（第54名）；RSI 34.5；周线向下；市场状态risk-off；Tier-C（未过：signal）"
+    },
+    {
+     "label": "ONDO (Ondo)",
+     "entry_price": 0.3402,
+     "entry_ts": "2026-11-13",
+     "score": 34.2,
+     "tier": "C",
+     "reason": "分数34.2（第38名）；看跌信号：Breakdown；RSI 35.0；周线向下；市场状态risk-off；Tier-C（未过：score）"
+    }
+   ]
+  },
+  "stocks": {
+   "regime": "risk-on",
+   "data_asof": "2026-11-13 00:00",
+   "skipped": false,
+   "skip_reason": null,
+   "longs": [
+    {
+     "label": "ED",
+     "entry_price": 121.0,
+     "entry_ts": "2026-11-13",
+     "score": 71.9,
+     "tier": "A",
+     "reason": "分数71.9（第23名）；看涨信号：MACD bullish cross；RSI 68.4；周线向上；市场状态risk-on"
+    },
+    {
+     "label": "KHC",
+     "entry_price": 25.110000610351562,
+     "entry_ts": "2026-11-13",
+     "score": 62.6,
+     "tier": "A",
+     "reason": "分数62.6（第141名）；看涨信号：MACD bullish cross；RSI 58.9；周线向上；市场状态risk-on"
+    },
+    {
+     "label": "AIG",
+     "entry_price": 82.86000061035156,
+     "entry_ts": "2026-11-13",
+     "score": 62.2,
+     "tier": "A",
+     "reason": "分数62.2（第148名）；看涨信号：MACD bullish cross；RSI 59.5；周线向上；市场状态risk-on"
+    }
+   ],
+   "shorts": [
+    {
+     "label": "FSLR",
+     "entry_price": 171.38999938964844,
+     "entry_ts": "2026-11-13",
+     "score": 18.8,
+     "tier": "B",
+     "reason": "分数18.8（第424名）；看跌信号：MACD bearish cross；RSI 40.9；周线向下；市场状态risk-on；Tier-B（未过：regime）"
+    },
+    {
+     "label": "COIN",
+     "entry_price": 127.6449966430664,
+     "entry_ts": "2026-11-13",
+     "score": 13.7,
+     "tier": "B",
+     "reason": "分数13.7（第442名）；看跌信号：Breakdown；RSI 32.4；周线向下；市场状态risk-on；Tier-B（未过：regime）"
+    },
+    {
+     "label": "CDNS",
+     "entry_price": 323.010009765625,
+     "entry_ts": "2026-11-13",
+     "score": 34.6,
+     "tier": "B",
+     "reason": "分数34.6（第369名）；看跌信号：MACD bearish cross；RSI 47.5；周线向下；市场状态risk-on；Tier-B（未过：regime）"
+    }
+   ]
+  }
+ },
+ "winrate": {
+  "crypto_long": {
+   "n": 320,
+   "win_rate": 24.4,
+   "avg_ret": -6.17,
+   "insufficient": false
+  },
+  "crypto_short": {
+   "n": 331,
+   "win_rate": 80.1,
+   "avg_ret": 5.26,
+   "insufficient": false
+  },
+  "stocks_long": {
+   "n": 102,
+   "win_rate": 55.9,
+   "avg_ret": 0.37,
+   "insufficient": false
+  },
+  "stocks_short": {
+   "n": 100,
+   "win_rate": 38.0,
+   "avg_ret": -1.79,
+   "insufficient": false
+  }
+ }
+}
