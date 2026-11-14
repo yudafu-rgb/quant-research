@@ -1,63 +1,39 @@
 {
  "regime": "risk-off",
- "data_asof": "2026-11-14 13:00",
+ "data_asof": "2026-11-14 17:00",
  "skipped": false,
  "skip_reason": null,
  "longs": [
   {
    "label": "LEO (LEO Token)",
-   "entry_price": 9.255978835453332,
-   "entry_ts": "2026-11-14T13:00:00",
-   "score": 75.8,
-   "tier": "C",
-   "reason": "小时线分数75.8（第1名）；RSI(14h) 38.1；日线向上；市场状态risk-off；板块CEX-token（24h -5.6%）；Tier-C（未过：signal,regime）"
-  },
-  {
-   "label": "M (MemeCore)",
-   "entry_price": 0.8231272773843785,
-   "entry_ts": "2026-11-14T13:00:00",
-   "score": 61.3,
-   "tier": "C",
-   "reason": "小时线分数61.3（第3名）；RSI(14h) 45.3；日线向下；市场状态risk-off；Tier-C（未过：signal,regime）"
+   "entry_price": 9.15014822822733,
+   "entry_ts": "2026-11-14T17:00:00",
+   "score": 69.4,
+   "tier": "B",
+   "reason": "小时线分数69.4（第1名）；看涨信号：RSI oversold；RSI(14h) 22.8；日线向上；市场状态risk-off；板块CEX-token（24h -7.2%）；注意：存在多空信号冲突，已按优先级裁决；Tier-B（未过：regime）"
   },
   {
    "label": "FIGR_HELOC (Figure Heloc)",
-   "entry_price": 1.0446299202401204,
-   "entry_ts": "2026-11-14T13:00:00",
-   "score": 63.7,
+   "entry_price": 1.0459850461618918,
+   "entry_ts": "2026-11-14T17:00:00",
+   "score": 64.3,
    "tier": "C",
-   "reason": "小时线分数63.7（第2名）；RSI(14h) 72.0；日线向上；市场状态risk-off；Tier-C（未过：rsi,signal,regime）"
+   "reason": "小时线分数64.3（第2名）；RSI(14h) 73.4；日线向上；市场状态risk-off；Tier-C（未过：rsi,signal,regime）"
   }
  ],
  "shorts": [
   {
-   "label": "BNB (BNB)",
-   "entry_price": 588.75,
-   "entry_ts": "2026-11-14T13:00:00",
-   "score": 16.5,
+   "label": "WBT (WhiteBIT Coin)",
+   "entry_price": 62.41681568223747,
+   "entry_ts": "2026-11-14T17:00:00",
+   "score": 33.2,
    "tier": "C",
-   "reason": "小时线分数16.5（第38名）；RSI(14h) 22.6；日线向下；市场状态risk-off；🔥trending关注度加成+2分；板块CEX-token（24h -5.6%）；Tier-C（未过：rsi,signal）"
-  },
-  {
-   "label": "aave (trending)",
-   "entry_price": 102.06,
-   "entry_ts": "2026-11-14T13:00:00",
-   "score": 18.9,
-   "tier": "C",
-   "reason": "小时线分数18.9（第36名）；RSI(14h) 22.1；日线向下；市场状态risk-off；🔥trending关注度加成+2分；板块DeFi（24h -12.1%）；Tier-C（未过：rsi,signal）"
-  },
-  {
-   "label": "BCH (Bitcoin Cash)",
-   "entry_price": 207.3,
-   "entry_ts": "2026-11-14T13:00:00",
-   "score": 19.0,
-   "tier": "C",
-   "reason": "小时线分数19.0（第35名）；RSI(14h) 25.8；日线向下；市场状态risk-off；板块L1（24h -8.2%）；Tier-C（未过：rsi,signal）"
+   "reason": "小时线分数33.2（第23名）；看跌信号：Breakdown；RSI(14h) 23.3；日线向下；市场状态risk-off；注意：存在多空信号冲突，已按优先级裁决；Tier-C（未过：score,rsi）"
   }
  ],
  "kind": "v3-crypto",
- "report": "intraday_run_2026-11-14_1416.json",
- "published_at_toronto": "2026-11-14 14:21",
+ "report": "intraday_run_2026-11-14_1816.json",
+ "published_at_toronto": "2026-11-14 18:20",
  "winrate": {
   "long": {
    "n": 765,
