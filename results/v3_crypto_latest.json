@@ -1,66 +1,74 @@
 {
  "regime": "risk-off",
- "data_asof": "2026-11-14 06:00",
+ "data_asof": "2026-11-14 09:00",
  "skipped": false,
  "skip_reason": null,
  "longs": [
   {
    "label": "TRX (TRON)",
-   "entry_price": 0.3132,
-   "entry_ts": "2026-11-14T06:00:00",
-   "score": 71.1,
-   "tier": "C",
-   "reason": "小时线分数71.1（第1名）；RSI(14h) 52.3；日线向下；市场状态risk-off；板块L1（24h -3.5%）；Tier-C（未过：signal,regime）"
+   "entry_price": 0.31,
+   "entry_ts": "2026-11-14T09:00:00",
+   "score": 63.3,
+   "tier": "B",
+   "reason": "小时线分数63.3（第3名）；看涨信号：RSI oversold；RSI(14h) 27.8；日线向下；市场状态risk-off；板块L1（24h -6.9%）；注意：存在多空信号冲突，已按优先级裁决；Tier-B（未过：regime）"
   },
   {
-   "label": "GRAM (Gram (prev. Toncoin))",
-   "entry_price": 1.097,
-   "entry_ts": "2026-11-14T06:00:00",
-   "score": 66.3,
+   "label": "LEO (LEO Token)",
+   "entry_price": 9.297235956790477,
+   "entry_ts": "2026-11-14T09:00:00",
+   "score": 79.2,
    "tier": "C",
-   "reason": "小时线分数66.3（第2名）；RSI(14h) 45.3；日线向下；市场状态risk-off；Tier-C（未过：signal,regime）"
+   "reason": "小时线分数79.2（第1名）；RSI(14h) 50.4；日线向上；市场状态risk-off；板块CEX-token（24h -3.9%）；Tier-C（未过：signal,regime）"
+  },
+  {
+   "label": "pearl-2 (trending)",
+   "entry_price": 1.5404525086255854,
+   "entry_ts": "2026-11-14T09:00:00",
+   "score": 64.2,
+   "tier": "C",
+   "reason": "小时线分数64.2（第2名）；RSI(14h) 58.1；日线向下；市场状态risk-off；🔥trending关注度加成+2分；Tier-C（未过：signal,regime）"
   }
  ],
  "shorts": [
   {
-   "label": "ENA (Ethena)",
-   "entry_price": 0.1271,
-   "entry_ts": "2026-11-14T06:00:00",
-   "score": 19.1,
-   "tier": "C",
-   "reason": "小时线分数19.1（第26名）；RSI(14h) 31.9；日线向下；市场状态risk-off；板块DeFi（24h -5.8%）；Tier-C（未过：signal）"
+   "label": "HBAR (Hedera)",
+   "entry_price": 0.05897,
+   "entry_ts": "2026-11-14T09:00:00",
+   "score": 36.0,
+   "tier": "A",
+   "reason": "小时线分数36.0（第28名）；看跌信号：MACD bearish cross、Breakdown；RSI(14h) 30.6；日线向下；市场状态risk-off"
   },
   {
-   "label": "AAVE (Aave)",
-   "entry_price": 107.19,
-   "entry_ts": "2026-11-14T06:00:00",
-   "score": 21.0,
+   "label": "BTC (Bitcoin)",
+   "entry_price": 65914.01,
+   "entry_ts": "2026-11-14T09:00:00",
+   "score": 33.9,
    "tier": "C",
-   "reason": "小时线分数21.0（第25名）；RSI(14h) 33.7；日线向下；市场状态risk-off；板块DeFi（24h -5.8%）；Tier-C（未过：signal）"
+   "reason": "小时线分数33.9（第33名）；看跌信号：MACD bearish cross、Breakdown；RSI(14h) 23.8；日线向下；市场状态risk-off；🔥trending关注度加成+2分；板块L1（24h -6.9%）；Tier-C（未过：rsi）"
   },
   {
    "label": "SOL (Solana)",
-   "entry_price": 75.97,
-   "entry_ts": "2026-11-14T06:00:00",
-   "score": 22.4,
+   "entry_price": 74.09,
+   "entry_ts": "2026-11-14T09:00:00",
+   "score": 34.6,
    "tier": "C",
-   "reason": "小时线分数22.4（第24名）；RSI(14h) 36.7；日线向下；市场状态risk-off；板块L1（24h -3.5%）；Tier-C（未过：signal）"
+   "reason": "小时线分数34.6（第31名）；看跌信号：MACD bearish cross、Breakdown；RSI(14h) 27.3；日线向下；市场状态risk-off；🔥trending关注度加成+2分；板块L1（24h -6.9%）；Tier-C（未过：rsi）"
   }
  ],
  "kind": "v3-crypto",
- "report": "intraday_run_2026-11-14_0720.json",
- "published_at_toronto": "2026-11-14 07:52",
+ "report": "intraday_run_2026-11-14_1019.json",
+ "published_at_toronto": "2026-11-14 10:23",
  "winrate": {
   "long": {
-   "n": 761,
-   "win_rate": 37.6,
-   "avg_ret": -1.37,
+   "n": 765,
+   "win_rate": 37.9,
+   "avg_ret": -1.23,
    "insufficient": false
   },
   "short": {
-   "n": 792,
-   "win_rate": 58.0,
-   "avg_ret": 0.67,
+   "n": 795,
+   "win_rate": 58.1,
+   "avg_ret": 0.68,
    "insufficient": false
   }
  }
