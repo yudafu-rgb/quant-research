@@ -1,63 +1,13 @@
 {
- "regime": "risk-on",
- "data_asof": "2026-11-13 15:30",
- "skipped": false,
- "skip_reason": null,
- "longs": [
-  {
-   "label": "ALLE",
-   "entry_price": 191.2274932861328,
-   "entry_ts": "2026-11-13T15:30:00",
-   "score": 70.0,
-   "tier": "A",
-   "reason": "小时线分数70.0（第8名）；看涨信号：MACD bullish cross；RSI(14h) 57.4；日线向上；市场状态risk-on"
-  },
-  {
-   "label": "UPS",
-   "entry_price": 112.31500244140625,
-   "entry_ts": "2026-11-13T15:30:00",
-   "score": 68.0,
-   "tier": "A",
-   "reason": "小时线分数68.0（第24名）；看涨信号：MACD bullish cross；RSI(14h) 56.7；日线向上；市场状态risk-on"
-  },
-  {
-   "label": "ROP",
-   "entry_price": 479.8299865722656,
-   "entry_ts": "2026-11-13T15:30:00",
-   "score": 72.5,
-   "tier": "C",
-   "reason": "小时线分数72.5（第2名）；RSI(14h) 52.0；日线向上；市场状态risk-on；Tier-C（未过：signal）"
-  }
- ],
- "shorts": [
-  {
-   "label": "EXPE",
-   "entry_price": 258.07000732421875,
-   "entry_ts": "2026-11-13T15:30:00",
-   "score": 25.3,
-   "tier": "B",
-   "reason": "小时线分数25.3（第443名）；看跌信号：MACD bearish cross；RSI(14h) 41.5；日线向下；市场状态risk-on；Tier-B（未过：regime）"
-  },
-  {
-   "label": "CTVA",
-   "entry_price": 9.375,
-   "entry_ts": "2026-11-13T15:30:00",
-   "score": 8.6,
-   "tier": "C",
-   "reason": "小时线分数8.6（第496名）；RSI(14h) 28.2；日线向下；市场状态risk-on；Tier-C（未过：rsi,signal,regime）"
-  },
-  {
-   "label": "CSCO",
-   "entry_price": 95.58999633789062,
-   "entry_ts": "2026-11-13T15:30:00",
-   "score": 11.8,
-   "tier": "C",
-   "reason": "小时线分数11.8（第495名）；RSI(14h) 31.2；日线向下；市场状态risk-on；Tier-C（未过：signal,regime）"
-  }
- ],
+ "regime": "unknown",
+ "data_asof": "n/a",
+ "skipped": true,
+ "skip_reason": "周末（Saturday），美股休市",
+ "longs": [],
+ "shorts": [],
  "kind": "v3-stocks",
- "report": "intraday_run_2026-11-13_1536.json",
- "published_at_toronto": "2026-11-13 23:21",
+ "report": "intraday_run_2026-11-14_1036.json",
+ "published_at_toronto": "2026-11-14 10:38",
  "winrate": {
   "long": {
    "n": 293,
