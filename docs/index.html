@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>分开前三模型每日推送 + V5币圈纸面 · GitHub看板（只读）</title>
+<title>分开前三模型每日推送 + V5币圈纸面 + v2/v3 选股 · GitHub看板（只读）</title>
 <style>
 body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;max-width:980px;margin:0 auto;padding:24px 16px;color:#222;line-height:1.6}
 h1{font-size:22px} h2{font-size:18px;margin-top:32px;border-bottom:1px solid #ddd;padding-bottom:6px} h3{font-size:16px;margin-top:20px}
@@ -13,9 +13,9 @@ table{border-collapse:collapse;width:100%;margin:12px 0} th,td{border:1px solid 
 </style>
 </head>
 <body>
-<h1>分开前三模型每日推送 + V5币圈纸面 · GitHub看板</h1>
+<h1>分开前三模型每日推送 + V5币圈纸面 + v2/v3 选股 · GitHub看板</h1>
 <p class="note">只读看板：交易与聊天推送仍由 Muse 定时任务运行，GitHub 只展示数据，不交易、不改仓位、不下单。<br>
-数据来源：<code>results/daily_push_history.jsonl</code>（Muse 每次推送后上传）、<code>results/daily_push_account_latest.json</code>（纸面账户快照）、<code>results/v5_crypto_latest.json</code>（V5 快照）。本页打开时从仓库实时读取，刷新页面即更新。</p>
+数据来源：<code>results/daily_push_history.jsonl</code>（Muse 每次推送后上传）、<code>results/daily_push_account_latest.json</code>（纸面账户快照）、<code>results/v5_crypto_latest.json</code>（V5 快照）、<code>results/v2_latest.json</code>（v2 最新一轮）、<code>results/v3_crypto_latest.json</code>（v3 加密最新一轮）、<code>results/v3_stocks_latest.json</code>（v3 美股最新一轮）。本页打开时从仓库实时读取，刷新页面即更新。</p>
 <p id="status" class="note">正在读取仓库数据……</p>
 
 <h2>最新一轮推送</h2>
@@ -32,6 +32,15 @@ table{border-collapse:collapse;width:100%;margin:12px 0} th,td{border:1px solid 
 
 <h2>V5币圈纸面（24池，$100,000起，纸面记录，非实盘）</h2>
 <div id="v5"></div>
+
+<h2>v2 本地简报（最新一轮，日线）</h2>
+<div id="v2"></div>
+
+<h2>v3 盘中加密（最新一轮，小时线）</h2>
+<div id="v3crypto"></div>
+
+<h2>v3 盘中美股（最新一轮，小时线）</h2>
+<div id="v3stocks"></div>
 
 <h2>CSMOM 美股前瞻账本（公开仓库每日流水线，月调仓前 5 只，成本未扣）</h2>
 <div id="csmom"></div>
@@ -56,6 +65,34 @@ function weightsTable(title, obj){
   if(!obj) return "";
   let rows = Object.entries(obj).map(([k,v])=>`<tr><td>${esc(k)}</td><td>${pct(v)}</td></tr>`).join("");
   return `<h3>${esc(title)}</h3><table><tr><th>标的</th><th>权重</th></tr>${rows}</table>`;
+}
+// ---- v2/v3 选股快照：入场价按量级格式化，小币不丢精度 ----
+function fmtPrice2(x){
+  if(x==null||x===""||isNaN(x)) return "—";
+  const a = Math.abs(x);
+  if(a>=1000) return "$"+Number(x).toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2});
+  if(a>=10) return "$"+Number(x).toFixed(2);
+  if(a>=0.01) return "$"+Number(x).toFixed(4);
+  return "$"+String(parseFloat(Number(x).toPrecision(4)));
+}
+function picksTable(title, picks){
+  if(!picks || !picks.length) return `<h3>${esc(title)}</h3><p class="note">本轮无选股。</p>`;
+  return `<h3>${esc(title)}</h3><div class="scroll"><table><tr><th>标的</th><th>入场价</th><th>分数</th><th>Tier</th><th>理由</th></tr>` +
+    picks.map(p=>`<tr><td>${esc(p.label||"")}</td><td>${fmtPrice2(p.entry_price)}</td><td>${esc(p.score??"")}</td><td>${esc(p.tier||"")}</td><td>${esc(p.reason||"")}</td></tr>`).join("") + `</table></div>`;
+}
+function wrText(o){
+  if(!o) return "数据不足";
+  if(o.insufficient) return `数据不足（n=${o.n??0}）`;
+  return `${o.win_rate}%（平均 ${o.avg_ret}% · n=${o.n}）`;
+}
+function uniBody(u){
+  let h = `<p>市场状态 ${esc(u.regime||"")} · 数据截至 ${esc(u.data_asof||"")}</p>`;
+  if(u.skipped){
+    h += `<p class="note">本轮跳过选股：${esc(u.skip_reason||"休市或数据不新鲜")}。</p>`;
+  } else {
+    h += picksTable("做多", u.longs) + picksTable("做空", u.shorts);
+  }
+  return h;
 }
 async function getJSON(url){
   const r = await fetch(url);
@@ -174,6 +211,29 @@ async function getText(url){
   }catch(e){
     document.getElementById("v5").innerHTML = `<p class="note">V5 快照尚未上传到仓库，待 V5 定时任务上传后这里自动显示。</p>`;
   }
+  try{
+    const d = await getJSON(RAW + "results/v2_latest.json");
+    let html = `<p>报告：${esc(d.report||"")} · 发布于 ${esc(d.published_at_toronto||"")}（多伦多）</p>`;
+    if(d.universes && d.universes.crypto) html += `<h3>加密</h3>` + uniBody(d.universes.crypto);
+    if(d.universes && d.universes.stocks) html += `<h3>美股</h3>` + uniBody(d.universes.stocks);
+    if(d.winrate) html += `<p>历史胜率（7 天窗口）：加密做多 ${wrText(d.winrate.crypto_long)} · 加密做空 ${wrText(d.winrate.crypto_short)} · 美股做多 ${wrText(d.winrate.stocks_long)} · 美股做空 ${wrText(d.winrate.stocks_short)}</p>`;
+    document.getElementById("v2").innerHTML = html;
+  }catch(e){
+    document.getElementById("v2").innerHTML = `<p class="note">v2 最新快照尚未上传到仓库，待下一轮 v2 任务上传后这里自动显示。</p>`;
+  }
+  async function renderV3(elId, file, winNote){
+    try{
+      const d = await getJSON(RAW + file);
+      let html = `<p>报告：${esc(d.report||"")} · 发布于 ${esc(d.published_at_toronto||"")}（多伦多）</p>`;
+      html += uniBody(d);
+      if(d.winrate) html += `<p>历史胜率（${esc(winNote)}）：做多 ${wrText(d.winrate.long)} · 做空 ${wrText(d.winrate.short)}</p>`;
+      document.getElementById(elId).innerHTML = html;
+    }catch(e){
+      document.getElementById(elId).innerHTML = `<p class="note">最新快照尚未上传到仓库，待下一轮任务上传后这里自动显示。</p>`;
+    }
+  }
+  await renderV3("v3crypto", "results/v3_crypto_latest.json", "24 小时窗口");
+  await renderV3("v3stocks", "results/v3_stocks_latest.json", "2 交易日窗口");
   try{
     const c = await getJSON(RAW + "results/csmom_forward_ledger.json");
     const s = c.summary || {};
