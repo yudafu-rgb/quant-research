@@ -305,10 +305,13 @@ function freshnessHtml(runToronto){
       return;
     }
     let acc = {}, accMeta = "", accSummary = null, accRule = "", accSource = "", accPreds = [];
+    let accSummaryView = null, accSummaryData = null, accSentiment = 0, accExcluded = 0;
     try{
       const aj = JSON.parse(await getText(RAW + "results/x_accuracy.json"));
       acc = aj.channels || {}; accMeta = aj.generated_at || "";
       accSummary = aj.summary || null; accRule = aj.rule || "";
+      accSummaryView = aj.summary_view || null; accSummaryData = aj.summary_data || null;
+      accSentiment = aj.sentiment_only || 0; accExcluded = aj.excluded || 0;
       accSource = aj.price_source || ""; accPreds = aj.predictions || [];
     }catch(e){}
     const lines = parseHistory(txt);
@@ -396,13 +399,13 @@ function freshnessHtml(runToronto){
       /* 可展开的准确率说明：规则、总数与逐笔记录 */
       if(accSummary || accRule || accPreds.length){
         html += "<details class=\"acc-details\"><summary>历史预测命中说明（点击展开）</summary>";
-        if(accSummary) html += "<p>累计 " + accSummary.claims + " 条预测：" + accSummary.hits + " 命中 / " + accSummary.misses + " 未命中 / " + accSummary.pending + " 待验证。</p>";
+        if(accSummary) html += "<p>累计 " + accSummary.claims + " 条计分预测：" + accSummary.hits + " 命中 / " + accSummary.misses + " 未命中 / " + accSummary.pending + " 待验证。" + (accSummaryView ? "其中观点型 " + accSummaryView.claims + " 条（" + accSummaryView.hits + "/" + accSummaryView.misses + "/" + accSummaryView.pending + "），数据/事件型 " + (accSummaryData ? accSummaryData.claims : 0) + " 条。" : "") + (accSentiment || accExcluded ? "另有 " + accSentiment + " 条只当情绪、" + accExcluded + " 条剔除。" : "") + "</p>";
         if(accRule) html += "<p>判定规则：" + esc(accRule) + "。</p>";
         if(accSource) html += "<p>价格源：" + esc(accSource) + "。</p>";
         html += "<p>窗口为原帖发布后 7 天：窗口内触及目标价即命中，窗口到期未触及判未命中；支撑位守住算命中、跌破算未命中。</p>";
         if(accPreds.length){
-          html += "<div class=\"scroll\"><table><thead><tr><th>账号</th><th>目标价</th><th>目标日</th><th>结果</th></tr></thead><tbody>"
-            + accPreds.map(p=>"<tr><td>" + esc(p.channel) + "</td><td>" + esc(p.target_price) + "</td><td>" + esc(p.target_date) + "</td><td>" + (OUTCOME[p.outcome] || esc(p.outcome)) + "</td></tr>").join("")
+          html += "<div class=\"scroll\"><table><thead><tr><th>账号</th><th>目标价</th><th>目标日</th><th>结果</th><th>计分</th></tr></thead><tbody>"
+            + accPreds.map(p=>"<tr><td>" + esc(p.channel) + "</td><td>" + esc(p.target_price) + "</td><td>" + esc(p.target_date) + "</td><td>" + (OUTCOME[p.outcome] || esc(p.outcome)) + "</td><td>" + (p.scored === false ? "不计分（" + esc(p.exclude_reason || "") + "）" : "计分") + "</td></tr>").join("")
             + "</tbody></table></div>";
         }
         if(accMeta) html += "<p class=\"note\">准确率文件更新于 " + esc(accMeta) + "（多伦多）。</p>";
@@ -426,25 +429,40 @@ function freshnessHtml(runToronto){
         return "<tr><td>"+esc(d.run_toronto)+"</td><td>"+markNums(one)+"</td></tr>";
       }).join("") + "</table>";
     document.getElementById("history").innerHTML = hist;
-    /* ---- 预测台账（独立文件，失败时只影响本节） ---- */
+    /* ---- 预测台账 v2（独立文件，失败时只影响本节） ---- */
     try{
       const lj = JSON.parse(await getText(RAW + "results/x_predictions_ledger.json"));
       let lh = "";
-      if(lj.summary) lh += "<p>累计 " + lj.summary.claims + " 条预测：" + lj.summary.hits + " 命中 / " + lj.summary.misses + " 未命中 / " + lj.summary.pending + " 待验证。命中率须结合目标距离%与窗口天数一起看：窗口宽、目标近的预测几乎必中。样本 n&lt;5 不排名；数据型与事件型不参与观点排名。</p>";
+      const sv = lj.summary_view, sd = lj.summary_data;
+      if(sv) lh += "<p>观点型账号累计 " + sv.claims + " 条预测：" + sv.hits + " 命中 / " + sv.misses + " 未命中 / " + sv.pending + " 待验证。实际命中率 " + (sv.observed_hit_rate_pct == null ? "—" : sv.observed_hit_rate_pct + "%") + "，期望命中率 " + (sv.expected_hit_rate_pct == null ? "—" : sv.expected_hit_rate_pct + "%") + "（发帖前 30 日波动率、无漂移随机游走估算），超额 " + (sv.excess_pp == null ? "—" : (sv.excess_pp > 0 ? "+" : "") + sv.excess_pp + " 个百分点") + "。样本 n&lt;5 不排名；数据型与事件型分口径、不参与观点排名。</p>";
+      if(sv && sv.touch && sv.hold) lh += "<p>触及型 " + sv.touch.claims + " 条：实际 " + (sv.touch.observed_hit_rate_pct == null ? "—" : sv.touch.observed_hit_rate_pct + "%") + " / 期望 " + (sv.touch.expected_hit_rate_pct == null ? "—" : sv.touch.expected_hit_rate_pct + "%") + "，超额 " + (sv.touch.excess_pp == null ? "—" : (sv.touch.excess_pp > 0 ? "+" : "") + sv.touch.excess_pp + " 个百分点") + "；守住型 " + sv.hold.claims + " 条：实际 " + (sv.hold.observed_hit_rate_pct == null ? "—" : sv.hold.observed_hit_rate_pct + "%") + " / 期望 " + (sv.hold.expected_hit_rate_pct == null ? "—" : sv.hold.expected_hit_rate_pct + "%") + "，超额 " + (sv.hold.excess_pp == null ? "—" : (sv.hold.excess_pp > 0 ? "+" : "") + sv.hold.excess_pp + " 个百分点") + "。触及型与守住型判定规则不同，不可比。</p>";
+      if(sd) lh += "<p>数据/事件型账号另计 " + sd.claims + " 条：" + sd.hits + " 命中 / " + sd.misses + " 未命中 / " + sd.pending + " 待验证（不参与观点排名）。</p>";
+      if(lj.sentiment_only && lj.sentiment_only.length) lh += "<p class=\"note\">只当情绪、不计分（" + lj.sentiment_only.length + " 条）：" + lj.sentiment_only.map(p=>esc(p.account) + " " + esc(p.target_text)).join("；") + "。</p>";
+      if(lj.excluded && lj.excluded.length) lh += "<p class=\"note\">已剔除（" + lj.excluded.length + " 条）：" + lj.excluded.map(p=>esc(p.account) + " " + esc(p.target_text) + "（" + esc(p.exclude_reason || "") + "）").join("；") + "。</p>";
+      if(lj.method) lh += "<p class=\"note\">方法：" + esc(lj.method) + "</p>";
+      if(lj.note) lh += "<p class=\"note\">" + esc(lj.note) + "</p>";
       if(lj.accounts && lj.accounts.length){
-        lh += "<div class=\"scroll\"><table><thead><tr><th>账号</th><th>类别</th><th>已判定</th><th>命中率</th><th>平均距离%</th><th>平均窗口</th><th>待验证</th></tr></thead><tbody>"
-          + lj.accounts.map(a=>"<tr><td>" + esc(a.account) + "</td><td>" + esc(a.role) + "</td><td>" + a.hits + "/" + a.resolved + "</td><td>" + (a.hit_rate_pct == null ? "—" : a.hit_rate_pct + "%") + "</td><td>" + (a.avg_distance_pct == null ? "—" : a.avg_distance_pct + "%") + "</td><td>" + (a.avg_window_days == null ? "—" : a.avg_window_days + " 天") + "</td><td>" + a.pending + "</td></tr>").join("")
+        lh += "<div class=\"scroll\"><table><thead><tr><th>账号</th><th>已判定</th><th>命中率</th><th>期望命中率</th><th>超额</th><th>平均距离%</th><th>平均窗口</th><th>待验证</th></tr></thead><tbody>"
+          + lj.accounts.map(a=>"<tr><td>" + esc(a.account) + "</td><td>" + a.hits + "/" + a.resolved + "</td><td>" + (a.hit_rate_pct == null ? "—" : a.hit_rate_pct + "%") + "</td><td>" + (a.expected_hit_rate_pct == null ? "—" : a.expected_hit_rate_pct + "%") + "</td><td>" + (a.excess_pp == null ? "—" : (a.excess_pp > 0 ? "+" : "") + a.excess_pp + "pp") + "</td><td>" + (a.avg_distance_pct == null ? "—" : a.avg_distance_pct + "%") + "</td><td>" + (a.avg_window_days == null ? "—" : a.avg_window_days + " 天") + "</td><td>" + a.pending + "</td></tr>").join("")
+          + "</tbody></table></div>";
+      }
+      if(lj.data_accounts && lj.data_accounts.length){
+        lh += "<h3>数据/事件型账号（分口径，不排名）</h3><div class=\"scroll\"><table><thead><tr><th>账号</th><th>类别</th><th>已判定</th><th>命中率</th><th>期望命中率</th><th>超额</th><th>待验证</th></tr></thead><tbody>"
+          + lj.data_accounts.map(a=>"<tr><td>" + esc(a.account) + "</td><td>" + esc(a.role) + "</td><td>" + a.hits + "/" + a.resolved + "</td><td>" + (a.hit_rate_pct == null ? "—" : a.hit_rate_pct + "%") + "</td><td>" + (a.expected_hit_rate_pct == null ? "—" : a.expected_hit_rate_pct + "%") + "</td><td>" + (a.excess_pp == null ? "—" : (a.excess_pp > 0 ? "+" : "") + a.excess_pp + "pp") + "</td><td>" + a.pending + "</td></tr>").join("")
           + "</tbody></table></div>";
       }
       if(lj.sentiment_series && lj.sentiment_series.length){
-        lh += "<h3>多空情绪时间序列（仅观点型账号）</h3><p class=\"note\">每期看多 / 看空账号数。极端一致本身就是反向指标。</p>";
+        lh += "<h3>多空情绪时间序列（仅观点型账号）</h3><p class=\"note\">每期看多 / 看空账号数（仅发帖 3 天内的新观点，过期背景观点不计）。“极端一致是反向指标”只是假设，尚未验证，仅供参考。</p>";
         lh += '<svg viewBox="0 0 900 170" width="100%" style="max-width:900px;background:#fff;border:1px solid var(--line);border-radius:10px" role="img" aria-label="多空情绪时间序列">'
           + sentimentSvg(lj.sentiment_series) + '</svg>';
       }
       if(lj.predictions && lj.predictions.length){
-        lh += "<details class=\"acc-details\"><summary>逐笔预测记录（" + lj.predictions.length + " 条，点击展开）</summary><div class=\"scroll\"><table><thead><tr><th>账号</th><th>发帖日</th><th>标的</th><th>方向</th><th>目标价</th><th>发帖时价格</th><th>距离%</th><th>窗口</th><th>结果</th></tr></thead><tbody>"
-          + lj.predictions.map(p=>"<tr><td>" + esc(p.account) + "</td><td>" + esc(p.post_date) + "</td><td>" + esc(p.asset) + "</td><td>" + esc(p.direction) + "</td><td>" + esc(p.target_text) + "</td><td>" + (p.price_at_post == null ? "—" : fmtMoney(p.price_at_post)) + "</td><td>" + (p.distance_pct == null ? "—" : (p.distance_pct > 0 ? "+" : "") + p.distance_pct + "%") + "</td><td>" + (p.window_days == null ? "—" : p.window_days + " 天") + "</td><td>" + (OUTCOME[p.outcome] || esc(p.outcome)) + "</td></tr>").join("")
-          + "</tbody></table></div><p class=\"note\">来源构成：32 条预测全部来自新闻转引，0 条原帖。判定规则见上方说明。</p></details>";
+        const srcCounts = {};
+        lj.predictions.forEach(p=>{ srcCounts[p.source_type || "未注明"] = (srcCounts[p.source_type || "未注明"] || 0) + 1; });
+        const srcNote = Object.keys(srcCounts).map(k=>srcCounts[k] + " 条" + k).join("、");
+        lh += "<details class=\"acc-details\"><summary>逐笔预测记录（" + lj.predictions.length + " 条，点击展开）</summary><div class=\"scroll\"><table><thead><tr><th>账号</th><th>发帖日</th><th>标的</th><th>方向</th><th>类型</th><th>目标价</th><th>发帖时价格</th><th>距离%</th><th>窗口</th><th>期望命中率</th><th>结果</th></tr></thead><tbody>"
+          + lj.predictions.map(p=>"<tr><td>" + esc(p.account) + "</td><td>" + esc(p.post_date) + "</td><td>" + esc(p.asset) + "</td><td>" + esc(p.direction) + "</td><td>" + esc(p.kind) + "</td><td>" + esc(p.target_text) + "</td><td>" + (p.price_at_post == null ? "—" : fmtMoney(p.price_at_post)) + "</td><td>" + (p.distance_pct == null ? "—" : (p.distance_pct > 0 ? "+" : "") + p.distance_pct + "%") + "</td><td>" + (p.window_days == null ? "—" : p.window_days + " 天") + "</td><td>" + (p.expected_hit_pct == null ? "—" : p.expected_hit_pct + "%") + "</td><td>" + (OUTCOME[p.outcome] || esc(p.outcome)) + "</td></tr>").join("")
+          + "</tbody></table></div><p class=\"note\">来源构成：" + esc(srcNote) + "。判定规则见上方说明；发帖时价格为发帖当日收盘价（发帖时刻未核实，小时价无法取）。</p></details>";
       }
       if(lj.generated_at) lh += "<p class=\"note\">台账更新于 " + esc(lj.generated_at) + "。</p>";
       document.getElementById("ledger").innerHTML = lh;
