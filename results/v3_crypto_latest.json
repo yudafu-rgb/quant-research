@@ -1,74 +1,66 @@
 {
  "regime": "risk-off",
- "data_asof": "2026-11-15 09:00",
+ "data_asof": "2026-11-15 13:00",
  "skipped": false,
  "skip_reason": null,
  "longs": [
   {
    "label": "LEO (LEO Token)",
-   "entry_price": 9.148868092387833,
-   "entry_ts": "2026-11-15T09:00:00",
-   "score": 69.2,
+   "entry_price": 9.144814652907375,
+   "entry_ts": "2026-11-15T13:00:00",
+   "score": 69.9,
    "tier": "C",
-   "reason": "小时线分数69.2（第2名）；RSI(14h) 47.6；日线向上；市场状态risk-off；板块CEX-token（24h -2.4%）；Tier-C（未过：signal,regime）"
+   "reason": "小时线分数69.9（第1名）；RSI(14h) 46.8；日线向上；市场状态risk-off；板块CEX-token（24h -0.6%）；Tier-C（未过：signal,regime）"
   },
   {
-   "label": "derive (trending)",
-   "entry_price": 0.28725742444049984,
-   "entry_ts": "2026-11-15T09:00:00",
-   "score": 74.4,
+   "label": "M (MemeCore)",
+   "entry_price": 0.8315683105127807,
+   "entry_ts": "2026-11-15T13:00:00",
+   "score": 60.4,
    "tier": "C",
-   "reason": "小时线分数74.4（第1名）；RSI(14h) 65.2；日线向下；市场状态risk-off；🔥trending关注度加成+2分；Tier-C（未过：signal,regime）"
-  },
-  {
-   "label": "FIGR_HELOC (Figure Heloc)",
-   "entry_price": 1.0660041638465427,
-   "entry_ts": "2026-11-15T08:00:00",
-   "score": 65.2,
-   "tier": "C",
-   "reason": "小时线分数65.2（第4名）；RSI(14h) 62.9；日线向上；市场状态risk-off；Tier-C（未过：signal,regime）"
+   "reason": "小时线分数60.4（第2名）；RSI(14h) 56.6；日线向下；市场状态risk-off；Tier-C（未过：signal,regime）"
   }
  ],
  "shorts": [
   {
-   "label": "SOL (Solana)",
-   "entry_price": 71.3,
-   "entry_ts": "2026-11-15T09:00:00",
+   "label": "BTC (Bitcoin)",
+   "entry_price": 64729.1,
+   "entry_ts": "2026-11-15T13:00:00",
    "score": 27.7,
    "tier": "C",
-   "reason": "小时线分数27.7（第40名）；RSI(14h) 44.4；日线向下；市场状态risk-off；板块L1（24h -3.1%）；Tier-C（未过：signal）"
+   "reason": "小时线分数27.7（第35名）；RSI(14h) 44.6；日线向下；市场状态risk-off；🔥trending关注度加成+2分；板块L1（24h -1.0%）；Tier-C（未过：signal）"
+  },
+  {
+   "label": "pudgy-penguins (trending)",
+   "entry_price": 0.0048652971327629545,
+   "entry_ts": "2026-11-15T13:00:00",
+   "score": 28.8,
+   "tier": "C",
+   "reason": "小时线分数28.8（第34名）；RSI(14h) 37.4；日线向下；市场状态risk-off；🔥trending关注度加成+2分；Tier-C（未过：signal）"
   },
   {
    "label": "DOGE (Dogecoin)",
-   "entry_price": 0.0585,
-   "entry_ts": "2026-11-15T09:00:00",
-   "score": 28.0,
+   "entry_price": 0.05871,
+   "entry_ts": "2026-11-15T13:00:00",
+   "score": 28.9,
    "tier": "C",
-   "reason": "小时线分数28.0（第39名）；RSI(14h) 43.7；日线向下；市场状态risk-off；板块Meme（24h -4.0%）；Tier-C（未过：signal）"
-  },
-  {
-   "label": "BNB (BNB)",
-   "entry_price": 590.14,
-   "entry_ts": "2026-11-15T09:00:00",
-   "score": 28.6,
-   "tier": "C",
-   "reason": "小时线分数28.6（第38名）；RSI(14h) 43.9；日线向下；市场状态risk-off；板块CEX-token（24h -2.4%）；Tier-C（未过：signal）"
+   "reason": "小时线分数28.9（第33名）；RSI(14h) 45.8；日线向下；市场状态risk-off；板块Meme（24h -1.3%）；Tier-C（未过：signal）"
   }
  ],
  "kind": "v3-crypto",
- "report": "intraday_run_2026-11-15_1016.json",
- "published_at_toronto": "2026-11-15 10:21",
+ "report": "intraday_run_2026-11-15_1419.json",
+ "published_at_toronto": "2026-11-15 14:21",
  "winrate": {
   "long": {
-   "n": 774,
+   "n": 776,
    "win_rate": 37.5,
    "avg_ret": -1.25,
    "insufficient": false
   },
   "short": {
-   "n": 805,
-   "win_rate": 58.6,
-   "avg_ret": 0.75,
+   "n": 808,
+   "win_rate": 58.4,
+   "avg_ret": 0.74,
    "insufficient": false
   }
  }
