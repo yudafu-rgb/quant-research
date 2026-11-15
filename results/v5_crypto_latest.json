@@ -1,5 +1,5 @@
 {
- "mode": "rebalance",
+ "mode": "valuation",
  "last_close_date": "2026-11-14",
  "cash": 96847.63059701493,
  "holdings_value": 0.0,
@@ -255,5 +255,46 @@
  "new_pending_entries": [],
  "new_pending_exits": [],
  "no_new_close": false,
- "pending_entries_detail": []
+ "watchlist_trend_ok": [
+  {
+   "coin": "QNT",
+   "close": 140.0,
+   "mom126": 1.0774595637334916,
+   "ma200": 103.1093,
+   "prior_max": 203.64,
+   "prior_min": 160.05,
+   "breakout": false,
+   "trend_ok": true
+  },
+  {
+   "coin": "ZEC",
+   "close": 862.44,
+   "mom126": 0.6985189853474083,
+   "ma200": 794.39495,
+   "prior_max": 1321.31,
+   "prior_min": 933.12,
+   "breakout": false,
+   "trend_ok": true
+  },
+  {
+   "coin": "NEAR",
+   "close": 3.022,
+   "mom126": 0.618639528655597,
+   "ma200": 2.68315,
+   "prior_max": 4.745,
+   "prior_min": 3.408,
+   "breakout": false,
+   "trend_ok": true
+  },
+  {
+   "coin": "PEPE",
+   "close": 3.87e-06,
+   "mom126": 0.4280442804428046,
+   "ma200": 3.54775e-06,
+   "prior_max": 5.36e-06,
+   "prior_min": 4.29e-06,
+   "breakout": false,
+   "trend_ok": true
+  }
+ ]
 }
