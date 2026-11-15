@@ -92,6 +92,9 @@ details.acc-details td,details.acc-details th{padding:6px 8px}
 #history tr:nth-child(even) td{background:#f7f4ec}
 button{font:inherit;font-size:13.5px;padding:5px 12px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);cursor:pointer}
 button:hover{border-color:var(--accent);color:var(--accent)}
+.filter-row{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.filter-btn.active{border-color:var(--accent);color:var(--accent);font-weight:700}
+.view-toggle{font-size:12.5px;padding:2px 10px;margin-top:6px}
 .foot{margin-top:40px}
 @media(max-width:720px){
   body{padding:24px 16px 40px;font-size:15.5px}
@@ -121,7 +124,7 @@ button:hover{border-color:var(--accent);color:var(--accent)}
 <h1>X BTC/ETH观点简报 · 网页版</h1>
 <p class="note">只读网页版：聊天推送仍由 Muse 定时任务在每天多伦多时间 9:30 和 20:30 运行，本页只展示简报内容，不交易、不下单。<br>
 数据来源：<code>results/x_briefing_history.jsonl</code>（Muse 每次推送后上传）。本页打开时从仓库实时读取，刷新页面即更新。<br>
-首屏先看导语、价格卡与三组短句（变了什么 / 等什么确认 / 还没核实）；下面分市场事实、观点分歧、预测市场报价三块，再附账号观点表（默认只显示本期新增与补录，背景行可展开）。<br>
+首屏只放导语、价格卡与三组短句（变了什么 / 等什么确认 / 还没核实）。采编说明、市场事实与观点分歧默认折叠，点开再看；账号卡片默认只显示短预览，点「展开全文」看完整观点，可用筛选只看新增、补录或背景。<br>
 以下均为 X 帖子观点整理（公开搜索和新闻引用的X帖子，X账号不直连，不声称为X官方趋势榜），仅供资讯参考，不构成买卖建议。历史预测命中只写可核实到日期和价位的记录，无法核实的写“暂无”。“点评”为 Muse 对每条观点的专业判断（不超过 3 句），只评逻辑、证据和价位合理性，不构成买卖建议；无观点的行显示“—”。</p>
 <p id="status" class="note">正在读取仓库数据……</p>
 
@@ -147,12 +150,36 @@ button:hover{border-color:var(--accent);color:var(--accent)}
 const RAW = "https://raw.githubusercontent.com/yudafu-rgb/quant-research/main/";
 const esc = s => String(s ?? "").replace(/&/g,"&amp;").replace(/</g,"&lt;");
 async function getText(url){ const r = await fetch(url); if(r.status===404) return ""; if(!r.ok) throw new Error(r.status); return r.text(); }
-function toggleBg(btn){
-  const rows = document.querySelectorAll("#latest tr.bg-row");
-  const showing = btn.dataset.showing === "1";
-  rows.forEach(r=>{ r.style.display = showing ? "none" : ""; });
-  btn.dataset.showing = showing ? "0" : "1";
-  btn.textContent = showing ? btn.dataset.labelShow : "收起背景";
+/* 账号卡片：短预览 + 展开全文 */
+const PREVIEW_LEN = 200;
+function viewHtml(r){
+  const v = r.view || "";
+  if(v.length <= PREVIEW_LEN) return markNums(v);
+  return '<span class="view-preview">' + markNums(v.slice(0, PREVIEW_LEN)) + '……</span>'
+    + '<span class="view-full" style="display:none">' + markNums(v) + '</span>'
+    + ' <button class="view-toggle" onclick="toggleView(this)">展开全文</button>';
+}
+function toggleView(btn){
+  const cell = btn.parentElement;
+  const prev = cell.querySelector(".view-preview");
+  const full = cell.querySelector(".view-full");
+  const open = btn.dataset.open === "1";
+  prev.style.display = open ? "" : "none";
+  full.style.display = open ? "none" : "";
+  btn.dataset.open = open ? "0" : "1";
+  btn.textContent = open ? "展开全文" : "收起";
+}
+/* 状态筛选：新增与补录（默认）/ 全部 / 新增 / 补录 / 背景 */
+function setFilter(btn, mode){
+  document.querySelectorAll("#latest tr.acc-row").forEach(tr=>{
+    const st = tr.dataset.status || "";
+    let show = false;
+    if(mode === "all") show = true;
+    else if(mode === "new") show = st === "新增" || st === "补录";
+    else show = st === mode;
+    tr.style.display = show ? "" : "none";
+  });
+  document.querySelectorAll("#latest .filter-btn").forEach(b=>b.classList.toggle("active", b === btn));
 }
 /* 重点数字（$价位、百分比）用等宽字体高亮，和正文区分 */
 function markNums(s){
@@ -264,7 +291,6 @@ const OUTCOME = {hit:"命中", missed:"未命中", pending:"待验证"};
     const runDate = (last.run_toronto || "").slice(0, 10);
     document.getElementById("status").textContent = "已读取 " + lines.length + " 期简报记录，最新一期：" + last.run_toronto + "（多伦多）。";
     let html = "<p class=\"meta\">推送时间（多伦多）：<span class=\"num\">" + esc(last.run_toronto) + "</span></p>";
-    if(last.format_note) html += "<p class=\"note\">" + esc(last.format_note) + "</p>";
     /* 首屏导语 */
     if(last.lede) html += "<p class=\"lede\">" + markNums(last.lede) + "</p>";
     /* 价格卡（有结构化 prices 时用卡片，否则退回旧的两栏摘要） */
@@ -278,15 +304,18 @@ const OUTCOME = {hit:"命中", missed:"未命中", pending:"待验证"};
       + trioBlock("接下来等什么确认", last.watch)
       + trioBlock("哪些消息还没核实", last.unverified);
     if(trio) html += '<div class="trio">' + trio + '</div>';
-    /* 市场事实 */
-    html += "<h3>市场事实</h3>";
+    /* 采编说明（可展开）：原 format_note 不再排在首屏前面 */
+    if(last.format_note) html += '<details class="acc-details"><summary>采编说明</summary><p class="note">' + esc(last.format_note) + '</p></details>';
+    /* 市场事实（默认折叠） */
+    html += '<details class="acc-details"><summary>市场事实（点击展开）</summary>';
     html += "<div class=\"summary-grid\">"
       + "<section><h3><span class=\"coin btc\">BTC</span></h3><p>" + markNums(last.btc_summary||"") + "</p></section>"
       + "<section><h3><span class=\"coin eth\">ETH</span></h3><p>" + markNums(last.eth_summary||"") + "</p></section></div>";
     if(last.consensus) html += "<div class=\"verdict\"><p><b>共识：</b>" + markNums(last.consensus) + "</p></div>";
-    /* 观点分歧 */
+    html += '</details>';
+    /* 观点分歧（默认折叠） */
     if(last.divergence){
-      html += "<h3>观点分歧</h3><div class=\"verdict\"><p>" + markNums(last.divergence) + "</p></div>";
+      html += '<details class="acc-details"><summary>观点分歧（点击展开）</summary><div class="verdict"><p>' + markNums(last.divergence) + '</p></div></details>';
     }
     const rows = last.table_rows || [];
     const pmRows = rows.filter(r=>r.category === "预测市场");
@@ -303,24 +332,29 @@ const OUTCOME = {hit:"命中", missed:"未命中", pending:"待验证"};
       }
       return "待验证（" + a.pending + "）";
     };
-    /* 账号观点表：默认只显示新增与补录，背景行折叠 */
+    /* 账号观点表：默认只显示新增与补录，可筛选；每行默认只显示短预览 */
     if(accRows.length){
-      const isBg = r => rowStatus(r) === "背景";
-      const bgCount = accRows.filter(isBg).length;
+      const cnt = {"新增":0, "补录":0, "背景":0};
+      accRows.forEach(r=>{ const st = rowStatus(r); if(cnt[st] !== undefined) cnt[st]++; });
       html += "<h3>账号观点</h3>";
+      html += '<p class="filter-row">'
+        + '<button class="filter-btn active" onclick="setFilter(this,\'new\')">新增与补录</button>'
+        + '<button class="filter-btn" onclick="setFilter(this,\'all\')">全部</button>'
+        + '<button class="filter-btn" onclick="setFilter(this,\'新增\')">新增（' + cnt["新增"] + '）</button>'
+        + '<button class="filter-btn" onclick="setFilter(this,\'补录\')">补录（' + cnt["补录"] + '）</button>'
+        + '<button class="filter-btn" onclick="setFilter(this,\'背景\')">背景（' + cnt["背景"] + '）</button></p>';
       html += "<div class=\"scroll main-wrap\"><table class=\"main\"><colgroup><col style=\"width:10%\"><col style=\"width:12%\"><col style=\"width:38%\"><col style=\"width:14%\"><col style=\"width:16%\"><col style=\"width:10%\"></colgroup><thead><tr><th>分类</th><th>账号名称</th><th>最新核心观点</th><th>核心关注点 / 风格定位</th><th>点评</th><th>历史预测命中</th></tr></thead><tbody>" +
         accRows.map(r=>{
-          const bg = isBg(r);
-          const cls = bg ? "bg-row" : "";
-          return "<tr" + (cls ? (" class=\"" + cls + "\"") : "") + (bg ? " style=\"display:none\"" : "") + ">"
+          const st = rowStatus(r);
+          const bg = st === "背景";
+          return "<tr class=\"acc-row\" data-status=\"" + st + "\"" + (bg ? " style=\"display:none\"" : "") + ">"
             + "<td class=\"cat\" data-label=\"分类\">" + esc(r.category) + "</td>"
             + "<td class=\"ch\" data-label=\"账号名称\">" + esc(r.channel) + "</td>"
-            + "<td data-label=\"最新核心观点\">" + stanceBadge(r.stance) + statusBadge(r) + markNums(r.view||"") + srcNote(r, runDate) + "</td>"
+            + "<td data-label=\"最新核心观点\">" + stanceBadge(r.stance) + statusBadge(r) + viewHtml(r) + srcNote(r, runDate) + "</td>"
             + "<td data-label=\"核心关注点 / 风格定位\">" + esc(r.focus) + "</td>"
             + "<td data-label=\"点评\">" + markNums(r.comment||"—") + "</td>"
             + "<td class=\"acc\" data-label=\"历史预测命中\">" + accCell(r) + "</td></tr>";
         }).join("") + "</tbody></table></div>";
-      if(bgCount) html += "<p class=\"note\">本期 " + bgCount + " 行是背景（无新帖），已默认折叠。 <button onclick=\"toggleBg(this)\" data-label-show=\"显示背景（" + bgCount + " 行）\">显示背景（" + bgCount + " 行）</button></p>";
       html += "<p class=\"note\">历史预测命中：“n/n 已判定”为已验证预测的命中数；样本 n&lt;5 时命中率仅供参考，不做排名。</p>";
       /* 可展开的准确率说明：规则、总数与逐笔记录 */
       if(accSummary || accRule || accPreds.length){
