@@ -1,7 +1,7 @@
 {
  "kind": "v2",
- "report": "run_2026-11-15_1346.json",
- "published_at_toronto": "2026-11-15 08:52",
+ "report": "run_2026-11-15_2146.json",
+ "published_at_toronto": "2026-11-15 16:52",
  "universes": {
   "crypto": {
    "regime": "risk-off",
@@ -10,54 +10,54 @@
    "skip_reason": null,
    "longs": [
     {
-     "label": "UNI (Uniswap)",
-     "entry_price": 5.176650283682788,
+     "label": "HYPE (Hyperliquid)",
+     "entry_price": 67.7015941782969,
      "entry_ts": "2026-11-15",
-     "score": 52.5,
+     "score": 47.2,
      "tier": "B",
-     "reason": "分数52.5（第14名）；看涨信号：RSI oversold；RSI 29.9；周线向上；市场状态risk-off；注意：存在多空信号冲突，已按优先级裁决；Tier-B（未过：regime）"
-    },
-    {
-     "label": "M (MemeCore)",
-     "entry_price": 0.8355223440680489,
-     "entry_ts": "2026-11-15",
-     "score": 50.7,
-     "tier": "B",
-     "reason": "分数50.7（第16名）；看涨信号：MACD bullish cross；RSI 46.4；周线向下；市场状态risk-off；Tier-B（未过：regime）"
+     "reason": "分数47.2（第16名）；看涨信号：RSI oversold；RSI 30.0；周线向上；市场状态risk-off；注意：存在多空信号冲突，已按优先级裁决；Tier-B（未过：regime）"
     },
     {
      "label": "FIGR_HELOC (Figure Heloc)",
      "entry_price": 1.0504622490504982,
      "entry_ts": "2026-11-15",
-     "score": 79.2,
+     "score": 79.9,
      "tier": "C",
-     "reason": "分数79.2（第1名）；RSI 53.8；周线向上；市场状态risk-off；Tier-C（未过：signal,regime）"
+     "reason": "分数79.9（第1名）；RSI 53.8；周线向上；市场状态risk-off；Tier-C（未过：signal,regime）"
+    },
+    {
+     "label": "derive (trending)",
+     "entry_price": 0.300106951270254,
+     "entry_ts": "2026-11-15",
+     "score": 73.4,
+     "tier": "C",
+     "reason": "分数73.4（第2名）；RSI 42.3；周线向上；市场状态risk-off；Tier-C（未过：signal,regime）"
     }
    ],
    "shorts": [
     {
-     "label": "XAUT (Tether Gold)",
-     "entry_price": 3823.3311931817834,
+     "label": "PAXG (PAX Gold)",
+     "entry_price": 3841.3747063702367,
      "entry_ts": "2026-11-15",
-     "score": 29.4,
+     "score": 25.3,
      "tier": "A",
-     "reason": "分数29.4（第37名）；看跌信号：Breakdown；RSI 32.5；周线向下；市场状态risk-off"
+     "reason": "分数25.3（第37名）；看跌信号：Breakdown；RSI 32.7；周线向下；市场状态risk-off"
     },
     {
-     "label": "PAXG (PAX Gold)",
-     "entry_price": 3824.6979280005285,
+     "label": "XAUT (Tether Gold)",
+     "entry_price": 3838.2942459380984,
      "entry_ts": "2026-11-15",
-     "score": 29.9,
+     "score": 25.4,
      "tier": "A",
-     "reason": "分数29.9（第34名）；看跌信号：Breakdown；RSI 31.8；周线向下；市场状态risk-off"
+     "reason": "分数25.4（第36名）；看跌信号：Breakdown；RSI 33.4；周线向下；市场状态risk-off"
     },
     {
      "label": "AVAX (Avalanche)",
-     "entry_price": 7.30966422155411,
+     "entry_price": 7.273140250973456,
      "entry_ts": "2026-11-15",
-     "score": 43.3,
+     "score": 36.1,
      "tier": "C",
-     "reason": "分数43.3（第17名）；看跌信号：MACD bearish cross、Breakdown；RSI 32.2；周线向下；市场状态risk-off；Tier-C（未过：score）"
+     "reason": "分数36.1（第20名）；看跌信号：MACD bearish cross、Breakdown；RSI 31.9；周线向下；市场状态risk-off；Tier-C（未过：score）"
     }
    ]
   },
