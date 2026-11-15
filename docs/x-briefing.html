@@ -33,6 +33,7 @@ p{margin:0 0 12px}
 .num{font-family:var(--font-num);font-size:.92em;font-weight:600;letter-spacing:-.01em}
 .note{color:var(--muted);font-size:13.5px;line-height:1.7}
 .err{color:var(--bear)}
+.stale{color:var(--bear);font-weight:700}
 .scroll{overflow-x:auto} .scroll table{min-width:680px}
 /* 首屏导语 */
 .lede{font-size:18px;line-height:1.7;margin:18px 0 4px;max-width:76ch;text-wrap:pretty}
@@ -52,15 +53,6 @@ p{margin:0 0 12px}
 .trio section+section{border-left:1px solid var(--line);padding-left:28px}
 .trio-list{margin:0;padding-left:18px;font-size:14.5px}
 .trio-list li{margin:0 0 8px;max-width:68ch;text-wrap:pretty}
-/* BTC / ETH 摘要：左右两栏，窄屏自动上下排 */
-.summary-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 32px;margin:20px 0 8px}
-.summary-grid section+section{border-left:1px solid var(--line);padding-left:32px}
-.summary-grid p{margin:0;max-width:68ch;text-wrap:pretty}
-.coin{display:inline-flex;align-items:center;gap:8px;font-size:17px;letter-spacing:.02em}
-.coin::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--coin,#888)}
-.coin.btc{--coin:#f7931a} .coin.eth{--coin:#627eea}
-.verdict{margin:20px 0 4px;border-top:1px solid var(--line-soft);padding-top:16px}
-.verdict p{margin:0 0 10px;max-width:74ch;text-wrap:pretty}
 /* 表格 */
 table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14.5px}
 th,td{padding:9px 10px;text-align:left;vertical-align:top;line-height:1.65}
@@ -96,6 +88,7 @@ button:hover{border-color:var(--accent);color:var(--accent)}
 .filter-btn.active{border-color:var(--accent);color:var(--accent);font-weight:700}
 .view-toggle{font-size:12.5px;padding:2px 10px;margin-top:6px}
 .foot{margin-top:40px}
+.ev-tag{font-size:11.5px;color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:0 6px;margin-left:6px;white-space:nowrap}
 @media(max-width:720px){
   body{padding:24px 16px 40px;font-size:15.5px}
   h1{font-size:22px}
@@ -103,8 +96,6 @@ button:hover{border-color:var(--accent);color:var(--accent)}
   .price-cards{grid-template-columns:1fr}
   .trio{grid-template-columns:1fr}
   .trio section+section{border-left:0;padding-left:0;border-top:1px solid var(--line);padding-top:16px;margin-top:16px}
-  .summary-grid{grid-template-columns:1fr}
-  .summary-grid section+section{border-left:0;padding-left:0;border-top:1px solid var(--line);padding-top:20px;margin-top:20px}
   th{position:static}
   /* 主表改卡片式：每行一张卡片，不再横向滚动 */
   .main-wrap{overflow-x:visible}
@@ -122,26 +113,38 @@ button:hover{border-color:var(--accent);color:var(--accent)}
 </head>
 <body>
 <h1>X BTC/ETH观点简报 · 网页版</h1>
+<details class="acc-details" id="about"><summary>说明（点击展开）</summary>
 <p class="note">只读网页版：聊天推送仍由 Muse 定时任务在每天多伦多时间 9:30 和 20:30 运行，本页只展示简报内容，不交易、不下单。<br>
 数据来源：<code>results/x_briefing_history.jsonl</code>（Muse 每次推送后上传）。本页打开时从仓库实时读取，刷新页面即更新。<br>
-首屏只放导语、价格卡与三组短句（变了什么 / 等什么确认 / 还没核实）。采编说明、市场事实与观点分歧默认折叠，点开再看；账号卡片默认只显示短预览，点「展开全文」看完整观点，可用筛选只看新增、补录或背景。<br>
-以下均为 X 帖子观点整理（公开搜索和新闻引用的X帖子，X账号不直连，不声称为X官方趋势榜），仅供资讯参考，不构成买卖建议。历史预测命中只写可核实到日期和价位的记录，无法核实的写“暂无”。“点评”为 Muse 对每条观点的专业判断（不超过 3 句），只评逻辑、证据和价位合理性，不构成买卖建议；无观点的行显示“—”。</p>
+首屏只放更新时间、价格卡与三组短句（变了什么 / 等什么确认 / 还没核实）。市场摘要与审计日志默认折叠，点开再看；账号卡片默认只显示短预览，点「展开全文」看完整观点，可用筛选只看新增、补录或背景。<br>
+以下均为 X 帖子观点整理（公开搜索和新闻引用的 X 帖子，X 账号不直连，不声称为 X 官方趋势榜），仅供资讯参考，不构成买卖建议。来源分「原帖」与「新闻转引」：目前几乎全部为新闻转引，原帖链接缺失是本简报可信度的最大短板，转引内容已降权处理。<br>
+账号分七类：观点型（计入多空统计与预测台账）、事件型（交易所/做市商/公司公告，只当事件源）、数据型（链上与数据商，不当价位来源）、媒体型、宏观/技术背景、情绪型（只当散户情绪温度计）、背景（已降权）。多空统计只统计观点型账号。<br>
+历史预测命中只写可核实到日期和价位的记录，无法核实的写“暂无”。预测台账（见下方）按账号、发帖日、标的、方向、目标价、发帖时价格、目标距离%、窗口天数、规则、结果逐笔记录；命中率须结合目标距离%与窗口天数一起看，样本 n&lt;5 不排名。<br>
+“点评”为 Muse 对每条观点的专业判断（不超过 3 句），只评逻辑、证据和价位合理性，不构成买卖建议；无观点的行显示“—”。每条点评标注证据类型（链上数据 / 技术形态 / 纯叙事），点评里的判断应是可证伪的。</p>
+</details>
 <p id="status" class="note">正在读取仓库数据……</p>
+<p id="freshness" class="meta"></p>
 
 <h2>最新一期</h2>
 <div id="latest"></div>
 
+<h2>预测台账</h2>
+<div id="ledger"><p class="note">正在读取台账……</p></div>
+
 <h2>历史简报（最近 12 期）</h2>
 <div id="history"></div>
 
-<h2>追踪账号名单（共 25 个，2026-11-02 用户确认）</h2>
-<p class="note">机构 / 新闻 / 链上类在简报里标注为“事件/数据”而非价位观点；Raoul Pal 为宏观对照，不是价位来源；ZachXBT 11月2日调查首发渠道是 Telegram，X是否同步未核实。</p>
+<h2>追踪账号名单（观点型 8 个、事件型 3 个、数据型 6 个、媒体型 1 个、宏观/技术背景 2 个、情绪型 3 个、背景 1 个；@BtcpayServer 已删）</h2>
+<p class="note">多空统计与预测台账只计观点型账号。事件型与数据型不当价位来源；情绪型只当散户情绪温度计；PlanB 已降权为背景。</p>
 <div class="scroll"><table>
-<tr><th>分类</th><th>账号</th></tr>
-<tr><td>英语核心</td><td>Michael Saylor、PlanB（@100trillionUSD）、Willy Woo（@willywoo）、Ali Martinez、Ted Pillows（@TedPillows）、Ash Crypto、Rekt Capital（@rektcapital）、Daan Crypto（@DaanCrypto）</td></tr>
-<tr><td>海外新增</td><td>Michaël van de Poppe（@CryptoMichNL）、Alex Thorn（@intangiblecoins）、Crypto Rover（@cryptorover）、Lark Davis</td></tr>
-<tr><td>中文精选</td><td>Phyrex Ni（@Phyrex_Ni）</td></tr>
-<tr><td>机构 / 新闻 / 链上</td><td>@binance、@whale_alert、@BtcpayServer、Lookonchain（@lookonchain）、Glassnode（@glassnode）、CryptoQuant（@cryptoquant_com）、Arkham（@arkham）、ZachXBT、Vitalik Buterin（@VitalikButerin）、Cointelegraph（@Cointelegraph）、DWF Labs（@DWFLabs）、Raoul Pal</td></tr>
+<tr><th>类别</th><th>账号</th></tr>
+<tr><td>观点型</td><td>Willy Woo（@willywoo）、Ali Martinez、Ted Pillows（@TedPillows）、Rekt Capital（@rektcapital）、Daan Crypto（@DaanCrypto）、Michaël van de Poppe（@CryptoMichNL）、Alex Thorn（@intangiblecoins）、Phyrex Ni（@Phyrex_Ni）</td></tr>
+<tr><td>事件型</td><td>Michael Saylor、@binance、DWF Labs（@DWFLabs）</td></tr>
+<tr><td>数据型</td><td>@whale_alert、Lookonchain（@lookonchain）、Glassnode（@glassnode）、CryptoQuant（@cryptoquant_com）、Arkham（@arkham）、ZachXBT</td></tr>
+<tr><td>媒体型</td><td>Cointelegraph（@Cointelegraph）</td></tr>
+<tr><td>宏观/技术背景</td><td>Vitalik Buterin（@VitalikButerin）、Raoul Pal</td></tr>
+<tr><td>情绪型</td><td>Ash Crypto、Crypto Rover（@cryptorover）、Lark Davis</td></tr>
+<tr><td>背景</td><td>PlanB（@100trillionUSD）</td></tr>
 </table></div>
 
 <p class="note">返回主看板：<a href="./index.html">分开前三模型每日推送 + V5币圈纸面 · GitHub看板</a></p>
@@ -223,6 +226,18 @@ function rowStatus(r){
   if(v === "本期暂无新帖" || v.indexOf("本期暂无新帖") === 0) return "背景";
   return "新增";
 }
+const ROLE_BADGE = {"观点型":"info", "事件型":"neu", "数据型":"info", "媒体型":"neu", "宏观/技术背景":"mix", "情绪型":"mix", "背景":"neu", "已删除":"bear", "预测市场":"info"};
+function roleBadge(r){
+  const role = r.role || "";
+  if(!role) return "";
+  return '<span class="badge ' + (ROLE_BADGE[role] || "neu") + '">' + role + '</span>';
+}
+const SRC_BADGE = {"原帖":"bull", "新闻转引":"mix", "API":"info", "未注明":"neu"};
+function srcBadge(r){
+  const st = r.source_type || "";
+  if(!st) return "";
+  return '<span class="badge ' + (SRC_BADGE[st] || "neu") + '">' + st + '</span>';
+}
 function statusBadge(r){
   const st = rowStatus(r);
   const map = {"新增":"bull", "补录":"info", "背景":"neu"};
@@ -240,7 +255,8 @@ function srcNote(r, runDate){
     parts.push("帖子时间 " + esc(r.video_date));
   }
   if(r.video_url){
-    parts.push('<a href="' + esc(r.video_url) + '" target="_blank" rel="noopener">' + (st === "补录" ? "转引来源" : "来源") + '</a>');
+    const label = r.source_type === "原帖" ? "原帖链接" : (r.source_type === "API" ? "数据源" : "转引来源");
+    parts.push('<a href="' + esc(r.video_url) + '" target="_blank" rel="noopener">' + label + '</a>');
   }
   return parts.length ? '<div class="src-note">' + parts.join(" · ") + '</div>' : "";
 }
@@ -266,6 +282,20 @@ function pmSettle(ch){
   return "11月价格市场 · Binance现货结算，12月1日到期";
 }
 const OUTCOME = {hit:"命中", missed:"未命中", pending:"待验证"};
+/* 多空只统计观点型账号 */
+function isViewRole(r){ return (r.role || "") === "观点型"; }
+/* 新鲜度：最近一期距现在多少小时（多伦多墙钟时间比较），超过 14 小时变红 */
+function freshnessHtml(runToronto){
+  try{
+    const nowTor = new Date(new Date().toLocaleString("en-US", {timeZone: "America/Toronto"}));
+    const run = new Date(runToronto.replace(" ", "T") + ":00");
+    const hours = (nowTor - run) / 3600000;
+    if(isNaN(hours) || hours < 0) return "";
+    const h = hours < 1 ? "不到 1 小时" : "约 " + Math.round(hours) + " 小时";
+    const stale = hours > 14;
+    return '最近一期距现在 ' + h + (stale ? ' <span class="stale">（已超过 14 小时未更新，最新一期可能未推送）</span>' : '');
+  }catch(e){ return ""; }
+}
 (async function(){
   try{
     const txt = await getText(RAW + "results/x_briefing_history.jsonl");
@@ -290,6 +320,7 @@ const OUTCOME = {hit:"命中", missed:"未命中", pending:"待验证"};
     const last = lines[lines.length-1];
     const runDate = (last.run_toronto || "").slice(0, 10);
     document.getElementById("status").textContent = "已读取 " + lines.length + " 期简报记录，最新一期：" + last.run_toronto + "（多伦多）。";
+    document.getElementById("freshness").innerHTML = freshnessHtml(last.run_toronto);
     let html = "<p class=\"meta\">推送时间（多伦多）：<span class=\"num\">" + esc(last.run_toronto) + "</span></p>";
     /* 首屏导语 */
     if(last.lede) html += "<p class=\"lede\">" + markNums(last.lede) + "</p>";
@@ -304,25 +335,30 @@ const OUTCOME = {hit:"命中", missed:"未命中", pending:"待验证"};
       + trioBlock("接下来等什么确认", last.watch)
       + trioBlock("哪些消息还没核实", last.unverified);
     if(trio) html += '<div class="trio">' + trio + '</div>';
-    /* 采编说明（可展开）：原 format_note 不再排在首屏前面 */
-    if(last.format_note) html += '<details class="acc-details"><summary>采编说明</summary><p class="note">' + esc(last.format_note) + '</p></details>';
-    /* 市场事实（默认折叠） */
-    html += '<details class="acc-details"><summary>市场事实（点击展开）</summary>';
-    html += "<div class=\"summary-grid\">"
-      + "<section><h3><span class=\"coin btc\">BTC</span></h3><p>" + markNums(last.btc_summary||"") + "</p></section>"
-      + "<section><h3><span class=\"coin eth\">ETH</span></h3><p>" + markNums(last.eth_summary||"") + "</p></section></div>";
-    if(last.consensus) html += "<div class=\"verdict\"><p><b>共识：</b>" + markNums(last.consensus) + "</p></div>";
-    html += '</details>';
-    /* 观点分歧（默认折叠） */
-    if(last.divergence){
-      html += '<details class="acc-details"><summary>观点分歧（点击展开）</summary><div class="verdict"><p>' + markNums(last.divergence) + '</p></div></details>';
+    /* 客观数据块（Deribit 资金费率/未平仓、ETF 流量、稳定币供应、宏观日历；无数据时不显示） */
+    if(last.objective){
+      const o = last.objective;
+      html += '<details class="acc-details"><summary>客观数据（点击展开）</summary>';
+      if(o.derivatives) html += "<p><b>衍生品与持仓：</b>" + markNums(o.derivatives) + "</p>";
+      if(o.etf) html += "<p><b>ETF 资金流：</b>" + markNums(o.etf) + "</p>";
+      if(o.stablecoins) html += "<p><b>稳定币供应：</b>" + markNums(o.stablecoins) + "</p>";
+      if(o.macro) html += "<p><b>未来 48 小时宏观日历：</b>" + markNums(o.macro) + "</p>";
+      if(o.divergence) html += "<p><b>观点与数据背离：</b>" + markNums(o.divergence) + "</p>";
+      html += '<p class="note">衍生品数据来自 Deribit 公开 API（资金费率、未平仓量、期权看跌/看涨未平仓比）；稳定币供应来自 DefiLlama 公开 API；ETF 流量为 Farside 口径新闻引用；清算数据暂无免费直连源（Binance 期货接口因地域限制不可用、Coinglass 需付费 Key），仍用新闻引用并标注。</p></details>';
     }
+    /* 审计日志（原 format_note，不再排在首屏前面） */
+    if(last.format_note) html += '<details class="acc-details"><summary>审计日志</summary><p class="note">' + esc(last.format_note) + '</p></details>';
+    /* 市场摘要（已合并：BTC/ETH 行情 + 共识 + 分歧，各事实只写一次；旧记录 fallback） */
+    const marketText = last.market
+      || [last.btc_summary, last.eth_summary, last.consensus, last.divergence].filter(Boolean).join("\n");
+    if(marketText) html += '<details class="acc-details"><summary>市场摘要（点击展开）</summary>'
+      + marketText.split("\n").filter(Boolean).map(p=>"<p>" + markNums(p) + "</p>").join("") + '</details>';
     const rows = last.table_rows || [];
     const pmRows = rows.filter(r=>r.category === "预测市场");
     const accRows = rows.filter(r=>r.category !== "预测市场");
-    /* 历史预测命中单元格：优先显示“n/n 已判定”与待验证数，不做百分比排名 */
+    /* 历史预测命中单元格：只对观点型账号显示；其余显示 — */
     const accCell = r => {
-      if(r.category === "预测市场") return "—";
+      if(!isViewRole(r)) return "—";
       const a = acc[r.channel];
       if(!a) return "暂无";
       if(a.resolved > 0){
@@ -347,15 +383,16 @@ const OUTCOME = {hit:"命中", missed:"未命中", pending:"待验证"};
         accRows.map(r=>{
           const st = rowStatus(r);
           const bg = st === "背景";
+          const evTag = r.comment_evidence ? '<span class="ev-tag">' + esc(r.comment_evidence) + '</span>' : "";
           return "<tr class=\"acc-row\" data-status=\"" + st + "\"" + (bg ? " style=\"display:none\"" : "") + ">"
             + "<td class=\"cat\" data-label=\"分类\">" + esc(r.category) + "</td>"
             + "<td class=\"ch\" data-label=\"账号名称\">" + esc(r.channel) + "</td>"
-            + "<td data-label=\"最新核心观点\">" + stanceBadge(r.stance) + statusBadge(r) + viewHtml(r) + srcNote(r, runDate) + "</td>"
+            + "<td data-label=\"最新核心观点\">" + roleBadge(r) + srcBadge(r) + (isViewRole(r) || (r.role || "") === "情绪型" ? stanceBadge(r.stance) : "") + statusBadge(r) + viewHtml(r) + srcNote(r, runDate) + "</td>"
             + "<td data-label=\"核心关注点 / 风格定位\">" + esc(r.focus) + "</td>"
-            + "<td data-label=\"点评\">" + markNums(r.comment||"—") + "</td>"
+            + "<td data-label=\"点评\">" + markNums(r.comment||"—") + evTag + "</td>"
             + "<td class=\"acc\" data-label=\"历史预测命中\">" + accCell(r) + "</td></tr>";
         }).join("") + "</tbody></table></div>";
-      html += "<p class=\"note\">历史预测命中：“n/n 已判定”为已验证预测的命中数；样本 n&lt;5 时命中率仅供参考，不做排名。</p>";
+      html += "<p class=\"note\">历史预测命中只统计观点型账号：“n/n 已判定”为已验证预测的命中数；样本 n&lt;5 时命中率仅供参考，不做排名。来源徽章：原帖为 X 原帖直链，新闻转引为媒体转述（目前几乎全部为转引）。</p>";
       /* 可展开的准确率说明：规则、总数与逐笔记录 */
       if(accSummary || accRule || accPreds.length){
         html += "<details class=\"acc-details\"><summary>历史预测命中说明（点击展开）</summary>";
@@ -383,14 +420,60 @@ const OUTCOME = {hit:"命中", missed:"未命中", pending:"待验证"};
       html += "<h3>主要帖子来源</h3><ul>" + last.sources.map(s=>"<li><a href=\""+esc(s.url)+"\" target=\"_blank\" rel=\"noopener\">"+esc(s.title)+"</a></li>").join("") + "</ul>";
     }
     document.getElementById("latest").innerHTML = html;
-    let hist = "<table><tr><th>推送时间（多伦多）</th><th>BTC 速览</th><th>ETH 速览</th></tr>" +
-      lines.slice(-12).reverse().map(d=>"<tr><td>"+esc(d.run_toronto)+"</td><td>"+markNums(d.btc_summary||"")+"</td><td>"+markNums(d.eth_summary||"")+"</td></tr>").join("") + "</table>";
+    let hist = "<table><tr><th>推送时间（多伦多）</th><th>本期一句话</th></tr>" +
+      lines.slice(-12).reverse().map(d=>{
+        const one = d.lede || (d.market ? d.market.split("\n")[0].slice(0, 140) : "") || (d.btc_summary || "");
+        return "<tr><td>"+esc(d.run_toronto)+"</td><td>"+markNums(one)+"</td></tr>";
+      }).join("") + "</table>";
     document.getElementById("history").innerHTML = hist;
+    /* ---- 预测台账（独立文件，失败时只影响本节） ---- */
+    try{
+      const lj = JSON.parse(await getText(RAW + "results/x_predictions_ledger.json"));
+      let lh = "";
+      if(lj.summary) lh += "<p>累计 " + lj.summary.claims + " 条预测：" + lj.summary.hits + " 命中 / " + lj.summary.misses + " 未命中 / " + lj.summary.pending + " 待验证。命中率须结合目标距离%与窗口天数一起看：窗口宽、目标近的预测几乎必中。样本 n&lt;5 不排名；数据型与事件型不参与观点排名。</p>";
+      if(lj.accounts && lj.accounts.length){
+        lh += "<div class=\"scroll\"><table><thead><tr><th>账号</th><th>类别</th><th>已判定</th><th>命中率</th><th>平均距离%</th><th>平均窗口</th><th>待验证</th></tr></thead><tbody>"
+          + lj.accounts.map(a=>"<tr><td>" + esc(a.account) + "</td><td>" + esc(a.role) + "</td><td>" + a.hits + "/" + a.resolved + "</td><td>" + (a.hit_rate_pct == null ? "—" : a.hit_rate_pct + "%") + "</td><td>" + (a.avg_distance_pct == null ? "—" : a.avg_distance_pct + "%") + "</td><td>" + (a.avg_window_days == null ? "—" : a.avg_window_days + " 天") + "</td><td>" + a.pending + "</td></tr>").join("")
+          + "</tbody></table></div>";
+      }
+      if(lj.sentiment_series && lj.sentiment_series.length){
+        lh += "<h3>多空情绪时间序列（仅观点型账号）</h3><p class=\"note\">每期看多 / 看空账号数。极端一致本身就是反向指标。</p>";
+        lh += '<svg viewBox="0 0 900 170" width="100%" style="max-width:900px;background:#fff;border:1px solid var(--line);border-radius:10px" role="img" aria-label="多空情绪时间序列">'
+          + sentimentSvg(lj.sentiment_series) + '</svg>';
+      }
+      if(lj.predictions && lj.predictions.length){
+        lh += "<details class=\"acc-details\"><summary>逐笔预测记录（" + lj.predictions.length + " 条，点击展开）</summary><div class=\"scroll\"><table><thead><tr><th>账号</th><th>发帖日</th><th>标的</th><th>方向</th><th>目标价</th><th>发帖时价格</th><th>距离%</th><th>窗口</th><th>结果</th></tr></thead><tbody>"
+          + lj.predictions.map(p=>"<tr><td>" + esc(p.account) + "</td><td>" + esc(p.post_date) + "</td><td>" + esc(p.asset) + "</td><td>" + esc(p.direction) + "</td><td>" + esc(p.target_text) + "</td><td>" + (p.price_at_post == null ? "—" : fmtMoney(p.price_at_post)) + "</td><td>" + (p.distance_pct == null ? "—" : (p.distance_pct > 0 ? "+" : "") + p.distance_pct + "%") + "</td><td>" + (p.window_days == null ? "—" : p.window_days + " 天") + "</td><td>" + (OUTCOME[p.outcome] || esc(p.outcome)) + "</td></tr>").join("")
+          + "</tbody></table></div><p class=\"note\">来源构成：32 条预测全部来自新闻转引，0 条原帖。判定规则见上方说明。</p></details>";
+      }
+      if(lj.generated_at) lh += "<p class=\"note\">台账更新于 " + esc(lj.generated_at) + "。</p>";
+      document.getElementById("ledger").innerHTML = lh;
+    }catch(e){
+      document.getElementById("ledger").innerHTML = "<p class=\"note\">台账加载失败，请重试（" + esc(e.message) + "）。</p>";
+    }
   }catch(e){
     document.getElementById("status").innerHTML = "<span class=\"err\">加载失败，请重试。</span>";
     document.getElementById("latest").innerHTML = "<p class=\"note\">加载失败，请重试（" + esc(e.message) + "）。这通常是网络或缓存问题，不代表没有推送记录；刷新页面即可。</p>";
   }
 })();
+function sentimentSvg(series){
+  const W = 900, H = 170, padL = 34, padB = 22, padT = 12;
+  const n = series.length, maxV = 8;
+  const x = i => padL + (W - padL - 10) * (n <= 1 ? 0 : i / (n - 1));
+  const y = v => padT + (H - padT - padB) * (1 - v / maxV);
+  const line = key => series.map((s, i)=> (i ? "L" : "M") + x(i).toFixed(1) + "," + y(s[key]).toFixed(1)).join(" ");
+  let g = "";
+  for(let v = 0; v <= maxV; v += 2){
+    g += '<line x1="' + padL + '" y1="' + y(v) + '" x2="' + (W - 10) + '" y2="' + y(v) + '" stroke="#efece3"/><text x="' + (padL - 6) + '" y="' + (y(v) + 4) + '" font-size="11" fill="#8b95a1" text-anchor="end">' + v + '</text>';
+  }
+  g += '<path d="' + line("bull") + '" fill="none" stroke="#177245" stroke-width="2"/>';
+  g += '<path d="' + line("bear") + '" fill="none" stroke="#b42318" stroke-width="2"/>';
+  g += '<text x="' + (W - 10) + '" y="' + (padT + 2) + '" font-size="12" fill="#177245" text-anchor="end">看多</text>';
+  g += '<text x="' + (W - 10) + '" y="' + (padT + 18) + '" font-size="12" fill="#b42318" text-anchor="end">看空</text>';
+  g += '<text x="' + padL + '" y="' + (H - 4) + '" font-size="11" fill="#8b95a1">' + esc(series[0].run_toronto) + '</text>';
+  g += '<text x="' + (W - 10) + '" y="' + (H - 4) + '" font-size="11" fill="#8b95a1" text-anchor="end">' + esc(series[n-1].run_toronto) + '</text>';
+  return g;
+}
 </script>
 </body>
 </html>
