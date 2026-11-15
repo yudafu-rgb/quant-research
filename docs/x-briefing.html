@@ -121,13 +121,34 @@ function markNums(s){
 }
 const STANCE = {bullish:["看涨","bull"], bearish:["看空","bear"], neutral:["中性","neu"], range:["区间","neu"], mixed:["分歧","mix"]};
 function stanceBadge(s){ const m = STANCE[s||""]; return m ? '<span class="badge '+m[1]+'">'+m[0]+'</span>' : ""; }
+function parseHistory(txt){
+  const ls = txt.trim().split("\n").filter(Boolean);
+  try{ return ls.map(l=>JSON.parse(l)); }
+  catch(e){
+    const out=[]; let i=0;
+    while(i<txt.length){
+      while(i<txt.length && /\s/.test(txt[i])) i++;
+      if(i>=txt.length) break;
+      let depth=0, inStr=false, esc=false; const start=i;
+      for(; i<txt.length; i++){
+        const c=txt[i];
+        if(inStr){ if(esc) esc=false; else if(c==="\\") esc=true; else if(c==='"') inStr=false; }
+        else if(c==='"') inStr=true;
+        else if(c==="{"||c==="[") depth++;
+        else if(c==="}"||c==="]"){ depth--; if(depth===0){ i++; break; } }
+      }
+      out.push(JSON.parse(txt.slice(start,i)));
+    }
+    return out;
+  }
+}
 (async function(){
   try{
     const txt = await getText(RAW + "results/x_briefing_history.jsonl");
     if(!txt.trim()){ document.getElementById("status").textContent = "暂无已上传的简报记录，下一期推送后会自动显示。"; document.getElementById("latest").innerHTML = "<p class=\"note\">首期为 2026-11-03 09:30（多伦多）。</p>"; return; }
     let acc = {}, accMeta = "";
     try{ const aj = JSON.parse(await getText(RAW + "results/x_accuracy.json")); acc = aj.channels || {}; accMeta = aj.generated_at || ""; }catch(e){}
-    const lines = txt.trim().split("\n").filter(Boolean).map(l=>JSON.parse(l));
+    const lines = parseHistory(txt);
     const last = lines[lines.length-1];
     document.getElementById("status").textContent = "已读取 " + lines.length + " 期简报记录，最新一期：" + last.run_toronto + "（多伦多）。";
     let html = "<p class=\"meta\">推送时间（多伦多）：<span class=\"num\">" + esc(last.run_toronto) + "</span></p>";
