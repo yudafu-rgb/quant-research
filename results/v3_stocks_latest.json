@@ -1,63 +1,63 @@
 {
  "regime": "risk-on",
- "data_asof": "2026-11-16 12:30",
+ "data_asof": "2026-11-16 15:30",
  "skipped": false,
  "skip_reason": null,
  "longs": [
   {
    "label": "PNR",
-   "entry_price": 68.18000030517578,
-   "entry_ts": "2026-11-16T12:30:00",
-   "score": 75.6,
+   "entry_price": 68.11000061035156,
+   "entry_ts": "2026-11-16T15:30:00",
+   "score": 60.8,
    "tier": "A",
-   "reason": "小时线分数75.6（第6名）；看涨信号：MACD bullish cross；RSI(14h) 41.6；日线向上；市场状态risk-on"
+   "reason": "小时线分数60.8（第119名）；看涨信号：MACD bullish cross；RSI(14h) 42.5；日线向上；市场状态risk-on"
   },
   {
-   "label": "TPR",
-   "entry_price": 133.02000427246094,
-   "entry_ts": "2026-11-16T12:30:00",
-   "score": 69.9,
-   "tier": "A",
-   "reason": "小时线分数69.9（第12名）；看涨信号：MACD bullish cross；RSI(14h) 52.6；日线向上；市场状态risk-on"
+   "label": "SPG",
+   "entry_price": 232.05999755859375,
+   "entry_ts": "2026-11-16T15:30:00",
+   "score": 71.5,
+   "tier": "C",
+   "reason": "小时线分数71.5（第1名）；RSI(14h) 46.1；日线向上；市场状态risk-on；Tier-C（未过：signal）"
   },
   {
-   "label": "MSI",
-   "entry_price": 536.6749877929688,
-   "entry_ts": "2026-11-16T12:30:00",
-   "score": 66.7,
-   "tier": "A",
-   "reason": "小时线分数66.7（第44名）；看涨信号：MACD bullish cross；RSI(14h) 60.6；日线向上；市场状态risk-on"
+   "label": "AIZ",
+   "entry_price": 325.43499755859375,
+   "entry_ts": "2026-11-16T15:30:00",
+   "score": 71.3,
+   "tier": "C",
+   "reason": "小时线分数71.3（第2名）；RSI(14h) 64.4；日线向上；市场状态risk-on；Tier-C（未过：signal）"
   }
  ],
  "shorts": [
   {
-   "label": "DELL",
-   "entry_price": 320.3900146484375,
-   "entry_ts": "2026-11-16T12:30:00",
-   "score": 7.9,
+   "label": "CAT",
+   "entry_price": 569.4650268554688,
+   "entry_ts": "2026-11-16T15:30:00",
+   "score": 13.1,
    "tier": "B",
-   "reason": "小时线分数7.9（第498名）；看跌信号：Breakdown；RSI(14h) 34.2；日线向下；市场状态risk-on；Tier-B（未过：regime）"
+   "reason": "小时线分数13.1（第477名）；看跌信号：Breakdown；RSI(14h) 32.1；日线向下；市场状态risk-on；Tier-B（未过：regime）"
   },
   {
-   "label": "DDOG",
-   "entry_price": 173.66000366210938,
-   "entry_ts": "2026-11-16T12:30:00",
-   "score": 11.9,
+   "label": "TPL",
+   "entry_price": 291.8699951171875,
+   "entry_ts": "2026-11-16T15:30:00",
+   "score": 24.4,
    "tier": "B",
-   "reason": "小时线分数11.9（第484名）；看跌信号：Breakdown；RSI(14h) 34.1；日线向下；市场状态risk-on；Tier-B（未过：regime）"
+   "reason": "小时线分数24.4（第418名）；看跌信号：MACD bearish cross；RSI(14h) 55.8；日线向下；市场状态risk-on；Tier-B（未过：regime）"
   },
   {
-   "label": "IP",
-   "entry_price": 33.42499923706055,
-   "entry_ts": "2026-11-16T12:30:00",
-   "score": 28.4,
+   "label": "FIS",
+   "entry_price": 28.299999237060547,
+   "entry_ts": "2026-11-16T15:30:00",
+   "score": 17.1,
    "tier": "B",
-   "reason": "小时线分数28.4（第407名）；看跌信号：Death cross、Breakdown；RSI(14h) 32.7；日线向下；市场状态risk-on；Tier-B（未过：regime）"
+   "reason": "小时线分数17.1（第457名）；看跌信号：Breakdown；RSI(14h) 36.1；日线向下；市场状态risk-on；Tier-B（未过：regime）"
   }
  ],
  "kind": "v3-stocks",
- "report": "intraday_run_2026-11-16_1306.json",
- "published_at_toronto": "2026-11-16 13:08",
+ "report": "intraday_run_2026-11-16_1536.json",
+ "published_at_toronto": "2026-11-16 15:38",
  "winrate": {
   "long": {
    "n": 302,
