@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-15 11:18",
+  "generated_at": "2026-11-15 22:11",
   "price_source": "Binance US 日线（UTC）最高/最低价；窗口为原帖发布后 7 天",
   "rule": "只验带明确价位+方向+短期的预测；复述、提问、模型估值、长期目标不验；同一原帖只计一次",
   "summary": {
-    "claims": 13,
+    "claims": 14,
     "hits": 8,
     "misses": 5,
-    "pending": 0
+    "pending": 1
   },
   "channels": {
     "Benjamin Cowen": {
@@ -60,7 +60,7 @@
     "TraderChenge Telegram（BTC）": {
       "hits": 0,
       "misses": 1,
-      "pending": 0,
+      "pending": 1,
       "resolved": 1,
       "accuracy_pct": 0,
       "display": "0%（0/1）"
