@@ -1,7 +1,7 @@
 {
  "kind": "v2",
- "report": "run_2026-11-16_0547.json",
- "published_at_toronto": "2026-11-16 00:52",
+ "report": "run_2026-11-16_1347.json",
+ "published_at_toronto": "2026-11-16 08:52",
  "universes": {
   "crypto": {
    "regime": "risk-off",
@@ -10,54 +10,54 @@
    "skip_reason": null,
    "longs": [
     {
-     "label": "FIGR_HELOC (Figure Heloc)",
-     "entry_price": 1.0504622490504982,
+     "label": "ZEC (Zcash)",
+     "entry_price": 864.6297347216275,
      "entry_ts": "2026-11-16",
-     "score": 78.7,
-     "tier": "C",
-     "reason": "分数78.7（第1名）；RSI 53.8；周线向上；市场状态risk-off；Tier-C（未过：signal,regime）"
+     "score": 51.3,
+     "tier": "B",
+     "reason": "分数51.3（第9名）；看涨信号：RSI oversold；RSI 29.5；周线向上；市场状态risk-off；Tier-B（未过：regime）"
     },
     {
-     "label": "venice-token (trending)",
-     "entry_price": 19.982954939866854,
+     "label": "HYPE (Hyperliquid)",
+     "entry_price": 65.53077868235967,
      "entry_ts": "2026-11-16",
-     "score": 64.7,
-     "tier": "C",
-     "reason": "分数64.7（第4名）；RSI 44.6；周线向上；市场状态risk-off；Tier-C（未过：signal,regime）"
+     "score": 44.6,
+     "tier": "B",
+     "reason": "分数44.6（第11名）；看涨信号：RSI oversold；RSI 29.6；周线向上；市场状态risk-off；Tier-B（未过：regime）"
     },
     {
-     "label": "QNT (Quant)",
-     "entry_price": 156.28330854660942,
+     "label": "RAIN (Rain)",
+     "entry_price": 0.005423897818710768,
      "entry_ts": "2026-11-16",
-     "score": 60.0,
-     "tier": "C",
-     "reason": "分数60.0（第5名）；RSI 38.0；周线向上；市场状态risk-off；Tier-C（未过：signal,regime）"
+     "score": 42.6,
+     "tier": "B",
+     "reason": "分数42.6（第13名）；看涨信号：MACD bullish cross；RSI 43.6；周线向下；市场状态risk-off；Tier-B（未过：regime）"
     }
    ],
    "shorts": [
     {
-     "label": "lighter (trending)",
-     "entry_price": 2.6975217021271107,
+     "label": "monad (trending)",
+     "entry_price": 0.01518730549638442,
      "entry_ts": "2026-11-16",
-     "score": 38.9,
-     "tier": "C",
-     "reason": "分数38.9（第17名）；看跌信号：MACD bearish cross、Breakdown；RSI 37.6；周线向下；市场状态risk-off；Tier-C（未过：score）"
+     "score": 26.7,
+     "tier": "A",
+     "reason": "分数26.7（第32名）；看跌信号：Breakdown；RSI 31.0；周线向下；市场状态risk-off"
     },
     {
-     "label": "BNB (BNB)",
-     "entry_price": 589.6642082410879,
+     "label": "lighter (trending)",
+     "entry_price": 2.5534870789915667,
      "entry_ts": "2026-11-16",
-     "score": 19.7,
+     "score": 41.8,
      "tier": "C",
-     "reason": "分数19.7（第40名）；RSI 24.1；周线向下；市场状态risk-off；Tier-C（未过：rsi,signal）"
+     "reason": "分数41.8（第14名）；看跌信号：MACD bearish cross、Breakdown；RSI 35.3；周线向下；市场状态risk-off；Tier-C（未过：score）"
     },
     {
      "label": "DOGE (Dogecoin)",
-     "entry_price": 0.058739742998279165,
+     "entry_price": 0.058411378580298996,
      "entry_ts": "2026-11-16",
-     "score": 20.5,
+     "score": 18.9,
      "tier": "C",
-     "reason": "分数20.5（第38名）；RSI 23.7；周线向下；市场状态risk-off；Tier-C（未过：rsi,signal）"
+     "reason": "分数18.9（第41名）；RSI 22.8；周线向下；市场状态risk-off；Tier-C（未过：rsi,signal）"
     }
    ]
   },
