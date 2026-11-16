@@ -1,63 +1,63 @@
 {
  "kind": "v2",
- "report": "run_2026-11-15_2146.json",
- "published_at_toronto": "2026-11-15 16:52",
+ "report": "run_2026-11-16_0547.json",
+ "published_at_toronto": "2026-11-16 00:52",
  "universes": {
   "crypto": {
    "regime": "risk-off",
-   "data_asof": "2026-11-15 00:00",
+   "data_asof": "2026-11-16 00:00",
    "skipped": false,
    "skip_reason": null,
    "longs": [
     {
-     "label": "HYPE (Hyperliquid)",
-     "entry_price": 67.7015941782969,
-     "entry_ts": "2026-11-15",
-     "score": 47.2,
-     "tier": "B",
-     "reason": "分数47.2（第16名）；看涨信号：RSI oversold；RSI 30.0；周线向上；市场状态risk-off；注意：存在多空信号冲突，已按优先级裁决；Tier-B（未过：regime）"
-    },
-    {
      "label": "FIGR_HELOC (Figure Heloc)",
      "entry_price": 1.0504622490504982,
-     "entry_ts": "2026-11-15",
-     "score": 79.9,
+     "entry_ts": "2026-11-16",
+     "score": 78.7,
      "tier": "C",
-     "reason": "分数79.9（第1名）；RSI 53.8；周线向上；市场状态risk-off；Tier-C（未过：signal,regime）"
+     "reason": "分数78.7（第1名）；RSI 53.8；周线向上；市场状态risk-off；Tier-C（未过：signal,regime）"
     },
     {
-     "label": "derive (trending)",
-     "entry_price": 0.300106951270254,
-     "entry_ts": "2026-11-15",
-     "score": 73.4,
+     "label": "venice-token (trending)",
+     "entry_price": 19.982954939866854,
+     "entry_ts": "2026-11-16",
+     "score": 64.7,
      "tier": "C",
-     "reason": "分数73.4（第2名）；RSI 42.3；周线向上；市场状态risk-off；Tier-C（未过：signal,regime）"
+     "reason": "分数64.7（第4名）；RSI 44.6；周线向上；市场状态risk-off；Tier-C（未过：signal,regime）"
+    },
+    {
+     "label": "QNT (Quant)",
+     "entry_price": 156.28330854660942,
+     "entry_ts": "2026-11-16",
+     "score": 60.0,
+     "tier": "C",
+     "reason": "分数60.0（第5名）；RSI 38.0；周线向上；市场状态risk-off；Tier-C（未过：signal,regime）"
     }
    ],
    "shorts": [
     {
-     "label": "PAXG (PAX Gold)",
-     "entry_price": 3841.3747063702367,
-     "entry_ts": "2026-11-15",
-     "score": 25.3,
-     "tier": "A",
-     "reason": "分数25.3（第37名）；看跌信号：Breakdown；RSI 32.7；周线向下；市场状态risk-off"
-    },
-    {
-     "label": "XAUT (Tether Gold)",
-     "entry_price": 3838.2942459380984,
-     "entry_ts": "2026-11-15",
-     "score": 25.4,
-     "tier": "A",
-     "reason": "分数25.4（第36名）；看跌信号：Breakdown；RSI 33.4；周线向下；市场状态risk-off"
-    },
-    {
-     "label": "AVAX (Avalanche)",
-     "entry_price": 7.273140250973456,
-     "entry_ts": "2026-11-15",
-     "score": 36.1,
+     "label": "lighter (trending)",
+     "entry_price": 2.6975217021271107,
+     "entry_ts": "2026-11-16",
+     "score": 38.9,
      "tier": "C",
-     "reason": "分数36.1（第20名）；看跌信号：MACD bearish cross、Breakdown；RSI 31.9；周线向下；市场状态risk-off；Tier-C（未过：score）"
+     "reason": "分数38.9（第17名）；看跌信号：MACD bearish cross、Breakdown；RSI 37.6；周线向下；市场状态risk-off；Tier-C（未过：score）"
+    },
+    {
+     "label": "BNB (BNB)",
+     "entry_price": 589.6642082410879,
+     "entry_ts": "2026-11-16",
+     "score": 19.7,
+     "tier": "C",
+     "reason": "分数19.7（第40名）；RSI 24.1；周线向下；市场状态risk-off；Tier-C（未过：rsi,signal）"
+    },
+    {
+     "label": "DOGE (Dogecoin)",
+     "entry_price": 0.058739742998279165,
+     "entry_ts": "2026-11-16",
+     "score": 20.5,
+     "tier": "C",
+     "reason": "分数20.5（第38名）；RSI 23.7；周线向下；市场状态risk-off；Tier-C（未过：rsi,signal）"
     }
    ]
   },
@@ -122,15 +122,15 @@
  },
  "winrate": {
   "crypto_long": {
-   "n": 331,
-   "win_rate": 23.6,
-   "avg_ret": -6.78,
+   "n": 335,
+   "win_rate": 23.3,
+   "avg_ret": -6.92,
    "insufficient": false
   },
   "crypto_short": {
-   "n": 352,
-   "win_rate": 80.4,
-   "avg_ret": 5.7,
+   "n": 359,
+   "win_rate": 80.8,
+   "avg_ret": 5.88,
    "insufficient": false
   },
   "stocks_long": {
