@@ -1,73 +1,73 @@
 {
  "regime": "risk-off",
- "data_asof": "2026-11-16 01:00",
+ "data_asof": "2026-11-16 05:00",
  "skipped": false,
  "skip_reason": null,
  "longs": [
   {
-   "label": "pearl-2 (trending)",
-   "entry_price": 1.6181199922239693,
-   "entry_ts": "2026-11-16T01:00:00",
-   "score": 70.9,
-   "tier": "C",
-   "reason": "小时线分数70.9（第1名）；RSI(14h) 60.1；日线向上；市场状态risk-off；🔥trending关注度加成+2分；Tier-C（未过：signal,regime）"
-  },
-  {
    "label": "LEO (LEO Token)",
-   "entry_price": 9.1624102750129,
-   "entry_ts": "2026-11-16T01:00:00",
-   "score": 69.5,
+   "entry_price": 9.17083719589654,
+   "entry_ts": "2026-11-16T05:00:00",
+   "score": 72.9,
    "tier": "C",
-   "reason": "小时线分数69.5（第2名）；RSI(14h) 48.9；日线向上；市场状态risk-off；板块CEX-token（24h -0.9%）；Tier-C（未过：signal,regime）"
+   "reason": "小时线分数72.9（第1名）；RSI(14h) 49.5；日线向上；市场状态risk-off；板块CEX-token（24h -1.7%）；Tier-C（未过：signal,regime）"
   },
   {
-   "label": "seeker (trending)",
-   "entry_price": 0.011665652521770447,
-   "entry_ts": "2026-11-16T01:00:00",
-   "score": 69.5,
+   "label": "venice-token (trending)",
+   "entry_price": 20.113422174812452,
+   "entry_ts": "2026-11-16T05:00:00",
+   "score": 68.2,
    "tier": "C",
-   "reason": "小时线分数69.5（第3名）；RSI(14h) 75.1；日线向下；市场状态risk-off；🔥trending关注度加成+2分；Tier-C（未过：rsi,signal,regime）"
+   "reason": "小时线分数68.2（第2名）；RSI(14h) 55.6；日线向下；市场状态risk-off；🔥trending关注度加成+2分；Tier-C（未过：signal,regime）"
+  },
+  {
+   "label": "NEAR (NEAR Protocol)",
+   "entry_price": 3.195,
+   "entry_ts": "2026-11-16T05:00:00",
+   "score": 66.3,
+   "tier": "C",
+   "reason": "小时线分数66.3（第3名）；RSI(14h) 53.2；日线向下；市场状态risk-off；🔥trending关注度加成+2分；板块L1（24h -1.3%）；Tier-C（未过：signal,regime）"
   }
  ],
  "shorts": [
   {
-   "label": "CRO (Cronos)",
-   "entry_price": 0.04250685622936705,
-   "entry_ts": "2026-11-16T01:00:00",
-   "score": 31.9,
+   "label": "WBT (WhiteBIT Coin)",
+   "entry_price": 62.177913954550874,
+   "entry_ts": "2026-11-16T05:00:00",
+   "score": 31.5,
    "tier": "A",
-   "reason": "小时线分数31.9（第35名）；看跌信号：MACD bearish cross、Breakdown；RSI(14h) 38.9；日线向下；市场状态risk-off；板块CEX-token（24h -0.9%）"
+   "reason": "小时线分数31.5（第31名）；看跌信号：MACD bearish cross、Breakdown；RSI(14h) 41.1；日线向下；市场状态risk-off"
   },
   {
-   "label": "SHIB (Shiba Inu)",
-   "entry_price": 3.89e-06,
-   "entry_ts": "2026-11-16T01:00:00",
-   "score": 28.9,
+   "label": "pudgy-penguins (trending)",
+   "entry_price": 0.0048392901693425,
+   "entry_ts": "2026-11-16T05:00:00",
+   "score": 24.6,
    "tier": "A",
-   "reason": "小时线分数28.9（第37名）；看跌信号：MACD bearish cross；RSI(14h) 43.9；日线向下；市场状态risk-off；板块Meme（24h +0.9%）"
+   "reason": "小时线分数24.6（第36名）；看跌信号：Breakdown；RSI(14h) 38.6；日线向下；市场状态risk-off；🔥trending关注度加成+2分"
   },
   {
    "label": "OKB (OKB)",
-   "entry_price": 85.41913518083942,
-   "entry_ts": "2026-11-16T01:00:00",
-   "score": 26.0,
+   "entry_price": 84.71382336084106,
+   "entry_ts": "2026-11-16T05:00:00",
+   "score": 24.7,
    "tier": "A",
-   "reason": "小时线分数26.0（第39名）；看跌信号：Breakdown；RSI(14h) 36.8；日线向下；市场状态risk-off；板块CEX-token（24h -0.9%）"
+   "reason": "小时线分数24.7（第35名）；看跌信号：Breakdown；RSI(14h) 34.4；日线向下；市场状态risk-off；板块CEX-token（24h -1.7%）"
   }
  ],
  "kind": "v3-crypto",
- "report": "intraday_run_2026-11-16_0216.json",
- "published_at_toronto": "2026-11-16 02:20",
+ "report": "intraday_run_2026-11-16_0617.json",
+ "published_at_toronto": "2026-11-16 06:21",
  "winrate": {
   "long": {
-   "n": 782,
+   "n": 784,
    "win_rate": 37.9,
-   "avg_ret": -1.23,
+   "avg_ret": -1.22,
    "insufficient": false
   },
   "short": {
-   "n": 814,
-   "win_rate": 58.0,
+   "n": 817,
+   "win_rate": 58.1,
    "avg_ret": 0.72,
    "insufficient": false
   }
