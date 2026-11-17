@@ -1,63 +1,63 @@
 {
  "regime": "risk-on",
- "data_asof": "2026-11-17 12:30",
+ "data_asof": "2026-11-17 15:30",
  "skipped": false,
  "skip_reason": null,
  "longs": [
   {
-   "label": "VRSK",
-   "entry_price": 207.66000366210938,
-   "entry_ts": "2026-11-17T12:30:00",
-   "score": 73.7,
-   "tier": "C",
-   "reason": "小时线分数73.7（第1名）；RSI(14h) 46.7；日线向上；市场状态risk-on；Tier-C（未过：signal）"
+   "label": "ALLE",
+   "entry_price": 187.47999572753906,
+   "entry_ts": "2026-11-17T15:30:00",
+   "score": 60.4,
+   "tier": "A",
+   "reason": "小时线分数60.4（第92名）；看涨信号：RSI oversold；RSI(14h) 30.0；日线向上；市场状态risk-on"
   },
   {
-   "label": "ROL",
-   "entry_price": 38.72999954223633,
-   "entry_ts": "2026-11-17T12:30:00",
-   "score": 73.3,
+   "label": "SBUX",
+   "entry_price": 107.7654037475586,
+   "entry_ts": "2026-11-17T15:30:00",
+   "score": 80.4,
    "tier": "C",
-   "reason": "小时线分数73.3（第2名）；RSI(14h) 50.3；日线向上；市场状态risk-on；Tier-C（未过：signal）"
+   "reason": "小时线分数80.4（第1名）；RSI(14h) 47.8；日线向上；市场状态risk-on；Tier-C（未过：signal）"
   },
   {
-   "label": "BXP",
-   "entry_price": 63.26499938964844,
-   "entry_ts": "2026-11-17T12:30:00",
-   "score": 72.9,
+   "label": "AIZ",
+   "entry_price": 322.5899963378906,
+   "entry_ts": "2026-11-17T15:30:00",
+   "score": 74.5,
    "tier": "C",
-   "reason": "小时线分数72.9（第3名）；RSI(14h) 44.2；日线向上；市场状态risk-on；Tier-C（未过：signal）"
+   "reason": "小时线分数74.5（第2名）；RSI(14h) 49.8；日线向上；市场状态risk-on；Tier-C（未过：signal）"
   }
  ],
  "shorts": [
   {
-   "label": "Q",
-   "entry_price": 113.54499816894531,
-   "entry_ts": "2026-11-17T12:30:00",
-   "score": 24.5,
+   "label": "AMD",
+   "entry_price": 493.5199890136719,
+   "entry_ts": "2026-11-17T15:30:00",
+   "score": 21.9,
    "tier": "B",
-   "reason": "小时线分数24.5（第415名）；看跌信号：Death cross；RSI(14h) 35.3；日线向下；市场状态risk-on；Tier-B（未过：regime）"
+   "reason": "小时线分数21.9（第429名）；看跌信号：Death cross；RSI(14h) 36.5；日线向下；市场状态risk-on；Tier-B（未过：regime）"
   },
   {
-   "label": "TPL",
-   "entry_price": 293.2900085449219,
-   "entry_ts": "2026-11-17T12:30:00",
-   "score": 26.3,
+   "label": "NUE",
+   "entry_price": 253.0749969482422,
+   "entry_ts": "2026-11-17T15:30:00",
+   "score": 35.1,
    "tier": "B",
-   "reason": "小时线分数26.3（第406名）；看跌信号：MACD bearish cross；RSI(14h) 56.2；日线向下；市场状态risk-on；Tier-B（未过：regime）"
+   "reason": "小时线分数35.1（第333名）；看跌信号：MACD bearish cross；RSI(14h) 43.4；日线向下；市场状态risk-on；Tier-B（未过：regime）"
   },
   {
-   "label": "MPC",
-   "entry_price": 393.88751220703125,
-   "entry_ts": "2026-11-17T12:30:00",
-   "score": 18.4,
-   "tier": "B",
-   "reason": "小时线分数18.4（第459名）；看跌信号：Breakdown；RSI(14h) 35.7；日线向下；市场状态risk-on；Tier-B（未过：regime）"
+   "label": "CRM",
+   "entry_price": 195.00999450683594,
+   "entry_ts": "2026-11-17T15:30:00",
+   "score": 6.6,
+   "tier": "C",
+   "reason": "小时线分数6.6（第499名）；RSI(14h) 24.0；日线向下；市场状态risk-on；Tier-C（未过：rsi,signal,regime）"
   }
  ],
  "kind": "v3-stocks",
- "report": "intraday_run_2026-11-17_1306.json",
- "published_at_toronto": "2026-11-17 13:08",
+ "report": "intraday_run_2026-11-17_1536.json",
+ "published_at_toronto": "2026-11-17 15:38",
  "winrate": {
   "long": {
    "n": 311,
