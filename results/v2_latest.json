@@ -1,7 +1,7 @@
 {
  "kind": "v2",
- "report": "run_2026-11-17_0547.json",
- "published_at_toronto": "2026-11-17 00:52",
+ "report": "run_2026-11-17_1347.json",
+ "published_at_toronto": "2026-11-17 08:52",
  "universes": {
   "crypto": {
    "regime": "risk-off",
@@ -11,53 +11,53 @@
    "longs": [
     {
      "label": "backpack (trending)",
-     "entry_price": 1.0043004287174386,
+     "entry_price": 1.0892112732597743,
      "entry_ts": "2026-11-17",
-     "score": 80.1,
+     "score": 82.4,
      "tier": "B",
-     "reason": "分数80.1（第2名）；看涨信号：MACD bullish cross；RSI 56.3；周线向下；市场状态risk-off；Tier-B（未过：regime）"
+     "reason": "分数82.4（第1名）；看涨信号：MACD bullish cross、Breakout on volume；RSI 61.4；周线向下；市场状态risk-off；Tier-B（未过：regime）"
     },
     {
      "label": "venice-token (trending)",
-     "entry_price": 21.571212920920942,
+     "entry_price": 21.368139928778085,
      "entry_ts": "2026-11-17",
-     "score": 73.8,
+     "score": 72.3,
      "tier": "B",
-     "reason": "分数73.8（第3名）；看涨信号：MACD bullish cross；RSI 50.0；周线向上；市场状态risk-off；Tier-B（未过：regime）"
+     "reason": "分数72.3（第4名）；看涨信号：MACD bullish cross；RSI 49.4；周线向上；市场状态risk-off；Tier-B（未过：regime）"
     },
     {
-     "label": "RAIN (Rain)",
-     "entry_price": 0.006167119680523011,
+     "label": "pearl-2 (trending)",
+     "entry_price": 1.7432283306495475,
      "entry_ts": "2026-11-17",
-     "score": 41.7,
+     "score": 76.1,
      "tier": "B",
-     "reason": "分数41.7（第16名）；看涨信号：MACD bullish cross；RSI 51.0；周线向下；市场状态risk-off；Tier-B（未过：regime）"
+     "reason": "分数76.1（第3名）；看涨信号：MACD bullish cross；RSI 55.5；周线向下；市场状态risk-off；Tier-B（未过：regime）"
     }
    ],
    "shorts": [
     {
      "label": "pudgy-penguins (trending)",
-     "entry_price": 0.004841100750628154,
+     "entry_price": 0.004703072822177704,
      "entry_ts": "2026-11-17",
-     "score": 14.0,
+     "score": 12.3,
      "tier": "C",
-     "reason": "分数14.0（第45名）；看跌信号：Breakdown；RSI 23.8；周线向下；市场状态risk-off；Tier-C（未过：rsi）"
+     "reason": "分数12.3（第45名）；看跌信号：Breakdown；RSI 22.9；周线向下；市场状态risk-off；Tier-C（未过：rsi）"
     },
     {
-     "label": "worldcoin-wld (trending)",
-     "entry_price": 0.2664780614058306,
+     "label": "SOL (Solana)",
+     "entry_price": 73.39568869574873,
      "entry_ts": "2026-11-17",
-     "score": 15.8,
+     "score": 18.4,
      "tier": "C",
-     "reason": "分数15.8（第44名）；RSI 27.6；周线向下；市场状态risk-off；Tier-C（未过：rsi,signal）"
+     "reason": "分数18.4（第43名）；RSI 23.0；周线向下；市场状态risk-off；Tier-C（未过：rsi,signal）"
     },
     {
      "label": "DOGE (Dogecoin)",
-     "entry_price": 0.05910603231723175,
+     "entry_price": 0.05931499831408139,
      "entry_ts": "2026-11-17",
-     "score": 17.7,
+     "score": 20.5,
      "tier": "C",
-     "reason": "分数17.7（第42名）；RSI 26.0；周线向下；市场状态risk-off；Tier-C（未过：rsi,signal）"
+     "reason": "分数20.5（第39名）；RSI 26.2；周线向下；市场状态risk-off；Tier-C（未过：rsi,signal）"
     }
    ]
   },
@@ -122,9 +122,9 @@
  },
  "winrate": {
   "crypto_long": {
-   "n": 343,
-   "win_rate": 22.7,
-   "avg_ret": -7.72,
+   "n": 345,
+   "win_rate": 22.6,
+   "avg_ret": -7.68,
    "insufficient": false
   },
   "crypto_short": {
