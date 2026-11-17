@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-16 约 21:00（多伦多）",
+ "generated_at": "2026-11-17 约 10:00（多伦多）",
  "note": "每期一行结构化客观数据（Deribit/OKX/Hyperliquid 永续、期权看跌看涨比、基差、稳定币、ETF、宏观）。OKX 与 Hyperliquid 列自 2026-11-15 20:30 期起填值（此前为 null）；Bybit 因 CloudFront 地域屏蔽无法直连，暂空；Binance 期货地域限制、Coinglass 需付费 Key。funding 单位：Deribit/OKX 为 8h 百分比，Hyperliquid 为 1h 百分比。注意：第 24–26 期 Deribit 列存的是小数（小 100 倍，如 0.000065 即 0.0065%），自 2026-11-16 09:30 期起改按百分比存，读数时注意口径断点。",
  "rows": [
   {
@@ -156,6 +156,37 @@
    "ibit_streak_days": 11,
    "macro_next": "11月17日 NVDA Q3 财报（盘后；黄仁勋辞职后首份财报）；11月18日 FOMC会议纪要；11月19日 Anthropic上市",
    "divergence": "观点分歧、定价回稳、资金单边"
+  },
+  {
+   "run_toronto": "2026-11-17 09:30",
+   "fetched_at": "11月17日约 09:40（多伦多）",
+   "btc_perp_mark": 64875.92,
+   "btc_perp_oi_usd_deribit": 695036180,
+   "btc_funding_8h_pct_deribit": 1.6e-05,
+   "eth_perp_mark": 1820.47,
+   "eth_perp_oi_usd_deribit": 264647378,
+   "eth_funding_8h_pct_deribit": 0.0,
+   "btc_put_call_oi_deribit": 0.7725,
+   "eth_put_call_oi_deribit": 0.5458,
+   "btc_basis_pct": 0.52,
+   "btc_basis_ann_pct": 5.0,
+   "btc_perp_oi_usd_okx": 2063750777,
+   "btc_funding_8h_pct_okx": -0.0019241,
+   "eth_perp_oi_usd_okx": 1230203578,
+   "eth_funding_8h_pct_okx": -0.0046072,
+   "btc_perp_oi_usd_hyperliquid": 2508377608,
+   "btc_funding_1h_pct_hyperliquid": 0.00125,
+   "eth_perp_oi_usd_hyperliquid": 1101078635,
+   "eth_funding_1h_pct_hyperliquid": 0.00030977,
+   "stablecoin_total_usd": 287086650720,
+   "stablecoin_dod_usd": -468007036,
+   "stablecoin_wow_usd": -3289572881,
+   "etf_btc_daily_usd": 7900000,
+   "etf_btc_7d_usd": -1469300000,
+   "etf_btc_2w_usd": null,
+   "ibit_streak_days": 0,
+   "macro_next": "11月17日 NVDA Q3 财报（盘后；黄仁勋辞职后首份财报）；11月18日 FOMC会议纪要；11月19日 Anthropic上市",
+   "divergence": "观点分歧、定价回稳、资金初现分化"
   }
  ]
 }
