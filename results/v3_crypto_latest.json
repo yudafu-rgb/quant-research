@@ -1,74 +1,74 @@
 {
  "regime": "risk-off",
- "data_asof": "2026-11-17 05:00",
+ "data_asof": "2026-11-17 09:00",
  "skipped": false,
  "skip_reason": null,
  "longs": [
   {
-   "label": "backpack (trending)",
-   "entry_price": 1.0654270286489762,
-   "entry_ts": "2026-11-17T05:00:00",
-   "score": 81.1,
-   "tier": "C",
-   "reason": "小时线分数81.1（第1名）；RSI(14h) 61.5；日线向上；市场状态risk-off；🔥trending关注度加成+2分；Tier-C（未过：signal,regime）"
+   "label": "GRAM (Gram (prev. Toncoin))",
+   "entry_price": 1.042,
+   "entry_ts": "2026-11-17T09:00:00",
+   "score": 60.3,
+   "tier": "B",
+   "reason": "小时线分数60.3（第9名）；看涨信号：MACD bullish cross；RSI(14h) 51.3；日线向下；市场状态risk-off；Tier-B（未过：regime）"
   },
   {
-   "label": "lukso-token-2 (trending)",
-   "entry_price": 0.3713880320547904,
-   "entry_ts": "2026-11-17T05:00:00",
-   "score": 72.1,
+   "label": "backpack (trending)",
+   "entry_price": 1.0916141292939847,
+   "entry_ts": "2026-11-17T09:00:00",
+   "score": 77.9,
    "tier": "C",
-   "reason": "小时线分数72.1（第3名）；RSI(14h) 64.6；日线向上；市场状态risk-off；🔥trending关注度加成+2分；Tier-C（未过：signal,regime）"
+   "reason": "小时线分数77.9（第1名）；RSI(14h) 62.5；日线向上；市场状态risk-off；🔥trending关注度加成+2分；Tier-C（未过：signal,regime）"
   },
   {
    "label": "pearl-2 (trending)",
-   "entry_price": 1.6598457965997617,
-   "entry_ts": "2026-11-17T05:00:00",
-   "score": 70.3,
+   "entry_price": 1.7343663102658577,
+   "entry_ts": "2026-11-17T09:00:00",
+   "score": 72.2,
    "tier": "C",
-   "reason": "小时线分数70.3（第4名）；RSI(14h) 54.8；日线向上；市场状态risk-off；🔥trending关注度加成+2分；Tier-C（未过：signal,regime）"
+   "reason": "小时线分数72.2（第3名）；RSI(14h) 66.3；日线向上；市场状态risk-off；🔥trending关注度加成+2分；Tier-C（未过：signal,regime）"
   }
  ],
  "shorts": [
   {
-   "label": "BNB (BNB)",
-   "entry_price": 587.31,
-   "entry_ts": "2026-11-17T05:00:00",
-   "score": 26.0,
-   "tier": "A",
-   "reason": "小时线分数26.0（第37名）；看跌信号：MACD bearish cross；RSI(14h) 40.7；日线向下；市场状态risk-off；板块CEX-token（24h +1.9%）"
+   "label": "pudgy-penguins (trending)",
+   "entry_price": 0.004717729330582346,
+   "entry_ts": "2026-11-17T09:00:00",
+   "score": 28.2,
+   "tier": "C",
+   "reason": "小时线分数28.2（第40名）；RSI(14h) 37.6；日线向下；市场状态risk-off；🔥trending关注度加成+2分；Tier-C（未过：signal）"
   },
   {
-   "label": "LTC (Litecoin)",
-   "entry_price": 44.37,
-   "entry_ts": "2026-11-17T05:00:00",
-   "score": 32.4,
-   "tier": "A",
-   "reason": "小时线分数32.4（第35名）；看跌信号：MACD bearish cross；RSI(14h) 43.3；日线向下；市场状态risk-off；板块L1（24h -0.1%）"
+   "label": "HBAR (Hedera)",
+   "entry_price": 0.05801,
+   "entry_ts": "2026-11-17T09:00:00",
+   "score": 30.4,
+   "tier": "C",
+   "reason": "小时线分数30.4（第39名）；RSI(14h) 56.2；日线向下；市场状态risk-off；Tier-C（未过：signal）"
   },
   {
-   "label": "ADA (Cardano)",
-   "entry_price": 0.1521,
-   "entry_ts": "2026-11-17T05:00:00",
-   "score": 33.5,
-   "tier": "A",
-   "reason": "小时线分数33.5（第34名）；看跌信号：MACD bearish cross；RSI(14h) 44.7；日线向下；市场状态risk-off；板块L1（24h -0.1%）"
+   "label": "SHIB (Shiba Inu)",
+   "entry_price": 3.84e-06,
+   "entry_ts": "2026-11-17T09:00:00",
+   "score": 31.2,
+   "tier": "C",
+   "reason": "小时线分数31.2（第38名）；RSI(14h) 45.0；日线向下；市场状态risk-off；板块Meme（24h -0.9%）；Tier-C（未过：signal）"
   }
  ],
  "kind": "v3-crypto",
- "report": "intraday_run_2026-11-17_0617.json",
- "published_at_toronto": "2026-11-17 06:21",
+ "report": "intraday_run_2026-11-17_1016.json",
+ "published_at_toronto": "2026-11-17 10:20",
  "winrate": {
   "long": {
-   "n": 802,
-   "win_rate": 38.8,
-   "avg_ret": -1.08,
+   "n": 805,
+   "win_rate": 38.9,
+   "avg_ret": -1.07,
    "insufficient": false
   },
   "short": {
-   "n": 834,
-   "win_rate": 57.7,
-   "avg_ret": 0.7,
+   "n": 839,
+   "win_rate": 57.6,
+   "avg_ret": 0.67,
    "insufficient": false
   }
  }
