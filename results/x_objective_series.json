@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-17 约 21:00（多伦多）",
- "note": "每期一行结构化客观数据（Deribit/OKX/Hyperliquid 永续、期权看跌看涨比、基差、稳定币、ETF、宏观）。OKX 与 Hyperliquid 列自 2026-11-15 20:30 期起填值（此前为 null）；Bybit 因 CloudFront 地域屏蔽无法直连，暂空；Binance 期货地域限制、Coinglass 需付费 Key。funding 单位：Deribit/OKX 为 8h 百分比，Hyperliquid 为 1h 百分比。注意：第 24–26 期 Deribit 列存的是小数（小 100 倍，如 0.000065 即 0.0065%），自 2026-11-16 09:30 期起改按百分比存，读数时注意口径断点。ETF 日值/7日值为最近已公布交易日（11月17日资金流尚未公布时沿用11月16日值：BTC +$7.9M、7日约-$14.693亿）。稳定币 DoD 为与上一期时间序列总量的差；WoW 按 DefiLlama 图表口径 7 日前 00:00 UTC 总量计算。",
+ "generated_at": "2026-11-18 约 09:45（多伦多）",
+ "note": "每期一行结构化客观数据（Deribit/OKX/Hyperliquid 永续、期权看跌看涨比、基差、稳定币、ETF、宏观）。OKX 与 Hyperliquid 列自 2026-11-15 20:30 期起填值（此前为 null）；Bybit 因 CloudFront 地域屏蔽无法直连，暂空；Binance 期货地域限制、Coinglass 需付费 Key。funding 单位：Deribit/OKX 为 8h 百分比，Hyperliquid 为 1h 百分比。注意：第 24–26 期 Deribit 列存的是小数（小 100 倍，如 0.000065 即 0.0065%），自 2026-11-16 09:30 期起改按百分比存，读数时注意口径断点。ETF 日值为最近已公布交易日（11月17日：BTC -$239.9M）；7日值因口径未核实（TheBitGuard约-$10.6亿与上期-$14.693亿窗口口径不一致）填null。稳定币 DoD 为与上一期时间序列总量的差；WoW 按 DefiLlama 图表口径 7 日前 00:00 UTC 总量计算。",
  "rows": [
   {
    "run_toronto": "2026-11-14 20:30",
@@ -218,6 +218,37 @@
    "ibit_streak_days": 0,
    "macro_next": "11月18日 FOMC会议纪要（13:00 ET）；11月19日 Anthropic上市、SEC/CFTC提名人听证会；12月9日美联储议息",
    "divergence": "观点分歧、链上偏底、衍生品中性"
+  },
+  {
+   "run_toronto": "2026-11-18 09:30",
+   "fetched_at": "11月18日约 09:40（多伦多）",
+   "btc_perp_mark": 63985.86,
+   "btc_perp_oi_usd_deribit": 715092070,
+   "btc_funding_8h_pct_deribit": 2.9e-05,
+   "eth_perp_mark": 1793.83,
+   "eth_perp_oi_usd_deribit": 271793454,
+   "eth_funding_8h_pct_deribit": -0.0007,
+   "btc_put_call_oi_deribit": 0.774,
+   "eth_put_call_oi_deribit": 0.5493,
+   "btc_basis_pct": 0.46,
+   "btc_basis_ann_pct": 4.5,
+   "btc_perp_oi_usd_okx": 2086557723,
+   "btc_funding_8h_pct_okx": 0.00238438,
+   "eth_perp_oi_usd_okx": 1241285936,
+   "eth_funding_8h_pct_okx": -0.00258538,
+   "btc_perp_oi_usd_hyperliquid": 2564535406,
+   "btc_funding_1h_pct_hyperliquid": 0.00043648,
+   "eth_perp_oi_usd_hyperliquid": 1088975440,
+   "eth_funding_1h_pct_hyperliquid": -0.0003599,
+   "stablecoin_total_usd": 287235600218,
+   "stablecoin_dod_usd": 148638691,
+   "stablecoin_wow_usd": -2247510035,
+   "etf_btc_daily_usd": -239900000,
+   "etf_btc_7d_usd": null,
+   "etf_btc_2w_usd": null,
+   "ibit_streak_days": 0,
+   "macro_next": "11月18日 FOMC会议纪要（14:00 ET）；11月19日 Anthropic上市、SEC/CFTC提名人听证会；12月9日美联储议息",
+   "divergence": "观点转多、ETF重回流出、衍生品中性"
   }
  ]
 }
