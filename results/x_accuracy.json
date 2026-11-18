@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-11-17 20:46",
+  "generated_at": "2026-11-18 09:46",
   "price_source": "Binance US 日线（UTC）最高/最低价；窗口为原帖发布后 7 天",
   "rule": "只验带明确价位+方向+短期的预测；复述、提问、模型估值、长期目标不验；同一原帖只计一次；方向不明的预测只当情绪、不计分；窗口 0 天的事后复述不计分；数据/事件型账号分口径、不参与观点排名",
   "summary": {
-    "claims": 31,
-    "hits": 10,
+    "claims": 32,
+    "hits": 11,
     "misses": 12,
     "pending": 9
   },
   "summary_view": {
-    "claims": 27,
-    "hits": 10,
+    "claims": 28,
+    "hits": 11,
     "misses": 9,
     "pending": 8
   },
@@ -30,6 +30,14 @@
       "resolved": 1,
       "accuracy_pct": 0,
       "display": "0%（0/1）"
+    },
+    "Rekt Capital（@rektcapital）": {
+      "hits": 2,
+      "misses": 1,
+      "pending": 2,
+      "resolved": 3,
+      "accuracy_pct": 67,
+      "display": "67%（2/3）"
     },
     "Daan Crypto（@DaanCrypto）": {
       "hits": 2,
@@ -63,21 +71,13 @@
       "accuracy_pct": 25,
       "display": "25%（1/4）"
     },
-    "Rekt Capital（@rektcapital）": {
-      "hits": 2,
-      "misses": 1,
-      "pending": 1,
-      "resolved": 3,
-      "accuracy_pct": 67,
-      "display": "67%（2/3）"
-    },
     "Ted Pillows（@TedPillows）": {
-      "hits": 4,
+      "hits": 5,
       "misses": 1,
-      "pending": 1,
-      "resolved": 5,
-      "accuracy_pct": 80,
-      "display": "80%（4/5）"
+      "pending": 0,
+      "resolved": 6,
+      "accuracy_pct": 83,
+      "display": "83%（5/6）"
     },
     "Glassnode（@glassnode）": {
       "hits": 0,
@@ -103,6 +103,15 @@
       "target_date": "2026-12-09",
       "outcome": "pending",
       "checked_at": "2026-11-11 20:45",
+      "scored": true,
+      "exclude_reason": ""
+    },
+    {
+      "channel": "Rekt Capital（@rektcapital）",
+      "target_price": "BTC $59,443（周收破$63,300后下看）",
+      "target_date": "2026-11-24",
+      "outcome": "pending",
+      "checked_at": "2026-11-18 09:30",
       "scored": true,
       "exclude_reason": ""
     },
@@ -173,8 +182,8 @@
       "channel": "Ted Pillows（@TedPillows）",
       "target_price": "ETH $2,000（重测）",
       "target_date": "2026-11-18",
-      "outcome": "pending",
-      "checked_at": "2026-11-11 20:45",
+      "outcome": "hit",
+      "checked_at": "2026-11-18 09:30",
       "scored": true,
       "exclude_reason": ""
     },
