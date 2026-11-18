@@ -1,5 +1,5 @@
 {
- "mode": "rebalance",
+ "mode": "valuation",
  "last_close_date": "2026-11-17",
  "cash": 96847.63059701493,
  "holdings_value": 0.0,
@@ -255,5 +255,66 @@
  "new_pending_entries": [],
  "new_pending_exits": [],
  "no_new_close": false,
- "pending_entries_detail": []
+ "watchlist_trend_ok": [
+  {
+   "coin": "QNT",
+   "close": 156.36,
+   "mom126": 1.3690909090909091,
+   "ma200": 104.3642,
+   "prior_max": 203.64,
+   "prior_min": 140.0,
+   "breakout": false,
+   "trend_ok": true
+  },
+  {
+   "coin": "ZEC",
+   "close": 968.41,
+   "mom126": 0.7161869993620189,
+   "ma200": 803.0077,
+   "prior_max": 1321.31,
+   "prior_min": 862.44,
+   "breakout": false,
+   "trend_ok": true
+  },
+  {
+   "coin": "NEAR",
+   "close": 3.4,
+   "mom126": 0.6983016983016985,
+   "ma200": 2.71259,
+   "prior_max": 4.745,
+   "prior_min": 3.022,
+   "breakout": false,
+   "trend_ok": true
+  },
+  {
+   "coin": "UNI",
+   "close": 5.189,
+   "mom126": 0.4235939643347051,
+   "ma200": 4.979915,
+   "prior_max": 7.8,
+   "prior_min": 4.761,
+   "breakout": false,
+   "trend_ok": true
+  },
+  {
+   "coin": "PEPE",
+   "close": 3.85e-06,
+   "mom126": 0.37010676156583644,
+   "ma200": 3.5476e-06,
+   "prior_max": 5.36e-06,
+   "prior_min": 3.87e-06,
+   "breakout": false,
+   "trend_ok": true
+  },
+  {
+   "coin": "AAVE",
+   "close": 111.24,
+   "mom126": 0.09975284231339576,
+   "ma200": 110.1093,
+   "prior_max": 135.6,
+   "prior_min": 99.33,
+   "breakout": false,
+   "trend_ok": true
+  }
+ ]
 }
