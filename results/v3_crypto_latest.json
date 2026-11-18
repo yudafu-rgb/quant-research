@@ -1,74 +1,74 @@
 {
  "regime": "risk-off",
- "data_asof": "2026-11-18 09:00",
+ "data_asof": "2026-11-18 13:00",
  "skipped": false,
  "skip_reason": null,
  "longs": [
   {
    "label": "LEO (LEO Token)",
-   "entry_price": 9.28955899325748,
-   "entry_ts": "2026-11-18T09:00:00",
-   "score": 71.0,
+   "entry_price": 9.303749606077865,
+   "entry_ts": "2026-11-18T13:00:00",
+   "score": 71.8,
    "tier": "C",
-   "reason": "小时线分数71.0（第3名）；RSI(14h) 49.2；日线向上；市场状态risk-off；板块CEX-token（24h -0.8%）；Tier-C（未过：signal,regime）"
+   "reason": "小时线分数71.8（第2名）；RSI(14h) 51.8；日线向上；市场状态risk-off；板块CEX-token（24h -0.1%）；Tier-C（未过：signal,regime）"
   },
   {
-   "label": "pearl-2 (trending)",
-   "entry_price": 1.8249404685968598,
-   "entry_ts": "2026-11-18T09:00:00",
-   "score": 69.1,
+   "label": "venice-token (trending)",
+   "entry_price": 20.716759368158264,
+   "entry_ts": "2026-11-18T13:00:00",
+   "score": 68.4,
    "tier": "C",
-   "reason": "小时线分数69.1（第4名）；RSI(14h) 57.0；日线向上；市场状态risk-off；🔥trending关注度加成+2分；Tier-C（未过：signal,regime）"
+   "reason": "小时线分数68.4（第3名）；RSI(14h) 45.8；日线向下；市场状态risk-off；🔥trending关注度加成+2分；Tier-C（未过：signal,regime）"
   },
   {
-   "label": "NEAR (NEAR Protocol)",
-   "entry_price": 3.313,
-   "entry_ts": "2026-11-18T09:00:00",
-   "score": 67.9,
+   "label": "backpack (trending)",
+   "entry_price": 1.0012875877603828,
+   "entry_ts": "2026-11-18T13:00:00",
+   "score": 66.0,
    "tier": "C",
-   "reason": "小时线分数67.9（第5名）；RSI(14h) 49.9；日线向下；市场状态risk-off；🔥trending关注度加成+2分；板块L1（24h -1.0%）；Tier-C（未过：signal,regime）"
+   "reason": "小时线分数66.0（第4名）；RSI(14h) 47.9；日线向下；市场状态risk-off；🔥trending关注度加成+2分；Tier-C（未过：signal,regime）"
   }
  ],
  "shorts": [
   {
-   "label": "official-trump (trending)",
-   "entry_price": 0.9461067058957533,
-   "entry_ts": "2026-11-18T09:00:00",
-   "score": 31.9,
-   "tier": "A",
-   "reason": "小时线分数31.9（第37名）；看跌信号：Breakdown；RSI(14h) 40.1；日线向下；市场状态risk-off；🔥trending关注度加成+2分"
+   "label": "BTC (Bitcoin)",
+   "entry_price": 63168.31,
+   "entry_ts": "2026-11-18T13:00:00",
+   "score": 23.8,
+   "tier": "C",
+   "reason": "小时线分数23.8（第38名）；RSI(14h) 35.5；日线向下；市场状态risk-off；🔥trending关注度加成+2分；板块L1（24h +0.5%）；Tier-C（未过：signal）"
   },
   {
-   "label": "GRAM (Gram (prev. Toncoin))",
-   "entry_price": 1.011,
-   "entry_ts": "2026-11-18T09:00:00",
-   "score": 30.1,
+   "label": "aero (trending)",
+   "entry_price": 0.4301,
+   "entry_ts": "2026-11-18T13:00:00",
+   "score": 25.0,
    "tier": "C",
-   "reason": "小时线分数30.1（第39名）；RSI(14h) 30.6；日线向下；市场状态risk-off；🔥trending关注度加成+2分；Tier-C（未过：signal）"
+   "reason": "小时线分数25.0（第37名）；RSI(14h) 40.2；日线向下；市场状态risk-off；🔥trending关注度加成+2分；Tier-C（未过：signal）"
   },
   {
-   "label": "pump-fun (trending)",
-   "entry_price": 0.0026664492693378007,
-   "entry_ts": "2026-11-18T09:00:00",
-   "score": 31.1,
+   "label": "ETH (Ethereum)",
+   "entry_price": 1770.36,
+   "entry_ts": "2026-11-18T13:00:00",
+   "score": 26.1,
    "tier": "C",
-   "reason": "小时线分数31.1（第38名）；RSI(14h) 41.2；日线向下；市场状态risk-off；🔥trending关注度加成+2分；Tier-C（未过：signal）"
+   "reason": "小时线分数26.1（第36名）；RSI(14h) 38.8；日线向下；市场状态risk-off；板块L1（24h +0.5%）；Tier-C（未过：signal）"
   }
  ],
  "kind": "v3-crypto",
- "report": "intraday_run_2026-11-18_1016.json",
- "published_at_toronto": "2026-11-18 10:21",
+ "report": "intraday_run_2026-11-18_1416.json",
+ "published_at_toronto": "2026-11-18 14:22",
  "winrate": {
   "long": {
-   "n": 821,
-   "win_rate": 39.3,
-   "avg_ret": -1.01,
+   "n": 824,
+   "win_rate": 39.4,
+   "avg_ret": -0.99,
    "insufficient": false
   },
   "short": {
-   "n": 857,
-   "win_rate": 57.4,
-   "avg_ret": 0.66,
+   "n": 860,
+   "win_rate": 57.3,
+   "avg_ret": 0.65,
    "insufficient": false
   }
  }
