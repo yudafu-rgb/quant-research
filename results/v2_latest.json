@@ -1,7 +1,7 @@
 {
  "kind": "v2",
- "report": "run_2026-11-18_0546.json",
- "published_at_toronto": "2026-11-18 00:52",
+ "report": "run_2026-11-18_1346.json",
+ "published_at_toronto": "2026-11-18 08:52",
  "universes": {
   "crypto": {
    "regime": "risk-off",
@@ -11,53 +11,53 @@
    "longs": [
     {
      "label": "pearl-2 (trending)",
-     "entry_price": 1.8409544953137065,
+     "entry_price": 1.8171071351483783,
      "entry_ts": "2026-11-18",
-     "score": 80.1,
+     "score": 80.9,
      "tier": "B",
-     "reason": "分数80.1（第2名）；看涨信号：MACD bullish cross；RSI 58.3；周线向下；市场状态risk-off；Tier-B（未过：regime）"
+     "reason": "分数80.9（第1名）；看涨信号：MACD bullish cross；RSI 57.6；周线向下；市场状态risk-off；Tier-B（未过：regime）"
     },
     {
-     "label": "bless-2 (trending)",
-     "entry_price": 0.009989697209045675,
+     "label": "LEO (LEO Token)",
+     "entry_price": 9.289163386112326,
      "entry_ts": "2026-11-18",
-     "score": 84.2,
+     "score": 71.6,
      "tier": "C",
-     "reason": "分数84.2（第1名）；RSI 51.4；周线向上；市场状态risk-off；Tier-C（未过：signal,regime）"
+     "reason": "分数71.6（第4名）；RSI 54.8；周线向下；市场状态risk-off；Tier-C（未过：signal,regime）"
     },
     {
-     "label": "brevis (trending)",
-     "entry_price": 0.11793118396527741,
+     "label": "backpack (trending)",
+     "entry_price": 1.0067836228597267,
      "entry_ts": "2026-11-18",
-     "score": 79.5,
+     "score": 71.1,
      "tier": "C",
-     "reason": "分数79.5（第3名）；看涨信号：MACD bullish cross、Breakout on volume；RSI 73.6；周线向下；市场状态risk-off；注意：存在多空信号冲突，已按优先级裁决；Tier-C（未过：rsi,regime）"
+     "reason": "分数71.1（第5名）；RSI 56.4；周线向下；市场状态risk-off；Tier-C（未过：signal,regime）"
     }
    ],
    "shorts": [
     {
      "label": "XAUT (Tether Gold)",
-     "entry_price": 3780.222908196238,
+     "entry_price": 3774.0041344876154,
      "entry_ts": "2026-11-18",
-     "score": 24.0,
+     "score": 23.9,
      "tier": "A",
-     "reason": "分数24.0（第38名）；看跌信号：Breakdown；RSI 33.8；周线向下；市场状态risk-off"
+     "reason": "分数23.9（第36名）；看跌信号：Breakdown；RSI 33.5；周线向下；市场状态risk-off"
     },
     {
      "label": "PAXG (PAX Gold)",
-     "entry_price": 3782.5059907792047,
+     "entry_price": 3775.026328055307,
      "entry_ts": "2026-11-18",
-     "score": 25.0,
+     "score": 25.7,
      "tier": "A",
-     "reason": "分数25.0（第36名）；看跌信号：Breakdown；RSI 33.7；周线向下；市场状态risk-off"
+     "reason": "分数25.7（第33名）；看跌信号：Breakdown；RSI 33.3；周线向下；市场状态risk-off"
     },
     {
      "label": "pudgy-penguins (trending)",
-     "entry_price": 0.004717221807596101,
+     "entry_price": 0.004792744076980811,
      "entry_ts": "2026-11-18",
-     "score": 21.2,
+     "score": 22.5,
      "tier": "C",
-     "reason": "分数21.2（第45名）；看跌信号：Death cross、Breakdown；RSI 22.9；周线向下；市场状态risk-off；Tier-C（未过：rsi）"
+     "reason": "分数22.5（第37名）；看跌信号：Death cross、Breakdown；RSI 23.5；周线向下；市场状态risk-off；Tier-C（未过：rsi）"
     }
    ]
   },
@@ -87,9 +87,9 @@
      "label": "MDLZ",
      "entry_price": 66.75,
      "entry_ts": "2026-11-17",
-     "score": 78.9,
+     "score": 78.8,
      "tier": "C",
-     "reason": "分数78.9（第5名）；RSI 59.5；周线向上；市场状态risk-on；Tier-C（未过：signal）"
+     "reason": "分数78.8（第5名）；RSI 59.5；周线向上；市场状态risk-on；Tier-C（未过：signal）"
     }
    ],
    "shorts": [
