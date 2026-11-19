@@ -1,73 +1,73 @@
 {
  "regime": "risk-off",
- "data_asof": "2026-11-18 17:00",
+ "data_asof": "2026-11-18 21:00",
  "skipped": false,
  "skip_reason": null,
  "longs": [
   {
+   "label": "pearl-2 (trending)",
+   "entry_price": 2.219296048289153,
+   "entry_ts": "2026-11-18T21:00:00",
+   "score": 79.8,
+   "tier": "C",
+   "reason": "小时线分数79.8（第1名）；RSI(14h) 65.8；日线向上；市场状态risk-off；🔥trending关注度加成+2分；Tier-C（未过：signal,regime）"
+  },
+  {
    "label": "LEO (LEO Token)",
-   "entry_price": 9.27464761295209,
-   "entry_ts": "2026-11-18T17:00:00",
-   "score": 66.7,
+   "entry_price": 9.290473837211458,
+   "entry_ts": "2026-11-18T21:00:00",
+   "score": 69.8,
    "tier": "C",
-   "reason": "小时线分数66.7（第4名）；RSI(14h) 44.2；日线向上；市场状态risk-off；板块CEX-token（24h -1.6%）；Tier-C（未过：signal,regime）"
+   "reason": "小时线分数69.8（第2名）；RSI(14h) 48.5；日线向上；市场状态risk-off；板块CEX-token（24h -1.1%）；Tier-C（未过：signal,regime）"
   },
   {
-   "label": "backpack (trending)",
-   "entry_price": 1.0085685010507106,
-   "entry_ts": "2026-11-18T17:00:00",
-   "score": 72.1,
+   "label": "TRX (TRON)",
+   "entry_price": 0.3102,
+   "entry_ts": "2026-11-18T21:00:00",
+   "score": 63.0,
    "tier": "C",
-   "reason": "小时线分数72.1（第2名）；RSI(14h) 50.2；日线向下；市场状态risk-off；🔥trending关注度加成+2分；Tier-C（未过：signal,regime）"
-  },
-  {
-   "label": "M (MemeCore)",
-   "entry_price": 0.8840272882316248,
-   "entry_ts": "2026-11-18T17:00:00",
-   "score": 69.6,
-   "tier": "C",
-   "reason": "小时线分数69.6（第3名）；RSI(14h) 48.5；日线向下；市场状态risk-off；Tier-C（未过：signal,regime）"
+   "reason": "小时线分数63.0（第3名）；RSI(14h) 59.9；日线向下；市场状态risk-off；板块L1（24h -1.5%）；Tier-C（未过：signal,regime）"
   }
  ],
  "shorts": [
   {
-   "label": "WBT (WhiteBIT Coin)",
-   "entry_price": 60.395893350401124,
-   "entry_ts": "2026-11-18T17:00:00",
-   "score": 29.8,
+   "label": "CRO (Cronos)",
+   "entry_price": 0.04226636601304116,
+   "entry_ts": "2026-11-18T21:00:00",
+   "score": 33.2,
    "tier": "A",
-   "reason": "小时线分数29.8（第30名）；看跌信号：Breakdown；RSI(14h) 30.3；日线向下；市场状态risk-off"
-  },
-  {
-   "label": "monad (trending)",
-   "entry_price": 0.01421206318121643,
-   "entry_ts": "2026-11-18T17:00:00",
-   "score": 32.7,
-   "tier": "A",
-   "reason": "小时线分数32.7（第27名）；看跌信号：Breakdown；RSI(14h) 31.2；日线向下；市场状态risk-off；🔥trending关注度加成+2分"
+   "reason": "小时线分数33.2（第32名）；看跌信号：Breakdown；RSI(14h) 37.1；日线向下；市场状态risk-off；板块CEX-token（24h -1.1%）"
   },
   {
    "label": "HBAR (Hedera)",
-   "entry_price": 0.05525,
-   "entry_ts": "2026-11-18T17:00:00",
-   "score": 24.8,
+   "entry_price": 0.05531,
+   "entry_ts": "2026-11-18T21:00:00",
+   "score": 18.4,
    "tier": "C",
-   "reason": "小时线分数24.8（第35名）；RSI(14h) 30.5；日线向下；市场状态risk-off；Tier-C（未过：signal）"
+   "reason": "小时线分数18.4（第41名）；RSI(14h) 36.3；日线向下；市场状态risk-off；Tier-C（未过：signal）"
+  },
+  {
+   "label": "AVAX (Avalanche)",
+   "entry_price": 6.983,
+   "entry_ts": "2026-11-18T21:00:00",
+   "score": 23.0,
+   "tier": "C",
+   "reason": "小时线分数23.0（第40名）；RSI(14h) 43.3；日线向下；市场状态risk-off；板块L1（24h -1.5%）；Tier-C（未过：signal）"
   }
  ],
  "kind": "v3-crypto",
- "report": "intraday_run_2026-11-18_1816.json",
- "published_at_toronto": "2026-11-18 18:20",
+ "report": "intraday_run_2026-11-18_2216.json",
+ "published_at_toronto": "2026-11-18 22:20",
  "winrate": {
   "long": {
-   "n": 826,
+   "n": 828,
    "win_rate": 39.5,
-   "avg_ret": -0.99,
+   "avg_ret": -0.96,
    "insufficient": false
   },
   "short": {
-   "n": 861,
-   "win_rate": 57.4,
+   "n": 865,
+   "win_rate": 57.5,
    "avg_ret": 0.66,
    "insufficient": false
   }
