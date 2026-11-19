@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-11-18 20:43",
+  "generated_at": "2026-11-19 09:42",
   "price_source": "Binance US 日线（UTC）最高/最低价；窗口为原帖发布后 7 天",
   "rule": "只验带明确价位+方向+短期的预测；复述、提问、模型估值、长期目标不验；同一原帖只计一次；方向不明的预测只当情绪、不计分；窗口 0 天的事后复述不计分；数据/事件型账号分口径、不参与观点排名",
   "summary": {
-    "claims": 34,
+    "claims": 36,
     "hits": 11,
-    "misses": 12,
-    "pending": 11
+    "misses": 13,
+    "pending": 12
   },
   "summary_view": {
-    "claims": 30,
+    "claims": 32,
     "hits": 11,
-    "misses": 9,
-    "pending": 10
+    "misses": 10,
+    "pending": 11
   },
   "summary_data": {
     "claims": 4,
@@ -31,13 +31,29 @@
       "accuracy_pct": 0,
       "display": "0%（0/1）"
     },
-    "Ali Martinez（Ali Charts）": {
+    "Michaël van de Poppe（@CryptoMichNL）": {
       "hits": 1,
       "misses": 3,
-      "pending": 4,
+      "pending": 2,
       "resolved": 4,
       "accuracy_pct": 25,
       "display": "25%（1/4）"
+    },
+    "Ted Pillows（@TedPillows）": {
+      "hits": 5,
+      "misses": 1,
+      "pending": 1,
+      "resolved": 6,
+      "accuracy_pct": 83,
+      "display": "83%（5/6）"
+    },
+    "Ali Martinez（Ali Charts）": {
+      "hits": 1,
+      "misses": 4,
+      "pending": 3,
+      "resolved": 5,
+      "accuracy_pct": 20,
+      "display": "20%（1/5）"
     },
     "Daan Crypto（@DaanCrypto）": {
       "hits": 2,
@@ -63,22 +79,6 @@
       "accuracy_pct": null,
       "display": "待验证（1）"
     },
-    "Michaël van de Poppe（@CryptoMichNL）": {
-      "hits": 1,
-      "misses": 3,
-      "pending": 1,
-      "resolved": 4,
-      "accuracy_pct": 25,
-      "display": "25%（1/4）"
-    },
-    "Ted Pillows（@TedPillows）": {
-      "hits": 5,
-      "misses": 1,
-      "pending": 0,
-      "resolved": 6,
-      "accuracy_pct": 83,
-      "display": "83%（5/6）"
-    },
     "Glassnode（@glassnode）": {
       "hits": 0,
       "misses": 2,
@@ -103,6 +103,24 @@
       "target_date": "2026-12-09",
       "outcome": "pending",
       "checked_at": "2026-11-11 20:45",
+      "scored": true,
+      "exclude_reason": ""
+    },
+    {
+      "channel": "Michaël van de Poppe（@CryptoMichNL）",
+      "target_price": "BTC $70,000（均值回归反弹至$70,000–$72,000）",
+      "target_date": "2026-11-25",
+      "outcome": "pending",
+      "checked_at": "2026-11-19 09:30",
+      "scored": true,
+      "exclude_reason": ""
+    },
+    {
+      "channel": "Ted Pillows（@TedPillows）",
+      "target_price": "ETH $2,000（突破$1,850–$1,860阻力区后快速上看）",
+      "target_date": "2026-11-25",
+      "outcome": "pending",
+      "checked_at": "2026-11-19 09:30",
       "scored": true,
       "exclude_reason": ""
     },
@@ -191,8 +209,8 @@
       "channel": "Ali Martinez（Ali Charts）",
       "target_price": "BTC $73,100（收复则反弹希望犹存）",
       "target_date": "2026-11-19",
-      "outcome": "pending",
-      "checked_at": null,
+      "outcome": "missed",
+      "checked_at": "2026-11-19 09:30",
       "scored": true,
       "exclude_reason": ""
     },
