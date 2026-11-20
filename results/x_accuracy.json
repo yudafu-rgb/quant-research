@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-11-19 20:50",
+  "generated_at": "2026-11-20 09:39",
   "price_source": "Binance US 日线（UTC）最高/最低价；窗口为原帖发布后 7 天",
   "rule": "只验带明确价位+方向+短期的预测；复述、提问、模型估值、长期目标不验；同一原帖只计一次；方向不明的预测只当情绪、不计分；窗口 0 天的事后复述不计分；数据/事件型账号分口径、不参与观点排名",
   "summary": {
     "claims": 37,
     "hits": 11,
-    "misses": 13,
-    "pending": 13
+    "misses": 17,
+    "pending": 9
   },
   "summary_view": {
     "claims": 33,
     "hits": 11,
-    "misses": 10,
-    "pending": 12
+    "misses": 14,
+    "pending": 8
   },
   "summary_data": {
     "claims": 4,
@@ -41,11 +41,11 @@
     },
     "Michaël van de Poppe（@CryptoMichNL）": {
       "hits": 1,
-      "misses": 3,
-      "pending": 2,
-      "resolved": 4,
-      "accuracy_pct": 25,
-      "display": "25%（1/4）"
+      "misses": 4,
+      "pending": 1,
+      "resolved": 5,
+      "accuracy_pct": 20,
+      "display": "20%（1/5）"
     },
     "Ted Pillows（@TedPillows）": {
       "hits": 5,
@@ -57,19 +57,19 @@
     },
     "Ali Martinez（Ali Charts）": {
       "hits": 1,
-      "misses": 4,
-      "pending": 3,
-      "resolved": 5,
-      "accuracy_pct": 20,
-      "display": "20%（1/5）"
+      "misses": 6,
+      "pending": 1,
+      "resolved": 7,
+      "accuracy_pct": 14,
+      "display": "14%（1/7）"
     },
     "Rekt Capital（@rektcapital）": {
       "hits": 2,
-      "misses": 1,
-      "pending": 2,
-      "resolved": 3,
-      "accuracy_pct": 67,
-      "display": "67%（2/3）"
+      "misses": 2,
+      "pending": 1,
+      "resolved": 4,
+      "accuracy_pct": 50,
+      "display": "50%（2/4）"
     },
     "DWF Labs（@DWFLabs）": {
       "hits": 0,
@@ -179,29 +179,11 @@
       "exclude_reason": ""
     },
     {
-      "channel": "Ali Martinez（Ali Charts）",
-      "target_price": "BTC $80,000（TD Sequential信号成立后目标，须先收复$73,000/200日均线）",
-      "target_date": "2026-11-20",
-      "outcome": "pending",
-      "checked_at": "2026-11-14 20:30",
-      "scored": true,
-      "exclude_reason": ""
-    },
-    {
-      "channel": "Ali Martinez（Ali Charts）",
-      "target_price": "ETH $2,150（TD Sequential信号成立后反弹至200日均线附近）",
-      "target_date": "2026-11-20",
-      "outcome": "pending",
-      "checked_at": "2026-11-14 20:30",
-      "scored": true,
-      "exclude_reason": ""
-    },
-    {
       "channel": "Michaël van de Poppe（@CryptoMichNL）",
       "target_price": "BTC $72,000（未来几天反弹至$72,000–$74,000）",
       "target_date": "2026-11-20",
-      "outcome": "pending",
-      "checked_at": null,
+      "outcome": "missed",
+      "checked_at": "2026-11-20 09:30",
       "scored": true,
       "exclude_reason": ""
     },
@@ -209,8 +191,26 @@
       "channel": "Rekt Capital（@rektcapital）",
       "target_price": "BTC $60,000（周收跌破$73,000后重演前两次破位）",
       "target_date": "2026-11-20",
-      "outcome": "pending",
-      "checked_at": null,
+      "outcome": "missed",
+      "checked_at": "2026-11-20 09:30",
+      "scored": true,
+      "exclude_reason": ""
+    },
+    {
+      "channel": "Ali Martinez（Ali Charts）",
+      "target_price": "BTC $80,000（TD Sequential信号成立后目标，须先收复$73,000/200日均线）",
+      "target_date": "2026-11-20",
+      "outcome": "missed",
+      "checked_at": "2026-11-20 09:30",
+      "scored": true,
+      "exclude_reason": ""
+    },
+    {
+      "channel": "Ali Martinez（Ali Charts）",
+      "target_price": "ETH $2,150（TD Sequential信号成立后反弹至200日均线附近）",
+      "target_date": "2026-11-20",
+      "outcome": "missed",
+      "checked_at": "2026-11-20 09:30",
       "scored": true,
       "exclude_reason": ""
     },
