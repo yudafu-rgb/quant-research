@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-19 21:13",
+  "generated_at": "2026-11-20 09:20",
   "price_source": "Binance US 日线（UTC）最高/最低价；窗口为原帖发布后 7 天",
   "rule": "只验带明确价位+方向+短期的预测；复述、提问、模型估值、长期目标不验；同一原帖只计一次",
   "summary": {
-    "claims": 18,
+    "claims": 19,
     "hits": 9,
     "misses": 6,
-    "pending": 3
+    "pending": 4
   },
   "channels": {
     "Benjamin Cowen": {
@@ -88,6 +88,14 @@
       "resolved": 1,
       "accuracy_pct": 100,
       "display": "100%（1/1）"
+    },
+    "大漂亮": {
+      "hits": 0,
+      "misses": 0,
+      "pending": 1,
+      "resolved": 0,
+      "accuracy_pct": null,
+      "display": "待验证（1）"
     },
     "比特币欧阳": {
       "hits": 0,
