@@ -1,33 +1,33 @@
 {
- "generated_at": "2026-11-19 09:42（多伦多）",
+ "generated_at": "2026-11-19 20:50（多伦多）",
  "price_source": "Binance US 日线（UTC）最高/最低价判定；price_at_post 为发帖当日 Binance US 日线收盘价，post_day_low/high 为当日盘中低/高（发帖时刻未核实，小时价无法取）",
  "rule": "只验带明确价位+方向+短期的预测；复述、提问、模型估值、长期目标、无价位观点（如“底部已现”）不进台账，只算情绪；同一原帖只计一次；窗口内触及目标价即命中，窗口到期未触及判未命中；支撑位守住算命中、跌破算未命中",
  "method": "期望命中率：发帖前 30 日日收益波动率（sigma），无漂移随机游走、反射原理：触及型期望 = 2(1-Φ(d/(sigma*sqrt(N))))，d 为目标距离%、N 为窗口天数；守住型期望 = 1 - 触及概率。超额命中 = 实际命中率 - 期望命中率。方向不明的预测只当情绪、不计分；触及型与守住型分开统计；数据/事件型账号分口径、不参与观点排名。期望模型为无漂移随机游走；单边行情中，顺势方向的预测期望会被低估（超额被高估），须等涨跌切换后再看超额。标准误：已判定样本较少时标准误很大（n=19、命中率约 42% 时约 ±11pp），超额在 1 个标准误之内时不能解读为比随机游走差，只能说没有证据显示优于随机；守住型期望值单独计算，与触及型不可直接比较。",
  "note": "样本只有 11 天、BTC 单边下跌约 19%、全部账号 n<10；在跨过至少一次涨跌切换、每账号至少 10 条之前，不得用本台账调整任何仓位。命中率须结合 distance_pct 与 window_days 一起看：窗口宽、目标近的预测几乎必中。样本 n<5 不排名。",
  "summary": {
-  "claims": 36,
+  "claims": 37,
   "hits": 11,
   "misses": 13,
-  "pending": 12,
+  "pending": 13,
   "resolved": 24,
   "observed_hit_rate_pct": 45.8,
   "expected_hit_rate_pct": 48.6,
   "excess_pp": -2.8
  },
  "summary_view": {
-  "claims": 32,
+  "claims": 33,
   "hits": 11,
   "misses": 10,
-  "pending": 11,
+  "pending": 12,
   "resolved": 21,
   "observed_hit_rate_pct": 52.4,
   "expected_hit_rate_pct": 46.4,
   "excess_pp": 6.0,
   "touch": {
-   "claims": 28,
+   "claims": 29,
    "hits": 11,
    "misses": 6,
-   "pending": 11,
+   "pending": 12,
    "resolved": 17,
    "observed_hit_rate_pct": 64.7,
    "expected_hit_rate_pct": 47.2,
@@ -120,14 +120,14 @@
    "role": "观点型",
    "hits": 2,
    "misses": 0,
-   "pending": 2,
+   "pending": 3,
    "resolved": 2,
    "hit_rate_pct": 100.0,
    "expected_hit_rate_pct": 55.5,
    "excess_pp": 44.5,
-   "avg_distance_pct": 7.0,
-   "avg_window_days": 7.0,
-   "touch_claims": 4,
+   "avg_distance_pct": 6.3,
+   "avg_window_days": 6.8,
+   "touch_claims": 5,
    "hold_claims": 0
   },
   {
@@ -921,6 +921,28 @@
    "vol_days": 29
   },
   {
+   "account": "Daan Crypto（@DaanCrypto）",
+   "post_date": "2026-11-19",
+   "asset": "BTC",
+   "direction": "看空",
+   "kind": "触及型",
+   "target_price": 60000.0,
+   "target_text": "BTC $60,000（FOMC纪要后看空，小时收破$62,000下行打开）",
+   "price_at_post": 61959.71,
+   "post_day_low": 61428.64,
+   "post_day_high": 64077.14,
+   "distance_pct": -3.2,
+   "window_days": 6,
+   "rule": "以Binance US日线最低价触及$60,000为准，触及为hit、未触及为missed；窗口7天至11-25。",
+   "outcome": "pending",
+   "checked_at": "2026-11-19 20:30",
+   "source_run": "2026-11-19 20:30",
+   "source_type": "新闻转引",
+   "notes_short": "Daan Crypto 11-18 X帖（23:01 多伦多，Binance Square；本期首次收录）：FOMC纪要偏鹰后BTC从$63,168跌$1,105至$62,063，反弹三次受阻$63,300；目标$60,000（Hyperliquid多头清算堆积处），小时收低于$62,000则下行打开，4小时收高于$65,450则判断错误。判定口径：以Binance US日线最低价触及$60,00",
+   "expected_hit_pct": 57.2,
+   "vol_days": 29
+  },
+  {
    "account": "Michaël van de Poppe（@CryptoMichNL）",
    "post_date": "2026-11-18",
    "asset": "BTC",
@@ -1231,6 +1253,12 @@
    "bull": 3,
    "bear": 2,
    "other": 1
+  },
+  {
+   "run_toronto": "2026-11-19 20:30",
+   "bull": 3,
+   "bear": 3,
+   "other": 0
   }
  ]
 }
