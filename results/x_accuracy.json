@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-11-19 09:42",
+  "generated_at": "2026-11-19 20:50",
   "price_source": "Binance US 日线（UTC）最高/最低价；窗口为原帖发布后 7 天",
   "rule": "只验带明确价位+方向+短期的预测；复述、提问、模型估值、长期目标不验；同一原帖只计一次；方向不明的预测只当情绪、不计分；窗口 0 天的事后复述不计分；数据/事件型账号分口径、不参与观点排名",
   "summary": {
-    "claims": 36,
+    "claims": 37,
     "hits": 11,
     "misses": 13,
-    "pending": 12
+    "pending": 13
   },
   "summary_view": {
-    "claims": 32,
+    "claims": 33,
     "hits": 11,
     "misses": 10,
-    "pending": 11
+    "pending": 12
   },
   "summary_data": {
     "claims": 4,
@@ -30,6 +30,14 @@
       "resolved": 1,
       "accuracy_pct": 0,
       "display": "0%（0/1）"
+    },
+    "Daan Crypto（@DaanCrypto）": {
+      "hits": 2,
+      "misses": 0,
+      "pending": 3,
+      "resolved": 2,
+      "accuracy_pct": 100,
+      "display": "100%（2/2）"
     },
     "Michaël van de Poppe（@CryptoMichNL）": {
       "hits": 1,
@@ -54,14 +62,6 @@
       "resolved": 5,
       "accuracy_pct": 20,
       "display": "20%（1/5）"
-    },
-    "Daan Crypto（@DaanCrypto）": {
-      "hits": 2,
-      "misses": 0,
-      "pending": 2,
-      "resolved": 2,
-      "accuracy_pct": 100,
-      "display": "100%（2/2）"
     },
     "Rekt Capital（@rektcapital）": {
       "hits": 2,
@@ -103,6 +103,15 @@
       "target_date": "2026-12-09",
       "outcome": "pending",
       "checked_at": "2026-11-11 20:45",
+      "scored": true,
+      "exclude_reason": ""
+    },
+    {
+      "channel": "Daan Crypto（@DaanCrypto）",
+      "target_price": "BTC $60,000（FOMC纪要后看空，小时收破$62,000下行打开）",
+      "target_date": "2026-11-25",
+      "outcome": "pending",
+      "checked_at": "2026-11-19 20:30",
       "scored": true,
       "exclude_reason": ""
     },
