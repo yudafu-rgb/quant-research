@@ -1,24 +1,24 @@
 {
-  "generated_at": "2026-11-20 20:45",
+  "generated_at": "2026-11-21 09:40",
   "price_source": "Binance US 日线（UTC）最高/最低价；窗口为原帖发布后 7 天",
   "rule": "只验带明确价位+方向+短期的预测；复述、提问、模型估值、长期目标不验；同一原帖只计一次；方向不明的预测只当情绪、不计分；窗口 0 天的事后复述不计分；数据/事件型账号分口径、不参与观点排名",
   "summary": {
-    "claims": 37,
-    "hits": 11,
+    "claims": 38,
+    "hits": 12,
     "misses": 17,
     "pending": 9
   },
   "summary_view": {
-    "claims": 33,
+    "claims": 34,
     "hits": 11,
     "misses": 14,
-    "pending": 8
+    "pending": 9
   },
   "summary_data": {
     "claims": 4,
-    "hits": 0,
+    "hits": 1,
     "misses": 3,
-    "pending": 1
+    "pending": 0
   },
   "sentiment_only": 1,
   "excluded": 1,
@@ -30,6 +30,14 @@
       "resolved": 1,
       "accuracy_pct": 0,
       "display": "0%（0/1）"
+    },
+    "Phyrex Ni（@Phyrex_Ni）": {
+      "hits": 0,
+      "misses": 0,
+      "pending": 1,
+      "resolved": 0,
+      "accuracy_pct": null,
+      "display": "待验证（1）"
     },
     "Daan Crypto（@DaanCrypto）": {
       "hits": 2,
@@ -72,12 +80,12 @@
       "display": "50%（2/4）"
     },
     "DWF Labs（@DWFLabs）": {
-      "hits": 0,
+      "hits": 1,
       "misses": 0,
-      "pending": 1,
-      "resolved": 0,
-      "accuracy_pct": null,
-      "display": "待验证（1）"
+      "pending": 0,
+      "resolved": 1,
+      "accuracy_pct": 100,
+      "display": "100%（1/1）"
     },
     "Glassnode（@glassnode）": {
       "hits": 0,
@@ -103,6 +111,15 @@
       "target_date": "2026-12-09",
       "outcome": "pending",
       "checked_at": "2026-11-11 20:45",
+      "scored": true,
+      "exclude_reason": ""
+    },
+    {
+      "channel": "Phyrex Ni（@Phyrex_Ni）",
+      "target_price": "BTC $60,000（守住则为底部）",
+      "target_date": "2026-11-25",
+      "outcome": "pending",
+      "checked_at": "2026-11-21 09:30",
       "scored": true,
       "exclude_reason": ""
     },
@@ -173,8 +190,8 @@
       "channel": "DWF Labs（@DWFLabs）",
       "target_price": "BTC $60,000（周线收破$68,000后下看）",
       "target_date": "2026-11-21",
-      "outcome": "pending",
-      "checked_at": "2026-11-14 20:30",
+      "outcome": "hit",
+      "checked_at": "2026-11-21 09:30",
       "scored": true,
       "exclude_reason": ""
     },
