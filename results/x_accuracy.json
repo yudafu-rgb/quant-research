@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21 20:40",
+  "generated_at": "2026-11-22 09:45",
   "price_source": "Binance US 日线（UTC）最高/最低价；窗口为原帖发布后 7 天",
   "rule": "只验带明确价位+方向+短期的预测；复述、提问、模型估值、长期目标不验；同一原帖只计一次；方向不明的预测只当情绪、不计分；窗口 0 天的事后复述不计分；数据/事件型账号分口径、不参与观点排名",
   "summary": {
@@ -31,13 +31,13 @@
       "accuracy_pct": 0,
       "display": "0%（0/1）"
     },
-    "Phyrex Ni（@Phyrex_Ni）": {
-      "hits": 0,
-      "misses": 0,
+    "Ali Martinez（Ali Charts）": {
+      "hits": 1,
+      "misses": 6,
       "pending": 1,
-      "resolved": 0,
-      "accuracy_pct": null,
-      "display": "待验证（1）"
+      "resolved": 7,
+      "accuracy_pct": 14,
+      "display": "14%（1/7）"
     },
     "Daan Crypto（@DaanCrypto）": {
       "hits": 2,
@@ -63,13 +63,13 @@
       "accuracy_pct": 83,
       "display": "83%（5/6）"
     },
-    "Ali Martinez（Ali Charts）": {
-      "hits": 1,
-      "misses": 6,
+    "Phyrex Ni（@Phyrex_Ni）": {
+      "hits": 0,
+      "misses": 0,
       "pending": 1,
-      "resolved": 7,
-      "accuracy_pct": 14,
-      "display": "14%（1/7）"
+      "resolved": 0,
+      "accuracy_pct": null,
+      "display": "待验证（1）"
     },
     "Rekt Capital（@rektcapital）": {
       "hits": 2,
@@ -110,43 +110,7 @@
       "target_price": "BTC $59,517（跌破则牛市论失效）",
       "target_date": "2026-12-09",
       "outcome": "pending",
-      "checked_at": "2026-11-11 20:45",
-      "scored": true,
-      "exclude_reason": ""
-    },
-    {
-      "channel": "Phyrex Ni（@Phyrex_Ni）",
-      "target_price": "BTC $60,000（守住则为底部）",
-      "target_date": "2026-11-25",
-      "outcome": "pending",
-      "checked_at": "2026-11-21 09:30",
-      "scored": true,
-      "exclude_reason": ""
-    },
-    {
-      "channel": "Daan Crypto（@DaanCrypto）",
-      "target_price": "BTC $60,000（FOMC纪要后看空，小时收破$62,000下行打开）",
-      "target_date": "2026-11-25",
-      "outcome": "pending",
-      "checked_at": "2026-11-19 20:30",
-      "scored": true,
-      "exclude_reason": ""
-    },
-    {
-      "channel": "Michaël van de Poppe（@CryptoMichNL）",
-      "target_price": "BTC $70,000（均值回归反弹至$70,000–$72,000）",
-      "target_date": "2026-11-25",
-      "outcome": "pending",
-      "checked_at": "2026-11-19 09:30",
-      "scored": true,
-      "exclude_reason": ""
-    },
-    {
-      "channel": "Ted Pillows（@TedPillows）",
-      "target_price": "ETH $2,000（突破$1,850–$1,860阻力区后快速上看）",
-      "target_date": "2026-11-25",
-      "outcome": "pending",
-      "checked_at": "2026-11-19 09:30",
+      "checked_at": "2026-11-22 09:30",
       "scored": true,
       "exclude_reason": ""
     },
@@ -155,7 +119,7 @@
       "target_price": "BTC $76,996（守住$63,111–$64,373需求区后反弹）",
       "target_date": "2026-11-25",
       "outcome": "pending",
-      "checked_at": "2026-11-18 20:30",
+      "checked_at": "2026-11-22 09:30",
       "scored": true,
       "exclude_reason": ""
     },
@@ -164,7 +128,43 @@
       "target_price": "ETH $1,500（若$1,750失守则再测）",
       "target_date": "2026-11-25",
       "outcome": "pending",
-      "checked_at": "2026-11-18 20:30",
+      "checked_at": "2026-11-22 09:30",
+      "scored": true,
+      "exclude_reason": ""
+    },
+    {
+      "channel": "Michaël van de Poppe（@CryptoMichNL）",
+      "target_price": "BTC $70,000（均值回归反弹至$70,000–$72,000）",
+      "target_date": "2026-11-25",
+      "outcome": "pending",
+      "checked_at": "2026-11-22 09:30",
+      "scored": true,
+      "exclude_reason": ""
+    },
+    {
+      "channel": "Ted Pillows（@TedPillows）",
+      "target_price": "ETH $2,000（突破$1,850–$1,860阻力区后快速上看）",
+      "target_date": "2026-11-25",
+      "outcome": "pending",
+      "checked_at": "2026-11-22 09:30",
+      "scored": true,
+      "exclude_reason": ""
+    },
+    {
+      "channel": "Daan Crypto（@DaanCrypto）",
+      "target_price": "BTC $60,000（FOMC纪要后看空，小时收破$62,000下行打开）",
+      "target_date": "2026-11-25",
+      "outcome": "pending",
+      "checked_at": "2026-11-22 09:30",
+      "scored": true,
+      "exclude_reason": ""
+    },
+    {
+      "channel": "Phyrex Ni（@Phyrex_Ni）",
+      "target_price": "BTC $60,000（守住则为底部）",
+      "target_date": "2026-11-25",
+      "outcome": "pending",
+      "checked_at": "2026-11-22 09:30",
       "scored": true,
       "exclude_reason": ""
     },
@@ -173,7 +173,7 @@
       "target_price": "BTC $59,443（周收破$63,300后下看）",
       "target_date": "2026-11-24",
       "outcome": "pending",
-      "checked_at": "2026-11-18 09:30",
+      "checked_at": "2026-11-22 09:30",
       "scored": true,
       "exclude_reason": ""
     },
@@ -182,7 +182,7 @@
       "target_price": "BTC $70,000（强制卖出后很快回升）",
       "target_date": "2026-11-23",
       "outcome": "pending",
-      "checked_at": "2026-11-16 20:30",
+      "checked_at": "2026-11-22 09:30",
       "scored": true,
       "exclude_reason": ""
     },
