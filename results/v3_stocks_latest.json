@@ -1,63 +1,13 @@
 {
- "regime": "risk-off",
- "data_asof": "2026-11-19 12:30",
- "skipped": false,
- "skip_reason": null,
- "longs": [
-  {
-   "label": "DD",
-   "entry_price": 150.61000061035156,
-   "entry_ts": "2026-11-19T12:30:00",
-   "score": 82.5,
-   "tier": "C",
-   "reason": "小时线分数82.5（第1名）；RSI(14h) 46.5；日线向上；市场状态risk-off；Tier-C（未过：signal,regime）"
-  },
-  {
-   "label": "HRL",
-   "entry_price": 22.985000610351562,
-   "entry_ts": "2026-11-19T12:30:00",
-   "score": 82.1,
-   "tier": "C",
-   "reason": "小时线分数82.1（第2名）；RSI(14h) 57.5；日线向上；市场状态risk-off；Tier-C（未过：signal,regime）"
-  },
-  {
-   "label": "EXR",
-   "entry_price": 155.7050018310547,
-   "entry_ts": "2026-11-19T12:30:00",
-   "score": 78.6,
-   "tier": "C",
-   "reason": "小时线分数78.6（第3名）；RSI(14h) 39.5；日线向上；市场状态risk-off；Tier-C（未过：signal,regime）"
-  }
- ],
- "shorts": [
-  {
-   "label": "APTV",
-   "entry_price": 37.70000076293945,
-   "entry_ts": "2026-11-19T12:30:00",
-   "score": 21.4,
-   "tier": "A",
-   "reason": "小时线分数21.4（第442名）；看跌信号：MACD bearish cross；RSI(14h) 38.8；日线向下；市场状态risk-off"
-  },
-  {
-   "label": "DECK",
-   "entry_price": 80.71499633789062,
-   "entry_ts": "2026-11-19T12:30:00",
-   "score": 27.5,
-   "tier": "A",
-   "reason": "小时线分数27.5（第391名）；看跌信号：MACD bearish cross；RSI(14h) 32.2；日线向下；市场状态risk-off"
-  },
-  {
-   "label": "VRT",
-   "entry_price": 186.3101043701172,
-   "entry_ts": "2026-11-19T12:30:00",
-   "score": 31.6,
-   "tier": "A",
-   "reason": "小时线分数31.6（第348名）；看跌信号：MACD bearish cross；RSI(14h) 36.4；日线向下；市场状态risk-off"
-  }
- ],
+ "regime": "unknown",
+ "data_asof": "n/a",
+ "skipped": true,
+ "skip_reason": "周末（Sunday），美股休市",
+ "longs": [],
+ "shorts": [],
  "kind": "v3-stocks",
- "report": "intraday_run_2026-11-19_1306.json",
- "published_at_toronto": "2026-11-19 13:08",
+ "report": "intraday_run_2026-11-22_1036.json",
+ "published_at_toronto": "2026-11-22 10:38",
  "winrate": {
   "long": {
    "n": 329,
