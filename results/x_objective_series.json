@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-21 约 09:40（多伦多）",
+ "generated_at": "2026-11-21 约 20:40（多伦多）",
  "note": "每期一行结构化客观数据（Deribit/OKX/Hyperliquid 永续、期权看跌看涨比、基差、稳定币、ETF、宏观）。OKX 与 Hyperliquid 列自 2026-11-15 20:30 期起填值（此前为 null）；Bybit 因 CloudFront 地域屏蔽无法直连，暂空；Binance 期货地域限制、Coinglass 需付费 Key。funding 单位：Deribit/OKX 为 8h 百分比，Hyperliquid 为 1h 百分比。注意：第 24–26 期 Deribit 列存的是小数（小 100 倍，如 0.000065 即 0.0065%），自 2026-11-16 09:30 期起改按百分比存，读数时注意口径断点。ETF 日值为最近已公布交易日（11月18日：BTC -$306.5M、ETH -$39.8M）；7日值为 Farside 口径 7 个交易日合计（bitcoinalmanack/whaleroom 交叉印证约-$14.03亿）。稳定币 DoD/WoW 均按 DefiLlama 图表口径：DoD 为当日 00:00 UTC 总量与前一日 00:00 UTC 总量之差，WoW 为与 7 日前 00:00 UTC 总量之差（自 2026-11-19 09:30 期起按此口径；此前 DoD 按与上一期时间序列总量之差计）。",
  "rows": [
   {
@@ -435,6 +435,37 @@
    "ibit_streak_days": null,
    "macro_next": "11月25日美国PCE与Q3 GDP；11月30日MSCI剔除Strategy；12月9日美联储议息、12月10日11月CPI",
    "divergence": "观点分化、定价偏空、衍生品中性"
+  },
+  {
+   "run_toronto": "2026-11-21 20:30",
+   "fetched_at": "11月21日约 20:38（多伦多）",
+   "btc_perp_mark": 59950.71,
+   "btc_perp_oi_usd_deribit": 902809930,
+   "btc_funding_8h_pct_deribit": -2.7e-05,
+   "eth_perp_mark": 1680.56,
+   "eth_perp_oi_usd_deribit": 287295442,
+   "eth_funding_8h_pct_deribit": 0.0,
+   "btc_put_call_oi_deribit": 0.8219,
+   "eth_put_call_oi_deribit": 0.5337,
+   "btc_basis_pct": 0.292,
+   "btc_basis_ann_pct": 3.13,
+   "btc_perp_oi_usd_okx": 1887805992,
+   "btc_funding_8h_pct_okx": -0.0015258,
+   "eth_perp_oi_usd_okx": 1116311638,
+   "eth_funding_8h_pct_okx": -0.001776,
+   "btc_perp_oi_usd_hyperliquid": 2243156100,
+   "btc_funding_1h_pct_hyperliquid": -0.00068,
+   "eth_perp_oi_usd_hyperliquid": 1014047221,
+   "eth_funding_1h_pct_hyperliquid": -0.00015,
+   "stablecoin_total_usd": 283562032226,
+   "stablecoin_dod_usd": -62380260,
+   "stablecoin_wow_usd": -4320104642,
+   "etf_btc_daily_usd": -124500000,
+   "etf_btc_7d_usd": -1250000000,
+   "etf_btc_2w_usd": null,
+   "ibit_streak_days": null,
+   "macro_next": "11月25日美国PCE与Q3 GDP；11月30日MSCI剔除Strategy；12月9日美联储议息、12月10日11月CPI",
+   "divergence": "观点持平、定价偏空、衍生品中性"
   }
  ]
 }
