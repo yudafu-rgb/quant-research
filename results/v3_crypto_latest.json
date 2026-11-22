@@ -1,72 +1,72 @@
 {
  "regime": "risk-off",
- "data_asof": "2026-11-22 05:00",
+ "data_asof": "2026-11-22 09:00",
  "skipped": false,
  "skip_reason": null,
  "longs": [
   {
    "label": "venice-token (trending)",
-   "entry_price": 25.362601087627624,
-   "entry_ts": "2026-11-22T05:00:00",
-   "score": 73.3,
+   "entry_price": 25.26228307234868,
+   "entry_ts": "2026-11-22T09:00:00",
+   "score": 73.9,
    "tier": "C",
-   "reason": "小时线分数73.3（第2名）；RSI(14h) 73.3；日线向上；市场状态risk-off；🔥trending关注度加成+2分；Tier-C（未过：rsi,signal,regime）"
-  },
-  {
-   "label": "pearl-2 (trending)",
-   "entry_price": 2.0173823531242983,
-   "entry_ts": "2026-11-22T05:00:00",
-   "score": 66.4,
-   "tier": "C",
-   "reason": "小时线分数66.4（第4名）；RSI(14h) 60.1；日线向上；市场状态risk-off；🔥trending关注度加成+2分；Tier-C（未过：signal,regime）"
+   "reason": "小时线分数73.9（第2名）；RSI(14h) 67.7；日线向上；市场状态risk-off；🔥trending关注度加成+2分；Tier-C（未过：signal,regime）"
   },
   {
    "label": "LEO (LEO Token)",
-   "entry_price": 9.161655207409197,
-   "entry_ts": "2026-11-22T05:00:00",
-   "score": 64.9,
+   "entry_price": 9.159507704195335,
+   "entry_ts": "2026-11-22T09:00:00",
+   "score": 64.2,
    "tier": "C",
-   "reason": "小时线分数64.9（第5名）；RSI(14h) 56.0；日线向上；市场状态risk-off；板块CEX-token（24h +3.4%）；Tier-C（未过：signal,regime）"
+   "reason": "小时线分数64.2（第6名）；RSI(14h) 55.2；日线向上；市场状态risk-off；板块CEX-token（24h +0.6%）；Tier-C（未过：signal,regime）"
+  },
+  {
+   "label": "cash-cat (trending)",
+   "entry_price": 0.04378239482287317,
+   "entry_ts": "2026-11-22T09:00:00",
+   "score": 67.8,
+   "tier": "C",
+   "reason": "小时线分数67.8（第4名）；RSI(14h) 73.9；日线向下；市场状态risk-off；🔥trending关注度加成+2分；Tier-C（未过：rsi,signal,regime）"
   }
  ],
  "shorts": [
   {
+   "label": "XLM (Stellar)",
+   "entry_price": 0.1279,
+   "entry_ts": "2026-11-22T09:00:00",
+   "score": 36.5,
+   "tier": "A",
+   "reason": "小时线分数36.5（第33名）；看跌信号：MACD bearish cross；RSI(14h) 47.9；日线向下；市场状态risk-off；板块Payments（24h -0.8%）"
+  },
+  {
    "label": "CC (Canton)",
-   "entry_price": 0.07404999649639049,
-   "entry_ts": "2026-11-22T05:00:00",
-   "score": 28.6,
+   "entry_price": 0.07313486384987257,
+   "entry_ts": "2026-11-22T09:00:00",
+   "score": 25.0,
    "tier": "C",
-   "reason": "小时线分数28.6（第41名）；RSI(14h) 44.5；日线向下；市场状态risk-off；Tier-C（未过：signal）"
+   "reason": "小时线分数25.0（第44名）；RSI(14h) 40.0；日线向下；市场状态risk-off；Tier-C（未过：signal）"
   },
   {
-   "label": "HBAR (Hedera)",
-   "entry_price": 0.05156,
-   "entry_ts": "2026-11-22T05:00:00",
-   "score": 28.6,
+   "label": "M (MemeCore)",
+   "entry_price": 0.7549572142672263,
+   "entry_ts": "2026-11-22T09:00:00",
+   "score": 25.7,
    "tier": "C",
-   "reason": "小时线分数28.6（第42名）；RSI(14h) 54.8；日线向下；市场状态risk-off；Tier-C（未过：signal）"
-  },
-  {
-   "label": "ZEC (Zcash)",
-   "entry_price": 794.35,
-   "entry_ts": "2026-11-22T05:00:00",
-   "score": 30.6,
-   "tier": "C",
-   "reason": "小时线分数30.6（第40名）；RSI(14h) 57.4；日线向下；市场状态risk-off；板块Privacy（24h +6.5%）；Tier-C（未过：signal）"
+   "reason": "小时线分数25.7（第43名）；RSI(14h) 40.9；日线向下；市场状态risk-off；Tier-C（未过：signal）"
   }
  ],
  "kind": "v3-crypto",
- "report": "intraday_run_2026-11-22_0617.json",
- "published_at_toronto": "2026-11-22 06:21",
+ "report": "intraday_run_2026-11-22_1016.json",
+ "published_at_toronto": "2026-11-22 10:21",
  "winrate": {
   "long": {
-   "n": 857,
-   "win_rate": 39.6,
-   "avg_ret": -0.86,
+   "n": 860,
+   "win_rate": 39.4,
+   "avg_ret": -0.9,
    "insufficient": false
   },
   "short": {
-   "n": 890,
+   "n": 892,
    "win_rate": 58.0,
    "avg_ret": 0.7,
    "insufficient": false
