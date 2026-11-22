@@ -1,7 +1,7 @@
 {
  "kind": "v2",
- "report": "run_2026-11-22_1347.json",
- "published_at_toronto": "2026-11-22 08:52",
+ "report": "run_2026-11-22_2146.json",
+ "published_at_toronto": "2026-11-22 16:53",
  "universes": {
   "crypto": {
    "regime": "risk-off",
@@ -11,53 +11,53 @@
    "longs": [
     {
      "label": "derive (trending)",
-     "entry_price": 0.36634763003534127,
+     "entry_price": 0.37814659001441836,
      "entry_ts": "2026-11-22",
-     "score": 80.6,
+     "score": 82.2,
      "tier": "B",
-     "reason": "分数80.6（第3名）；看涨信号：MACD bullish cross、Breakout on volume；RSI 58.6；周线向上；市场状态risk-off；Tier-B（未过：regime）"
+     "reason": "分数82.2（第1名）；看涨信号：MACD bullish cross、Breakout on volume；RSI 59.9；周线向上；市场状态risk-off；Tier-B（未过：regime）"
     },
     {
-     "label": "evaa-protocol (trending)",
-     "entry_price": 4.024719500630464,
+     "label": "pearl-2 (trending)",
+     "entry_price": 1.995127189830362,
      "entry_ts": "2026-11-22",
-     "score": 83.1,
+     "score": 76.6,
      "tier": "C",
-     "reason": "分数83.1（第1名）；RSI 63.7；周线向上；市场状态risk-off；Tier-C（未过：signal,regime）"
+     "reason": "分数76.6（第2名）；RSI 56.8；周线向下；市场状态risk-off；Tier-C（未过：signal,regime）"
     },
     {
-     "label": "venice-token (trending)",
-     "entry_price": 25.185775431667295,
+     "label": "nesa (trending)",
+     "entry_price": 0.1975066820763972,
      "entry_ts": "2026-11-22",
-     "score": 79.2,
+     "score": 76.5,
      "tier": "C",
-     "reason": "分数79.2（第4名）；RSI 60.9；周线向上；市场状态risk-off；Tier-C（未过：signal,regime）"
+     "reason": "分数76.5（第3名）；RSI 54.0；周线向下；市场状态risk-off；Tier-C（未过：signal,regime）"
     }
    ],
    "shorts": [
     {
      "label": "XRP (XRP)",
-     "entry_price": 0.9208083166314462,
+     "entry_price": 0.9263326466860179,
      "entry_ts": "2026-11-22",
-     "score": 19.8,
+     "score": 20.2,
      "tier": "C",
-     "reason": "分数19.8（第42名）；看跌信号：Death cross；RSI 27.7；周线向下；市场状态risk-off；Tier-C（未过：rsi）"
-    },
-    {
-     "label": "DOGE (Dogecoin)",
-     "entry_price": 0.054936745973691595,
-     "entry_ts": "2026-11-22",
-     "score": 16.7,
-     "tier": "C",
-     "reason": "分数16.7（第44名）；RSI 25.0；周线向下；市场状态risk-off；Tier-C（未过：rsi,signal）"
+     "reason": "分数20.2（第39名）；看跌信号：Death cross；RSI 28.7；周线向下；市场状态risk-off；Tier-C（未过：rsi）"
     },
     {
      "label": "LTC (Litecoin)",
-     "entry_price": 39.80663175464001,
+     "entry_price": 40.10263307206984,
      "entry_ts": "2026-11-22",
-     "score": 24.9,
+     "score": 22.7,
      "tier": "C",
-     "reason": "分数24.9（第33名）；看跌信号：Breakdown；RSI 22.9；周线向下；市场状态risk-off；Tier-C（未过：rsi）"
+     "reason": "分数22.7（第33名）；看跌信号：Breakdown；RSI 23.3；周线向下；市场状态risk-off；Tier-C（未过：rsi）"
+    },
+    {
+     "label": "DOGE (Dogecoin)",
+     "entry_price": 0.055253037277398026,
+     "entry_ts": "2026-11-22",
+     "score": 16.8,
+     "tier": "C",
+     "reason": "分数16.8（第42名）；RSI 26.0；周线向下；市场状态risk-off；Tier-C（未过：rsi,signal）"
     }
    ]
   },
