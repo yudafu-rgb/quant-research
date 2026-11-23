@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-11-22 20:49",
+  "generated_at": "2026-11-23 09:47",
   "price_source": "Binance US 日线（UTC）最高/最低价；窗口为原帖发布后 7 天",
   "rule": "只验带明确价位+方向+短期的预测；复述、提问、模型估值、长期目标不验；同一原帖只计一次；方向不明的预测只当情绪、不计分；窗口 0 天的事后复述不计分；数据/事件型账号分口径、不参与观点排名",
   "summary": {
     "claims": 38,
     "hits": 12,
-    "misses": 17,
-    "pending": 9
+    "misses": 18,
+    "pending": 8
   },
   "summary_view": {
     "claims": 34,
     "hits": 11,
-    "misses": 14,
-    "pending": 9
+    "misses": 15,
+    "pending": 8
   },
   "summary_data": {
     "claims": 4,
@@ -41,11 +41,11 @@
     },
     "Daan Crypto（@DaanCrypto）": {
       "hits": 2,
-      "misses": 0,
-      "pending": 3,
-      "resolved": 2,
-      "accuracy_pct": 100,
-      "display": "100%（2/2）"
+      "misses": 1,
+      "pending": 2,
+      "resolved": 3,
+      "accuracy_pct": 67,
+      "display": "67%（2/3）"
     },
     "Michaël van de Poppe（@CryptoMichNL）": {
       "hits": 1,
@@ -181,8 +181,8 @@
       "channel": "Daan Crypto（@DaanCrypto）",
       "target_price": "BTC $70,000（强制卖出后很快回升）",
       "target_date": "2026-11-23",
-      "outcome": "pending",
-      "checked_at": "2026-11-22 09:30",
+      "outcome": "missed",
+      "checked_at": "2026-11-23 09:30",
       "scored": true,
       "exclude_reason": ""
     },
