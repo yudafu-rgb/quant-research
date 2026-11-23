@@ -1,74 +1,74 @@
 {
  "regime": "risk-off",
- "data_asof": "2026-11-22 21:00",
+ "data_asof": "2026-11-23 01:00",
  "skipped": false,
  "skip_reason": null,
  "longs": [
   {
-   "label": "LEO (LEO Token)",
-   "entry_price": 9.229668572729764,
-   "entry_ts": "2026-11-22T21:00:00",
-   "score": 63.5,
-   "tier": "B",
-   "reason": "小时线分数63.5（第5名）；看涨信号：MACD bullish cross；RSI(14h) 61.2；日线向上；市场状态risk-off；板块CEX-token（24h +0.7%）；Tier-B（未过：regime）"
-  },
-  {
-   "label": "elsa (trending)",
-   "entry_price": 0.08793821080855092,
-   "entry_ts": "2026-11-22T21:00:00",
-   "score": 73.4,
-   "tier": "C",
-   "reason": "小时线分数73.4（第1名）；RSI(14h) 63.4；日线向上；市场状态risk-off；🔥trending关注度加成+2分；Tier-C（未过：signal,regime）"
-  },
-  {
    "label": "pearl-2 (trending)",
-   "entry_price": 2.0659873260787402,
-   "entry_ts": "2026-11-22T21:00:00",
-   "score": 68.0,
+   "entry_price": 2.0844770005172943,
+   "entry_ts": "2026-11-23T01:00:00",
+   "score": 70.3,
    "tier": "C",
-   "reason": "小时线分数68.0（第4名）；RSI(14h) 60.5；日线向上；市场状态risk-off；🔥trending关注度加成+2分；Tier-C（未过：signal,regime）"
+   "reason": "小时线分数70.3（第2名）；RSI(14h) 60.8；日线向上；市场状态risk-off；🔥trending关注度加成+2分；Tier-C（未过：signal,regime）"
+  },
+  {
+   "label": "sanctum-2 (trending)",
+   "entry_price": 0.05817128519930439,
+   "entry_ts": "2026-11-23T01:00:00",
+   "score": 68.2,
+   "tier": "C",
+   "reason": "小时线分数68.2（第3名）；RSI(14h) 63.5；日线向上；市场状态risk-off；🔥trending关注度加成+2分；Tier-C（未过：signal,regime）"
+  },
+  {
+   "label": "backpack (trending)",
+   "entry_price": 0.8708616641751509,
+   "entry_ts": "2026-11-23T01:00:00",
+   "score": 65.0,
+   "tier": "C",
+   "reason": "小时线分数65.0（第4名）；RSI(14h) 60.3；日线向下；市场状态risk-off；🔥trending关注度加成+2分；Tier-C（未过：signal,regime）"
   }
  ],
  "shorts": [
   {
-   "label": "LTC (Litecoin)",
-   "entry_price": 39.74,
-   "entry_ts": "2026-11-22T21:00:00",
-   "score": 29.4,
+   "label": "LEO (LEO Token)",
+   "entry_price": 9.042184988756237,
+   "entry_ts": "2026-11-23T01:00:00",
+   "score": 36.6,
    "tier": "A",
-   "reason": "小时线分数29.4（第35名）；看跌信号：MACD bearish cross；RSI(14h) 47.0；日线向下；市场状态risk-off；板块L1（24h +0.8%）"
+   "reason": "小时线分数36.6（第36名）；看跌信号：Breakdown；RSI(14h) 37.8；日线向上；市场状态risk-off；板块CEX-token（24h +2.2%）"
   },
   {
-   "label": "SHIB (Shiba Inu)",
-   "entry_price": 3.55e-06,
-   "entry_ts": "2026-11-22T21:00:00",
-   "score": 34.2,
-   "tier": "A",
-   "reason": "小时线分数34.2（第34名）；看跌信号：Breakdown；RSI(14h) 37.5；日线向下；市场状态risk-off；板块Meme（24h -0.7%）"
+   "label": "HBAR (Hedera)",
+   "entry_price": 0.05214,
+   "entry_ts": "2026-11-23T01:00:00",
+   "score": 26.5,
+   "tier": "C",
+   "reason": "小时线分数26.5（第42名）；RSI(14h) 60.9；日线向下；市场状态risk-off；Tier-C（未过：signal）"
   },
   {
-   "label": "XLM (Stellar)",
-   "entry_price": 0.1256,
-   "entry_ts": "2026-11-22T21:00:00",
-   "score": 35.6,
-   "tier": "A",
-   "reason": "小时线分数35.6（第31名）；看跌信号：Breakdown；RSI(14h) 36.2；日线向下；市场状态risk-off；板块Payments（24h -1.0%）"
+   "label": "SUI (Sui)",
+   "entry_price": 0.6641,
+   "entry_ts": "2026-11-23T01:00:00",
+   "score": 32.5,
+   "tier": "C",
+   "reason": "小时线分数32.5（第41名）；RSI(14h) 59.9；日线向下；市场状态risk-off；板块L1（24h +3.3%）；Tier-C（未过：signal）"
   }
  ],
  "kind": "v3-crypto",
- "report": "intraday_run_2026-11-22_2216.json",
- "published_at_toronto": "2026-11-22 22:20",
+ "report": "intraday_run_2026-11-23_0216.json",
+ "published_at_toronto": "2026-11-23 02:20",
  "winrate": {
   "long": {
-   "n": 860,
-   "win_rate": 39.4,
-   "avg_ret": -0.9,
+   "n": 863,
+   "win_rate": 39.5,
+   "avg_ret": -0.82,
    "insufficient": false
   },
   "short": {
-   "n": 898,
-   "win_rate": 58.2,
-   "avg_ret": 0.72,
+   "n": 901,
+   "win_rate": 58.0,
+   "avg_ret": 0.71,
    "insufficient": false
   }
  }
