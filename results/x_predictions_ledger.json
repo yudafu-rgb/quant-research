@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-22 20:49（多伦多）",
+ "generated_at": "2026-11-23 09:47（多伦多）",
  "price_source": "Binance US 日线（UTC）最高/最低价判定；price_at_post 为发帖当日 Binance US 日线收盘价，post_day_low/high 为当日盘中低/高（发帖时刻未核实，小时价无法取）",
  "rule": "只验带明确价位+方向+短期的预测；复述、提问、模型估值、长期目标、无价位观点（如“底部已现”）不进台账，只算情绪；同一原帖只计一次；窗口内触及目标价即命中，窗口到期未触及判未命中；支撑位守住算命中、跌破算未命中",
  "method": "期望命中率：发帖前 30 日日收益波动率（sigma），无漂移随机游走、反射原理：触及型期望 = 2(1-Φ(d/(sigma*sqrt(N))))，d 为目标距离%、N 为窗口天数；守住型期望 = 1 - 触及概率。超额命中 = 实际命中率 - 期望命中率。方向不明的预测只当情绪、不计分；触及型与守住型分开统计；数据/事件型账号分口径、不参与观点排名。期望模型为无漂移随机游走；单边行情中，顺势方向的预测期望会被低估（超额被高估），须等涨跌切换后再看超额。标准误：已判定样本较少时标准误很大（n=19、命中率约 42% 时约 ±11pp），超额在 1 个标准误之内时不能解读为比随机游走差，只能说没有证据显示优于随机；守住型期望值单独计算，与触及型不可直接比较。",
@@ -7,31 +7,31 @@
  "summary": {
   "claims": 38,
   "hits": 12,
-  "misses": 17,
-  "pending": 9,
-  "resolved": 29,
-  "observed_hit_rate_pct": 41.4,
-  "expected_hit_rate_pct": 43.4,
-  "excess_pp": -2.0
+  "misses": 18,
+  "pending": 8,
+  "resolved": 30,
+  "observed_hit_rate_pct": 40.0,
+  "expected_hit_rate_pct": 42.6,
+  "excess_pp": -2.6
  },
  "summary_view": {
   "claims": 34,
   "hits": 11,
-  "misses": 14,
-  "pending": 9,
-  "resolved": 25,
-  "observed_hit_rate_pct": 44.0,
-  "expected_hit_rate_pct": 41.8,
-  "excess_pp": 2.2,
+  "misses": 15,
+  "pending": 8,
+  "resolved": 26,
+  "observed_hit_rate_pct": 42.3,
+  "expected_hit_rate_pct": 40.9,
+  "excess_pp": 1.4,
   "touch": {
    "claims": 29,
    "hits": 11,
-   "misses": 10,
-   "pending": 8,
-   "resolved": 21,
-   "observed_hit_rate_pct": 52.4,
-   "expected_hit_rate_pct": 41.6,
-   "excess_pp": 10.8
+   "misses": 11,
+   "pending": 7,
+   "resolved": 22,
+   "observed_hit_rate_pct": 50.0,
+   "expected_hit_rate_pct": 40.6,
+   "excess_pp": 9.4
   },
   "hold": {
    "claims": 5,
@@ -119,12 +119,12 @@
    "account": "Daan Crypto（@DaanCrypto）",
    "role": "观点型",
    "hits": 2,
-   "misses": 0,
-   "pending": 3,
-   "resolved": 2,
-   "hit_rate_pct": 100.0,
-   "expected_hit_rate_pct": 55.5,
-   "excess_pp": 44.5,
+   "misses": 1,
+   "pending": 2,
+   "resolved": 3,
+   "hit_rate_pct": 66.7,
+   "expected_hit_rate_pct": 43.7,
+   "excess_pp": 23.0,
    "avg_distance_pct": 6.3,
    "avg_window_days": 6.8,
    "touch_claims": 5,
@@ -861,8 +861,8 @@
    "distance_pct": 7.9,
    "window_days": 7,
    "rule": "以Binance US日线最高价触及$70,000为准，触及为hit、未触及为missed；窗口7天至11-23。",
-   "outcome": "pending",
-   "checked_at": "2026-11-22 09:30",
+   "outcome": "missed",
+   "checked_at": "2026-11-23 09:30",
    "source_run": "2026-11-16 20:30",
    "source_type": "新闻转引",
    "notes_short": "Daan Crypto 11-16 X帖（09:17 UTC，RAFA.ai转录；原帖直链未取得）：上周抛售或为爆仓基金强制卖出（抛压集中在Coinbase），若属实或很快回升至$70,000+；确认条件为Coinbase折价收窄、资金费率转负。判定口径：以Binance US日线最高价触及$70,000为准，触及为hit、未触及为missed；窗口7天至11-23。11月16日BTC高$65,7",
@@ -1332,6 +1332,12 @@
    "bull": 1,
    "bear": 1,
    "other": 4
+  },
+  {
+   "run_toronto": "2026-11-23 09:30",
+   "bull": 2,
+   "bear": 1,
+   "other": 3
   }
  ]
 }
