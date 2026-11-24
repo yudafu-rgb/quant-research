@@ -1,7 +1,7 @@
 {
  "kind": "v2",
- "report": "run_2026-11-24_0547.json",
- "published_at_toronto": "2026-11-24 00:52",
+ "report": "run_2026-11-24_1347.json",
+ "published_at_toronto": "2026-11-24 08:52",
  "universes": {
   "crypto": {
    "regime": "risk-off",
@@ -11,53 +11,53 @@
    "longs": [
     {
      "label": "FIGR_HELOC (Figure Heloc)",
-     "entry_price": 1.0417677862417727,
+     "entry_price": 1.04179775054893,
      "entry_ts": "2026-11-24",
-     "score": 64.0,
+     "score": 65.0,
      "tier": "B",
-     "reason": "分数64.0（第6名）；看涨信号：MACD bullish cross；RSI 52.4；周线向上；市场状态risk-off；Tier-B（未过：regime）"
-    },
-    {
-     "label": "sahara-ai (trending)",
-     "entry_price": 0.0062791255300048195,
-     "entry_ts": "2026-11-24",
-     "score": 62.0,
-     "tier": "B",
-     "reason": "分数62.0（第8名）；看涨信号：MACD bullish cross；RSI 51.4；周线向下；市场状态risk-off；Tier-B（未过：regime）"
+     "reason": "分数65.0（第3名）；看涨信号：MACD bullish cross；RSI 52.4；周线向上；市场状态risk-off；Tier-B（未过：regime）"
     },
     {
      "label": "TRX (TRON)",
-     "entry_price": 0.3092616605669808,
+     "entry_price": 0.3077048370218442,
      "entry_ts": "2026-11-24",
-     "score": 60.4,
+     "score": 59.6,
      "tier": "B",
-     "reason": "分数60.4（第9名）；看涨信号：MACD bullish cross；RSI 44.2；周线向下；市场状态risk-off；Tier-B（未过：regime）"
+     "reason": "分数59.6（第7名）；看涨信号：MACD bullish cross；RSI 42.2；周线向下；市场状态risk-off；Tier-B（未过：regime）"
+    },
+    {
+     "label": "ZEC (Zcash)",
+     "entry_price": 728.3937291456766,
+     "entry_ts": "2026-11-24",
+     "score": 39.2,
+     "tier": "B",
+     "reason": "分数39.2（第15名）；看涨信号：RSI oversold；RSI 30.0；周线向上；市场状态risk-off；注意：存在多空信号冲突，已按优先级裁决；Tier-B（未过：regime）"
     }
    ],
    "shorts": [
     {
-     "label": "RAIN (Rain)",
-     "entry_price": 0.003054691363769067,
+     "label": "SHIB (Shiba Inu)",
+     "entry_price": 3.558255154959795e-06,
      "entry_ts": "2026-11-24",
-     "score": 26.7,
-     "tier": "A",
-     "reason": "分数26.7（第35名）；看跌信号：Breakdown；RSI 32.8；周线向下；市场状态risk-off"
-    },
-    {
-     "label": "pudgy-penguins (trending)",
-     "entry_price": 0.004500667834531745,
-     "entry_ts": "2026-11-24",
-     "score": 19.8,
+     "score": 22.4,
      "tier": "C",
-     "reason": "分数19.8（第45名）；RSI 26.9；周线向下；市场状态risk-off；Tier-C（未过：rsi,signal）"
+     "reason": "分数22.4（第38名）；看跌信号：Breakdown；RSI 24.2；周线向下；市场状态risk-off；Tier-C（未过：rsi）"
     },
     {
      "label": "BCH (Bitcoin Cash)",
-     "entry_price": 203.49847701893282,
+     "entry_price": 197.836933510921,
      "entry_ts": "2026-11-24",
-     "score": 36.4,
+     "score": 33.3,
      "tier": "C",
-     "reason": "分数36.4（第22名）；看跌信号：Death cross；RSI 33.1；周线向下；市场状态risk-off；Tier-C（未过：score）"
+     "reason": "分数33.3（第21名）；看跌信号：Death cross；RSI 29.1；周线向下；市场状态risk-off；Tier-C（未过：score,rsi）"
+    },
+    {
+     "label": "XAUT (Tether Gold)",
+     "entry_price": 3605.367148886803,
+     "entry_ts": "2026-11-24",
+     "score": 21.0,
+     "tier": "C",
+     "reason": "分数21.0（第41名）；RSI 31.2；周线向下；市场状态risk-off；Tier-C（未过：signal）"
     }
    ]
   },
