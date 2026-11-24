@@ -1,74 +1,74 @@
 {
  "regime": "risk-off",
- "data_asof": "2026-11-24 09:00",
+ "data_asof": "2026-11-24 13:00",
  "skipped": false,
  "skip_reason": null,
  "longs": [
   {
-   "label": "venice-token (trending)",
-   "entry_price": 25.399885411173273,
-   "entry_ts": "2026-11-24T09:00:00",
-   "score": 84.5,
-   "tier": "C",
-   "reason": "小时线分数84.5（第1名）；RSI(14h) 51.6；日线向上；市场状态risk-off；🔥trending关注度加成+2分；Tier-C（未过：signal,regime）"
-  },
-  {
    "label": "FIGR_HELOC (Figure Heloc)",
-   "entry_price": 1.040486178161029,
-   "entry_ts": "2026-11-24T09:00:00",
-   "score": 73.0,
-   "tier": "C",
-   "reason": "小时线分数73.0（第2名）；RSI(14h) 44.0；日线向上；市场状态risk-off；Tier-C（未过：signal,regime）"
+   "entry_price": 1.0575975819188375,
+   "entry_ts": "2026-11-24T13:00:00",
+   "score": 79.9,
+   "tier": "B",
+   "reason": "小时线分数79.9（第2名）；看涨信号：Breakout on volume；RSI(14h) 62.4；日线向上；市场状态risk-off；Tier-B（未过：regime）"
   },
   {
-   "label": "LEO (LEO Token)",
-   "entry_price": 9.140939018773151,
-   "entry_ts": "2026-11-24T09:00:00",
-   "score": 68.0,
+   "label": "venice-token (trending)",
+   "entry_price": 25.209364752166206,
+   "entry_ts": "2026-11-24T13:00:00",
+   "score": 80.2,
    "tier": "C",
-   "reason": "小时线分数68.0（第3名）；RSI(14h) 45.8；日线向下；市场状态risk-off；板块CEX-token（24h -3.4%）；Tier-C（未过：signal,regime）"
+   "reason": "小时线分数80.2（第1名）；RSI(14h) 50.1；日线向上；市场状态risk-off；🔥trending关注度加成+2分；Tier-C（未过：signal,regime）"
+  },
+  {
+   "label": "TRX (TRON)",
+   "entry_price": 0.3083,
+   "entry_ts": "2026-11-24T13:00:00",
+   "score": 63.3,
+   "tier": "C",
+   "reason": "小时线分数63.3（第3名）；RSI(14h) 48.9；日线向下；市场状态risk-off；板块L1（24h -3.7%）；Tier-C（未过：signal,regime）"
   }
  ],
  "shorts": [
   {
-   "label": "monad (trending)",
-   "entry_price": 0.01209941654623365,
-   "entry_ts": "2026-11-24T09:00:00",
-   "score": 35.2,
-   "tier": "A",
-   "reason": "小时线分数35.2（第27名）；看跌信号：MACD bearish cross；RSI(14h) 45.4；日线向下；市场状态risk-off；🔥trending关注度加成+2分"
+   "label": "ZEC (Zcash)",
+   "entry_price": 721.44,
+   "entry_ts": "2026-11-24T13:00:00",
+   "score": 20.5,
+   "tier": "C",
+   "reason": "小时线分数20.5（第37名）；RSI(14h) 31.3；日线向下；市场状态risk-off；🔥trending关注度加成+2分；板块Privacy（24h -11.6%）；Tier-C（未过：signal）"
   },
   {
-   "label": "CRO (Cronos)",
-   "entry_price": 0.04006429189847419,
-   "entry_ts": "2026-11-24T09:00:00",
-   "score": 32.5,
-   "tier": "A",
-   "reason": "小时线分数32.5（第33名）；看跌信号：Breakdown；RSI(14h) 39.5；日线向下；市场状态risk-off；板块CEX-token（24h -3.4%）"
+   "label": "layerzero (trending)",
+   "entry_price": 1.04765951125131,
+   "entry_ts": "2026-11-24T13:00:00",
+   "score": 22.4,
+   "tier": "C",
+   "reason": "小时线分数22.4（第36名）；RSI(14h) 37.7；日线向下；市场状态risk-off；🔥trending关注度加成+2分；Tier-C（未过：signal）"
   },
   {
-   "label": "pudgy-penguins (trending)",
-   "entry_price": 0.0042522233338502784,
-   "entry_ts": "2026-11-24T09:00:00",
-   "score": 33.3,
-   "tier": "A",
-   "reason": "小时线分数33.3（第30名）；看跌信号：Breakdown；RSI(14h) 33.9；日线向下；市场状态risk-off；🔥trending关注度加成+2分"
+   "label": "aave (trending)",
+   "entry_price": 93.7,
+   "entry_ts": "2026-11-24T13:00:00",
+   "score": 22.8,
+   "tier": "C",
+   "reason": "小时线分数22.8（第34名）；RSI(14h) 38.5；日线向下；市场状态risk-off；🔥trending关注度加成+2分；板块DeFi（24h -4.7%）；Tier-C（未过：signal）"
   }
  ],
  "kind": "v3-crypto",
- "report": "intraday_run_2026-11-24_1016.json",
- "published_at_toronto": "2026-11-24 10:21",
+ "report": "intraday_run_2026-11-24_1416.json",
+ "published_at_toronto": "2026-11-24 14:20",
  "winrate": {
   "long": {
-   "n": 882,
+   "n": 884,
    "win_rate": 39.8,
-   "avg_ret": -0.76,
+   "avg_ret": -0.77,
    "insufficient": false
   },
   "short": {
-   "n": 924,
-   "win_rate": 57.3,
-   "avg_ret": 0.65,
+   "n": 928,
+   "win_rate": 57.4,
+   "avg_ret": 0.67,
    "insufficient": false
   }
  }
