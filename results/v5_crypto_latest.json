@@ -1,5 +1,5 @@
 {
- "mode": "rebalance",
+ "mode": "valuation",
  "last_close_date": "2026-11-23",
  "cash": 96847.63059701493,
  "holdings_value": 0.0,
@@ -255,5 +255,26 @@
  "new_pending_entries": [],
  "new_pending_exits": [],
  "no_new_close": false,
- "pending_entries_detail": []
+ "watchlist_trend_ok": [
+  {
+   "coin": "QNT",
+   "close": 157.84,
+   "mom126": 1.4358024691358025,
+   "ma200": 106.7119,
+   "prior_max": 203.64,
+   "prior_min": 140.0,
+   "breakout": false,
+   "trend_ok": true
+  },
+  {
+   "coin": "NEAR",
+   "close": 2.992,
+   "mom126": 0.5118746841839312,
+   "ma200": 2.763055,
+   "prior_max": 4.015,
+   "prior_min": 2.865,
+   "breakout": false,
+   "trend_ok": true
+  }
+ ]
 }
