@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-11-23 20:47",
+  "generated_at": "2026-11-24 09:53",
   "price_source": "Binance US 日线（UTC）最高/最低价；窗口为原帖发布后 7 天",
   "rule": "只验带明确价位+方向+短期的预测；复述、提问、模型估值、长期目标不验；同一原帖只计一次；方向不明的预测只当情绪、不计分；窗口 0 天的事后复述不计分；数据/事件型账号分口径、不参与观点排名",
   "summary": {
     "claims": 38,
-    "hits": 12,
+    "hits": 13,
     "misses": 18,
-    "pending": 8
+    "pending": 7
   },
   "summary_view": {
     "claims": 34,
-    "hits": 11,
+    "hits": 12,
     "misses": 15,
-    "pending": 8
+    "pending": 7
   },
   "summary_data": {
     "claims": 4,
@@ -72,12 +72,12 @@
       "display": "待验证（1）"
     },
     "Rekt Capital（@rektcapital）": {
-      "hits": 2,
+      "hits": 3,
       "misses": 2,
-      "pending": 1,
-      "resolved": 4,
-      "accuracy_pct": 50,
-      "display": "50%（2/4）"
+      "pending": 0,
+      "resolved": 5,
+      "accuracy_pct": 60,
+      "display": "60%（3/5）"
     },
     "DWF Labs（@DWFLabs）": {
       "hits": 1,
@@ -172,8 +172,8 @@
       "channel": "Rekt Capital（@rektcapital）",
       "target_price": "BTC $59,443（周收破$63,300后下看）",
       "target_date": "2026-11-24",
-      "outcome": "pending",
-      "checked_at": "2026-11-22 09:30",
+      "outcome": "hit",
+      "checked_at": "2026-11-24 09:30",
       "scored": true,
       "exclude_reason": ""
     },
