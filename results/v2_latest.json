@@ -1,63 +1,63 @@
 {
  "kind": "v2",
- "report": "run_2026-11-24_2146.json",
- "published_at_toronto": "2026-11-24 16:52",
+ "report": "run_2026-11-25_0547.json",
+ "published_at_toronto": "2026-11-25 00:52",
  "universes": {
   "crypto": {
    "regime": "risk-off",
-   "data_asof": "2026-11-24 00:00",
+   "data_asof": "2026-11-25 00:00",
    "skipped": false,
    "skip_reason": null,
    "longs": [
     {
+     "label": "big-time (trending)",
+     "entry_price": 0.006647562326201055,
+     "entry_ts": "2026-11-25",
+     "score": 65.3,
+     "tier": "B",
+     "reason": "分数65.3（第4名）；看涨信号：MACD bullish cross、Breakout on volume；RSI 65.6；周线向下；市场状态risk-off；Tier-B（未过：regime）"
+    },
+    {
+     "label": "LINK (Chainlink)",
+     "entry_price": 8.741136998382846,
+     "entry_ts": "2026-11-25",
+     "score": 39.8,
+     "tier": "B",
+     "reason": "分数39.8（第13名）；看涨信号：MACD bullish cross；RSI 34.2；周线向下；市场状态risk-off；Tier-B（未过：regime）"
+    },
+    {
      "label": "FIGR_HELOC (Figure Heloc)",
-     "entry_price": 1.0549382953924442,
-     "entry_ts": "2026-11-24",
-     "score": 65.4,
-     "tier": "B",
-     "reason": "分数65.4（第4名）；看涨信号：MACD bullish cross；RSI 54.8；周线向上；市场状态risk-off；Tier-B（未过：regime）"
-    },
-    {
-     "label": "TRX (TRON)",
-     "entry_price": 0.30805084568304814,
-     "entry_ts": "2026-11-24",
-     "score": 56.8,
-     "tier": "B",
-     "reason": "分数56.8（第9名）；看涨信号：MACD bullish cross；RSI 42.6；周线向下；市场状态risk-off；Tier-B（未过：regime）"
-    },
-    {
-     "label": "ZEC (Zcash)",
-     "entry_price": 728.7424023185089,
-     "entry_ts": "2026-11-24",
-     "score": 38.5,
-     "tier": "B",
-     "reason": "分数38.5（第15名）；看涨信号：RSI oversold；RSI 30.0；周线向上；市场状态risk-off；注意：存在多空信号冲突，已按优先级裁决；Tier-B（未过：regime）"
+     "entry_price": 1.0422982293620675,
+     "entry_ts": "2026-11-25",
+     "score": 80.6,
+     "tier": "C",
+     "reason": "分数80.6（第1名）；RSI 52.4；周线向上；市场状态risk-off；Tier-C（未过：signal,regime）"
     }
    ],
    "shorts": [
     {
      "label": "GRAM (Gram (prev. Toncoin))",
-     "entry_price": 0.9412223516863312,
-     "entry_ts": "2026-11-24",
+     "entry_price": 0.9220118102384982,
+     "entry_ts": "2026-11-25",
      "score": 24.4,
      "tier": "A",
-     "reason": "分数24.4（第34名）；看跌信号：Breakdown；RSI 32.1；周线向下；市场状态risk-off"
+     "reason": "分数24.4（第33名）；看跌信号：Breakdown；RSI 31.4；周线向下；市场状态risk-off"
     },
     {
-     "label": "RAIN (Rain)",
-     "entry_price": 0.002862383432472815,
-     "entry_ts": "2026-11-24",
-     "score": 24.7,
-     "tier": "A",
-     "reason": "分数24.7（第33名）；看跌信号：Breakdown；RSI 31.9；周线向下；市场状态risk-off"
-    },
-    {
-     "label": "SHIB (Shiba Inu)",
-     "entry_price": 3.5357313342940096e-06,
-     "entry_ts": "2026-11-24",
-     "score": 18.9,
+     "label": "pudgy-penguins (trending)",
+     "entry_price": 0.004209834913236756,
+     "entry_ts": "2026-11-25",
+     "score": 18.2,
      "tier": "C",
-     "reason": "分数18.9（第42名）；看跌信号：Breakdown；RSI 23.8；周线向下；市场状态risk-off；Tier-C（未过：rsi）"
+     "reason": "分数18.2（第43名）；看跌信号：Breakdown；RSI 22.9；周线向下；市场状态risk-off；Tier-C（未过：rsi）"
+    },
+    {
+     "label": "PAXG (PAX Gold)",
+     "entry_price": 3524.0912176683405,
+     "entry_ts": "2026-11-25",
+     "score": 19.2,
+     "tier": "C",
+     "reason": "分数19.2（第41名）；看跌信号：Breakdown；RSI 28.2；周线向下；市场状态risk-off；Tier-C（未过：rsi）"
     }
    ]
   },
@@ -79,17 +79,17 @@
      "label": "A",
      "entry_price": 183.52000427246094,
      "entry_ts": "2026-11-24",
-     "score": 79.3,
+     "score": 79.8,
      "tier": "B",
-     "reason": "分数79.3（第2名）；看涨信号：MACD bullish cross；RSI 60.5；周线向上；市场状态risk-off；Tier-B（未过：regime）"
+     "reason": "分数79.8（第2名）；看涨信号：MACD bullish cross；RSI 60.5；周线向上；市场状态risk-off；Tier-B（未过：regime）"
     },
     {
      "label": "DIS",
      "entry_price": 122.51000213623047,
      "entry_ts": "2026-11-24",
-     "score": 76.3,
+     "score": 77.2,
      "tier": "B",
-     "reason": "分数76.3（第7名）；看涨信号：MACD bullish cross；RSI 64.5；周线向上；市场状态risk-off；Tier-B（未过：regime）"
+     "reason": "分数77.2（第6名）；看涨信号：MACD bullish cross；RSI 64.5；周线向上；市场状态risk-off；Tier-B（未过：regime）"
     }
    ],
    "shorts": [
@@ -97,9 +97,9 @@
      "label": "LITE",
      "entry_price": 487.1199951171875,
      "entry_ts": "2026-11-24",
-     "score": 16.2,
+     "score": 16.3,
      "tier": "A",
-     "reason": "分数16.2（第436名）；看跌信号：Death cross；RSI 35.9；周线向下；市场状态risk-off"
+     "reason": "分数16.3（第437名）；看跌信号：Death cross；RSI 35.9；周线向下；市场状态risk-off"
     },
     {
      "label": "SYF",
@@ -107,7 +107,7 @@
      "entry_ts": "2026-11-24",
      "score": 20.3,
      "tier": "A",
-     "reason": "分数20.3（第410名）；看跌信号：Death cross；RSI 30.4；周线向下；市场状态risk-off"
+     "reason": "分数20.3（第413名）；看跌信号：Death cross；RSI 30.4；周线向下；市场状态risk-off"
     },
     {
      "label": "CIEN",
@@ -115,22 +115,22 @@
      "entry_ts": "2026-11-24",
      "score": 20.4,
      "tier": "A",
-     "reason": "分数20.4（第408名）；看跌信号：MACD bearish cross；RSI 38.9；周线向下；市场状态risk-off"
+     "reason": "分数20.4（第410名）；看跌信号：MACD bearish cross；RSI 38.9；周线向下；市场状态risk-off"
     }
    ]
   }
  },
  "winrate": {
   "crypto_long": {
-   "n": 398,
-   "win_rate": 22.9,
-   "avg_ret": -8.01,
+   "n": 407,
+   "win_rate": 23.1,
+   "avg_ret": -7.9,
    "insufficient": false
   },
   "crypto_short": {
-   "n": 422,
-   "win_rate": 82.9,
-   "avg_ret": 6.2,
+   "n": 432,
+   "win_rate": 83.3,
+   "avg_ret": 6.24,
    "insufficient": false
   },
   "stocks_long": {
