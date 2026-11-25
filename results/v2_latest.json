@@ -1,7 +1,7 @@
 {
  "kind": "v2",
- "report": "run_2026-11-25_1347.json",
- "published_at_toronto": "2026-11-25 08:52",
+ "report": "run_2026-11-25_2146.json",
+ "published_at_toronto": "2026-11-25 16:52",
  "universes": {
   "crypto": {
    "regime": "risk-off",
@@ -10,112 +10,112 @@
    "skip_reason": null,
    "longs": [
     {
-     "label": "big-time (trending)",
-     "entry_price": 0.007132156220375937,
+     "label": "NEAR (NEAR Protocol)",
+     "entry_price": 3.030612724208285,
      "entry_ts": "2026-11-25",
-     "score": 68.7,
+     "score": 61.9,
      "tier": "B",
-     "reason": "分数68.7（第6名）；看涨信号：MACD bullish cross、Breakout on volume；RSI 68.8；周线向下；市场状态risk-off；Tier-B（未过：regime）"
+     "reason": "分数61.9（第6名）；看涨信号：MACD bullish cross；RSI 37.5；周线向上；市场状态risk-off；Tier-B（未过：regime）"
     },
     {
-     "label": "FIGR_HELOC (Figure Heloc)",
-     "entry_price": 1.0422603601965454,
+     "label": "LINK (Chainlink)",
+     "entry_price": 9.056701473092238,
      "entry_ts": "2026-11-25",
-     "score": 81.1,
-     "tier": "C",
-     "reason": "分数81.1（第2名）；RSI 52.4；周线向上；市场状态risk-off；Tier-C（未过：signal,regime）"
+     "score": 44.0,
+     "tier": "B",
+     "reason": "分数44.0（第12名）；看涨信号：MACD bullish cross；RSI 37.5；周线向下；市场状态risk-off；Tier-B（未过：regime）"
     },
     {
-     "label": "pearl-2 (trending)",
-     "entry_price": 1.9063202218950104,
+     "label": "venice-token (trending)",
+     "entry_price": 28.90966918428437,
      "entry_ts": "2026-11-25",
-     "score": 80.4,
+     "score": 82.8,
      "tier": "C",
-     "reason": "分数80.4（第3名）；RSI 52.4；周线向下；市场状态risk-off；Tier-C（未过：signal,regime）"
+     "reason": "分数82.8（第1名）；RSI 65.8；周线向上；市场状态risk-off；Tier-C（未过：signal,regime）"
     }
    ],
    "shorts": [
     {
-     "label": "GRAM (Gram (prev. Toncoin))",
-     "entry_price": 0.9125182232246322,
+     "label": "RAIN (Rain)",
+     "entry_price": 0.002742008322943247,
      "entry_ts": "2026-11-25",
-     "score": 25.5,
+     "score": 27.0,
      "tier": "A",
-     "reason": "分数25.5（第32名）；看跌信号：Breakdown；RSI 30.8；周线向下；市场状态risk-off"
+     "reason": "分数27.0（第33名）；看跌信号：Breakdown；RSI 31.2；周线向下；市场状态risk-off"
     },
     {
-     "label": "TAO (Bittensor)",
-     "entry_price": 171.82595140445164,
+     "label": "GRAM (Gram (prev. Toncoin))",
+     "entry_price": 0.9515916418492771,
      "entry_ts": "2026-11-25",
-     "score": 32.0,
-     "tier": "C",
-     "reason": "分数32.0（第20名）；看跌信号：MACD bearish cross、Breakdown；RSI 30.5；周线向下；市场状态risk-off；Tier-C（未过：score）"
+     "score": 27.9,
+     "tier": "A",
+     "reason": "分数27.9（第31名）；看跌信号：Breakdown；RSI 33.5；周线向下；市场状态risk-off"
     },
     {
-     "label": "BTC (Bitcoin)",
-     "entry_price": 58257.022734618324,
+     "label": "monad (trending)",
+     "entry_price": 0.011049486979352218,
      "entry_ts": "2026-11-25",
-     "score": 17.7,
+     "score": 23.1,
      "tier": "C",
-     "reason": "分数17.7（第45名）；看跌信号：Breakdown；RSI 23.0；周线向下；市场状态risk-off；Tier-C（未过：rsi）"
+     "reason": "分数23.1（第40名）；看跌信号：Breakdown；RSI 22.4；周线向下；市场状态risk-off；Tier-C（未过：rsi）"
     }
    ]
   },
   "stocks": {
    "regime": "risk-off",
-   "data_asof": "2026-11-24 00:00",
+   "data_asof": "2026-11-25 00:00",
    "skipped": false,
    "skip_reason": null,
    "longs": [
     {
-     "label": "DLTR",
-     "entry_price": 154.64999389648438,
-     "entry_ts": "2026-11-24",
-     "score": 79.3,
+     "label": "HPQ",
+     "entry_price": 31.149999618530273,
+     "entry_ts": "2026-11-25",
+     "score": 73.7,
      "tier": "B",
-     "reason": "分数79.3（第3名）；看涨信号：MACD bullish cross、Breakout on volume；RSI 68.5；周线向上；市场状态risk-off；Tier-B（未过：regime）"
+     "reason": "分数73.7（第23名）；看涨信号：MACD bullish cross；RSI 57.5；周线向上；市场状态risk-off；Tier-B（未过：regime）"
     },
     {
-     "label": "A",
-     "entry_price": 183.52000427246094,
-     "entry_ts": "2026-11-24",
-     "score": 79.8,
+     "label": "GILD",
+     "entry_price": 176.74000549316406,
+     "entry_ts": "2026-11-25",
+     "score": 73.3,
      "tier": "B",
-     "reason": "分数79.8（第2名）；看涨信号：MACD bullish cross；RSI 60.5；周线向上；市场状态risk-off；Tier-B（未过：regime）"
+     "reason": "分数73.3（第26名）；看涨信号：MACD bullish cross；RSI 65.8；周线向上；市场状态risk-off；Tier-B（未过：regime）"
     },
     {
-     "label": "DIS",
-     "entry_price": 122.51000213623047,
-     "entry_ts": "2026-11-24",
-     "score": 77.2,
+     "label": "VRSN",
+     "entry_price": 319.4700012207031,
+     "entry_ts": "2026-11-25",
+     "score": 72.8,
      "tier": "B",
-     "reason": "分数77.2（第6名）；看涨信号：MACD bullish cross；RSI 64.5；周线向上；市场状态risk-off；Tier-B（未过：regime）"
+     "reason": "分数72.8（第32名）；看涨信号：MACD bullish cross；RSI 64.8；周线向上；市场状态risk-off；Tier-B（未过：regime）"
     }
    ],
    "shorts": [
     {
-     "label": "LITE",
-     "entry_price": 487.1199951171875,
-     "entry_ts": "2026-11-24",
-     "score": 16.3,
+     "label": "KEYS",
+     "entry_price": 267.69000244140625,
+     "entry_ts": "2026-11-25",
+     "score": 19.4,
      "tier": "A",
-     "reason": "分数16.3（第437名）；看跌信号：Death cross；RSI 35.9；周线向下；市场状态risk-off"
+     "reason": "分数19.4（第419名）；看跌信号：MACD bearish cross；RSI 38.9；周线向下；市场状态risk-off"
     },
     {
-     "label": "SYF",
-     "entry_price": 67.91000366210938,
-     "entry_ts": "2026-11-24",
-     "score": 20.3,
+     "label": "COF",
+     "entry_price": 182.52000427246094,
+     "entry_ts": "2026-11-25",
+     "score": 20.5,
      "tier": "A",
-     "reason": "分数20.3（第413名）；看跌信号：Death cross；RSI 30.4；周线向下；市场状态risk-off"
+     "reason": "分数20.5（第409名）；看跌信号：Death cross；RSI 33.9；周线向下；市场状态risk-off"
     },
     {
-     "label": "CIEN",
-     "entry_price": 239.27000427246094,
-     "entry_ts": "2026-11-24",
-     "score": 20.4,
+     "label": "LRCX",
+     "entry_price": 185.00999450683594,
+     "entry_ts": "2026-11-25",
+     "score": 21.8,
      "tier": "A",
-     "reason": "分数20.4（第410名）；看跌信号：MACD bearish cross；RSI 38.9；周线向下；市场状态risk-off"
+     "reason": "分数21.8（第402名）；看跌信号：MACD bearish cross；RSI 35.9；周线向下；市场状态risk-off"
     }
    ]
   }
@@ -134,15 +134,15 @@
    "insufficient": false
   },
   "stocks_long": {
-   "n": 124,
-   "win_rate": 50.0,
-   "avg_ret": -0.28,
+   "n": 127,
+   "win_rate": 50.4,
+   "avg_ret": -0.22,
    "insufficient": false
   },
   "stocks_short": {
-   "n": 124,
-   "win_rate": 46.8,
-   "avg_ret": -0.48,
+   "n": 127,
+   "win_rate": 47.2,
+   "avg_ret": -0.43,
    "insufficient": false
   }
  }
