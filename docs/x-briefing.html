@@ -107,6 +107,16 @@ button:hover{border-color:var(--accent);color:var(--accent)}
 details.bg-merge{margin:0 0 14px}
 .bg-item{border-top:1px solid var(--line-soft);padding:10px 0}
 .bg-item:first-of-type{border-top:0}
+/* 顶部跳转 */
+.topnav{font-size:14.5px;color:var(--muted);margin:10px 0 0}
+/* 首屏一句话结论 */
+.verdict{border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:12px;background:#fff;padding:12px 16px;margin:14px 0;font-size:17px;line-height:1.65}
+.verdict .badge{font-size:13px}
+/* 历史简报：一行一期，点开看全文 */
+.hist-row{border-bottom:1px solid var(--line-soft);padding:10px 0}
+.hist-row summary{cursor:pointer;list-style:none}
+.hist-row summary::-webkit-details-marker{display:none}
+.hist-date{font-family:var(--font-num);font-size:14px;color:var(--muted);margin-right:10px;white-space:nowrap}
 @media(max-width:720px){
   body{padding:24px 16px 40px;font-size:15.5px}
   h1{font-size:22px}
@@ -121,10 +131,11 @@ details.bg-merge{margin:0 0 14px}
 </head>
 <body>
 <h1>X BTC/ETH观点简报 · 网页版</h1>
+<nav class="topnav"><a href="#latest">最新一期</a> · <a href="#ledger">预测台账</a> · <a href="#history">历史</a> · <a href="#accounts">账号名单</a></nav>
 <details class="acc-details" id="about"><summary>说明（点击展开）</summary>
 <p class="note">只读网页版：聊天推送仍由 Muse 定时任务在每天多伦多时间 9:30 和 20:30 运行，本页只展示简报内容，不交易、不下单。<br>
 数据来源：<code>results/x_briefing_history.jsonl</code>（Muse 每次推送后上传）。本页打开时从仓库实时读取，刷新页面即更新。<br>
-首屏顺序：更新时间 → 价格卡 → 价位梯子 → 接下来等什么确认 → 变了什么 → 客观数据小表；还没核实的消息、市场摘要与审计日志默认折叠，点开再看；账号改为卡片（徽章＋一句话＋价位＋窗口），默认只显示短预览，点「展开全文」看完整观点，可用筛选只看新增、补录或背景，本期无新帖的背景账号合并成一行；预测市场改为小表（前值 → 现值）；预测台账默认折叠，首屏只留一行摘要。<br>
+首屏只放一句话结论、两张价格卡和一个价位梯子；还没核实的消息、市场摘要与审计日志默认折叠，点开再看；账号改为卡片（徽章＋一句话＋价位＋窗口），默认只显示短预览，点「展开全文」看完整观点，可用筛选只看新增、补录或背景，本期无新帖的背景账号合并成一行；预测市场改为小表（前值 → 现值）；预测台账默认折叠，首屏只留一行摘要。<br>
 以下均为 X 帖子观点整理（公开搜索和新闻引用的 X 帖子，X 账号不直连，不声称为 X 官方趋势榜），仅供资讯参考，不构成买卖建议。来源分「原帖」与「新闻转引」：目前几乎全部为新闻转引，原帖链接缺失是本简报可信度的最大短板，转引内容已降权处理。<br>
 账号分七类：观点型（计入多空统计与预测台账）、事件型（交易所/做市商/公司公告，只当事件源）、数据型（链上与数据商，不当价位来源）、媒体型、宏观/技术背景、情绪型（只当散户情绪温度计）、背景（已降权）。多空统计只统计观点型账号。<br>
 历史预测命中只写可核实到日期和价位的记录，无法核实的写“暂无”。预测台账（见下方）按账号、发帖日、标的、方向、目标价、发帖时价格、目标距离%、窗口天数、规则、结果逐笔记录；命中率须结合目标距离%与窗口天数一起看，样本 n&lt;5 不排名。<br>
@@ -143,7 +154,7 @@ details.bg-merge{margin:0 0 14px}
 <h2>历史简报（最近 12 期）</h2>
 <div id="history"></div>
 
-<h2>追踪账号名单（观点型 8 个、事件型 3 个、数据型 6 个、媒体型 1 个、宏观/技术背景 2 个、情绪型 3 个、背景 1 个；@BtcpayServer 已删）</h2>
+<h2 id="accounts">追踪账号名单（观点型 8 个、事件型 3 个、数据型 6 个、媒体型 1 个、宏观/技术背景 2 个、情绪型 3 个、背景 1 个；@BtcpayServer 已删）</h2>
 <p class="note">多空统计与预测台账只计观点型账号。事件型与数据型不当价位来源；情绪型只当散户情绪温度计；PlanB 已降权为背景。</p>
 <div class="scroll"><table>
 <tr><th>类别</th><th>账号</th></tr>
@@ -193,11 +204,10 @@ function setFilter(btn, mode){
   });
   document.querySelectorAll("#latest .filter-btn").forEach(b=>b.classList.toggle("active", b === btn));
 }
-/* 重点数字（$价位、百分比）用等宽字体高亮，和正文区分 */
+/* 重点数字（$价位）用等宽字体高亮，和正文区分；百分比用普通字体 */
 function markNums(s){
   return esc(s)
-    .replace(/\$[\d,]+(?:\.\d+)?/g, m=>'<span class="num">'+m+'</span>')
-    .replace(/\d+(?:\.\d+)?%/g, m=>'<span class="num">'+m+'</span>');
+    .replace(/\$[\d,]+(?:\.\d+)?/g, m=>'<span class="num">'+m+'</span>');
 }
 function fmtMoney(n){
   if(n == null || n === "" || isNaN(Number(n))) return "";
@@ -269,29 +279,123 @@ function srcNote(r, runDate){
   }
   return parts.length ? '<div class="src-note">' + parts.join(" · ") + '</div>' : "";
 }
-/* 价格卡：上一根日线收盘 / 当前快照 / 下一项待确认 */
+/* 价格卡：上一根日线收盘 / 当前快照（下一项待确认见下方 watch 框，不重复） */
 function priceCard(key, p){
   const coinCls = key === "btc" ? "btc" : "eth";
   const name = key === "btc" ? "BTC" : "ETH";
   return '<section class="price-card"><h3><span class="coin ' + coinCls + '">' + name + '</span> <span class="pair">' + esc(p.pair || "") + '</span></h3><dl>'
     + '<div><dt>上一根日线收盘</dt><dd><span class="num">' + fmtMoney(p.close) + '</span><span class="sub">' + esc(p.close_label || "") + (p.close_source ? " · " + esc(p.close_source) : "") + '</span></dd></div>'
     + '<div><dt>当前快照</dt><dd><span class="num">约 ' + fmtMoney(p.snapshot) + '</span><span class="sub">' + esc(p.snapshot_label || "") + ' · 截至 ' + esc(p.snapshot_time || "") + '</span></dd></div>'
-    + '<div><dt>下一项待确认</dt><dd>' + markNums(p.watch || "") + '</dd></div>'
     + '</dl></section>';
 }
-/* 价位梯子：竖向 SVG，现价动态取最新快照，其余四档为固定结构位 */
-function priceLadderSvg(snapshot, snapTime){
-  const levels = [
-    {p:73000, label:"$73,000", who:"200 日均线 / Ali $73,100 收复 / Rekt 周收 $73,000"},
-    {p:67993, label:"$67,993", who:"200 周均线"},
-    {p:snapshot, label:"现价 " + fmtMoney(snapshot), who:"最新快照" + (snapTime ? "（" + snapTime + "）" : ""), cur:true},
-    {p:62500, label:"$62,500", who:"Polymarket 11 月档位 / K线回忆录 62,000–65,600 区域"},
-    {p:60000, label:"$60,000", who:"Rekt / DWF $60,000 目标 / Polymarket 11 月档位"}
-  ];
-  const MIN = 59000, MAX = 74500, W = 900, H = 300, TOP = 26, BOT = 26;
-  const clamp = p => Math.max(MIN, Math.min(MAX, p));
-  const y = p => TOP + (MAX - clamp(p)) / (MAX - MIN) * (H - TOP - BOT);
-  let g = '<line x1="200" y1="' + y(73000) + '" x2="200" y2="' + y(60000) + '" stroke="#e7e2d6" stroke-width="2"/>';
+/* 价位梯子：档位从当期数据取（PM 最近档 + watch/market 里的关键价位），范围跟现价自动调；太远的档进图外说明 */
+function ladderLevels(last){
+  const snap = last.prices.btc.snapshot;
+  const cands = [];
+  function push(p, label, prio){
+    if(p == null || isNaN(p)) return;
+    p = Number(p);
+    if(p < snap * 0.5 || p > snap * 2) return; /* 低于半价的都是 ETH 价或资金额，不是 BTC 档位 */
+    if(Math.abs(p - snap) < 150) return; /* 离现价太近会与现价字重叠 */
+    cands.push({p:p, label:label, prio:prio});
+  }
+  /* PM BTC 11月：离现价最近的上/下档 */
+  const pmBtc = (last.table_rows || []).find(r=>r.channel === "Polymarket BTC 11月");
+  if(pmBtc){
+    const parsed = parsePm(pmBtc.view || "");
+    let up = null, down = null;
+    Object.keys(parsed).forEach(k=>{
+      if(parsed[k] === "settled") return;
+      const v = Number(k.slice(2).replace(/,/g, ""));
+      if(k[0] === "↑" && v >= snap && (up == null || v < up)) up = v;
+      if(k[0] === "↓" && v <= snap && (down == null || v > down)) down = v;
+    });
+    if(up != null) push(up, "PM 11月上档", 2);
+    if(down != null) push(down, "PM 11月下档", 2);
+  }
+  /* watch 与 market 文本里的关键价位：按前后文给短标签 */
+  const texts = [(last.prices && last.prices.btc ? (last.prices.btc.watch || "") : ""), (last.market || "")];
+  texts.forEach(t=>{
+    const re = /\$([\d,]+(?:\.\d+)?)/g; let m;
+    while((m = re.exec(t))){
+      const v = Number(m[1].replace(/,/g, ""));
+      const before = t.slice(Math.max(0, m.index - 12), m.index);
+      const after = t.slice(m.index + m[0].length, m.index + m[0].length + 10);
+      if(/^万|亿/.test(after)) continue; /* $8,496万、$5.697亿这类资金额不是价位 */
+      if(/收(盘)?\s*(BTC|ETH)?\s*$/.test(before)) continue; /* 收盘价不是档位（收复位不受影响） */
+      if(/[↑↓]/.test(before.slice(-3))) continue; /* 文中提到的 PM 档位已由 PM 表覆盖 */
+      let label = "关键位", prio = 3;
+      if(/200\s*周均线/.test(before)){ label = "200 周均线"; prio = 1; }
+      else if(/实现价/.test(before)){ label = "实现价"; prio = 1; }
+      else if(/收复/.test(before)){ label = "收复位"; }
+      else if(/守住/.test(before)){ label = "守住位"; }
+      else if(/失守|跌破/.test(before)){ label = "失守位"; }
+      else if(/接货|更高低点/.test(before + after)){ label = "接货区"; }
+      else if(/阻力/.test(before)){ label = "阻力"; }
+      else if(/支撑/.test(before)){ label = "支撑"; }
+      else if(/收盘低/.test(after)){ label = "收盘低"; }
+      else if(/盘中低/.test(before)){ label = "近期低点"; }
+      push(v, label, prio);
+    }
+  });
+  /* 去重：同一档（$50 内）只留 prio 最小的 */
+  cands.sort((a,b)=> a.prio - b.prio || Math.abs(a.p - snap) - Math.abs(b.p - snap));
+  const uniq = [];
+  cands.forEach(c=>{ if(!uniq.some(k=>Math.abs(k.p - c.p) < 50)) uniq.push(c); });
+  /* 只取现价 ±15% 内的档位，其余进图外说明 */
+  const lo = snap * 0.85, hi = snap * 1.15;
+  const outside = [];
+  let pool = [];
+  uniq.forEach(c=>{
+    if(c.p >= lo && c.p <= hi) pool.push(c);
+    else outside.push(c.label + " " + fmtMoney(c.p));
+  });
+  pool.sort((a,b)=>a.p - b.p);
+  /* 相邻档位 <$600 时合并成区间档 */
+  const merged = [];
+  pool.forEach(c=>{
+    const prevM = merged[merged.length - 1];
+    if(prevM && c.p - prevM.hi < 600){
+      prevM.hi = c.p;
+      prevM.p = (prevM.lo + prevM.hi) / 2;
+      prevM.label = fmtMoney(prevM.lo) + "–" + fmtMoney(prevM.hi).replace("$", "");
+      if(prevM.who.indexOf(c.label) < 0) prevM.who += " · " + c.label;
+    } else {
+      merged.push({lo:c.p, hi:c.p, p:c.p, label:fmtMoney(c.p), who:c.label});
+    }
+  });
+  let levels = merged.map(m=>({p:m.p, label:m.label, who:m.who}));
+  levels.push({p:snap, label:"现价 " + fmtMoney(snap), who:"最新快照" + (last.prices.btc.snapshot_time ? "（" + last.prices.btc.snapshot_time + "）" : ""), cur:true});
+  levels.sort((a,b)=>a.p - b.p);
+  function minGap(ls){
+    let g = Infinity;
+    for(let i = 1; i < ls.length; i++) g = Math.min(g, ls[i].p - ls[i-1].p);
+    return g;
+  }
+  function dropFarthest(){
+    let idx = -1, far = -1;
+    levels.forEach((l,i)=>{ if(!l.cur && Math.abs(l.p - snap) > far){ far = Math.abs(l.p - snap); idx = i; } });
+    if(idx < 0) return false;
+    const d = levels.splice(idx, 1)[0];
+    outside.push(d.who + " " + d.label);
+    return true;
+  }
+  while(levels.length > 7 && dropFarthest()){}
+  while(levels.length > 3 && minGap(levels) < 450 && dropFarthest()){}
+  return {levels:levels, outside:outside};
+}
+function priceLadderSvg(snapshot, snapTime, last){
+  const lv = ladderLevels(last);
+  const levels = lv.levels;
+  const W = 900, H = 400, TOP = 26, BOT = 26;
+  let MIN = Math.min.apply(null, levels.map(l=>l.p));
+  let MAX = Math.max.apply(null, levels.map(l=>l.p));
+  let span = MAX - MIN;
+  if(span < 3000){ const mid = (MIN + MAX) / 2; MIN = mid - 1500; MAX = mid + 1500; span = 3000; }
+  const pad = span * 0.08;
+  MIN -= pad; MAX += pad;
+  const y = p => TOP + (MAX - p) / (MAX - MIN) * (H - TOP - BOT);
+  let g = '<line x1="200" y1="' + y(levels[0].p) + '" x2="200" y2="' + y(levels[levels.length - 1].p) + '" stroke="#e7e2d6" stroke-width="2"/>';
   levels.forEach(l=>{
     const yy = y(l.p);
     const col = l.cur ? "#1d4ed8" : "#5a6572";
@@ -300,11 +404,58 @@ function priceLadderSvg(snapshot, snapTime){
     g += '<text x="178" y="' + (yy + 5) + '" font-size="15" font-weight="' + (l.cur ? 700 : 600) + '" fill="' + (l.cur ? "#1d4ed8" : "#1d2733") + '" text-anchor="end">' + esc(l.label) + '</text>';
     g += '<text x="224" y="' + (yy + 5) + '" font-size="13.5" fill="#5a6572">' + esc(l.who) + '</text>';
   });
-  return '<svg viewBox="0 0 ' + W + ' ' + H + '" width="100%" style="max-width:900px" role="img" aria-label="价位梯子：现价、200 周均线、62,500、60,000、73,000">' + g + '</svg>';
+  const aria = "价位梯子：" + levels.map(l=>l.label).join("、");
+  let svg = '<svg viewBox="0 0 ' + W + ' ' + H + '" width="100%" style="max-width:900px" role="img" aria-label="' + esc(aria) + '">' + g + '</svg>';
+  if(lv.outside && lv.outside.length) svg += '<p class="note">图外关键位：' + lv.outside.map(o=>esc(o)).join("；") + '。</p>';
+  return svg;
+}
+/* 首屏一句话结论：观点型多空比 + 分歧焦点（取自 lede），不写死 */
+function verdictHtml(last){
+  const rows = last.table_rows || [];
+  let bull = 0, bear = 0;
+  rows.forEach(r=>{
+    if(r.role !== "观点型") return;
+    if(r.stance === "bullish") bull++;
+    else if(r.stance === "bearish") bear++;
+  });
+  const diff = bull - bear;
+  let cls = "mix", word = "分歧";
+  if(diff >= 2){ cls = "bull"; word = "偏多"; }
+  else if(diff <= -2){ cls = "bear"; word = "偏空"; }
+  let reason = "";
+  const lede = last.lede || "";
+  const idx = lede.indexOf("本期分歧焦点：");
+  if(idx >= 0){
+    reason = lede.slice(idx + "本期分歧焦点：".length).split("；")[0];
+  } else if(last.market){
+    reason = last.market.split("。")[0];
+  }
+  if(reason.length > 60){
+    let cut = reason.slice(0, 60);
+    const m = /\$[\d,]*\.?\d*$/.exec(cut); /* 别把 $53,200 截成 $53,2 */
+    if(m){
+      const rest = reason.slice(60).match(/^[\d,.]+/);
+      if(rest) cut += rest[0];
+    }
+    reason = cut + "……";
+  }
+  return '<div class="verdict"><span class="badge ' + cls + '">' + word + '</span> <span>观点型 ' + bull + ' 多 ' + bear + ' 空' + (reason ? '——' + markNums(reason) : '') + '</span></div>';
+}
+/* 比上一期变了什么：只写变化量——去掉重复收盘价/写稿时快照的句子分句，正文数字不加粗 */
+function dedupeChanges(items){
+  if(!items) return [];
+  const out = [];
+  items.forEach(it=>{
+    const segs = String(it).split("；").map(s=>s.trim()).filter(Boolean);
+    const kept = segs.filter(s=>!/收\$|写稿时约/.test(s));
+    if(kept.length) out.push(kept.join("；"));
+  });
+  return out;
 }
 function trioBlock(title, items){
-  if(!items || !items.length) return "";
-  return '<section><h3>' + title + '</h3><ul class="trio-list">' + items.map(it=>"<li>" + markNums(it) + "</li>").join("") + '</ul></section>';
+  const list = dedupeChanges(items);
+  if(!list.length) return "";
+  return '<section><h3>' + title + '</h3><ul class="trio-list">' + list.map(it=>"<li>" + esc(it) + "</li>").join("") + '</ul></section>';
 }
 /* 预测市场显示名：12月行（2026全年市场）直接显示为 2026全年，数据库频道名不动 */
 const PM_NAME = {"Polymarket BTC 12月":"Polymarket BTC 2026全年", "Polymarket ETH 12月":"Polymarket ETH 2026全年"};
@@ -313,14 +464,20 @@ function pmSettle(ch){
   if(ch.indexOf("12月") >= 0) return "2026全年市场 · Binance现货结算，2027年1月1日到期";
   return "11月价格市场 · Binance现货结算，12月1日到期";
 }
-/* 解析 PM 行 view 文本里的档位：dip/reach + Yes 价或已结算 */
+/* 解析 PM 行 view 文本里的档位：新格式 ↑/↓ + 百分比（可带「上期」）与旧格式 dip/reach + Yes 价或已结算都认 */
 function parsePm(view){
   const out = {};
-  const re = /(dip|reach)\s+(?:to\s+)?\$([\d,]+(?:\.\d+)?)\s+(?:Yes\s+([\d.]+)%|已结算)/g;
+  const text = view || "";
   let m;
-  while((m = re.exec(view || ""))){
-    const key = (m[1] === "dip" ? "↓" : "↑") + "$" + m[2];
+  const reNew = /([↑↓])\$([\d,]+(?:\.\d+)?)\s+(?:([\d.]+)%|已结算)/g;
+  while((m = reNew.exec(text))){
+    const key = m[1] + "$" + m[2];
     out[key] = m[3] === undefined ? "settled" : Number(m[3]);
+  }
+  const reOld = /(dip|reach)\s+(?:to\s+)?\$([\d,]+(?:\.\d+)?)\s+(?:Yes\s+([\d.]+)%|已结算)/g;
+  while((m = reOld.exec(text))){
+    const key = (m[1] === "dip" ? "↓" : "↑") + "$" + m[2];
+    if(!(key in out)) out[key] = m[3] === undefined ? "settled" : Number(m[3]);
   }
   return out;
 }
@@ -464,8 +621,8 @@ function objSection(last, seriesRows){
   R.push(["ETH 永续资金费率（Deribit，8h）", fmtPct(cur.eth_funding_8h_pct_deribit), fmtPctDelta(cur.eth_funding_8h_pct_deribit, prev && prev.eth_funding_8h_pct_deribit), fundingRead(cur.eth_funding_8h_pct_deribit)]);
   R.push(["BTC 永续未平仓（Deribit）", fmtYi(cur.btc_perp_oi_usd_deribit), fmtYiDelta(cur.btc_perp_oi_usd_deribit, prev && prev.btc_perp_oi_usd_deribit), oiRead(cur.btc_perp_oi_usd_deribit, prev && prev.btc_perp_oi_usd_deribit)]);
   R.push(["ETH 永续未平仓（Deribit）", fmtYi(cur.eth_perp_oi_usd_deribit), fmtYiDelta(cur.eth_perp_oi_usd_deribit, prev && prev.eth_perp_oi_usd_deribit), oiRead(cur.eth_perp_oi_usd_deribit, prev && prev.eth_perp_oi_usd_deribit)]);
-  R.push(["BTC 永续未平仓（OKX）", fmtYi(cur.btc_perp_oi_usd_okx), fmtYiDelta(cur.btc_perp_oi_usd_okx, prev && prev.btc_perp_oi_usd_okx), cur.btc_perp_oi_usd_okx == null ? "待 2026-11-15 20:30 期起接入" : oiRead(cur.btc_perp_oi_usd_okx, prev && prev.btc_perp_oi_usd_okx)]);
-  R.push(["BTC 永续未平仓（Hyperliquid）", fmtYi(cur.btc_perp_oi_usd_hyperliquid), fmtYiDelta(cur.btc_perp_oi_usd_hyperliquid, prev && prev.btc_perp_oi_usd_hyperliquid), cur.btc_perp_oi_usd_hyperliquid == null ? "待 2026-11-15 20:30 期起接入" : oiRead(cur.btc_perp_oi_usd_hyperliquid, prev && prev.btc_perp_oi_usd_hyperliquid)]);
+  R.push(["BTC 永续未平仓（OKX）", fmtYi(cur.btc_perp_oi_usd_okx), fmtYiDelta(cur.btc_perp_oi_usd_okx, prev && prev.btc_perp_oi_usd_okx), cur.btc_perp_oi_usd_okx == null ? "暂无数据" : oiRead(cur.btc_perp_oi_usd_okx, prev && prev.btc_perp_oi_usd_okx)]);
+  R.push(["BTC 永续未平仓（Hyperliquid）", fmtYi(cur.btc_perp_oi_usd_hyperliquid), fmtYiDelta(cur.btc_perp_oi_usd_hyperliquid, prev && prev.btc_perp_oi_usd_hyperliquid), cur.btc_perp_oi_usd_hyperliquid == null ? "暂无数据" : oiRead(cur.btc_perp_oi_usd_hyperliquid, prev && prev.btc_perp_oi_usd_hyperliquid)]);
   R.push(["BTC 期权看跌/看涨比（Deribit）", fmtRatio(cur.btc_put_call_oi_deribit), fmtRatioDelta(cur.btc_put_call_oi_deribit, prev && prev.btc_put_call_oi_deribit), pcRead(cur.btc_put_call_oi_deribit)]);
   R.push(["ETH 期权看跌/看涨比（Deribit）", fmtRatio(cur.eth_put_call_oi_deribit), fmtRatioDelta(cur.eth_put_call_oi_deribit, prev && prev.eth_put_call_oi_deribit), pcRead(cur.eth_put_call_oi_deribit)]);
   R.push(["BTC 季度基差（BTC-25DEC26）", fmtPct(cur.btc_basis_pct) + "（年化 " + fmtPct(cur.btc_basis_ann_pct) + "）", fmtPctDelta(cur.btc_basis_pct, prev && prev.btc_basis_pct), cur.btc_basis_pct == null ? "—" : (cur.btc_basis_pct > 0 ? "温和升水" : (cur.btc_basis_pct < 0 ? "贴水" : "平水"))]);
@@ -478,7 +635,6 @@ function objSection(last, seriesRows){
     + R.map(r=>"<tr><td>" + esc(r[0]) + "</td><td>" + markNums(r[1]) + "</td><td>" + markNums(r[2]) + "</td><td>" + esc(r[3]) + "</td></tr>").join("") + "</tbody></table>";
   if(cur.macro_next) h += "<p><b>下一关键事件：</b>" + markNums(cur.macro_next) + "</p>";
   if(cur.divergence) h += "<p><b>观点与数据背离：</b>" + markNums(cur.divergence) + "</p>";
-  h += "<p class=\"note\">多交易所对照（11月15日约 12:30 实测）：OKX BTC 永续未平仓 $20.8 亿、Hyperliquid $23.3 亿，三所合计约 $51 亿，Deribit 仅占约 14%；三所资金费率均近 0。OKX / Hyperliquid 列自 2026-11-15 20:30 期起每期填值。</p>";
   h += "<p class=\"note\">" + OBJ_SOURCE_NOTE + "</p>";
   return h;
 }
@@ -530,8 +686,8 @@ function freshnessHtml(runToronto){
     document.getElementById("freshness").innerHTML = freshnessHtml(last.run_toronto);
     if(prev) document.getElementById("prevlink").innerHTML = '上一期：<a href="#history">' + esc(prev.run_toronto) + '</a>';
     let html = "<p class=\"meta\">推送时间（多伦多）：<span class=\"num\">" + esc(last.run_toronto) + "</span></p>";
-    /* 首屏导语 */
-    if(last.lede) html += "<p class=\"lede\">" + markNums(last.lede) + "</p>";
+    /* 首屏一句话结论：观点型多空比 + 分歧焦点；完整导语与市场摘要合并进下方折叠区 */
+    html += verdictHtml(last);
     /* 价格卡（有结构化 prices 时用卡片，否则退回旧的两栏摘要） */
     if(last.prices && (last.prices.btc || last.prices.eth)){
       html += '<div class="price-cards">'
@@ -540,7 +696,7 @@ function freshnessHtml(runToronto){
     }
     /* 价位梯子：现价动态取最新快照 */
     if(last.prices && last.prices.btc && last.prices.btc.snapshot != null){
-      html += '<div class="ladder-wrap"><h3>价位梯子</h3>' + priceLadderSvg(last.prices.btc.snapshot, last.prices.btc.snapshot_time) + '</div>';
+      html += '<div class="ladder-wrap"><h3>价位梯子</h3>' + priceLadderSvg(last.prices.btc.snapshot, last.prices.btc.snapshot_time, last) + '</div>';
     }
     /* 接下来等什么确认：单独置顶醒目 */
     if(last.watch && last.watch.length){
@@ -605,18 +761,30 @@ function freshnessHtml(runToronto){
     const marketText = last.market
       || [last.btc_summary, last.eth_summary, last.consensus, last.divergence].filter(Boolean).join("\n");
     if(marketText) html += '<details class="acc-details"><summary>市场摘要（点击展开）</summary>'
-      + marketText.split("\n").filter(Boolean).map(p=>"<p>" + markNums(p) + "</p>").join("") + '</details>';
+      + marketText.split("\n").filter(Boolean).map(p=>"<p>" + esc(p) + "</p>").join("") + '</details>';
     /* 审计日志（原 format_note，不再排在首屏前面） */
     if(last.format_note) html += '<details class="acc-details"><summary>审计日志</summary><p class="note">' + esc(last.format_note) + '</p></details>';
-    if(last.sources && last.sources.length){
-      html += "<h3>主要帖子来源</h3><ul>" + last.sources.map(s=>"<li><a href=\""+esc(s.url)+"\" target=\"_blank\" rel=\"noopener\">"+esc(s.title)+"</a></li>").join("") + "</ul>";
-    }
     document.getElementById("latest").innerHTML = html;
-    let hist = "<table><tr><th>推送时间（多伦多）</th><th>本期一句话</th></tr>" +
-      lines.slice(-12).reverse().map(d=>{
-        const one = d.lede || (d.market ? d.market.split("\n")[0].slice(0, 140) : "") || (d.btc_summary || "");
-        return "<tr><td>"+esc(d.run_toronto)+"</td><td>"+markNums(one)+"</td></tr>";
-      }).join("") + "</table>";
+    let hist = lines.slice(-12).reverse().map(d=>{
+      const lede = d.lede || "";
+      let one = lede.split("。")[0];
+      if(!one && d.market) one = d.market.split("。")[0];
+      if(one.length > 80){
+        let cut = one.slice(0, 80);
+        const m = /\$[\d,]*\.?\d*$/.exec(cut); /* 别把 $1,660 截成 $…… */
+        if(m){
+          const rest = one.slice(80).match(/^[\d,.]+/);
+          if(rest) cut += rest[0];
+        }
+        one = cut + "……";
+      }
+      else if(one) one += "。";
+      let body = "";
+      if(lede) body += "<p>" + esc(lede) + "</p>";
+      if(d.market) body += "<p>" + esc(d.market) + "</p>";
+      if(d.changes && d.changes.length) body += "<ul class=\"trio-list\">" + d.changes.map(c=>"<li>" + esc(c) + "</li>").join("") + "</ul>";
+      return '<details class="hist-row"><summary><span class="hist-date">' + esc(d.run_toronto) + '</span>' + esc(one) + '</summary>' + body + '</details>';
+    }).join("");
     document.getElementById("history").innerHTML = hist;
     /* ---- 预测台账 v2（独立文件，失败时只影响本节）；默认折叠，首屏只留一行动态摘要 ---- */
     try{
