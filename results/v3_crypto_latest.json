@@ -1,74 +1,74 @@
 {
  "regime": "risk-off",
- "data_asof": "2026-11-25 01:00",
+ "data_asof": "2026-11-25 05:00",
  "skipped": false,
  "skip_reason": null,
  "longs": [
   {
+   "label": "backpack (trending)",
+   "entry_price": 0.8386004566734715,
+   "entry_ts": "2026-11-25T05:00:00",
+   "score": 61.3,
+   "tier": "B",
+   "reason": "小时线分数61.3（第5名）；看涨信号：MACD bullish cross；RSI(14h) 52.0；日线向下；市场状态risk-off；🔥trending关注度加成+2分；Tier-B（未过：regime）"
+  },
+  {
    "label": "venice-token (trending)",
-   "entry_price": 25.039008343014885,
-   "entry_ts": "2026-11-25T01:00:00",
-   "score": 79.3,
+   "entry_price": 24.709824263649708,
+   "entry_ts": "2026-11-25T05:00:00",
+   "score": 78.1,
    "tier": "C",
-   "reason": "小时线分数79.3（第1名）；RSI(14h) 52.1；日线向上；市场状态risk-off；🔥trending关注度加成+2分；Tier-C（未过：signal,regime）"
+   "reason": "小时线分数78.1（第1名）；RSI(14h) 46.9；日线向上；市场状态risk-off；🔥trending关注度加成+2分；Tier-C（未过：signal,regime）"
   },
   {
    "label": "FIGR_HELOC (Figure Heloc)",
-   "entry_price": 1.0422949175258565,
-   "entry_ts": "2026-11-25T01:00:00",
-   "score": 77.6,
+   "entry_price": 1.0423066571131134,
+   "entry_ts": "2026-11-25T02:00:00",
+   "score": 77.5,
    "tier": "C",
-   "reason": "小时线分数77.6（第2名）；RSI(14h) 42.3；日线向上；市场状态risk-off；Tier-C（未过：signal,regime）"
-  },
-  {
-   "label": "TRX (TRON)",
-   "entry_price": 0.3088,
-   "entry_ts": "2026-11-25T01:00:00",
-   "score": 67.6,
-   "tier": "C",
-   "reason": "小时线分数67.6（第3名）；RSI(14h) 54.0；日线向下；市场状态risk-off；板块L1（24h -3.1%）；Tier-C（未过：signal,regime）"
+   "reason": "小时线分数77.5（第2名）；RSI(14h) 42.3；日线向上；市场状态risk-off；Tier-C（未过：signal,regime）"
   }
  ],
  "shorts": [
   {
    "label": "layerzero (trending)",
-   "entry_price": 1.0028565723272742,
-   "entry_ts": "2026-11-25T01:00:00",
-   "score": 21.7,
+   "entry_price": 0.9966001400497421,
+   "entry_ts": "2026-11-25T05:00:00",
+   "score": 22.8,
    "tier": "A",
-   "reason": "小时线分数21.7（第39名）；看跌信号：Breakdown；RSI(14h) 33.3；日线向下；市场状态risk-off；🔥trending关注度加成+2分"
+   "reason": "小时线分数22.8（第37名）；看跌信号：Breakdown；RSI(14h) 33.6；日线向下；市场状态risk-off；🔥trending关注度加成+2分"
+  },
+  {
+   "label": "CRO (Cronos)",
+   "entry_price": 0.03866496495081894,
+   "entry_ts": "2026-11-25T05:00:00",
+   "score": 29.8,
+   "tier": "A",
+   "reason": "小时线分数29.8（第29名）；看跌信号：Breakdown；RSI(14h) 32.9；日线向下；市场状态risk-off；板块CEX-token（24h -2.1%）"
   },
   {
    "label": "HYPE (Hyperliquid)",
-   "entry_price": 59.24,
-   "entry_ts": "2026-11-25T01:00:00",
-   "score": 22.7,
+   "entry_price": 58.07,
+   "entry_ts": "2026-11-25T05:00:00",
+   "score": 18.9,
    "tier": "C",
-   "reason": "小时线分数22.7（第38名）；RSI(14h) 32.2；日线向下；市场状态risk-off；🔥trending关注度加成+2分；板块PerpDEX（24h -8.0%）；Tier-C（未过：signal）"
-  },
-  {
-   "label": "XLM (Stellar)",
-   "entry_price": 0.1237,
-   "entry_ts": "2026-11-25T01:00:00",
-   "score": 26.2,
-   "tier": "C",
-   "reason": "小时线分数26.2（第37名）；RSI(14h) 40.7；日线向下；市场状态risk-off；板块Payments（24h -4.1%）；Tier-C（未过：signal）"
+   "reason": "小时线分数18.9（第38名）；RSI(14h) 27.3；日线向下；市场状态risk-off；🔥trending关注度加成+2分；板块PerpDEX（24h -7.6%）；Tier-C（未过：rsi,signal）"
   }
  ],
  "kind": "v3-crypto",
- "report": "intraday_run_2026-11-25_0216.json",
- "published_at_toronto": "2026-11-25 02:20",
+ "report": "intraday_run_2026-11-25_0617.json",
+ "published_at_toronto": "2026-11-25 06:20",
  "winrate": {
   "long": {
-   "n": 893,
+   "n": 896,
    "win_rate": 39.6,
-   "avg_ret": -0.81,
+   "avg_ret": -0.82,
    "insufficient": false
   },
   "short": {
-   "n": 936,
-   "win_rate": 57.7,
-   "avg_ret": 0.66,
+   "n": 938,
+   "win_rate": 57.8,
+   "avg_ret": 0.67,
    "insufficient": false
   }
  }
