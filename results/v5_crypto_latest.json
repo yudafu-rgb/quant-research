@@ -1,5 +1,5 @@
 {
- "mode": "rebalance",
+ "mode": "valuation",
  "last_close_date": "2026-11-25",
  "cash": 96847.63059701493,
  "holdings_value": 0.0,
@@ -232,7 +232,7 @@
    "coin": "TAO",
    "close": 181.04121146858526,
    "mom126": -0.09780571480487354,
-   "ma200": 235.9137148527742,
+   "ma200": 235.91406325039975,
    "prior_max": 234.1270530900252,
    "prior_min": 180.64748418514463,
    "breakout": false,
@@ -255,5 +255,26 @@
  "new_pending_entries": [],
  "new_pending_exits": [],
  "no_new_close": false,
- "pending_entries_detail": []
+ "watchlist_trend_ok": [
+  {
+   "coin": "QNT",
+   "close": 144.25,
+   "mom126": 1.2378219050574,
+   "ma200": 107.4255,
+   "prior_max": 199.2,
+   "prior_min": 140.0,
+   "breakout": false,
+   "trend_ok": true
+  },
+  {
+   "coin": "NEAR",
+   "close": 3.024,
+   "mom126": 0.6205787781350482,
+   "ma200": 2.776675,
+   "prior_max": 3.741,
+   "prior_min": 2.865,
+   "breakout": false,
+   "trend_ok": true
+  }
+ ]
 }
