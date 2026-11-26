@@ -7,91 +7,162 @@
 <style>
 :root{
   --ink:#1d2733; --muted:#5a6572; --faint:#8b95a1;
-  --paper:#faf9f5; --line:#e7e2d6; --line-soft:#efece3;
+  --paper:#faf9f5; --card:#ffffff; --line:#e7e2d6; --line-soft:#efece3;
   --accent:#1d4ed8;
   --bull:#177245; --bull-bg:#e6f4ec;
   --bear:#b42318; --bear-bg:#fdecea;
   --neu:#5a6572; --neu-bg:#edf0f2;
   --mix:#8a5a00; --mix-bg:#fdf3df;
+  --unk:#6b7280; --unk-bg:#f1f2f4;
   --pm-bg:#e9eff8;
   --font-body:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",sans-serif;
   --font-num:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;
 }
 *{box-sizing:border-box}
-body{font-family:var(--font-body);max-width:960px;margin:0 auto;padding:32px 20px 48px;color:var(--ink);background:var(--paper);line-height:1.75;font-size:16px}
+body{font-family:var(--font-body);max-width:1160px;margin:0 auto;padding:28px 20px 64px;color:var(--ink);background:var(--paper);line-height:1.6;font-size:16px}
 ::selection{background:#dbe7ff}
 a{color:var(--accent);text-underline-offset:3px}
 a:hover{color:#173ea8}
 :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 h1{font-size:26px;line-height:1.3;letter-spacing:-.01em;margin:0 0 6px;text-wrap:balance}
-h2{font-size:19px;margin:40px 0 12px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+h2{font-size:20px;margin:44px 0 12px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
 h3{font-size:15px;margin:0 0 8px}
 p{margin:0 0 12px}
 .meta{color:var(--muted);font-size:14px;margin:2px 0 0}
-/* 重点数字：等宽字体，和正文区分 */
 .num{font-family:var(--font-num);font-size:.92em;font-weight:600;letter-spacing:-.01em}
 .note{color:var(--muted);font-size:13.5px;line-height:1.7}
 .err{color:var(--bear)}
-.scroll{overflow-x:auto} .scroll table{min-width:680px}
-/* BTC / ETH 摘要：左右两栏，窄屏自动上下排 */
-.summary-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 32px;margin:20px 0 8px}
-.summary-grid section+section{border-left:1px solid var(--line);padding-left:32px}
-.summary-grid p{margin:0;max-width:68ch;text-wrap:pretty}
-.coin{display:inline-flex;align-items:center;gap:8px;font-size:17px;letter-spacing:.02em}
-.coin::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--coin,#888)}
-.coin.btc{--coin:#f7931a} .coin.eth{--coin:#627eea}
-.verdict{margin:20px 0 4px;border-top:1px solid var(--line-soft);padding-top:16px}
-.verdict p{margin:0 0 10px;max-width:74ch;text-wrap:pretty}
-/* 表格 */
-table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14.5px}
-th,td{padding:9px 10px;text-align:left;vertical-align:top;line-height:1.65}
-th{position:sticky;top:0;background:#f3f0e8;font-size:13px;color:var(--muted);font-weight:700;white-space:nowrap;border-bottom:1px solid var(--line)}
-td{border-bottom:1px solid var(--line-soft)}
-tr:nth-child(even) td{background:#f7f4ec}
-tr:hover td{background:#f2eee3}
-td.cat{color:var(--muted);font-size:13px}
-td.ch{font-weight:650}
-td.acc{font-size:13px;white-space:nowrap;text-align:center}
-/* 最新一期表：固定列宽，最新核心观点居中、占约一半宽度 */
-table.main{table-layout:fixed}
-table tr.pm td{background:var(--pm-bg)}
-table tr.pm:nth-child(even) td{background:var(--pm-bg)}
-/* 立场徽章：只在能判断时出现 */
-.badge{display:inline-block;font-size:12px;font-weight:700;line-height:1.5;padding:1px 8px;border-radius:999px;margin:0 6px 2px 0;white-space:nowrap}
+.skip{font-size:14px}
+/* 吸顶导航 */
+.topnav{position:sticky;top:0;z-index:20;background:var(--paper);padding:10px 0;border-bottom:1px solid var(--line);margin:14px 0 0;display:flex;flex-wrap:wrap;gap:4px 16px;font-size:14.5px}
+.topnav a{color:var(--muted);text-decoration:none}
+.topnav a:hover{color:var(--accent);text-decoration:underline}
+/* 执行摘要卡 */
+.exec{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 22px;margin:20px 0 8px;box-shadow:0 1px 3px rgba(29,39,51,.06)}
+.exec h2{margin:0 0 10px;border:0;padding:0}
+.exec-lede{font-size:16.5px;line-height:1.75;margin:0 0 14px;max-width:78ch}
+.exec-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px 28px}
+.exec-grid h3{font-size:13px;color:var(--muted);margin:0 0 6px;letter-spacing:.02em}
+.facts{width:100%;border-collapse:collapse;font-size:14.5px}
+.facts td,.facts th{padding:5px 8px 5px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--line-soft);line-height:1.6}
+.facts th{color:var(--muted);font-weight:600;white-space:nowrap}
+.levels{display:flex;flex-wrap:wrap;gap:6px}
+.chip{display:inline-block;font-size:13px;padding:3px 10px;border-radius:999px;background:var(--neu-bg);color:var(--ink);white-space:nowrap}
+.chip b{font-family:var(--font-num);font-weight:600}
+/* 观点分布条 */
+.dist-bar{display:flex;height:26px;border-radius:6px;overflow:hidden;margin:6px 0 8px}
+.dist-bar span{display:block;height:100%}
+.dist-bar .seg-bull{background:#2e9e66}
+.dist-bar .seg-bear{background:#d64541}
+.dist-bar .seg-mix{background:#d9a441}
+.dist-bar .seg-neu{background:#8b95a1}
+.dist-bar .seg-unk{background:#d5d8dc}
+.dist-legend{font-size:14px;line-height:1.9}
+.dist-legend b{font-family:var(--font-num)}
+/* 多空两栏 */
+.vs-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 28px}
+.vs-grid section+section{border-left:1px solid var(--line);padding-left:28px}
+.vs-grid ul{margin:0;padding-left:18px}
+.vs-grid li{margin-bottom:8px;line-height:1.65}
+/* 社群卡片 */
+.comm-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.comm{border:1px solid var(--line);border-radius:10px;padding:14px 16px;background:var(--card)}
+.comm h3{margin:0 0 6px}
+.comm p{margin:0 0 8px;font-size:14.5px;line-height:1.65}
+/* 筛选按钮 */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 16px}
+.filters button{font:inherit;font-size:14px;padding:6px 14px;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--ink);cursor:pointer}
+.filters button:hover{border-color:var(--accent);color:var(--accent)}
+.filters button.active{background:var(--accent);border-color:var(--accent);color:#fff}
+/* 频道卡片 */
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.card{border:1px solid var(--line);border-radius:12px;padding:16px 18px;background:var(--card)}
+.card h3{font-size:16px;margin:0 0 4px;display:inline}
+.card-head{margin-bottom:8px;line-height:1.6}
+.card-sum,.card-eval{font-size:14.5px;line-height:1.7;margin:0 0 8px}
+.card-sum b,.card-eval b{font-size:13px;color:var(--muted)}
+.card-key{font-size:14px;margin:0 0 8px}
+.card-meta{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:4px 0 10px}
+.card-links{font-size:14px}
+.card-links a{margin-right:14px}
+.card-det{margin-top:10px;border-top:1px solid var(--line-soft);padding-top:10px;font-size:14px;line-height:1.7}
+.card-det summary{cursor:pointer;color:var(--accent);font-size:14px}
+.card-det dl{margin:8px 0 0;display:grid;grid-template-columns:88px 1fr;gap:4px 10px}
+.card-det dt{color:var(--muted)}
+.card-det dd{margin:0}
+/* 标签与徽章 */
+.badge{display:inline-block;font-size:12px;font-weight:700;line-height:1.5;padding:1px 8px;border-radius:999px;margin:0 4px 2px 0;white-space:nowrap;vertical-align:1px}
 .badge.bull{color:var(--bull);background:var(--bull-bg)}
 .badge.bear{color:var(--bear);background:var(--bear-bg)}
 .badge.neu{color:var(--neu);background:var(--neu-bg)}
 .badge.mix{color:var(--mix);background:var(--mix-bg)}
-#history td{vertical-align:top}
-#history td:first-child{font-family:var(--font-num);font-size:13px;white-space:nowrap;color:var(--muted)}
-#history tr:nth-child(even) td{background:#f7f4ec}
-button{font:inherit;font-size:13.5px;padding:5px 12px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);cursor:pointer}
-button:hover{border-color:var(--accent);color:var(--accent)}
-.foot{margin-top:40px}
+.badge.unk{color:var(--unk);background:var(--unk-bg)}
+.tag{display:inline-block;font-size:12px;line-height:1.5;padding:1px 8px;border-radius:6px;background:var(--neu-bg);color:var(--muted);white-space:nowrap}
+.tag.warn{background:var(--mix-bg);color:var(--mix)}
+.tag.api{background:var(--pm-bg);color:var(--accent)}
+.acc{font-size:13px;color:var(--muted)}
+/* 表格（预测市场 / 新视频 / 历史） */
+table{border-collapse:collapse;width:100%;margin:12px 0;font-size:14.5px}
+th,td{padding:8px 10px;text-align:left;vertical-align:top;line-height:1.6}
+th{font-size:13px;color:var(--muted);font-weight:700;white-space:nowrap;border-bottom:1px solid var(--line)}
+td{border-bottom:1px solid var(--line-soft)}
+tr.pm td{background:var(--pm-bg)}
+details{margin:12px 0}
+details>summary{cursor:pointer;color:var(--accent);font-size:14.5px;padding:4px 0}
+details>summary:hover{text-decoration:underline}
+.hist-row td:first-child{font-family:var(--font-num);font-size:13px;white-space:nowrap;color:var(--muted)}
+.scroll{overflow-x:auto}
+.foot{margin-top:44px}
+#toTop{position:fixed;right:18px;bottom:18px;z-index:30;font:inherit;font-size:14px;padding:8px 14px;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--ink);cursor:pointer;box-shadow:0 2px 8px rgba(29,39,51,.15)}
+#toTop:hover{border-color:var(--accent);color:var(--accent)}
 @media(max-width:720px){
-  body{padding:24px 16px 40px;font-size:15.5px}
+  body{padding:22px 16px 56px;font-size:15.5px}
   h1{font-size:22px}
-  .summary-grid{grid-template-columns:1fr}
-  .summary-grid section+section{border-left:0;padding-left:0;border-top:1px solid var(--line);padding-top:20px;margin-top:20px}
-  th{position:static}
+  .exec-grid,.vs-grid,.comm-grid,.cards{grid-template-columns:1fr}
+  .vs-grid section+section{border-left:0;padding-left:0;border-top:1px solid var(--line);padding-top:16px;margin-top:16px}
+  .exec{padding:16px}
+  .topnav{font-size:13.5px;gap:4px 12px}
 }
 </style>
 </head>
 <body>
+<p class="skip"><a href="#summary">跳到本期结论 ↓</a></p>
 <h1>YouTube BTC/ETH观点简报 · 网页版</h1>
 <p class="note">只读网页版：聊天推送仍由 Muse 定时任务在每天多伦多时间 9:00 和 21:00 运行，本页只展示简报内容，不交易、不下单。<br>
-数据来源：<code>results/youtube_briefing_history.jsonl</code>（Muse 每次推送后上传）。本页打开时从仓库实时读取，刷新页面即更新。<br>
-以下均为 YouTube 视频作者观点整理，仅供资讯参考，不构成买卖建议。历史准确度只写可核实到日期和价位的记录，无法核实的写“准确度无法核实”。“点评”为 Muse 对每条观点的专业判断（不超过 3 句），只评逻辑、证据和价位合理性，不构成买卖建议；无观点的行显示“—”。</p>
+数据来源：<code>results/youtube_briefing_history.jsonl</code>（每次推送后上传）与 <code>results/youtube_accuracy.json</code>。本页打开时从仓库实时读取，刷新页面即更新。<br>
+以下均为 YouTube 视频作者观点整理，仅供资讯参考，不构成买卖建议。“点评”为 Muse 对每条观点的专业判断（不超过 3 句），只评逻辑、证据和价位合理性，不构成买卖建议；无观点的行显示“—”。观点依据以可读取的标题与简介为主，未核实口播内容不作为明确预测。</p>
 <p id="status" class="note">正在读取仓库数据……</p>
 
-<h2>最新一期</h2>
-<div id="latest"></div>
+<nav class="topnav" id="topnav">
+<a href="#summary">本期摘要</a><a href="#distribution">观点分布</a><a href="#channels">频道观点</a><a href="#community">社群动态</a><a href="#pm">预测市场</a><a href="#accuracy">准确率</a><a href="#history">历史</a><a href="#method">方法说明</a>
+</nav>
 
-<h2>历史简报（最近 12 期）</h2>
-<div id="history"></div>
+<section id="summary" aria-label="本期摘要"><div id="execBox"></div></section>
 
-<h2>追踪频道名单（共 57 个，2026-11-02 用户确认 49 个，2026-11-04 用户确认新增 4 个，2026-11-05 用户确认新增 1 个，2026-11-06 新增 Gareth Soloway，2026-11-07 新增 DonAlt，2026-11-08 新增 Rekt Capital）</h2>
-<p class="note">新增 30 个全部采用；示范 20 个中保留 15 个，筛掉 5 个（Crypto Banter、宝二爷、孙宇晨/行业播客精选、Web3洞察/链闻精选、深度加密实验室），筛掉原因见定时任务说明，不再追踪。2026-11-04 新增：VirtualBacon、The Wolf Of All Streets（Scott Melker）、Morning Crypto Brief、Blockchain Backer。2026-11-05 新增：交易员陈哥（与 TraderChenge 同一人，美股为主、兼讲 BTC）。2026-11-06 新增：Gareth Soloway；2026-11-07 新增：DonAlt；2026-11-08 新增：Rekt Capital。</p>
+<section id="distribution" aria-label="观点分布"><div id="distBox"></div></section>
+
+<section id="divergence" aria-label="主要分歧"><div id="vsBox"></div></section>
+
+<section id="channels" aria-label="频道观点">
+<h2>频道观点</h2>
+<div class="filters" id="filters"></div>
+<div class="cards" id="cards"></div>
+<details id="novideoBox"><summary id="novideoSummary">无新视频频道</summary><div class="cards" id="novideoCards" style="margin-top:14px"></div></details>
+<p class="note" id="filterNote"></p>
+</section>
+
+<section id="community" aria-label="社群动态"><div id="commBox"></div></section>
+
+<section id="pm" aria-label="预测市场"><div id="pmBox"></div></section>
+
+<section id="accuracy" aria-label="准确率与口径"><div id="accBox"></div></section>
+
+<section id="sources" aria-label="本期新视频"><div id="srcBox"></div></section>
+
+<section id="history" aria-label="历史简报"><div id="histBox"></div></section>
+
+<h2>追踪频道名单（共 65 个）</h2>
+<p class="note">2026-11-02 用户确认 49 个；2026-11-04 新增 4 个；2026-11-05 新增交易员陈哥；2026-11-06 至 2026-11-15 每日推荐陆续新增 10 个；2026-11-14 用户点选只加进简报名单（不订阅、不计入每日推荐）：鴨密貨幣。筛掉的 5 个示范频道（Crypto Banter、宝二爷、孙宇晨/行业播客精选、Web3洞察/链闻精选、深度加密实验室）不再追踪。</p>
 <div class="scroll"><table>
 <tr><th>分类</th><th>频道</th></tr>
 <tr><td>英语核心（新增）</td><td>Unchained、Natalie Brunell / Coin Stories、99Bitcoins、CryptosRUs、Thinking Crypto、Crypto Capital Venture、Brian Jung、Crypto Jebb、Crypto World、Bitcoin Magazine</td></tr>
@@ -103,30 +174,113 @@ button:hover{border-color:var(--accent);color:var(--accent)}
 <tr><td>用户常看（新增）</td><td>TraderChenge、比特币米娅老师、分析师舒琴谈比特币、大漂亮（大漂亮的K线日记）</td></tr>
 <tr><td>海外新增（2026-11-04 新增）</td><td>VirtualBacon、The Wolf Of All Streets（Scott Melker）、Morning Crypto Brief、Blockchain Backer</td></tr>
 <tr><td>用户常看（2026-11-05 新增）</td><td>交易员陈哥（与 TraderChenge 同一人，美股为主、兼讲 BTC）</td></tr>
-<tr><td>每日推荐新增</td><td>Gareth Soloway（2026-11-06）、DonAlt（2026-11-07）、Rekt Capital（2026-11-08）</td></tr>
+<tr><td>每日推荐新增</td><td>Gareth Soloway（2026-11-06）、DonAlt（2026-11-07）、Rekt Capital（2026-11-08）、Tyler S（2026-11-09）、Jason Pizzino（2026-11-10）、Kevin Svenson（2026-11-11）、Tone Vays（2026-11-12）、CrediBULL Crypto（2026-11-13）、PlanB（2026-11-14）、Sheldon the Sniper（2026-11-15）</td></tr>
+<tr><td>用户自发频道、仅加进简报名单</td><td>鴨密貨幣（2026-11-14）</td></tr>
 </table></div>
 
-<p class="note">返回主看板：<a href="./index.html">分开前三模型每日推送 + V5币圈纸面 · GitHub看板</a></p>
+<section id="method" aria-label="方法说明">
+<h2>方法说明</h2>
+<p><b>中性与方向未明不是一回事。</b>中性指明确给出无方向判断，或内容为纯新闻汇总；方向未明指信息不足，无法从标题 / 简介判断方向。两者分开统计。</p>
+<p><b>统计口径。</b>“新视频数”指窗口内查到的新视频条数；“观点条目数”指归并后的行数，同一频道多条视频可能合并为一行（如“窗口内新视频 2 条”）。“观点分布”只统计本期新视频行，是<b>样本观点分布</b>，不等同于市场整体共识：频道之间影响力、内容质量和证据强度不同。</p>
+<p><b>长期目标与短期预测分开。</b>例如“2036 年 160 万美元”这类长期目标不进入短期多空统计，也不进入预测验证；预测验证只收明确价位 + 方向 + 短期的预测。</p>
+<p><b>非 BTC/ETH 内容。</b>DOGE、黄金、美股、宏观等非 BTC/ETH 直接观点会标注“非 BTC/ETH”，默认折叠或放在附录，避免冲淡主题。</p>
+<p><b>时间。</b>发布时间为多伦多时间；RSS 时间为 UTC。本页同时标注时，写作“11月25日 20:31（多伦多）｜RSS 11月26日 01:31 UTC”。日期、价位统一写作 <span class="num">$60,451</span>、<span class="num">+1.04%</span>、11月25日 21:00（多伦多）；推算或近似值标“约”。</p>
+<p><b>来源状态。</b>每条观点带一个来源标签：<span class="tag">口播已核实</span> <span class="tag">据视频简介</span> <span class="tag">仅据视频标题</span> <span class="tag">社群消息</span> <span class="tag api">API（Gamma）</span> <span class="tag warn">来源暂不可用</span>。“口播未核实”表示未审阅视频口播，观点仅依据标题与简介，不作为已确认预测。2026-11-25 之前（含）的历史期没有结构化来源字段，标签由页面按标题 / 简介措辞推断；自下一期起写稿会直接给出该字段。</p>
+<p><b>准确率口径。</b>见“准确率与口径”一节：只统计已验证的预测，样本少于 5 条时标注“样本不足”。预测准确率衡量历史结果，来源标签衡量信息证据质量，两者不是同一种评级。</p>
+</section>
+
+<p class="note foot">返回主看板：<a href="./index.html">分开前三模型每日推送 + V5币圈纸面 · GitHub看板</a></p>
+<button id="toTop" type="button">返回顶部 ↑</button>
 
 <script>
 const RAW = "https://raw.githubusercontent.com/yudafu-rgb/quant-research/main/";
-const esc = s => String(s ?? "").replace(/&/g,"&amp;").replace(/</g,"&lt;");
+const esc = s => String(s ?? "").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
 async function getText(url){ const r = await fetch(url); if(!r.ok) throw new Error(r.status); return r.text(); }
-function toggleNoVideo(btn){
-  const rows = document.querySelectorAll("#latest tr.no-video");
-  const showing = btn.dataset.showing === "1";
-  rows.forEach(r=>{ r.style.display = showing ? "none" : ""; });
-  btn.dataset.showing = showing ? "0" : "1";
-  btn.textContent = showing ? btn.dataset.labelShow : "收起无新视频的频道";
-}
-/* 重点数字（$价位、百分比）用等宽字体高亮，和正文区分 */
 function markNums(s){
   return esc(s)
     .replace(/\$[\d,]+(?:\.\d+)?/g, m=>'<span class="num">'+m+'</span>')
-    .replace(/\d+(?:\.\d+)?%/g, m=>'<span class="num">'+m+'</span>');
+    .replace(/(^|[^0-9])(\d+(?:\.\d+)?%)/g, (m,p1,p2)=>p1+'<span class="num">'+p2+'</span>');
 }
-const STANCE = {bullish:["看涨","bull"], bearish:["看空","bear"], neutral:["中性","neu"], range:["区间","neu"], mixed:["分歧","mix"]};
-function stanceBadge(s){ const m = STANCE[s||""]; return m ? '<span class="badge '+m[1]+'">'+m[0]+'</span>' : ""; }
+const STANCE = {bullish:["偏多","bull"], bearish:["偏空","bear"], neutral:["中性","neu"], range:["区间","neu"], mixed:["混合","mix"], unknown:["方向未明","unk"]};
+function stanceBadge(s){ const m = STANCE[s||"unknown"] || STANCE.unknown; return '<span class="badge '+m[1]+'">'+m[0]+'</span>'; }
+function firstSentence(s, maxLen){
+  s = (s||"").replace(/\s+/g," ").trim();
+  if(!s) return "";
+  s = s.replace(/^(窗口内新视频|有新视频)\s*\d+\s*条[。、，]?\s*/, "");
+  const m = s.match(/^[^。；！？\n]+[。；！？]?/);
+  let t = m ? m[0] : s;
+  if(maxLen && t.length > maxLen) t = t.slice(0, maxLen) + "…";
+  return t;
+}
+function firstPrice(s){
+  const text = s || "";
+  const re = /\$[\d,]+(?:\.\d+)?/g;
+  let m;
+  while((m = re.exec(text)) !== null){
+    const after = text.slice(re.lastIndex).replace(/^\s*/, "");
+    if(after[0] === "亿" || after[0] === "万" || after[0] === "B" || after[0] === "M") continue; /* 64 亿美元 / $6.4B 这类规模数不是价位 */
+    return m[0];
+  }
+  return null;
+}
+/* 价格解析：优先用写稿给的结构化 prices 字段（自 2026-11-26 期起），否则从摘要固定写法里抽，抽不到回退原文 */
+function parsePrice(summary){
+  const s = summary || "";
+  const g = re => { const m = s.match(re); return m ? m[1] : null; };
+  const g2 = re => { const m = s.match(re); return m ? [m[1], m[2]] : [null, null]; };
+  const dirPct = g2(/(上涨|下跌)\s*([\d.]+%)/);
+  return {
+    close: g(/收\s*\$([\d,]+(?:\.\d+)?)/),
+    dir: dirPct[0], pct: dirPct[1],
+    high: g(/最高\s*\$([\d,]+(?:\.\d+)?)/),
+    low: g(/最低\s*\$([\d,]+(?:\.\d+)?)/),
+    progHigh: g(/进行中[^。]*?最高\s*\$([\d,]+(?:\.\d+)?)/),
+    progLow: g(/进行中[^。]*?最低\s*\$([\d,]+(?:\.\d+)?)/),
+    snapshot: g(/现价约\s*\$([\d,]+(?:\.\d+)?)/)
+  };
+}
+function coinPrice(last, coin){
+  if(last.prices && last.prices[coin]) {
+    const p = last.prices[coin];
+    return {close:p.close||null, dir:p.dir||null, pct:p.pct||null, high:p.high||null, low:p.low||null, progHigh:p.progHigh||null, progLow:p.progLow||null, snapshot:p.snapshot||null};
+  }
+  return parsePrice(coin === "btc" ? last.btc_summary : last.eth_summary);
+}
+const isPM = r => r.category === "预测市场";
+const isTG = r => r.category === "Telegram" || r.category === "Discord";
+function rowKind(r){
+  if(r.status){ if(r.status === "新增") return "new"; if(r.status === "无新视频") return "novideo"; return "background"; }
+  const v = (r.view||"").trim();
+  if(/^(窗口内新视频|有新视频)/.test(v)) return "new";
+  if(v.indexOf("本期暂无新视频") === 0) return "novideo";
+  return "background";
+}
+function sourceStatus(r){
+  if(r.source_status) return r.source_status;
+  if(isPM(r)) return "API（Gamma）";
+  if(r.category === "Discord") return (r.view||"").indexOf("登录仍过期") >= 0 ? "来源暂不可用" : "社群消息";
+  if(r.category === "Telegram") return "社群消息";
+  const v = r.view || "";
+  if(v.indexOf("本期暂无新视频") === 0) return "来源暂不可用";
+  if(/据视频简介/.test(v)) return "据视频简介";
+  if(/标题称/.test(v)) return "仅据视频标题";
+  return "据视频简介";
+}
+function srcTag(r){
+  const s = sourceStatus(r);
+  const cls = s === "API（Gamma）" ? "api" : (s === "来源暂不可用" ? "warn" : "");
+  let t = '<span class="tag'+(cls ? " "+cls : "")+'">'+esc(s)+'</span>';
+  if(/口播/.test(r.view||"") && /未核实/.test(r.view||"")) t += ' <span class="tag warn">口播未核实</span>';
+  return t;
+}
+function assetTag(r){
+  const t = ((r.view||"") + " " + (r.video_title||""));
+  const hasBtc = /BTC|比特币/.test(t), hasEth = /ETH|以太坊/.test(t);
+  if(hasBtc && hasEth) return "BTC · ETH";
+  if(hasEth) return "ETH";
+  if(hasBtc) return "BTC";
+  return "非 BTC/ETH";
+}
 function parseHistory(txt){
   const ls = txt.trim().split("\n").filter(Boolean);
   try{ return ls.map(l=>JSON.parse(l)); }
@@ -135,10 +289,10 @@ function parseHistory(txt){
     while(i<txt.length){
       while(i<txt.length && /\s/.test(txt[i])) i++;
       if(i>=txt.length) break;
-      let depth=0, inStr=false, esc=false; const start=i;
+      let depth=0, inStr=false, esc2=false; const start=i;
       for(; i<txt.length; i++){
         const c=txt[i];
-        if(inStr){ if(esc) esc=false; else if(c==="\\") esc=true; else if(c==='"') inStr=false; }
+        if(inStr){ if(esc2) esc2=false; else if(c==="\\") esc2=true; else if(c==='"') inStr=false; }
         else if(c==='"') inStr=true;
         else if(c==="{"||c==="[") depth++;
         else if(c==="}"||c==="]"){ depth--; if(depth===0){ i++; break; } }
@@ -148,49 +302,241 @@ function parseHistory(txt){
     return out;
   }
 }
+function accText(acc, ch){
+  const a = acc[ch];
+  if(!a) return "暂无可核实预测";
+  const res = a.resolved || 0, pen = a.pending || 0, hits = a.hits || 0;
+  if(res === 0) return pen > 0 ? "待验证（" + pen + "）" : "暂无可核实预测";
+  let t = "命中 " + hits + " / 已判定 " + res;
+  if(res < 5) t += "｜样本不足";
+  if(pen > 0) t += "｜待验证 " + pen;
+  return t;
+}
+function pubTime(r){
+  const v = r.view || "";
+  const m = v.match(/(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2}):\d{2}（多伦多时间/);
+  const u = v.match(/(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):\d{2}(?:Z|\+00:00)/);
+  let t = "";
+  if(m) t = Number(m[2]) + "月" + Number(m[3]) + "日 " + m[4] + ":" + m[5] + "（多伦多）";
+  else if(r.video_date){ const d = (r.video_date||"").match(/(\d{4})-(\d{2})-(\d{2})/); if(d) t = Number(d[2]) + "月" + Number(d[3]) + "日"; }
+  if(u) t += (t ? " ｜ RSS " : "") + Number(u[2]) + "月" + Number(u[3]) + "日 " + u[4] + ":" + u[5] + " UTC";
+  return t || "—";
+}
+function cardHtml(r, acc){
+  const kind = rowKind(r);
+  const asset = assetTag(r);
+  const price = firstPrice(r.view);
+  const sum = firstSentence(r.view, 120);
+  const evalTxt = firstSentence(r.comment || "—", 140);
+  const det = '<details class="card-det"><summary>展开详情</summary><dl>'
+    + '<dt>频道背景</dt><dd>' + esc(r.focus || "") + '</dd>'
+    + '<dt>视频标题</dt><dd>' + esc(r.video_title || "—") + '</dd>'
+    + '<dt>发布时间</dt><dd>' + esc(pubTime(r)) + '</dd>'
+    + '<dt>完整观点</dt><dd>' + markNums(r.view || "") + '</dd>'
+    + '<dt>完整点评</dt><dd>' + markNums(r.comment || "—") + '</dd>'
+    + '<dt>准确率</dt><dd>' + esc(accText(acc, r.channel)) + '</dd>'
+    + '</dl></details>';
+  return '<article class="card" data-kind="' + kind + '" data-stance="' + (r.stance || "unknown") + '" data-asset="' + esc(asset) + '">'
+    + '<div class="card-head"><h3>' + esc(r.channel) + '</h3> ' + stanceBadge(r.stance) + ' <span class="tag">' + esc(asset) + '</span></div>'
+    + '<p class="card-sum"><b>来源内容：</b>' + markNums(sum) + '</p>'
+    + (price ? '<p class="card-key">关键价位：<span class="num">' + esc(price) + '</span></p>' : '')
+    + '<p class="card-eval"><b>本页评估：</b>' + markNums(evalTxt) + '</p>'
+    + '<div class="card-meta">' + srcTag(r) + ' <span class="acc">' + esc(accText(acc, r.channel)) + '</span></div>'
+    + '<div class="card-links">' + (r.video_url ? '<a href="' + esc(r.video_url) + '" target="_blank" rel="noopener">视频来源</a>' : '<span class="note">无视频链接</span>') + '</div>'
+    + det + '</article>';
+}
+
 (async function(){
   try{
     const txt = await getText(RAW + "results/youtube_briefing_history.jsonl");
-    let acc = {}, accMeta = "";
-    try{ const aj = JSON.parse(await getText(RAW + "results/youtube_accuracy.json")); acc = aj.channels || {}; accMeta = aj.generated_at || ""; }catch(e){}
+    let acc = {}, accMeta = "", accSum = null;
+    try{ const aj = JSON.parse(await getText(RAW + "results/youtube_accuracy.json")); acc = aj.channels || {}; accMeta = aj.generated_at || ""; accSum = aj.summary || null; }catch(e){}
     const lines = parseHistory(txt);
     const last = lines[lines.length-1];
     document.getElementById("status").textContent = "已读取 " + lines.length + " 期简报记录，最新一期：" + last.run_toronto + "（多伦多）。";
-    let html = "<p class=\"meta\">推送时间（多伦多）：<span class=\"num\">" + esc(last.run_toronto) + "</span></p>";
-    if(last.format_note) html += "<p class=\"note\">" + esc(last.format_note) + "</p>";
-    html += "<div class=\"summary-grid\">"
-      + "<section><h3><span class=\"coin btc\">BTC</span></h3><p>" + markNums(last.btc_summary||"") + "</p></section>"
-      + "<section><h3><span class=\"coin eth\">ETH</span></h3><p>" + markNums(last.eth_summary||"") + "</p></section></div>";
-    if(last.consensus || last.divergence){
-      html += "<div class=\"verdict\">";
-      if(last.consensus) html += "<p><b>共识：</b>" + markNums(last.consensus) + "</p>";
-      if(last.divergence) html += "<p><b>分歧：</b>" + markNums(last.divergence) + "</p>";
-      html += "</div>";
+    const rows = last.table_rows || [];
+    const ytRows = rows.filter(r => !isPM(r) && !isTG(r));
+    const tgRows = rows.filter(isTG);
+    const pmRows = rows.filter(isPM);
+    const newRows = ytRows.filter(r => rowKind(r) === "new");
+    const novideoRows = ytRows.filter(r => rowKind(r) === "novideo");
+    const bgRows = ytRows.filter(r => rowKind(r) === "background");
+    const dist = {bullish:0, bearish:0, mixed:0, neutral:0, unknown:0};
+    newRows.forEach(r => { const k = r.stance || "unknown"; if(dist[k] === undefined) dist.unknown++; else dist[k]++; });
+    const nNew = newRows.length;
+
+    /* ---- 执行摘要 ---- */
+    const btcP = coinPrice(last, "btc"), ethP = coinPrice(last, "eth");
+    function priceRow(label, p, unit){
+      if(!p.close) return "";
+      const chg = (p.dir && p.pct) ? (p.dir === "上涨" ? "+" : "−") + p.pct : "—";
+      const hi = p.high, lo = p.low; /* 最高/最低与收盘同一天（UTC 日线）；进行中数值只放关键观察位 */
+      return "<tr><th>" + label + "</th><td><span class=\"num\">$" + esc(p.close) + "</span>（" + esc(chg) + "）"
+        + (hi ? "｜最高 <span class=\"num\">$" + esc(hi) + "</span>" : "")
+        + (lo ? "｜最低 <span class=\"num\">$" + esc(lo) + "</span>" : "")
+        + (p.snapshot ? "｜快照约 <span class=\"num\">$" + esc(p.snapshot) + "</span>" : "")
+        + "</td></tr>";
     }
-    if(last.table_rows && last.table_rows.length){
-      const isEmpty = r => (r.view||"").trim() === "本期暂无新视频";
-      const hiddenCount = last.table_rows.filter(isEmpty).length;
-      const accCell = r => r.category==="预测市场" ? "—" : (r.channel||"").includes("Telegram") ? "—" : (acc[r.channel] ? acc[r.channel].display : "暂无");
-      html += "<div class=\"scroll\"><table class=\"main\"><colgroup><col style=\"width:10%\"><col style=\"width:12%\"><col style=\"width:38%\"><col style=\"width:14%\"><col style=\"width:16%\"><col style=\"width:10%\"></colgroup><tr><th>分类</th><th>频道名称</th><th>最新核心观点</th><th>核心关注点 / 风格定位</th><th>点评</th><th>准确率</th></tr>" +
-        last.table_rows.map(r=>{
-          const cls = [isEmpty(r)?"no-video":"", r.category==="预测市场"?"pm":""].filter(Boolean).join(" ");
-          return "<tr"+(cls?(" class=\""+cls+"\""):"")+(isEmpty(r)?" style=\"display:none\"":"")+"><td class=\"cat\">"+esc(r.category)+"</td><td class=\"ch\">"+esc(r.channel)+"</td><td>"+stanceBadge(r.stance)+markNums(r.view||"")+"</td><td>"+esc(r.focus)+"</td><td>"+markNums(r.comment||"—")+"</td><td class=\"acc\">"+accCell(r)+"</td></tr>";
-        }).join("") + "</table></div>";
-      if(hiddenCount) html += "<p class=\"note\">本期 " + hiddenCount + " 个频道暂无新视频，已默认隐藏。 <button onclick=\"toggleNoVideo(this)\" data-label-show=\"显示" + hiddenCount + "个无新视频的频道\">显示" + hiddenCount + "个无新视频的频道</button></p>";
-      if(accMeta) html += "<p class=\"note\">准确率：只统计已验证的预测（命中 / 已判定数，括号为样本数）；“待验证”为窗口未到，“暂无”为无可核实预测。价格源 Binance US 日线，更新于 " + esc(accMeta) + "。</p>";
+    const ledeParts = [];
+    if(btcP.close) ledeParts.push("BTC 收于 <b>$" + esc(btcP.close) + "</b>" + (btcP.dir && btcP.pct ? "（" + (btcP.dir === "上涨" ? "+" : "−") + btcP.pct + "）" : "") + (btcP.low ? "，当日先跌至 $" + esc(btcP.low) : "") + (btcP.progHigh ? "，随后最高 $" + esc(btcP.progHigh) : "") + "。");
+    if(ethP.close) ledeParts.push("ETH 收于 <b>$" + esc(ethP.close) + "</b>" + (ethP.dir && ethP.pct ? "（" + (ethP.dir === "上涨" ? "+" : "−") + ethP.pct + "）" : "") + "。");
+    ledeParts.push("新视频观点 " + nNew + " 条：偏多 " + dist.bullish + "、偏空 " + dist.bearish + "、混合 " + dist.mixed + "、中性 " + dist.neutral + "、方向未明 " + dist.unknown + "。");
+    if(last.divergence) ledeParts.push(markNums("主要分歧：" + firstSentence(last.divergence, 110)));
+    const levels = [];
+    if(btcP.low) levels.push("BTC 日低 <b>$" + esc(btcP.low) + "</b>");
+    if(btcP.close) levels.push("BTC 收盘 <b>$" + esc(btcP.close) + "</b>");
+    if(btcP.progHigh) levels.push("BTC 进行中最高 <b>$" + esc(btcP.progHigh) + "</b>");
+    if(ethP.low) levels.push("ETH 日低 <b>$" + esc(ethP.low) + "</b>");
+    if(ethP.close) levels.push("ETH 收盘 <b>$" + esc(ethP.close) + "</b>");
+    if(ethP.progHigh) levels.push("ETH 进行中最高 <b>$" + esc(ethP.progHigh) + "</b>");
+    let execHtml = '<div class="exec"><h2>本期速览｜' + esc(last.run_toronto) + ' 多伦多时间</h2>'
+      + '<p class="exec-lede">' + ledeParts.join("<br>") + '</p>'
+      + '<div class="exec-grid"><div><h3>市场事实</h3><table class="facts">'
+      + priceRow("BTC", btcP) + priceRow("ETH", ethP)
+      + '<tr><th>更新时间</th><td>' + esc(last.run_toronto) + '（多伦多）</td></tr></table>'
+      + ((btcP.close || ethP.close) ? "" : '<p class="note">本期摘要未解析出结构化价格，见下方完整文字摘要。</p>')
+      + '</div><div><h3>关键观察位</h3><div class="levels">' + levels.map(l => '<span class="chip">' + l + '</span>').join("") + '</div>'
+      + '<p class="note" style="margin-top:10px">观点依据以可读取的标题与简介为主，未核实口播内容不作为明确预测。</p></div></div>'
+      + '<details><summary>完整文字摘要（BTC / ETH / 共识 / 分歧原文）</summary>'
+      + (last.btc_summary ? "<p><b>BTC：</b>" + markNums(last.btc_summary) + "</p>" : "")
+      + (last.eth_summary ? "<p><b>ETH：</b>" + markNums(last.eth_summary) + "</p>" : "")
+      + (last.consensus ? "<p><b>共识：</b>" + markNums(last.consensus) + "</p>" : "")
+      + (last.divergence ? "<p><b>分歧：</b>" + markNums(last.divergence) + "</p>" : "")
+      + (last.format_note ? "<p class=\"note\">" + esc(last.format_note) + "</p>" : "")
+      + '</details></div>';
+    document.getElementById("execBox").innerHTML = execHtml;
+
+    /* ---- 观点分布 ---- */
+    const segs = [["bullish","seg-bull","偏多"],["bearish","seg-bear","偏空"],["mixed","seg-mix","混合"],["neutral","seg-neu","中性"],["unknown","seg-unk","方向未明"]];
+    const barHtml = nNew ? '<div class="dist-bar">' + segs.map(s => dist[s[0]] ? '<span class="' + s[1] + '" style="width:' + (dist[s[0]] / nNew * 100).toFixed(1) + '%" title="' + s[2] + " " + dist[s[0]] + '"></span>' : "").join("") + "</div>" : "";
+    document.getElementById("distBox").innerHTML = '<h2>观点分布</h2>'
+      + '<p class="note">样本观点分布（仅本期 ' + nNew + ' 条新视频行），<b>不等同于市场整体共识</b>：频道之间影响力、内容质量和证据强度不同。</p>'
+      + barHtml
+      + '<p class="dist-legend">' + segs.map(s => s[2] + ' <b>' + dist[s[0]] + '</b>').join(" ｜ ") + '</p>'
+      + '<p class="note">统计口径：新视频 ' + (last.btc_summary && /(\d+)\s*条真正新视频/.test(last.btc_summary) ? last.btc_summary.match(/(\d+)\s*条真正新视频/)[1] : "—") + ' 条、归并为 ' + nNew + ' 条观点记录；同一频道多条视频可能合并为一行。</p>';
+
+    /* ---- 主要分歧：多方 / 空方 / 条件情景 ---- */
+    function sideList(stance){
+      const list = newRows.filter(r => r.stance === stance);
+      if(!list.length) return "<p class=\"note\">本期无明确" + (stance === "bullish" ? "偏多" : "偏空") + "行。</p>";
+      return "<ul>" + list.map(r => "<li><b>" + esc(r.channel) + "</b>：" + markNums(firstSentence(r.view, 90)) + "</li>").join("") + "</ul>";
     }
-    if(last.sources && last.sources.length){
-      html += "<h3>主要视频来源</h3><ul>" + last.sources.map(s=>"<li><a href=\""+esc(s.url)+"\" target=\"_blank\" rel=\"noopener\">"+esc(s.title)+"</a></li>").join("") + "</ul>";
+    const mixedRows = newRows.filter(r => r.stance === "mixed" || r.stance === "range");
+    document.getElementById("vsBox").innerHTML = '<h2>主要分歧</h2>'
+      + '<div class="vs-grid"><section><h3>多方</h3>' + sideList("bullish") + '</section>'
+      + '<section><h3>空方</h3>' + sideList("bearish") + '</section></div>'
+      + (mixedRows.length ? '<p class="note">条件情景（混合 / 区间，' + mixedRows.length + ' 条，不计入多空比）——' + mixedRows.map(r => esc(r.channel)).join("、") + '：方向取决于关键位是否守住 / 收复，见各卡片详情。</p>' : "")
+      + (last.divergence ? '<details><summary>分歧原文</summary><p>' + markNums(last.divergence) + '</p></details>' : "");
+
+    /* ---- 频道观点卡片 + 筛选 ---- */
+    const btcN = ytRows.filter(r => assetTag(r).indexOf("BTC") >= 0 && rowKind(r) !== "novideo").length;
+    const ethN = ytRows.filter(r => assetTag(r).indexOf("ETH") >= 0 && rowKind(r) !== "novideo").length;
+    const clearN = newRows.filter(r => r.stance === "bullish" || r.stance === "bearish").length;
+    const filters = [
+      ["all", "全部观点（" + (ytRows.length - novideoRows.length) + "）"],
+      ["new", "新增视频（" + nNew + "）"],
+      ["stance", "明确多空观点（" + clearN + "）"],
+      ["btc", "BTC（" + btcN + "）"],
+      ["eth", "ETH（" + ethN + "）"],
+      ["novideo", "无新视频（" + novideoRows.length + "）"]
+    ];
+    document.getElementById("filters").innerHTML = filters.map(f => '<button type="button" data-filter="' + f[0] + '"' + (f[0] === "all" ? ' class="active"' : "") + '>' + esc(f[1]) + '</button>').join("");
+    document.getElementById("cards").innerHTML = ytRows.filter(r => rowKind(r) !== "novideo").map(r => cardHtml(r, acc)).join("");
+    document.getElementById("novideoCards").innerHTML = novideoRows.map(r => cardHtml(r, acc)).join("");
+    document.getElementById("novideoSummary").textContent = "无新视频频道（" + novideoRows.length + " 个，点击展开）";
+    document.getElementById("filterNote").textContent = "默认只展示有新视频 / 有背景的频道；无新视频频道收在下方折叠区。点评为 Muse 判断，不构成买卖建议。";
+    window.__applyFilter = function(f){
+      document.querySelectorAll("#filters button").forEach(b => b.classList.toggle("active", b.dataset.filter === f));
+      const box = document.getElementById("novideoBox");
+      document.querySelectorAll("#channels .card").forEach(c => {
+        let show = true;
+        if(f === "new") show = c.dataset.kind === "new";
+        else if(f === "stance") show = (c.dataset.stance === "bullish" || c.dataset.stance === "bearish") && c.dataset.kind === "new";
+        else if(f === "btc") show = c.dataset.asset.indexOf("BTC") >= 0 && c.dataset.kind !== "novideo";
+        else if(f === "eth") show = c.dataset.asset.indexOf("ETH") >= 0 && c.dataset.kind !== "novideo";
+        else if(f === "novideo") show = c.dataset.kind === "novideo";
+        else show = c.dataset.kind !== "novideo";
+        c.style.display = show ? "" : "none";
+      });
+      box.open = (f === "novideo");
+    };
+    document.querySelectorAll("#filters button").forEach(b => b.addEventListener("click", () => window.__applyFilter(b.dataset.filter)));
+
+    /* ---- 社群动态 ---- */
+    document.getElementById("commBox").innerHTML = '<h2>Telegram / Discord 动态</h2>'
+      + '<p class="note">只收窗口内新帖；无新策略写“本期暂无新策略”，不硬填。发帖人自称的止盈只转述原文，不核实为事实。</p>'
+      + '<div class="comm-grid">' + tgRows.map(r => {
+          const noNew = /暂无新策略|无新开单/.test(r.view || "");
+          return '<div class="comm"><h3>' + esc(r.channel) + '</h3>'
+            + '<p>' + markNums(firstSentence(r.view, 220)) + '</p>'
+            + '<div class="card-meta">' + srcTag(r) + ' ' + stanceBadge(r.stance)
+            + (noNew ? ' <span class="tag">无新策略</span>' : "") + '</div>'
+            + (r.video_url ? '<a href="' + esc(r.video_url) + '" target="_blank" rel="noopener">帖子链接</a>' : "")
+            + '</div>';
+        }).join("") + '</div>';
+
+    /* ---- 预测市场 ---- */
+    document.getElementById("pmBox").innerHTML = '<h2>预测市场</h2>'
+      + '<p class="note">Yes 价即隐含概率（1¢ = 1%），不是现货价格；已结算档位不作为预测。数据：Polymarket 公开 Gamma API，每期现查。</p>'
+      + '<table><tr><th>市场</th><th>本期关键变化</th><th>状态</th></tr>'
+      + pmRows.map(r => {
+          const settled = (r.view || "").indexOf("已结算") >= 0;
+          return "<tr" + (settled ? "" : "") + "><td><b>" + esc(r.channel) + "</b><br><span class=\"note\">" + esc(r.focus || "") + "</span></td><td>" + markNums(firstSentence(r.comment || r.view || "", 200)) + "</td><td>" + (settled ? '<span class="tag warn">有档位已结算</span>' : '<span class="tag">未结算</span>') + "</td></tr>";
+        }).join("") + "</table>"
+      + '<details><summary>查看完整 Polymarket 档位（' + pmRows.length + ' 个市场）</summary>'
+      + pmRows.map(r => "<p><b>" + esc(r.channel) + "：</b>" + markNums(r.view || "") + "</p>").join("") + "</details>";
+
+    /* ---- 准确率与口径 ---- */
+    const tot = accSum ? ("累计 " + accSum.claims + " 条预测：命中 " + accSum.hits + " / 未命中 " + accSum.misses + " / 待验证 " + accSum.pending) : "";
+    document.getElementById("accBox").innerHTML = '<h2>准确率与口径</h2>'
+      + (tot ? '<p>' + esc(tot) + '。' + (accMeta ? '价格源 Binance US 日线，更新于 ' + esc(accMeta) + '。' : "") + '</p>' : "")
+      + '<p><b>什么算一条预测：</b>明确价位 + 方向 + 短期（7 天窗口）才计入；复述、提问、模型估值、长期目标、无价位观点（如“底部已现”）不验；同一原帖只计一次。</p>'
+      + '<p><b>如何判定：</b>原帖发布后 7 天内，Binance US 日线最高 / 最低价触及目标价即命中；支撑位守住算命中、跌破算未命中；带止损止盈的交易单按窗口内先触价判定；窗口未到算待验证，不计入分母。</p>'
+      + '<p><b>条件预测：</b>分叉式、条件式表述（如“跌破看 A、站上看 B”）不入验证口径，只在卡片点评里说明。</p>'
+      + '<p><b>样本不足：</b>已判定少于 5 条的频道标注“样本不足”，不要把 1/1、2/2 当成稳定胜率读。</p>'
+      + '<p class="note">预测准确率衡量历史结果；来源标签（口播已核实 / 据视频简介 / 仅据视频标题）衡量信息证据质量，两者不是同一种评级，不要混用。</p>'
+      + '<p class="note">各频道逐条成绩见上方卡片的准确率栏；完整台账见 <a href="./x-briefing.html">X 简报页预测台账</a>（YouTube 侧台账与 X 侧口径一致，verifications 表为准）。</p>';
+
+    /* ---- 本期新视频 ---- */
+    const newWithUrl = newRows.filter(r => r.video_url);
+    const urlSet = {};
+    newWithUrl.forEach(r => { urlSet[r.video_url] = true; });
+    const restSrcs = (last.sources || []).filter(s => !urlSet[s.url]);
+    function srcTime(r){
+      const v = r.view || "";
+      const m = v.match(/(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2}):\d{2}（多伦多时间/);
+      const u = v.match(/(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):\d{2}(?:Z|\+00:00)/);
+      let t = "";
+      if(m) t = Number(m[2]) + "月" + Number(m[3]) + "日 " + m[4] + ":" + m[5] + "（多伦多）";
+      else if(r.video_date){ const d = (r.video_date||"").match(/(\d{4})-(\d{2})-(\d{2})/); if(d) t = Number(d[2]) + "月" + Number(d[3]) + "日"; }
+      if(u) t += (t ? " ｜ RSS " : "") + Number(u[2]) + "月" + Number(u[3]) + "日 " + u[4] + ":" + u[5] + " UTC";
+      return t || "—";
     }
-    document.getElementById("latest").innerHTML = html;
-    let hist = "<table><tr><th>推送时间（多伦多）</th><th>BTC 速览</th><th>ETH 速览</th></tr>" +
-      lines.slice(-12).reverse().map(d=>"<tr><td>"+esc(d.run_toronto)+"</td><td>"+markNums(d.btc_summary||"")+"</td><td>"+markNums(d.eth_summary||"")+"</td></tr>").join("") + "</table>";
-    document.getElementById("history").innerHTML = hist;
+    document.getElementById("srcBox").innerHTML = '<h2>本期新视频</h2>'
+      + '<p class="note">默认只展示本期纳入分析的新视频（' + newWithUrl.length + ' 条）。非行情内容、窗口外视频与重复记录收在下方折叠区。</p>'
+      + '<div class="scroll"><table><tr><th>发布时间</th><th>频道</th><th>视频标题</th><th>本页状态</th></tr>'
+      + newWithUrl.map(r => {
+          const nonBtcEth = assetTag(r) === "非 BTC/ETH";
+          return "<tr><td style=\"white-space:nowrap\">" + esc(srcTime(r)) + "</td><td>" + esc(r.channel) + "</td><td><a href=\"" + esc(r.video_url) + "\" target=\"_blank\" rel=\"noopener\">" + esc(r.video_title || "（无标题）") + "</a>" + (nonBtcEth ? ' <span class="tag">非 BTC/ETH</span>' : "") + "</td><td>" + srcTag(r) + "</td></tr>";
+        }).join("") + "</table></div>"
+      + '<details><summary>其余来源（' + restSrcs.length + ' 条）：非本期分析 / 背景视频 / 重复记录，点击展开</summary><ul>'
+      + restSrcs.map(s => "<li><a href=\"" + esc(s.url) + "\" target=\"_blank\" rel=\"noopener\">" + esc(s.title) + "</a>" + (/BTC|ETH|比特币|以太坊/.test(s.title) ? "" : ' <span class="tag">非 BTC/ETH</span>') + "</li>").join("") + "</ul></details>";
+
+    /* ---- 历史简报：默认最近 5 期 ---- */
+    const recent = lines.slice(-5).reverse();
+    const older = lines.slice(0, -5).reverse();
+    function histRow(l){
+      return "<tr class=\"hist-row\"><td>" + esc(l.run_toronto) + "</td><td>" + markNums(firstSentence(l.btc_summary || "", 90)) + "</td></tr>";
+    }
+    document.getElementById("histBox").innerHTML = '<h2>历史简报</h2>'
+      + '<table><tr><th>时间（多伦多）</th><th>BTC 摘要首句</th></tr>' + recent.map(histRow).join("") + "</table>"
+      + (older.length ? '<details><summary>查看更早简报（' + older.length + ' 期）</summary><table><tr><th>时间（多伦多）</th><th>BTC 摘要首句</th></tr>' + older.map(histRow).join("") + "</table></details>" : "");
   }catch(e){
-    document.getElementById("status").innerHTML = "<span class=\"err\">简报历史读取失败（"+esc(e.message)+"），请稍后刷新。</span>";
-    document.getElementById("latest").innerHTML = "<p class=\"note\">暂无已上传的简报记录，下一期推送后会自动显示。</p>";
+    document.getElementById("status").textContent = "仓库数据读取失败：" + e.message + "。请稍后刷新，或确认 GitHub Pages 是否可达。";
+    document.getElementById("status").className = "err";
   }
 })();
+document.getElementById("toTop").addEventListener("click", () => window.scrollTo({top: 0, behavior: "smooth"}));
 </script>
 </body>
 </html>
