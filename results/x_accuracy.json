@@ -1,24 +1,24 @@
 {
-  "generated_at": "2026-11-25 09:49",
+  "generated_at": "2026-11-25 20:58",
   "price_source": "Binance US 日线（UTC）最高/最低价；窗口为原帖发布后 7 天",
   "rule": "只验带明确价位+方向+短期的预测；复述、提问、模型估值、长期目标不验；同一原帖只计一次；方向不明的预测只当情绪、不计分；窗口 0 天的事后复述不计分；数据/事件型账号分口径、不参与观点排名",
   "summary": {
-    "claims": 39,
+    "claims": 42,
     "hits": 14,
     "misses": 23,
-    "pending": 2
+    "pending": 5
   },
   "summary_view": {
-    "claims": 35,
+    "claims": 37,
     "hits": 13,
     "misses": 20,
-    "pending": 2
+    "pending": 4
   },
   "summary_data": {
-    "claims": 4,
+    "claims": 5,
     "hits": 1,
     "misses": 3,
-    "pending": 0
+    "pending": 1
   },
   "sentiment_only": 1,
   "excluded": 1,
@@ -26,7 +26,7 @@
     "Michaël van de Poppe（@CryptoMichNL）": {
       "hits": 1,
       "misses": 5,
-      "pending": 1,
+      "pending": 2,
       "resolved": 6,
       "accuracy_pct": 17,
       "display": "17%（1/6）"
@@ -34,10 +34,18 @@
     "Alex Thorn（Galaxy，@intangiblecoins）": {
       "hits": 0,
       "misses": 1,
-      "pending": 1,
+      "pending": 2,
       "resolved": 1,
       "accuracy_pct": 0,
       "display": "0%（0/1）"
+    },
+    "Glassnode（@glassnode）": {
+      "hits": 0,
+      "misses": 2,
+      "pending": 1,
+      "resolved": 2,
+      "accuracy_pct": 0,
+      "display": "0%（0/2）"
     },
     "Ali Martinez（Ali Charts）": {
       "hits": 1,
@@ -87,14 +95,6 @@
       "accuracy_pct": 100,
       "display": "100%（1/1）"
     },
-    "Glassnode（@glassnode）": {
-      "hits": 0,
-      "misses": 2,
-      "pending": 0,
-      "resolved": 2,
-      "accuracy_pct": 0,
-      "display": "0%（0/2）"
-    },
     "CryptoQuant（@cryptoquant_com）": {
       "hits": 0,
       "misses": 1,
@@ -120,6 +120,33 @@
       "target_date": "2026-12-09",
       "outcome": "pending",
       "checked_at": "2026-11-22 09:30",
+      "scored": true,
+      "exclude_reason": ""
+    },
+    {
+      "channel": "Alex Thorn（Galaxy，@intangiblecoins）",
+      "target_price": "BTC $58,525（日收跌破则向更低底部）",
+      "target_date": "2026-12-02",
+      "outcome": "pending",
+      "checked_at": "2026-11-25 20:50",
+      "scored": true,
+      "exclude_reason": ""
+    },
+    {
+      "channel": "Glassnode（@glassnode）",
+      "target_price": "BTC $58,500（日收跌破则下探$53,200）",
+      "target_date": "2026-12-02",
+      "outcome": "pending",
+      "checked_at": "2026-11-25 20:50",
+      "scored": true,
+      "exclude_reason": ""
+    },
+    {
+      "channel": "Michaël van de Poppe（@CryptoMichNL）",
+      "target_price": "BTC $57,000（跌破则向假期周末进一步下行）",
+      "target_date": "2026-11-29",
+      "outcome": "pending",
+      "checked_at": "2026-11-25 20:50",
       "scored": true,
       "exclude_reason": ""
     },
