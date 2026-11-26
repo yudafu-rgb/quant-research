@@ -1,7 +1,7 @@
 {
  "kind": "v2",
- "report": "run_2026-11-26_0547.json",
- "published_at_toronto": "2026-11-26 00:53",
+ "report": "run_2026-11-26_1346.json",
+ "published_at_toronto": "2026-11-26 08:52",
  "universes": {
   "crypto": {
    "regime": "risk-off",
@@ -11,53 +11,53 @@
    "longs": [
     {
      "label": "venice-token (trending)",
-     "entry_price": 27.9149836926576,
+     "entry_price": 27.58354586289812,
      "entry_ts": "2026-11-26",
-     "score": 83.1,
+     "score": 83.9,
      "tier": "B",
-     "reason": "分数83.1（第1名）；看涨信号：Breakout on volume；RSI 64.6；周线向上；市场状态risk-off；Tier-B（未过：regime）"
-    },
-    {
-     "label": "XMR (Monero)",
-     "entry_price": 520.828353455129,
-     "entry_ts": "2026-11-26",
-     "score": 69.6,
-     "tier": "B",
-     "reason": "分数69.6（第4名）；看涨信号：MACD bullish cross；RSI 47.5；周线向上；市场状态risk-off；Tier-B（未过：regime）"
+     "reason": "分数83.9（第1名）；看涨信号：Breakout on volume；RSI 63.9；周线向上；市场状态risk-off；Tier-B（未过：regime）"
     },
     {
      "label": "NEAR (NEAR Protocol)",
-     "entry_price": 3.076060636280236,
+     "entry_price": 3.075931504195754,
      "entry_ts": "2026-11-26",
-     "score": 66.9,
+     "score": 67.4,
      "tier": "B",
-     "reason": "分数66.9（第5名）；看涨信号：MACD bullish cross；RSI 40.3；周线向上；市场状态risk-off；Tier-B（未过：regime）"
+     "reason": "分数67.4（第7名）；看涨信号：MACD bullish cross；RSI 40.3；周线向上；市场状态risk-off；Tier-B（未过：regime）"
+    },
+    {
+     "label": "QNT (Quant)",
+     "entry_price": 151.4130999364693,
+     "entry_ts": "2026-11-26",
+     "score": 66.1,
+     "tier": "B",
+     "reason": "分数66.1（第8名）；看涨信号：MACD bullish cross；RSI 42.3；周线向上；市场状态risk-off；Tier-B（未过：regime）"
     }
    ],
    "shorts": [
     {
      "label": "RAIN (Rain)",
-     "entry_price": 0.0027468392788649325,
+     "entry_price": 0.0025542340462259153,
      "entry_ts": "2026-11-26",
-     "score": 25.2,
+     "score": 20.8,
      "tier": "A",
-     "reason": "分数25.2（第42名）；看跌信号：Breakdown；RSI 31.1；周线向下；市场状态risk-off"
+     "reason": "分数20.8（第47名）；看跌信号：Breakdown；RSI 30.1；周线向下；市场状态risk-off"
     },
     {
      "label": "pudgy-penguins (trending)",
-     "entry_price": 0.0044294608115173955,
+     "entry_price": 0.004441424382329822,
      "entry_ts": "2026-11-26",
-     "score": 19.6,
+     "score": 18.3,
      "tier": "C",
-     "reason": "分数19.6（第45名）；RSI 28.8；周线向下；市场状态risk-off；Tier-C（未过：rsi,signal）"
+     "reason": "分数18.3（第48名）；RSI 29.1；周线向下；市场状态risk-off；Tier-C（未过：rsi,signal）"
     },
     {
-     "label": "pi-network (trending)",
-     "entry_price": 0.05565631503634308,
+     "label": "aptos (trending)",
+     "entry_price": 0.3845882054518678,
      "entry_ts": "2026-11-26",
-     "score": 21.6,
+     "score": 22.7,
      "tier": "C",
-     "reason": "分数21.6（第44名）；RSI 35.9；周线向下；市场状态risk-off；Tier-C（未过：signal）"
+     "reason": "分数22.7（第45名）；RSI 27.1；周线向下；市场状态risk-off；Tier-C（未过：rsi,signal）"
     }
    ]
   },
@@ -128,9 +128,9 @@
    "insufficient": false
   },
   "crypto_short": {
-   "n": 436,
-   "win_rate": 83.5,
-   "avg_ret": 6.22,
+   "n": 439,
+   "win_rate": 83.4,
+   "avg_ret": 6.21,
    "insufficient": false
   },
   "stocks_long": {
