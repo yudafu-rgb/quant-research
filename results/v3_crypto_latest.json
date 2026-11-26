@@ -1,74 +1,66 @@
 {
  "regime": "risk-off",
- "data_asof": "2026-11-26 05:00",
+ "data_asof": "2026-11-26 09:00",
  "skipped": false,
  "skip_reason": null,
  "longs": [
   {
    "label": "venice-token (trending)",
-   "entry_price": 27.1383550975549,
-   "entry_ts": "2026-11-26T05:00:00",
-   "score": 79.9,
+   "entry_price": 27.77481556320674,
+   "entry_ts": "2026-11-26T09:00:00",
+   "score": 76.1,
    "tier": "C",
-   "reason": "小时线分数79.9（第1名）；RSI(14h) 50.8；日线向上；市场状态risk-off；🔥trending关注度加成+2分；Tier-C（未过：signal,regime）"
+   "reason": "小时线分数76.1（第1名）；RSI(14h) 56.1；日线向上；市场状态risk-off；🔥trending关注度加成+2分；Tier-C（未过：signal,regime）"
   },
   {
-   "label": "derive (trending)",
-   "entry_price": 0.3598198677156176,
-   "entry_ts": "2026-11-26T05:00:00",
-   "score": 67.5,
+   "label": "sky (trending)",
+   "entry_price": 0.04629,
+   "entry_ts": "2026-11-26T09:00:00",
+   "score": 63.8,
    "tier": "C",
-   "reason": "小时线分数67.5（第5名）；RSI(14h) 58.4；日线向上；市场状态risk-off；🔥trending关注度加成+2分；Tier-C（未过：signal,regime）"
-  },
-  {
-   "label": "M (MemeCore)",
-   "entry_price": 0.8562797815566707,
-   "entry_ts": "2026-11-26T05:00:00",
-   "score": 64.9,
-   "tier": "C",
-   "reason": "小时线分数64.9（第6名）；RSI(14h) 75.0；日线向上；市场状态risk-off；Tier-C（未过：rsi,signal,regime）"
+   "reason": "小时线分数63.8（第4名）；RSI(14h) 69.4；日线向下；市场状态risk-off；🔥trending关注度加成+2分；Tier-C（未过：signal,regime）"
   }
  ],
  "shorts": [
   {
+   "label": "RAIN (Rain)",
+   "entry_price": 0.002554312790841945,
+   "entry_ts": "2026-11-26T09:00:00",
+   "score": 19.9,
+   "tier": "C",
+   "reason": "小时线分数19.9（第39名）；RSI(14h) 30.7；日线向下；市场状态risk-off；Tier-C（未过：signal）"
+  },
+  {
+   "label": "monad (trending)",
+   "entry_price": 0.010755464970709,
+   "entry_ts": "2026-11-26T09:00:00",
+   "score": 28.4,
+   "tier": "C",
+   "reason": "小时线分数28.4（第37名）；RSI(14h) 49.2；日线向下；市场状态risk-off；🔥trending关注度加成+2分；Tier-C（未过：signal）"
+  },
+  {
    "label": "HYPE (Hyperliquid)",
-   "entry_price": 60.53,
-   "entry_ts": "2026-11-26T05:00:00",
-   "score": 35.2,
-   "tier": "A",
-   "reason": "小时线分数35.2（第36名）；看跌信号：MACD bearish cross；RSI(14h) 47.0；日线向下；市场状态risk-off；🔥trending关注度加成+2分；板块PerpDEX（24h +4.2%）"
-  },
-  {
-   "label": "GRAM (Gram (prev. Toncoin))",
-   "entry_price": 0.961,
-   "entry_ts": "2026-11-26T05:00:00",
-   "score": 35.2,
-   "tier": "A",
-   "reason": "小时线分数35.2（第37名）；看跌信号：MACD bearish cross；RSI(14h) 53.3；日线向下；市场状态risk-off"
-  },
-  {
-   "label": "XLM (Stellar)",
-   "entry_price": 0.1275,
-   "entry_ts": "2026-11-26T05:00:00",
-   "score": 35.5,
-   "tier": "A",
-   "reason": "小时线分数35.5（第35名）；看跌信号：MACD bearish cross；RSI(14h) 52.6；日线向下；市场状态risk-off；板块Payments（24h +3.8%）"
+   "entry_price": 60.69,
+   "entry_ts": "2026-11-26T09:00:00",
+   "score": 28.6,
+   "tier": "C",
+   "reason": "小时线分数28.6（第36名）；RSI(14h) 48.2；日线向下；市场状态risk-off；板块PerpDEX（24h +5.4%）；Tier-C（未过：signal）"
   }
  ],
  "kind": "v3-crypto",
- "report": "intraday_run_2026-11-26_0617.json",
- "published_at_toronto": "2026-11-26 06:21",
+ "report": "intraday_run_2026-11-26_1016.json",
+ "published_at_toronto": "2026-11-26 10:21",
  "winrate": {
   "long": {
-   "n": 916,
-   "win_rate": 39.8,
-   "avg_ret": -0.8,
+   "n": 918,
+   "win_rate": 39.9,
+   "avg_ret": -0.79,
    "insufficient": false
   },
   "short": {
-   "n": 957,
-   "win_rate": 57.4,
-   "avg_ret": 0.66,
+   "n": 959,
+   "win_rate": 57.2,
+   "avg_ret": 0.64,
    "insufficient": false
   }
  }
