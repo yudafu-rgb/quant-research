@@ -1,24 +1,74 @@
 {
- "regime": "unknown",
- "data_asof": "n/a",
- "skipped": true,
- "skip_reason": "SPY 最新已收盘bar为 2026-11-25（今天 2026-11-26），判定为休市/假日，跳过美股选股",
- "longs": [],
- "shorts": [],
+ "regime": "risk-off",
+ "data_asof": "2026-11-27 10:30",
+ "skipped": false,
+ "skip_reason": null,
+ "longs": [
+  {
+   "label": "PCG",
+   "entry_price": 14.444999694824219,
+   "entry_ts": "2026-11-27T10:30:00",
+   "score": 66.5,
+   "tier": "B",
+   "reason": "小时线分数66.5（第12名）；看涨信号：MACD bullish cross；RSI(14h) 69.9；日线向上；市场状态risk-off；Tier-B（未过：regime）"
+  },
+  {
+   "label": "COST",
+   "entry_price": 1097.969970703125,
+   "entry_ts": "2026-11-27T10:30:00",
+   "score": 70.6,
+   "tier": "C",
+   "reason": "小时线分数70.6（第1名）；RSI(14h) 54.0；日线向上；市场状态risk-off；Tier-C（未过：signal,regime）"
+  },
+  {
+   "label": "PG",
+   "entry_price": 172.625,
+   "entry_ts": "2026-11-27T10:30:00",
+   "score": 68.2,
+   "tier": "C",
+   "reason": "小时线分数68.2（第2名）；RSI(14h) 53.9；日线向上；市场状态risk-off；Tier-C（未过：signal,regime）"
+  }
+ ],
+ "shorts": [
+  {
+   "label": "OKE",
+   "entry_price": 88.2300033569336,
+   "entry_ts": "2026-11-27T10:30:00",
+   "score": 34.5,
+   "tier": "A",
+   "reason": "小时线分数34.5（第392名）；看跌信号：RSI overbought；RSI(14h) 74.5；日线向下；市场状态risk-off"
+  },
+  {
+   "label": "HAL",
+   "entry_price": 32.54999923706055,
+   "entry_ts": "2026-11-27T10:30:00",
+   "score": 36.7,
+   "tier": "A",
+   "reason": "小时线分数36.7（第364名）；看跌信号：RSI overbought；RSI(14h) 71.0；日线向下；市场状态risk-off"
+  },
+  {
+   "label": "WDAY",
+   "entry_price": 180.52000427246094,
+   "entry_ts": "2026-11-27T10:30:00",
+   "score": 29.2,
+   "tier": "A",
+   "reason": "小时线分数29.2（第434名）；看跌信号：MACD bearish cross；RSI(14h) 50.4；日线向下；市场状态risk-off"
+  }
+ ],
  "kind": "v3-stocks",
- "report": "intraday_run_2026-11-26_1536.json",
- "published_at_toronto": "2026-11-26 15:39",
+ "report": "intraday_run_2026-11-27_1036.json",
+ "published_at_toronto": "2026-11-27 10:39",
  "winrate": {
   "long": {
-   "n": 353,
-   "win_rate": 46.7,
-   "avg_ret": -0.26,
+   "n": 362,
+   "win_rate": 47.8,
+   "avg_ret": -0.22,
    "insufficient": false
   },
   "short": {
-   "n": 354,
-   "win_rate": 53.1,
-   "avg_ret": 0.43,
+   "n": 363,
+   "win_rate": 52.1,
+   "avg_ret": 0.33,
    "insufficient": false
   }
  }
