@@ -1,7 +1,7 @@
 {
  "kind": "v2",
- "report": "run_2026-11-27_1347.json",
- "published_at_toronto": "2026-11-27 08:52",
+ "report": "run_2026-11-27_2146.json",
+ "published_at_toronto": "2026-11-27 16:52",
  "universes": {
   "crypto": {
    "regime": "risk-off",
@@ -11,111 +11,111 @@
    "longs": [
     {
      "label": "QNT (Quant)",
-     "entry_price": 149.74136903047338,
+     "entry_price": 147.6347608287479,
      "entry_ts": "2026-11-27",
-     "score": 63.1,
+     "score": 62.2,
      "tier": "B",
-     "reason": "分数63.1（第7名）；看涨信号：MACD bullish cross；RSI 41.8；周线向上；市场状态risk-off；Tier-B（未过：regime）"
+     "reason": "分数62.2（第7名）；看涨信号：MACD bullish cross；RSI 40.4；周线向上；市场状态risk-off；Tier-B（未过：regime）"
     },
     {
      "label": "UNI (Uniswap)",
-     "entry_price": 4.909546409544486,
+     "entry_price": 4.842596291118809,
      "entry_ts": "2026-11-27",
-     "score": 50.9,
+     "score": 48.7,
      "tier": "B",
-     "reason": "分数50.9（第13名）；看涨信号：MACD bullish cross；RSI 37.9；周线向上；市场状态risk-off；Tier-B（未过：regime）"
+     "reason": "分数48.7（第15名）；看涨信号：MACD bullish cross；RSI 36.6；周线向上；市场状态risk-off；Tier-B（未过：regime）"
     },
     {
      "label": "venice-token (trending)",
-     "entry_price": 27.533793798967594,
+     "entry_price": 26.13384422502008,
      "entry_ts": "2026-11-27",
-     "score": 74.0,
+     "score": 72.8,
      "tier": "C",
-     "reason": "分数74.0（第3名）；RSI 61.3；周线向上；市场状态risk-off；Tier-C（未过：signal,regime）"
+     "reason": "分数72.8（第3名）；RSI 57.4；周线向上；市场状态risk-off；Tier-C（未过：signal,regime）"
     }
    ],
    "shorts": [
     {
-     "label": "RAIN (Rain)",
-     "entry_price": 0.0024361129152621133,
+     "label": "XMR (Monero)",
+     "entry_price": 402.8694417068756,
      "entry_ts": "2026-11-27",
-     "score": 17.9,
-     "tier": "C",
-     "reason": "分数17.9（第44名）；看跌信号：MACD bearish cross、Breakdown；RSI 29.5；周线向下；市场状态risk-off；注意：存在多空信号冲突，已按优先级裁决；Tier-C（未过：rsi）"
+     "score": 27.7,
+     "tier": "A",
+     "reason": "分数27.7（第35名）；看跌信号：MACD bearish cross、Breakdown；RSI 30.7；周线向下；市场状态risk-off"
     },
     {
-     "label": "TAO (Bittensor)",
-     "entry_price": 189.7060086362756,
+     "label": "RAIN (Rain)",
+     "entry_price": 0.0023035099178153567,
      "entry_ts": "2026-11-27",
-     "score": 35.9,
+     "score": 16.7,
      "tier": "C",
-     "reason": "分数35.9（第27名）；看跌信号：Death cross；RSI 39.9；周线向下；市场状态risk-off；Tier-C（未过：score）"
+     "reason": "分数16.7（第44名）；看跌信号：MACD bearish cross、Breakdown；RSI 28.8；周线向下；市场状态risk-off；注意：存在多空信号冲突，已按优先级裁决；Tier-C（未过：rsi）"
     },
     {
      "label": "BTC (Bitcoin)",
-     "entry_price": 61383.10079541028,
+     "entry_price": 59777.741948827286,
      "entry_ts": "2026-11-27",
-     "score": 21.6,
+     "score": 20.1,
      "tier": "C",
-     "reason": "分数21.6（第42名）；RSI 31.5；周线向下；市场状态risk-off；Tier-C（未过：signal）"
+     "reason": "分数20.1（第43名）；RSI 26.4；周线向下；市场状态risk-off；Tier-C（未过：rsi,signal）"
     }
    ]
   },
   "stocks": {
    "regime": "risk-off",
-   "data_asof": "2026-11-25 00:00",
+   "data_asof": "2026-11-27 00:00",
    "skipped": false,
    "skip_reason": null,
    "longs": [
     {
-     "label": "GILD",
-     "entry_price": 176.74000549316406,
-     "entry_ts": "2026-11-25",
-     "score": 74.6,
+     "label": "ADP",
+     "entry_price": 319.42999267578125,
+     "entry_ts": "2026-11-27",
+     "score": 71.0,
      "tier": "B",
-     "reason": "分数74.6（第16名）；看涨信号：MACD bullish cross；RSI 65.8；周线向上；市场状态risk-off；Tier-B（未过：regime）"
+     "reason": "分数71.0（第5名）；看涨信号：MACD bullish cross；RSI 68.3；周线向上；市场状态risk-off；Tier-B（未过：regime）"
     },
     {
-     "label": "HPQ",
-     "entry_price": 31.149999618530273,
-     "entry_ts": "2026-11-25",
-     "score": 73.7,
+     "label": "AMGN",
+     "entry_price": 474.0799865722656,
+     "entry_ts": "2026-11-27",
+     "score": 67.4,
      "tier": "B",
-     "reason": "分数73.7（第26名）；看涨信号：MACD bullish cross；RSI 57.5；周线向上；市场状态risk-off；Tier-B（未过：regime）"
+     "reason": "分数67.4（第45名）；看涨信号：MACD bullish cross；RSI 62.5；周线向上；市场状态risk-off；Tier-B（未过：regime）"
     },
     {
-     "label": "VRSN",
-     "entry_price": 319.4700012207031,
-     "entry_ts": "2026-11-25",
-     "score": 72.9,
+     "label": "MMM",
+     "entry_price": 191.22999572753906,
+     "entry_ts": "2026-11-27",
+     "score": 66.7,
      "tier": "B",
-     "reason": "分数72.9（第33名）；看涨信号：MACD bullish cross；RSI 64.8；周线向上；市场状态risk-off；Tier-B（未过：regime）"
+     "reason": "分数66.7（第51名）；看涨信号：MACD bullish cross；RSI 65.4；周线向上；市场状态risk-off；Tier-B（未过：regime）"
     }
    ],
    "shorts": [
     {
-     "label": "KEYS",
-     "entry_price": 267.69000244140625,
-     "entry_ts": "2026-11-25",
+     "label": "NVDA",
+     "entry_price": 150.49000549316406,
+     "entry_ts": "2026-11-27",
+     "score": 14.7,
+     "tier": "A",
+     "reason": "分数14.7（第438名）；看跌信号：Death cross；RSI 38.1；周线向下；市场状态risk-off"
+    },
+    {
+     "label": "INTC",
+     "entry_price": 57.400001525878906,
+     "entry_ts": "2026-11-27",
      "score": 19.6,
      "tier": "A",
-     "reason": "分数19.6（第418名）；看跌信号：MACD bearish cross；RSI 38.9；周线向下；市场状态risk-off"
+     "reason": "分数19.6（第409名）；看跌信号：Death cross；RSI 39.8；周线向下；市场状态risk-off"
     },
     {
-     "label": "COF",
-     "entry_price": 182.52000427246094,
-     "entry_ts": "2026-11-25",
-     "score": 20.5,
+     "label": "WST",
+     "entry_price": 366.1700134277344,
+     "entry_ts": "2026-11-27",
+     "score": 34.9,
      "tier": "A",
-     "reason": "分数20.5（第411名）；看跌信号：Death cross；RSI 33.9；周线向下；市场状态risk-off"
-    },
-    {
-     "label": "LRCX",
-     "entry_price": 185.00999450683594,
-     "entry_ts": "2026-11-25",
-     "score": 22.4,
-     "tier": "A",
-     "reason": "分数22.4（第399名）；看跌信号：MACD bearish cross；RSI 35.9；周线向下；市场状态risk-off"
+     "reason": "分数34.9（第338名）；看跌信号：Breakdown；RSI 33.2；周线向上；市场状态risk-off"
     }
    ]
   }
@@ -134,15 +134,15 @@
    "insufficient": false
   },
   "stocks_long": {
-   "n": 127,
-   "win_rate": 50.4,
-   "avg_ret": -0.22,
+   "n": 130,
+   "win_rate": 50.8,
+   "avg_ret": -0.21,
    "insufficient": false
   },
   "stocks_short": {
-   "n": 127,
-   "win_rate": 47.2,
-   "avg_ret": -0.43,
+   "n": 130,
+   "win_rate": 46.2,
+   "avg_ret": -0.59,
    "insufficient": false
   }
  }
