@@ -1,63 +1,63 @@
 {
  "kind": "v2",
- "report": "run_2026-11-26_2146.json",
- "published_at_toronto": "2026-11-26 16:52",
+ "report": "run_2026-11-27_0547.json",
+ "published_at_toronto": "2026-11-27 00:52",
  "universes": {
   "crypto": {
    "regime": "risk-off",
-   "data_asof": "2026-11-26 00:00",
+   "data_asof": "2026-11-27 00:00",
    "skipped": false,
    "skip_reason": null,
    "longs": [
     {
-     "label": "initia (trending)",
-     "entry_price": 0.1456683451980263,
-     "entry_ts": "2026-11-26",
-     "score": 81.6,
+     "label": "QNT (Quant)",
+     "entry_price": 150.3621565895293,
+     "entry_ts": "2026-11-27",
+     "score": 64.4,
      "tier": "B",
-     "reason": "分数81.6（第2名）；看涨信号：MACD bullish cross；RSI 55.8；周线向上；市场状态risk-off；Tier-B（未过：regime）"
+     "reason": "分数64.4（第6名）；看涨信号：MACD bullish cross；RSI 42.2；周线向上；市场状态risk-off；Tier-B（未过：regime）"
     },
     {
-     "label": "venice-token (trending)",
-     "entry_price": 26.778077556470183,
-     "entry_ts": "2026-11-26",
-     "score": 83.1,
+     "label": "UNI (Uniswap)",
+     "entry_price": 4.863237290537573,
+     "entry_ts": "2026-11-27",
+     "score": 47.9,
      "tier": "B",
-     "reason": "分数83.1（第1名）；看涨信号：Breakout on volume；RSI 62.3；周线向上；市场状态risk-off；Tier-B（未过：regime）"
+     "reason": "分数47.9（第14名）；看涨信号：MACD bullish cross；RSI 37.0；周线向上；市场状态risk-off；Tier-B（未过：regime）"
     },
     {
-     "label": "NEAR (NEAR Protocol)",
-     "entry_price": 3.0992284838546196,
-     "entry_ts": "2026-11-26",
-     "score": 63.9,
+     "label": "LTC (Litecoin)",
+     "entry_price": 44.72862016836062,
+     "entry_ts": "2026-11-27",
+     "score": 47.4,
      "tier": "B",
-     "reason": "分数63.9（第8名）；看涨信号：MACD bullish cross；RSI 40.9；周线向上；市场状态risk-off；Tier-B（未过：regime）"
+     "reason": "分数47.4（第15名）；看涨信号：MACD bullish cross；RSI 43.1；周线向下；市场状态risk-off；Tier-B（未过：regime）"
     }
    ],
    "shorts": [
     {
-     "label": "RAIN (Rain)",
-     "entry_price": 0.0025401098325859343,
-     "entry_ts": "2026-11-26",
-     "score": 20.1,
+     "label": "akedo (trending)",
+     "entry_price": 0.001099982773515653,
+     "entry_ts": "2026-11-27",
+     "score": 24.7,
      "tier": "A",
-     "reason": "分数20.1（第43名）；看跌信号：Breakdown；RSI 30.1；周线向下；市场状态risk-off"
+     "reason": "分数24.7（第40名）；看跌信号：Breakdown；RSI 32.3；周线向下；市场状态risk-off"
     },
     {
-     "label": "pudgy-penguins (trending)",
-     "entry_price": 0.004432209781309791,
-     "entry_ts": "2026-11-26",
-     "score": 18.9,
+     "label": "TAO (Bittensor)",
+     "entry_price": 188.19991909804523,
+     "entry_ts": "2026-11-27",
+     "score": 32.9,
      "tier": "C",
-     "reason": "分数18.9（第45名）；RSI 28.9；周线向下；市场状态risk-off；Tier-C（未过：rsi,signal）"
+     "reason": "分数32.9（第29名）；看跌信号：Death cross；RSI 38.9；周线向下；市场状态risk-off；Tier-C（未过：score）"
     },
     {
-     "label": "XAUT (Tether Gold)",
-     "entry_price": 3567.01146024446,
-     "entry_ts": "2026-11-26",
-     "score": 20.0,
+     "label": "RAIN (Rain)",
+     "entry_price": 0.0024522868983856308,
+     "entry_ts": "2026-11-27",
+     "score": 17.5,
      "tier": "C",
-     "reason": "分数20.0（第44名）；RSI 31.8；周线向下；市场状态risk-off；Tier-C（未过：signal）"
+     "reason": "分数17.5（第45名）；看跌信号：MACD bearish cross、Breakdown；RSI 29.5；周线向下；市场状态risk-off；注意：存在多空信号冲突，已按优先级裁决；Tier-C（未过：rsi）"
     }
    ]
   },
@@ -122,9 +122,9 @@
  },
  "winrate": {
   "crypto_long": {
-   "n": 415,
-   "win_rate": 22.9,
-   "avg_ret": -8.39,
+   "n": 416,
+   "win_rate": 22.8,
+   "avg_ret": -8.4,
    "insufficient": false
   },
   "crypto_short": {
