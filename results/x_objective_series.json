@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-26 约 09:45（多伦多）",
+ "generated_at": "2026-11-26 约 20:40（多伦多）",
  "note": "每期一行结构化客观数据（Deribit/OKX/Hyperliquid 永续、期权看跌看涨比、基差、稳定币、ETF、宏观）。OKX 与 Hyperliquid 列自 2026-11-15 20:30 期起填值（此前为 null）；Bybit 因 CloudFront 地域屏蔽无法直连，暂空；Binance 期货地域限制、Coinglass 需付费 Key。funding 单位：Deribit/OKX 为 8h 百分比，Hyperliquid 为 1h 百分比。注意：第 24–26 期 Deribit 列存的是小数（小 100 倍，如 0.000065 即 0.0065%），自 2026-11-16 09:30 期起改按百分比存，读数时注意口径断点。ETF 日值为最近已公布交易日（11月18日：BTC -$306.5M、ETH -$39.8M）；7日值为 Farside 口径 7 个交易日合计（bitcoinalmanack/whaleroom 交叉印证约-$14.03亿）。稳定币 DoD/WoW 均按 DefiLlama 图表口径：DoD 为当日 00:00 UTC 总量与前一日 00:00 UTC 总量之差，WoW 为与 7 日前 00:00 UTC 总量之差（自 2026-11-19 09:30 期起按此口径；此前 DoD 按与上一期时间序列总量之差计）。",
  "rows": [
   {
@@ -745,6 +745,37 @@
    "ibit_streak_days": 7,
    "macro_next": "11月26日感恩节美股休市、11月27日美股提前收盘与约70亿美元BTC期权到期；11月30日MSCI剔除Strategy与BTC月收；12月9日美联储议息、12月10日11月CPI",
    "divergence": "观点型新观点1多1空1区间2中性，Polymarket上档概率随反弹回落（BTC 11月↑$62,500 65.5%→57.5%），但ETF连续7日流出、11月累计创纪录$53.9亿，资金面与接多观点仍背离；三所资金费率接近零、期权看跌未占优，衍生品未确认恐慌；Glassnode七条反转信号几乎无一满足"
+  },
+  {
+   "run_toronto": "2026-11-26 20:30",
+   "fetched_at": "11月26日约 20:40（多伦多）",
+   "btc_perp_mark": 60705.45,
+   "btc_perp_oi_usd_deribit": 824817340,
+   "btc_funding_8h_pct_deribit": 0.0,
+   "eth_perp_mark": 1700.78,
+   "eth_perp_oi_usd_deribit": 288249836,
+   "eth_funding_8h_pct_deribit": 5e-06,
+   "btc_put_call_oi_deribit": 0.794,
+   "eth_put_call_oi_deribit": 0.57,
+   "btc_basis_pct": 0.2841,
+   "btc_basis_ann_pct": 3.58,
+   "btc_perp_oi_usd_okx": 1940385277.62,
+   "btc_funding_8h_pct_okx": 3.9313e-05,
+   "eth_perp_oi_usd_okx": 1105598224.92,
+   "eth_funding_8h_pct_okx": 7.25166e-05,
+   "btc_perp_oi_usd_hyperliquid": 2099022691,
+   "btc_funding_1h_pct_hyperliquid": 9.2638e-06,
+   "eth_perp_oi_usd_hyperliquid": 1144160443,
+   "eth_funding_1h_pct_hyperliquid": 1.25e-05,
+   "stablecoin_total_usd": 283665490924,
+   "stablecoin_dod_usd": 442474625,
+   "stablecoin_wow_usd": -918192099,
+   "etf_btc_daily_usd": null,
+   "etf_btc_7d_usd": null,
+   "etf_btc_2w_usd": null,
+   "ibit_streak_days": 7,
+   "macro_next": "11月27日美股提前收盘与约70亿美元BTC期权到期（max pain约$70,000、本期更正）；11月30日MSCI剔除Strategy与BTC月收；12月9日美联储议息、12月10日11月CPI",
+   "divergence": "观点型新观点0多0空、2个mixed（Ted、Rekt）、1个中性（Poppe），无新增明确看多；Polymarket上档概率继续回落（BTC 11月↑$62,500 57.5%→53.5%），全年↓$55,000由46.5%升至52.5%；ETF连续7日流出、11月累计创纪录$53.9亿，资金面与Ted/Poppe的反弹路径仍背离；三所资金费率接近零、期权看跌未占优，衍生品未确认恐慌；CryptoQuant CEO称挤压风险在空头一边，但其本人也指出表观需求增长为负"
   }
  ]
 }
