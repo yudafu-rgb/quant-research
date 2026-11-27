@@ -1,74 +1,66 @@
 {
  "regime": "risk-off",
- "data_asof": "2026-11-27 01:00",
+ "data_asof": "2026-11-27 05:00",
  "skipped": false,
  "skip_reason": null,
  "longs": [
   {
-   "label": "venice-token (trending)",
-   "entry_price": 27.006794004438945,
-   "entry_ts": "2026-11-27T01:00:00",
-   "score": 71.9,
+   "label": "zylo-ecosystem (trending)",
+   "entry_price": 0.024299330033405196,
+   "entry_ts": "2026-11-27T05:00:00",
+   "score": 72.9,
    "tier": "C",
-   "reason": "小时线分数71.9（第2名）；RSI(14h) 51.3；日线向上；市场状态risk-off；🔥trending关注度加成+2分；Tier-C（未过：signal,regime）"
+   "reason": "小时线分数72.9（第2名）；RSI(14h) 68.2；日线向上；市场状态risk-off；🔥trending关注度加成+2分；Tier-C（未过：signal,regime）"
   },
   {
-   "label": "kinetiq (trending)",
-   "entry_price": 0.21128236066988137,
-   "entry_ts": "2026-11-27T01:00:00",
-   "score": 71.9,
+   "label": "derive (trending)",
+   "entry_price": 0.38639104712020034,
+   "entry_ts": "2026-11-27T05:00:00",
+   "score": 69.8,
    "tier": "C",
-   "reason": "小时线分数71.9（第1名）；RSI(14h) 75.2；日线向下；市场状态risk-off；🔥trending关注度加成+2分；Tier-C（未过：rsi,signal,regime）"
-  },
-  {
-   "label": "FIGR_HELOC (Figure Heloc)",
-   "entry_price": 1.0654277290335465,
-   "entry_ts": "2026-11-27T01:00:00",
-   "score": 61.4,
-   "tier": "C",
-   "reason": "小时线分数61.4（第3名）；RSI(14h) 64.1；日线向上；市场状态risk-off；Tier-C（未过：signal,regime）"
+   "reason": "小时线分数69.8（第3名）；RSI(14h) 60.9；日线向上；市场状态risk-off；🔥trending关注度加成+2分；Tier-C（未过：signal,regime）"
   }
  ],
  "shorts": [
   {
-   "label": "akedo (trending)",
-   "entry_price": 0.0010956066540221381,
-   "entry_ts": "2026-11-27T01:00:00",
-   "score": 15.4,
-   "tier": "C",
-   "reason": "小时线分数15.4（第40名）；看跌信号：Breakdown；RSI(14h) 28.9；日线向下；市场状态risk-off；🔥trending关注度加成+2分；注意：存在多空信号冲突，已按优先级裁决；Tier-C（未过：rsi）"
+   "label": "RAIN (Rain)",
+   "entry_price": 0.0024081622349205935,
+   "entry_ts": "2026-11-27T05:00:00",
+   "score": 20.8,
+   "tier": "A",
+   "reason": "小时线分数20.8（第41名）；看跌信号：MACD bearish cross、Breakdown；RSI(14h) 30.5；日线向下；市场状态risk-off"
   },
   {
-   "label": "TRX (TRON)",
-   "entry_price": 0.3057,
-   "entry_ts": "2026-11-27T01:00:00",
-   "score": 34.1,
-   "tier": "C",
-   "reason": "小时线分数34.1（第37名）；RSI(14h) 61.2；日线向下；市场状态risk-off；板块L1（24h +2.3%）；Tier-C（未过：signal）"
+   "label": "TAO (Bittensor)",
+   "entry_price": 189.1,
+   "entry_ts": "2026-11-27T05:00:00",
+   "score": 30.4,
+   "tier": "A",
+   "reason": "小时线分数30.4（第38名）；看跌信号：RSI overbought；RSI(14h) 71.0；日线向下；市场状态risk-off；板块AI（24h +7.7%）"
   },
   {
-   "label": "SUI (Sui)",
-   "entry_price": 0.6842,
-   "entry_ts": "2026-11-27T01:00:00",
-   "score": 34.3,
-   "tier": "C",
-   "reason": "小时线分数34.3（第36名）；RSI(14h) 65.3；日线向下；市场状态risk-off；板块L1（24h +2.3%）；Tier-C（未过：signal）"
+   "label": "SHIB (Shiba Inu)",
+   "entry_price": 3.72e-06,
+   "entry_ts": "2026-11-27T05:00:00",
+   "score": 35.6,
+   "tier": "A",
+   "reason": "小时线分数35.6（第33名）；看跌信号：RSI overbought；RSI(14h) 70.5；日线向下；市场状态risk-off；板块Meme（24h +3.0%）"
   }
  ],
  "kind": "v3-crypto",
- "report": "intraday_run_2026-11-27_0216.json",
- "published_at_toronto": "2026-11-27 02:20",
+ "report": "intraday_run_2026-11-27_0617.json",
+ "published_at_toronto": "2026-11-27 06:21",
  "winrate": {
   "long": {
-   "n": 926,
-   "win_rate": 40.1,
-   "avg_ret": -0.78,
+   "n": 930,
+   "win_rate": 40.2,
+   "avg_ret": -0.75,
    "insufficient": false
   },
   "short": {
-   "n": 971,
-   "win_rate": 57.1,
-   "avg_ret": 0.65,
+   "n": 976,
+   "win_rate": 57.0,
+   "avg_ret": 0.64,
    "insufficient": false
   }
  }
