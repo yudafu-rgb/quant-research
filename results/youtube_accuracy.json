@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-26 21:12",
+  "generated_at": "2026-11-27 09:21",
   "price_source": "Binance US 日线（UTC）最高/最低价；窗口为原帖发布后 7 天",
   "rule": "只验带明确价位+方向+短期的预测；复述、提问、模型估值、长期目标不验；同一原帖只计一次",
   "summary": {
-    "claims": 28,
-    "hits": 9,
-    "misses": 9,
-    "pending": 10
+    "claims": 29,
+    "hits": 11,
+    "misses": 11,
+    "pending": 7
   },
   "channels": {
     "Benjamin Cowen": {
@@ -98,12 +98,12 @@
       "display": "100%（1/1）"
     },
     "大漂亮": {
-      "hits": 0,
+      "hits": 1,
       "misses": 0,
-      "pending": 1,
-      "resolved": 0,
-      "accuracy_pct": null,
-      "display": "待验证（1）"
+      "pending": 0,
+      "resolved": 1,
+      "accuracy_pct": 100,
+      "display": "100%（1/1）"
     },
     "比特币欧阳": {
       "hits": 0,
@@ -114,20 +114,20 @@
       "display": "0%（0/2）"
     },
     "比特币米娅老师": {
-      "hits": 0,
+      "hits": 1,
       "misses": 0,
       "pending": 2,
-      "resolved": 0,
-      "accuracy_pct": null,
-      "display": "待验证（2）"
+      "resolved": 1,
+      "accuracy_pct": 100,
+      "display": "100%（1/1）"
     },
     "比特币米娅老师 Telegram（BTC/ETH）": {
       "hits": 0,
-      "misses": 3,
-      "pending": 3,
-      "resolved": 3,
+      "misses": 5,
+      "pending": 1,
+      "resolved": 5,
       "accuracy_pct": 0,
-      "display": "0%（0/3）"
+      "display": "0%（0/5）"
     }
   }
 }
