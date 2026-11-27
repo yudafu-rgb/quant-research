@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-11-26 09:49",
+  "generated_at": "2026-11-26 20:50",
   "price_source": "Binance US 日线（UTC）最高/最低价；窗口为原帖发布后 7 天",
   "rule": "只验带明确价位+方向+短期的预测；复述、提问、模型估值、长期目标不验；同一原帖只计一次；方向不明的预测只当情绪、不计分；窗口 0 天的事后复述不计分；数据/事件型账号分口径、不参与观点排名",
   "summary": {
-    "claims": 42,
+    "claims": 44,
     "hits": 14,
     "misses": 23,
-    "pending": 5
+    "pending": 7
   },
   "summary_view": {
-    "claims": 37,
+    "claims": 39,
     "hits": 13,
     "misses": 20,
-    "pending": 4
+    "pending": 6
   },
   "summary_data": {
     "claims": 5,
@@ -26,7 +26,7 @@
     "Michaël van de Poppe（@CryptoMichNL）": {
       "hits": 1,
       "misses": 5,
-      "pending": 2,
+      "pending": 3,
       "resolved": 6,
       "accuracy_pct": 17,
       "display": "17%（1/6）"
@@ -38,6 +38,14 @@
       "resolved": 1,
       "accuracy_pct": 0,
       "display": "0%（0/1）"
+    },
+    "Ted Pillows（@TedPillows）": {
+      "hits": 5,
+      "misses": 2,
+      "pending": 1,
+      "resolved": 7,
+      "accuracy_pct": 71,
+      "display": "71%（5/7）"
     },
     "Glassnode（@glassnode）": {
       "hits": 0,
@@ -62,14 +70,6 @@
       "resolved": 5,
       "accuracy_pct": 60,
       "display": "60%（3/5）"
-    },
-    "Ted Pillows（@TedPillows）": {
-      "hits": 5,
-      "misses": 2,
-      "pending": 0,
-      "resolved": 7,
-      "accuracy_pct": 71,
-      "display": "71%（5/7）"
     },
     "Phyrex Ni（@Phyrex_Ni）": {
       "hits": 0,
@@ -124,6 +124,15 @@
       "exclude_reason": ""
     },
     {
+      "channel": "Ted Pillows（@TedPillows）",
+      "target_price": "BTC $65,000（收复$61,500–$62,000阻力区后推向）",
+      "target_date": "2026-12-03",
+      "outcome": "pending",
+      "checked_at": "2026-11-26 20:50",
+      "scored": true,
+      "exclude_reason": ""
+    },
+    {
       "channel": "Alex Thorn（Galaxy，@intangiblecoins）",
       "target_price": "BTC $58,525（日收跌破则向更低底部）",
       "target_date": "2026-12-02",
@@ -138,6 +147,15 @@
       "target_date": "2026-12-02",
       "outcome": "pending",
       "checked_at": "2026-11-25 20:50",
+      "scored": true,
+      "exclude_reason": ""
+    },
+    {
+      "channel": "Michaël van de Poppe（@CryptoMichNL）",
+      "target_price": "ETH $1,900（缓解反弹至$1,900–$2,000）",
+      "target_date": "2026-12-01",
+      "outcome": "pending",
+      "checked_at": "2026-11-26 20:50",
       "scored": true,
       "exclude_reason": ""
     },
