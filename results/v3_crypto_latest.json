@@ -1,58 +1,66 @@
 {
  "regime": "risk-off",
- "data_asof": "2026-11-28 05:00",
+ "data_asof": "2026-11-28 09:00",
  "skipped": false,
  "skip_reason": null,
  "longs": [
   {
+   "label": "variational-x (trending)",
+   "entry_price": 0.005483846072147646,
+   "entry_ts": "2026-11-28T09:00:00",
+   "score": 62.8,
+   "tier": "B",
+   "reason": "小时线分数62.8（第4名）；看涨信号：Breakout on volume；RSI(14h) 68.7；市场状态risk-off；🔥trending关注度加成+2分；Tier-B（未过：regime）"
+  },
+  {
    "label": "zylo-ecosystem (trending)",
-   "entry_price": 0.024440957878508144,
-   "entry_ts": "2026-11-28T05:00:00",
-   "score": 80.4,
+   "entry_price": 0.024345287698248896,
+   "entry_ts": "2026-11-28T09:00:00",
+   "score": 78.6,
    "tier": "C",
-   "reason": "小时线分数80.4（第1名）；RSI(14h) 51.2；日线向上；市场状态risk-off；🔥trending关注度加成+2分；Tier-C（未过：signal,regime）"
+   "reason": "小时线分数78.6（第1名）；RSI(14h) 47.6；日线向上；市场状态risk-off；🔥trending关注度加成+2分；Tier-C（未过：signal,regime）"
   }
  ],
  "shorts": [
   {
-   "label": "XLM (Stellar)",
-   "entry_price": 0.1237,
-   "entry_ts": "2026-11-28T05:00:00",
-   "score": 26.7,
+   "label": "RAIN (Rain)",
+   "entry_price": 0.0021891366335428375,
+   "entry_ts": "2026-11-28T09:00:00",
+   "score": 19.3,
    "tier": "C",
-   "reason": "小时线分数26.7（第35名）；RSI(14h) 32.1；日线向下；市场状态risk-off；板块Payments（24h -4.6%）；Tier-C（未过：signal）"
+   "reason": "小时线分数19.3（第39名）；RSI(14h) 37.0；日线向下；市场状态risk-off；Tier-C（未过：signal）"
   },
   {
-   "label": "AVAX (Avalanche)",
-   "entry_price": 6.493,
-   "entry_ts": "2026-11-28T05:00:00",
-   "score": 30.7,
+   "label": "XLM (Stellar)",
+   "entry_price": 0.1234,
+   "entry_ts": "2026-11-28T09:00:00",
+   "score": 27.8,
    "tier": "C",
-   "reason": "小时线分数30.7（第34名）；RSI(14h) 33.2；日线向下；市场状态risk-off；板块L1（24h -3.6%）；Tier-C（未过：signal）"
+   "reason": "小时线分数27.8（第36名）；RSI(14h) 33.3；日线向下；市场状态risk-off；板块Payments（24h -0.7%）；Tier-C（未过：signal）"
   },
   {
    "label": "ETH (Ethereum)",
-   "entry_price": 1646.81,
-   "entry_ts": "2026-11-28T05:00:00",
-   "score": 32.2,
+   "entry_price": 1647.78,
+   "entry_ts": "2026-11-28T09:00:00",
+   "score": 31.3,
    "tier": "C",
-   "reason": "小时线分数32.2（第33名）；RSI(14h) 31.2；日线向下；市场状态risk-off；🔥trending关注度加成+2分；板块L1（24h -3.6%）；Tier-C（未过：signal）"
+   "reason": "小时线分数31.3（第34名）；RSI(14h) 36.1；日线向下；市场状态risk-off；板块L1（24h +0.0%）；Tier-C（未过：signal）"
   }
  ],
  "kind": "v3-crypto",
- "report": "intraday_run_2026-11-28_0617.json",
- "published_at_toronto": "2026-11-28 06:21",
+ "report": "intraday_run_2026-11-28_1016.json",
+ "published_at_toronto": "2026-11-28 10:21",
  "winrate": {
   "long": {
-   "n": 939,
-   "win_rate": 40.0,
+   "n": 941,
+   "win_rate": 40.1,
    "avg_ret": -0.75,
    "insufficient": false
   },
   "short": {
-   "n": 993,
-   "win_rate": 57.4,
-   "avg_ret": 0.69,
+   "n": 995,
+   "win_rate": 57.5,
+   "avg_ret": 0.7,
    "insufficient": false
   }
  }
