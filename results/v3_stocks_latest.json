@@ -2,12 +2,12 @@
  "regime": "unknown",
  "data_asof": "n/a",
  "skipped": true,
- "skip_reason": "SPY 数据不新鲜（最新bar 189 分钟前），跳过本轮美股",
+ "skip_reason": "周末（Saturday），美股休市",
  "longs": [],
  "shorts": [],
  "kind": "v3-stocks",
- "report": "intraday_run_2026-11-27_1536.json",
- "published_at_toronto": "2026-11-27 15:38",
+ "report": "intraday_run_2026-11-28_1036.json",
+ "published_at_toronto": "2026-11-28 10:38",
  "winrate": {
   "long": {
    "n": 362,
