@@ -1,63 +1,63 @@
 {
  "kind": "v2",
- "report": "run_2026-11-27_2146.json",
- "published_at_toronto": "2026-11-27 16:52",
+ "report": "run_2026-11-28_0547.json",
+ "published_at_toronto": "2026-11-28 00:52",
  "universes": {
   "crypto": {
    "regime": "risk-off",
-   "data_asof": "2026-11-27 00:00",
+   "data_asof": "2026-11-28 00:00",
    "skipped": false,
    "skip_reason": null,
    "longs": [
     {
-     "label": "QNT (Quant)",
-     "entry_price": 147.6347608287479,
-     "entry_ts": "2026-11-27",
-     "score": 62.2,
+     "label": "centrifuge-2 (trending)",
+     "entry_price": 0.06480842180617984,
+     "entry_ts": "2026-11-28",
+     "score": 51.4,
      "tier": "B",
-     "reason": "分数62.2（第7名）；看涨信号：MACD bullish cross；RSI 40.4；周线向上；市场状态risk-off；Tier-B（未过：regime）"
+     "reason": "分数51.4（第11名）；看涨信号：MACD bullish cross；RSI 43.3；周线向下；市场状态risk-off；Tier-B（未过：regime）"
     },
     {
-     "label": "UNI (Uniswap)",
-     "entry_price": 4.842596291118809,
-     "entry_ts": "2026-11-27",
-     "score": 48.7,
-     "tier": "B",
-     "reason": "分数48.7（第15名）；看涨信号：MACD bullish cross；RSI 36.6；周线向上；市场状态risk-off；Tier-B（未过：regime）"
+     "label": "portal-2 (trending)",
+     "entry_price": 0.01667964975106169,
+     "entry_ts": "2026-11-28",
+     "score": 78.9,
+     "tier": "C",
+     "reason": "分数78.9（第1名）；看涨信号：Breakout on volume；RSI 75.7；周线向上；市场状态risk-off；Tier-C（未过：rsi,regime）"
     },
     {
      "label": "venice-token (trending)",
-     "entry_price": 26.13384422502008,
-     "entry_ts": "2026-11-27",
-     "score": 72.8,
+     "entry_price": 26.07001638580965,
+     "entry_ts": "2026-11-28",
+     "score": 73.7,
      "tier": "C",
-     "reason": "分数72.8（第3名）；RSI 57.4；周线向上；市场状态risk-off；Tier-C（未过：signal,regime）"
+     "reason": "分数73.7（第3名）；RSI 57.2；周线向上；市场状态risk-off；Tier-C（未过：signal,regime）"
     }
    ],
    "shorts": [
     {
-     "label": "XMR (Monero)",
-     "entry_price": 402.8694417068756,
-     "entry_ts": "2026-11-27",
-     "score": 27.7,
+     "label": "XLM (Stellar)",
+     "entry_price": 0.1239801583151604,
+     "entry_ts": "2026-11-28",
+     "score": 23.0,
      "tier": "A",
-     "reason": "分数27.7（第35名）；看跌信号：MACD bearish cross、Breakdown；RSI 30.7；周线向下；市场状态risk-off"
+     "reason": "分数23.0（第39名）；看跌信号：Breakdown；RSI 31.4；周线向下；市场状态risk-off"
     },
     {
-     "label": "RAIN (Rain)",
-     "entry_price": 0.0023035099178153567,
-     "entry_ts": "2026-11-27",
-     "score": 16.7,
-     "tier": "C",
-     "reason": "分数16.7（第44名）；看跌信号：MACD bearish cross、Breakdown；RSI 28.8；周线向下；市场状态risk-off；注意：存在多空信号冲突，已按优先级裁决；Tier-C（未过：rsi）"
+     "label": "beldex (trending)",
+     "entry_price": 0.06143451192371445,
+     "entry_ts": "2026-11-28",
+     "score": 24.3,
+     "tier": "A",
+     "reason": "分数24.3（第38名）；看跌信号：Breakdown；RSI 31.8；周线向下；市场状态risk-off"
     },
     {
-     "label": "BTC (Bitcoin)",
-     "entry_price": 59777.741948827286,
-     "entry_ts": "2026-11-27",
-     "score": 20.1,
+     "label": "official-trump (trending)",
+     "entry_price": 0.7888311140785179,
+     "entry_ts": "2026-11-28",
+     "score": 19.1,
      "tier": "C",
-     "reason": "分数20.1（第43名）；RSI 26.4；周线向下；市场状态risk-off；Tier-C（未过：rsi,signal）"
+     "reason": "分数19.1（第43名）；看跌信号：Breakdown；RSI 24.1；周线向下；市场状态risk-off；Tier-C（未过：rsi）"
     }
    ]
   },
@@ -79,9 +79,9 @@
      "label": "AMGN",
      "entry_price": 474.0799865722656,
      "entry_ts": "2026-11-27",
-     "score": 67.4,
+     "score": 67.5,
      "tier": "B",
-     "reason": "分数67.4（第45名）；看涨信号：MACD bullish cross；RSI 62.5；周线向上；市场状态risk-off；Tier-B（未过：regime）"
+     "reason": "分数67.5（第44名）；看涨信号：MACD bullish cross；RSI 62.5；周线向上；市场状态risk-off；Tier-B（未过：regime）"
     },
     {
      "label": "MMM",
@@ -89,7 +89,7 @@
      "entry_ts": "2026-11-27",
      "score": 66.7,
      "tier": "B",
-     "reason": "分数66.7（第51名）；看涨信号：MACD bullish cross；RSI 65.4；周线向上；市场状态risk-off；Tier-B（未过：regime）"
+     "reason": "分数66.7（第50名）；看涨信号：MACD bullish cross；RSI 65.4；周线向上；市场状态risk-off；Tier-B（未过：regime）"
     }
    ],
    "shorts": [
@@ -97,9 +97,9 @@
      "label": "NVDA",
      "entry_price": 150.49000549316406,
      "entry_ts": "2026-11-27",
-     "score": 14.7,
+     "score": 14.8,
      "tier": "A",
-     "reason": "分数14.7（第438名）；看跌信号：Death cross；RSI 38.1；周线向下；市场状态risk-off"
+     "reason": "分数14.8（第438名）；看跌信号：Death cross；RSI 38.1；周线向下；市场状态risk-off"
     },
     {
      "label": "INTC",
@@ -113,9 +113,9 @@
      "label": "WST",
      "entry_price": 366.1700134277344,
      "entry_ts": "2026-11-27",
-     "score": 34.9,
+     "score": 35.8,
      "tier": "A",
-     "reason": "分数34.9（第338名）；看跌信号：Breakdown；RSI 33.2；周线向上；市场状态risk-off"
+     "reason": "分数35.8（第332名）；看跌信号：Breakdown；RSI 33.2；周线向上；市场状态risk-off"
     }
    ]
   }
@@ -128,9 +128,9 @@
    "insufficient": false
   },
   "crypto_short": {
-   "n": 439,
+   "n": 440,
    "win_rate": 83.4,
-   "avg_ret": 6.21,
+   "avg_ret": 6.22,
    "insufficient": false
   },
   "stocks_long": {
